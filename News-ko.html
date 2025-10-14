@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4YZHC1G9FN');
+    </script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>수수랜드신문</title>
+<style>
+  :root{--paper:#fff8ef;--frame:#e9dccb;--ink:#222;--muted:#7a6c5b;--dot:#c9b79e}
+
+body{margin:0;background:#faf7f3;color:var(–ink);font-family:system-ui,apple-system,Segoe UI,Roboto,sans-serif; font-size: 20px;}
+.wrap{max-width:600px;margin:auto;padding:18px}
+h1{font-size:26px;margin:0 0 10px}
+.topnav{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
+.topnav a{padding:6px 10px;border:1px solid var(–frame);border-radius:8px;background:#fff;text-decoration:none;color:#333;font-weight:600}
+.section-title{margin:20px 0 8px;font-size:20px;font-weight:800;color:#4a3c2b}
+.card{background:#fff;border:1px solid var(–frame);border-radius:12px;padding:12px;margin:10px 0}
+table{width:100%;border-collapse:collapse;font-size:20px;background:#fff;border:1px solid var(–frame);border-radius:8px;overflow:hidden}
+th,td{border-bottom:1px solid #efe5d6;padding:8px;text-align:center}
+th:first-child,td:first-child{text-align:left}
+.up{color:#0b7a3e;font-weight:700}
+.down{color:#b12a2a;font-weight:700}
+.new{color:#6b5a45;font-weight:700}
+
+/* 연표 스타일 */
+.hint{color:var(–muted);font-size:13px;margin-bottom:8px}
+.year{font-weight:800;margin:18px 0 8px;font-size:20px;color:#4a3c2b}
+.timeline{position:relative;padding-left:14px;border-left:3px solid #e7dccc}
+.item{margin:10px 0 14px;position:relative}
+.dot{position:absolute;left:-17px;top:6px;width:12px;height:12px;border-radius:50%;background:var(–dot);border:2px solid #eee}
+.date-ttl{font-weight: 500;margin: 2px 0;white-space: nowrap;}
+.desc{color:#4f4a43;font-size:20px;margin:0}
+
+.square-button {
+width: 250px;
+height: 45px;
+background:#9d9e90;
+color: white;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+font-size: 1.1rem;
+font-weight: bold;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+line-height: 1.2;
+margin: 8px;
+transition: all 0.3s ease;
+font-family: Arial, sans-serif;
+}
+
+.square-button:hover {
+background-color: #FFB3D9;
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.square-button:active {
+transform: scale(0.95);
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <h1>📰 수수랜드의 기록</h1>
+  <nav class="topnav">
+    <a href="#oct">2025년 10월</a>
+    <a href="#sep">2025년 9월</a>
+    <a href="#aug">2025년 8월</a>
+    <a href="#jul">2025년 7월</a>
+    <a href="#timeline">전체 연표</a>
+  </nav>
+
+  <!-- 10월 -->
+
+  <section class="card">
+    <div class="section-title">📅 2025년 10월 연표</div>
+    <div class="timeline" id="octTimeline"></div>
+  </section>
+
+ <!-- 9월 -->
+
+  <section class="card" id="sep">
+    <div class="section-title">2025년 9월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="sepBody"></tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <div class="section-title">📅 2025년 9월 연표</div>
+    <div class="timeline" id="sepTimeline"></div>
+  </section>
+
+  <button class="square-button" onclick="location.href='https://soosoohan.github.io/soosooland/'">
+    즐거운 퍼즐, 수수랜드
+  </button>
+
+  <!-- 8월 -->
+
+  <section class="card" id="aug">
+    <div class="section-title">2025년 8월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="augBody"></tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <div class="section-title">📅 2025년 8월 연표</div>
+    <div class="timeline" id="augTimeline"></div>
+  </section>
+
+  <!-- 7월 -->
+
+  <section class="card" id="jul">
+    <div class="section-title">2025년 7월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="julBody"></tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <div class="section-title">📅 2025년 7월 연표</div>
+    <div class="timeline" id="julTimeline"></div>
+  </section>
+
+  <!-- 전체 연표 -->
+
+  <section class="card" id="timeline">
+    <div class="section-title">📅 전체 연표</div>
+    <div id="allTimeline"></div>
+  </section>
+
+  <button class="square-button" onclick="location.href='https://soosoohan.github.io/soosooland/'">
+    즐거운 퍼즐, 수수랜드
+  </button>
+</div>
+
+<script>
+// =================== 여기서 데이터를 관리하세요! ===================
+
+// 월별 인기순위 (최신 월부터 순서대로)
+const monthlyRanking = {
+  "2025-09": ["야구게임","모음퀴즈","트링클","오목","워퍼즈","넘즐"],
+  "2025-08": ["오목","모음퀴즈", "야구게임", "워퍼즈","트링클", "넘즐"],
+  "2025-07": ["모음퀴즈", "워퍼즈", "트링클", "넘즐" ]
+};
+
+// 월별 연표 (새로운 소식을 여기에 추가하세요!)
+const monthlyNews = {
+  "2025-10": [
+    "2025-10-05: 수수랜드 사용자 500명 달성"
+  ],    
+  "2025-09": [
+    "2025-09-03: 수수랜드 사용자 300명 달성",
+    "2025-09-11: 넘즐 저작권 등록 완료",
+    "2025-09-18: 수수랜드 사용자 400명 달성"
+  ],
+  "2025-08": [
+    "2025-08-01: 둘이 모음 출시",
+    "2025-08-02: 오목 게임 공개",
+    "2025-08-02: 넘플엑스 출시",
+    "2025-08-04: 넘털 출시",
+    "2025-08-11: 숫자야구게임 제작 공개",
+    "2025-08-13: 단어야구게임 제작 공개",
+    "2025-08-15: 수수랜드 신문 발행",
+    "2025-08-15: 하루 모음 출시",
+    "2025-08-19: 트링클,워퍼즈,모음퀴즈 저작권 등록 완료",
+    "2025-08-19: 수수랜드 사용자 200명 달성",
+    "2025-08-23: 네이버 AI 브리핑에 '교육용 게임 플랫폼'으로 소개",
+    "2025-08-25: 한글야구게임 제작 공표",
+    "2025-08-25: 수수랜드야구게임 2종 제작 공표"
+      ],
+  "2025-07": [
+    "2025-07-06: 넘즐엑스 출시",
+    "2025-07-12: 추적 시작",
+    "2025-07-14: 넘플 출시",
+    "2025-07-15: 모음퀴즈 힌트없음 출시",
+    "2025-07-16: 워퍼즈미니 출시",
+    "2025-07-18: 수수랜드 공개",
+    "2025-07-19: 워퍼즈메이트 찌니 출시",
+    "2025-07-20: 워퍼즈 몽이 출시",
+    "2025-07-30: 수수랜드 사용자 100명 달성"
+  ],
+  "2025-06": [
+    "2025-06-05: 넘즐 제작 공표",
+    "2025-06-07: 트링클 제작 공표",
+    "2025-06-15: 워퍼즈메이트 출시",
+    "2025-06-21: 모음퀴즈 제작 공표"
+  ],
+  "2025-05": [
+    "2025-05-31: 워퍼즈 제작 공표"
+  ]
+};
+
+// 순위 변동 계산
+function calculateRankChange(current, previous, gameName) {
+  const currentRank = current.indexOf(gameName) + 1;
+  const previousRank = previous ? previous.indexOf(gameName) + 1 : 0;
+  
+  if (previousRank === 0) return { text: "NEW", class: "new" };
+  if (currentRank < previousRank) return { text: `▲ ${previousRank - currentRank}계단`, class: "up" };
+  if (currentRank > previousRank) return { text: `▼ ${currentRank - previousRank}계단`, class: "down" };
+  return { text: "유지", class: "" };
+}
+
+// 순위표 그리기
+function drawRankingTable(monthKey, tableBodyId, previousMonthKey) {
+  const current = monthlyRanking[monthKey] || [];
+  const previous = previousMonthKey ? monthlyRanking[previousMonthKey] : null;
+  const tbody = document.getElementById(tableBodyId);
+  
+  if (!tbody || current.length === 0) return;
+  
+  tbody.innerHTML = "";
+  current.forEach((gameName, index) => {
+    const rank = index + 1;
+    const change = calculateRankChange(current, previous, gameName);
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${rank}</td>
+      <td>${gameName}</td>
+      <td class="${change.class}">${change.text}</td>
+    `;
+    tbody.appendChild(row);
+  });
+}
+
+// 연표 그리기
+function drawTimeline(monthKey, timelineId) {
+  const news = monthlyNews[monthKey] || [];
+  const timeline = document.getElementById(timelineId);
+  
+  if (!timeline) return;
+  
+  timeline.innerHTML = "";
+  news.forEach(item => {
+    const [date, title] = item.split(": ");
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = `
+      <span class="dot"></span>
+      <div class="date-ttl">${date} ${title}</div>
+    `;
+    timeline.appendChild(div);
+  });
+  
+  if (news.length === 0) {
+    timeline.innerHTML = '<div class="item"><div class="date-ttl">아직 소식이 없습니다</div></div>';
+  }
+}
+
+// 전체 연표 그리기
+function drawAllTimeline() {
+  const timeline = document.getElementById("allTimeline");
+  if (!timeline) return;
+  
+  const allNews = [];
+  Object.keys(monthlyNews).forEach(month => {
+    monthlyNews[month].forEach(item => {
+      const [date, title] = item.split(": ");
+      allNews.push({ date, title });
+    });
+  });
+  
+  // 날짜순으로 정렬
+  allNews.sort((a, b) => a.date.localeCompare(b.date));
+  
+  // 연도별로 그룹화
+  const byYear = {};
+  allNews.forEach(item => {
+    const year = item.date.substring(0, 4);
+    if (!byYear[year]) byYear[year] = [];
+    byYear[year].push(item);
+  });
+  
+  timeline.innerHTML = "";
+  Object.keys(byYear).sort().forEach(year => {
+    const yearDiv = document.createElement("div");
+    yearDiv.className = "year";
+    yearDiv.textContent = year;
+    timeline.appendChild(yearDiv);
+    
+    const timelineDiv = document.createElement("div");
+    timelineDiv.className = "timeline";
+    
+    byYear[year].forEach(item => {
+      const div = document.createElement("div");
+      div.className = "item";
+      div.innerHTML = `
+        <span class="dot"></span>
+        <div class="date-ttl">${item.date} ${item.title}</div>
+      `;
+      timelineDiv.appendChild(div);
+    });
+    
+    timeline.appendChild(timelineDiv);
+  });
+}
+
+// 모든 데이터 그리기
+function initializePage() {
+  // 순위표 그리기
+  drawRankingTable("2025-10", "octBody", "2025-09");
+  drawRankingTable("2025-09", "sepBody", "2025-08");
+  drawRankingTable("2025-08", "augBody", "2025-07");
+  drawRankingTable("2025-07", "julBody", null);
+  
+  // 월별 연표 그리기
+  drawTimeline("2025-10", "octTimeline");
+  drawTimeline("2025-09", "sepTimeline");
+  drawTimeline("2025-08", "augTimeline");
+  drawTimeline("2025-07", "julTimeline");
+  
+  // 전체 연표 그리기
+  drawAllTimeline();
+}
+
+// 페이지 로드 시 실행
+initializePage();
+
+/*
+=== 새로운 소식 추가하는 방법 ===
+
+1. 새로운 달의 순위를 추가하려면:
+   monthlyRanking에 "2025-10": [게임들] 형태로 추가
+
+2. 새로운 소식을 추가하려면:
+   monthlyNews에 "YYYY-MM-DD: 제목" 형태로 추가
+
+3. 새로운 달 섹션을 추가하려면:
+   HTML에 해당 월 섹션을 복사해서 추가하고
+   initializePage() 함수에 해당 월 그리기 함수 추가
+
+예시:
+monthlyRanking["2025-10"] = ["새게임", "모음퀴즈", ...];
+monthlyNews["2025-10"] = ["2025-10-01: 새게임 출시"];
+*/
+</script>
+
+</body>
+</html>
