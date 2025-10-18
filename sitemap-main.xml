@@ -69,13 +69,6 @@
   <!-- 지원/피드백 -->
 
   <url>
-    <loc>https://soosooland.com/G1.html</loc>
-    <lastmod>2025-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://soosooland.com/Contact.html</loc>
     <lastmod>2025-10-18</lastmod>
     <changefreq>yearly</changefreq>
