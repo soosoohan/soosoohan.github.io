@@ -1,104 +1,127 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>연락처와 지원</title>
+<title>연락처 - Contact</title>
 <link rel="canonical" href="https://soosooland.com/Contact.html">
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
     color: #333;
   }
-  h1 { color: #2c3e50; }
-  h2 { margin-top: 1.8em; color: #34495e; }
-  p { margin: .6em 0; }
-  .box {
-    background:#f8f9fa;
-    border:1px solid #ddd;
-    border-radius:6px;
-    padding:1rem;
-    margin:1.2rem 0;
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
   }
-  nav {
-    margin: 1rem 0;
-  }
-  nav a {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: 500;
-  }
-  nav a[aria-current="page"] {
+  h1 {
     color: #2c3e50;
-    font-weight: bold;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+  }
+  h2 {
+    color: #34495e;
+    margin-top: 2rem;
+  }
+  .email-box {
+    background: #f0f7ff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
   }
   .email {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #e74c3c;
+    color: #2c3e50;
+    word-break: break-all;
   }
-  hr { border:0; height:1px; background:#ddd; margin:2rem 0; }
+  .copy-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .copy-btn:hover {
+    background: #2980b9;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    margin: 3rem 0;
+  }
+  .section {
+    margin-bottom: 3rem;
+  }
 </style>
 </head>
 <body>
-  <h1>Contact & Support</h1>
-
-  <nav>
-    <a href="Opera.html">Operating Principles</a>
-    <a href="Priva.html">Privacy Policy</a>
-    <a href="Contact.html" aria-current="page">Contact & Support</a>
-  </nav>
+  <div class="container">
+    <!-- 한국어 -->
+    <div class="section" lang="ko">
+      <h1>연락처</h1>
       
-  <p>For any questions, feedback, or issues regarding Soosooland, please use the contact information below.</p>
+      <div class="email-box">
+        <p>문의사항이 있으시면 이메일 주세요</p>
+        <div class="email" id="email">soosooland2025@gmail.com</div>
+        <button class="copy-btn" onclick="copyEmail()">이메일 복사</button>
+      </div>
 
-  <div class="box">
-    <span id="email">soosooland2025@gmail.com</span>
-    <button style="margin-left:10px; padding:4px 8px; cursor:pointer;" onclick="copyEmail()">Copy</button>
-    <p>Please include a clear subject line such as <em>[General]</em>, <em>[Support]</em>, or <em>[Report]</em> so we can respond quickly.</p>
+      <h2>문의 가능 내용</h2>
+      <ul>
+        <li>게임 버그 신고</li>
+        <li>제안 및 피드백</li>
+        <li>일반 문의</li>
+      </ul>
+
+      <p><strong>응답 시간:</strong> 보통 1-2일 내 답변드립니다.</p>
+    </div>
+
+    <hr>
+
+    <!-- English -->
+    <div class="section" lang="en">
+      <h1>Contact</h1>
+      
+      <div class="email-box">
+        <p>Please email us if you have any questions</p>
+        <div class="email">soosooland2025@gmail.com</div>
+        <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
+      </div>
+
+      <h2>What to Contact About</h2>
+      <ul>
+        <li>Bug reports</li>
+        <li>Suggestions and feedback</li>
+        <li>General inquiries</li>
+      </ul>
+
+      <p><strong>Response Time:</strong> Usually reply within 1-2 days.</p>
+    </div>
   </div>
-
-  <h2>Support Categories</h2>
-  <ul>
-    <li><strong>General Inquiries:</strong> Questions about Soosooland, collaboration, or feedback</li>
-    <li><strong>Technical Support:</strong> Bug reports, game loading issues, or device compatibility</li>
-    <li><strong>Copyright & Reporting:</strong> Unauthorized uploads, inappropriate content, or ad concerns</li>
-  </ul>
-
-  <hr>
-
-  <h1>연락처 및 지원</h1>
-  <p>수수랜드와 관련된 질문, 피드백, 문제 제기는 아래 이메일을 이용해 주세요.</p>
-
-  <div class="box">
-    <span id="email-kr">soosooland2025@gmail.com</span>
-    <button style="margin-left:10px; padding:4px 8px; cursor:pointer;" onclick="copyEmailKr()">Copy</button>
-    <p>제목에 <em>[일반]</em>, <em>[지원]</em>, <em>[신고]</em> 와 같이 구분을 적어주시면 더 빠르게 대응할 수 있습니다.</p>
-  </div>
-
-  <h2>지원 범주</h2>
-  <ul>
-    <li><strong>일반 문의:</strong> 수수랜드 관련 질문, 협업 제안, 피드백, 광고 문의</li>
-    <li><strong>기술 지원:</strong> 버그 제보, 게임 실행 문제, 기기 호환성</li>
-    <li><strong>저작권 및 신고:</strong> 무단 업로드, 부적절한 콘텐츠, 광고 관련 신고</li>
-  </ul>
 
   <script>
   function copyEmail() {
-    const email = document.getElementById("email").textContent;
+    const email = "soosooland2025@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
-      alert("Email copied: " + email);
-    });
-  }
-  
-  function copyEmailKr() {
-    const email = document.getElementById("email-kr").textContent;
-    navigator.clipboard.writeText(email).then(() => {
-      alert("이메일이 복사되었습니다: " + email);
+      alert("이메일이 복사되었습니다!\nEmail copied!\n\n" + email);
     });
   }
   </script>
