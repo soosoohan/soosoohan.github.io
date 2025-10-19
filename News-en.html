@@ -87,8 +87,16 @@ transform: scale(0.95);
 
   <!-- 10월 -->
 
+  <section class="card" id="sep">
+    <div class="section-title">September 2025 Popularity Rankings</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="octBody"></tbody>
+    </table>
+  </section>
+
   <section class="card">
-    <div class="section-title">📅 October 2025 Timeline</div>
+    <div class="section-title">📅 September 2025 Timeline</div>
     <div class="timeline" id="octTimeline"></div>
   </section>
 
@@ -156,8 +164,9 @@ transform: scale(0.95);
 
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
-  "2025-09": ["Baseball Game","Moeum Quiz","Trinkle","Gomoku", "Worpuzz", "Numzzle"],
-  "2025-08": ["Gomoku", "Moeum Quiz", "Baseball Game", "Worpuzz","Trinkle", "Numzzle"],
+ "2025-10": ["Worpuzz","Numzzle","Omok","Moeum Quiz", "Baseball Game", "Trinkle"],
+  "2025-09": ["Baseball Game","Moeum Quiz","Trinkle","Omok", "Worpuzz", "Numzzle"],
+  "2025-08": ["Omok", "Moeum Quiz", "Baseball Game", "Worpuzz","Trinkle", "Numzzle"],
   "2025-07": ["Moeum Quiz", "Worpuzz", "Trinkle", "Numzzle" ]
   };
 
@@ -318,6 +327,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2025-10", "octBody", "2025-09");
   drawRankingTable("2025-09", "sepBody", "2025-08");
   drawRankingTable("2025-08", "augBody", "2025-07");
   drawRankingTable("2025-07", "julBody", null);
