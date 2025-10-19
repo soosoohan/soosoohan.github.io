@@ -86,6 +86,14 @@ transform: scale(0.95);
 
   <!-- 10월 -->
 
+  <section class="card" id="oct">
+    <div class="section-title">2025년 10월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="octBody"></tbody>
+    </table>
+  </section>
+
   <section class="card">
     <div class="section-title">📅 2025년 10월 연표</div>
     <div class="timeline" id="octTimeline"></div>
@@ -157,6 +165,7 @@ transform: scale(0.95);
 
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
+  "2025-10": ["워퍼즈","넘즐","오목","모음퀴즈","야구게임","트링클"],
   "2025-09": ["야구게임","모음퀴즈","트링클","오목","워퍼즈","넘즐"],
   "2025-08": ["오목","모음퀴즈", "야구게임", "워퍼즈","트링클", "넘즐"],
   "2025-07": ["모음퀴즈", "워퍼즈", "트링클", "넘즐" ]
