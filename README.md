@@ -451,7 +451,7 @@ Hangul Baseball is a consonant-based deduction game for Korean words (2–5 syll
 
 > "Learning through fun, and fun through learning."
 
-Explore more brain games and puzzles in **[Soosooland](https://soosooland.vercel.app)**    
+Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**    
 — a digital playground designed to improve memory, logic, and creativity while having fun!
 
 ---
