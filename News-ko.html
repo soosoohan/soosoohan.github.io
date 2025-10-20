@@ -47,14 +47,14 @@ th:first-child,td:first-child{text-align:left}
 .desc{color:#4f4a43;font-size:20px;margin:0}
 
 .square-button {
-width: 250px;
-height: 45px;
-background:#9d9e90;
+width: 350px;
+height: 100px;
+background:#145454;
 color: white;
 border: none;
 border-radius: 12px;
 cursor: pointer;
-font-size: 1.1rem;
+font-size: 1.3rem;
 font-weight: bold;
 display: flex;
 flex-direction: column;
@@ -67,7 +67,7 @@ font-family: Arial, sans-serif;
 }
 
 .square-button:hover {
-background-color: #FFB3D9;
+background-color: #145454;
 transform: scale(1.05);
 box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -103,6 +103,10 @@ transform: scale(0.95);
     <div class="section-title">📅 2025년 10월 연표</div>
     <div class="timeline" id="octTimeline"></div>
   </section>
+  <button class="square-button" onclick="location.href='/'">
+   즐거운 퍼즐, 수수랜드<br><br>
+    🌟 지금 게임하러가기
+  </button>
 
  <!-- 9월 -->
 
@@ -120,7 +124,8 @@ transform: scale(0.95);
   </section>
 
   <button class="square-button" onclick="location.href='/'">
-    즐거운 퍼즐, 수수랜드
+   즐거운 퍼즐, 수수랜드<br><br>
+    🌟 지금 게임하러가기
   </button>
 
   <!-- 8월 -->
@@ -138,6 +143,10 @@ transform: scale(0.95);
     <div class="timeline" id="augTimeline"></div>
   </section>
 
+  <button class="square-button" onclick="location.href='/'">
+   즐거운 퍼즐, 수수랜드<br><br>
+    🌟 지금 게임하러가기
+  </button>
   <!-- 7월 -->
 
   <section class="card" id="jul">
@@ -180,6 +189,7 @@ const monthlyRanking = {
 const monthlyNews = {
   "2025-10": [
     "2025-10-05: 수수랜드 사용자 500명 달성",    
+    "2025-10-14: soosooland.com 도메인 획득",    
     "2025-10-16: 수수랜드 사용자 600명 달성"
   ],    
   "2025-09": [
