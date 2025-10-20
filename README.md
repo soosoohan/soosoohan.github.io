@@ -71,7 +71,7 @@ Games like Gomoku and Baseball-style logic games are reinterpreted for modern ga
 🌐 수수랜드 접속 방법
 🌐 How to Access Soosoland
  
- https://soosooland.vercel.app    
+ https://soosooland.com/    
 • 크롬, 사파리 등 브라우저에서 바로 접속 가능   
 • 다운로드 불필요!   
 • 언제 어디서든 가볍게 두뇌 개발 게임을 즐길 수 있습니다.  
@@ -81,7 +81,7 @@ Games like Gomoku and Baseball-style logic games are reinterpreted for modern ga
      
 그렇다면 지금 바로 수수랜드에서 만나보세요!     
 Then don’t wait—start playing now on Soosoland!    
- https://soosoohan.github.io/soosooland/   
+ https://soosooland.com/   
 
 ---
 
