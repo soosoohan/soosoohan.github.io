@@ -1,20 +1,20 @@
-# ⚠️ 안내
+## ⚠️ 안내
 본 저장소의 소스코드와 자료는 작성자의 허락 없이 **복사·수정·배포·상업적 이용**할 수 없습니다.  
 이 저장소는 오픈소스가 아니며, 교육 및 참고 목적으로만 열람 가능합니다.
 
 
->---
->
->🛡️**워퍼즈 시리즈 , 넘즐 시리즈, 모음퀴즈 시리즈, 트링클은  창작자 한수수의 독창적인 아이디어와 표현을 바탕으로 제작되었으며, 한국저작권위원회에 저작권등록이 완료된 공식 저작물입니다.** 
->무단 복제, 무단 이용, 상업적 사용은 법적 책임을 초래할 수 있습니다.   
->
->🛡️**The Worpuzz series, Numzzle series, Moeum Quiz series and Trinkle
-> created by Han Soosoo. 
->and they are officially registered with the Korea Copyright Commission.**
->Unauthorized reproduction, use, or commercial distribution may result
->in legal consequences.
->
->-----
+---
+
+🛡️**워퍼즈 시리즈 , 넘즐 시리즈, 모음퀴즈 시리즈, 트링클은  창작자 한수수의 독창적인 아이디어와 표현을 바탕으로 제작되었으며, 한국저작권위원회에 저작권등록이 완료된 공식 저작물입니다.** 
+무단 복제, 무단 이용, 상업적 사용은 법적 책임을 초래할 수 있습니다.   
+
+🛡️**The Worpuzz series, Numzzle series, Moeum Quiz series and Trinkle
+ created by Han Soosoo. 
+and they are officially registered with the Korea Copyright Commission.**
+Unauthorized reproduction, use, or commercial distribution may result
+in legal consequences.
+
+---
 
 # Soosoo Land
 수수랜드는 저작권을 존중하며, 교육·두뇌개발 게임을 함께 나누는 플랫폼입니다.    
@@ -28,6 +28,8 @@ Introducing the Online Educational & Brain Development Game Platform, Soosoland.
 Soosoland is an educational and brain-training game platform that runs directly on your browser without any downloads.  
 It offers a wide range of word, logic, strategy, and math games—perfect for children’s learning and for adults’ brain health.  
    
+---
+
 🎲 수수랜드에서 즐길 수 있는 게임  
 🎲 Games Available on Soosoland  
    
@@ -44,6 +46,7 @@ It offers a wide range of word, logic, strategy, and math games—perfect for ch
 👦 Great for children’s vocabulary and logical thinking.  
 👵 Also helpful for seniors to maintain brain health.  
    
+---
 📌 수수랜드만의 특징  
 📌 Features of Soosoland  
    
@@ -68,6 +71,7 @@ Most games provide both Korean. and English instructions for global users.
 • Modern Twist on Classics    
 Games like Gomoku and Baseball-style logic games are reinterpreted for modern gameplay.  
    
+---
 🌐 수수랜드 접속 방법
 🌐 How to Access Soosoland
  
@@ -133,7 +137,6 @@ If you guess incorrectly, the consonant changes color and the turn switches to t
 
 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
 The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.
-
 
 -----
 
@@ -447,7 +450,7 @@ Hangul Baseball is a consonant-based deduction game for Korean words (2–5 syll
 
 ---
 
-## 🌟 Soosooland - Game Hub by Han Soosoo
+## 🌟 Soosooland - Puzzle Game Hub by Han Soosoo
 
 > "Learning through fun, and fun through learning."
 
