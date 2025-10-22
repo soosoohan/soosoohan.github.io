@@ -50,45 +50,45 @@
 <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-    * {
+* {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    body {
+body {
         font-family: 'Pretendard', sans-serif;
         background: #2e8b8b;
         min-height: 100vh;
         padding: 20px;
         overflow-y: auto;
     }
-  .games-hub-header {
-    display: flex;
-    align-items: center;      /* 수직 가운데 정렬 */
-    justify-content: center;  /* 기본적으로 가운데 정렬 */
-    position: relative;       /* 오른쪽 버튼 위치 조정을 위해 */
-    margin-bottom: 20px;
-    font-size: clamp(1.3rem, 3.7vw, 1.9rem);
-    color: #f0f8ff;
+.games-hub-header {
+        display: flex;
+        align-items: center;      /* 수직 가운데 정렬 */
+        justify-content: center;  /* 기본적으로 가운데 정렬 */
+        position: relative;       /* 오른쪽 버튼 위치 조정을 위해 */
+        margin-bottom: 20px;
+        font-size: clamp(1.3rem, 3.7vw, 1.9rem);
+        color: #f0f8ff;
    }
 
-  .hub-title {
-    margin: 0;
-    text-align: center;
-    font-size: clamp(1.3rem, 3.7vw, 1.9rem);
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f0f8ff;
+.hub-title {
+        margin: 0;
+        text-align: center;
+        font-size: clamp(1.3rem, 3.7vw, 1.9rem);
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #f0f8ff;
    }
 
-  .language-toggle {
-    position: absolute;
-    right: 0;                 /* 오른쪽으로 고정 */
+.language-toggle {
+        position: absolute;
+        right: 0;                 /* 오른쪽으로 고정 */
    }
     
  
-  .language-btn {
+.language-btn {
         background: rgba(255,255,255,0.2);
         color: #f0f8ff;
         border: 2px solid rgba(255,255,255,0.3);
@@ -100,23 +100,23 @@
         transition: all 0.3s ease;
     }
 
-   .language-btn.active {
+.language-btn.active {
         background: rgba(255,255,255,0.9);
         color: #2e8b8b;
         border-color: rgba(255,255,255,0.9);
     }
 
-    .language-btn:hover {
+.language-btn:hover {
         background: rgba(255,255,255,0.3);
     }
 
-    .games-grid {
+.games-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
     }
 
-    .game-card {
+.game-card {
         background: rgba(255,255,255,0.95);
         border-radius: 15px;
         padding: 20px;
@@ -125,56 +125,56 @@
         cursor: pointer;
     }
 
-    .game-card:hover {
+.game-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 30px rgba(0,0,0,0.4);
     }
 
-    .test-card {
+.test-card {
         cursor: default;
     }
 
-    .test-card:hover {
+.test-card:hover {
         transform: none;
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
 
-    .info-card {
+.info-card {
         cursor: default;
     }
 
-    .info-card:hover {
+.info-card:hover {
         transform: none;
     }
 
-    .game-card-header {
+.game-card-header {
         display: flex;
         align-items: center;
         gap: 15px;
         margin-bottom: 15px;
     }
 
-    .game-emoji {
+.game-emoji {
         font-size:1.0rem;
     }
 
-    .game-title {
+.game-title {
         font-size: clamp(1.2rem, 3vw, 1.4rem);
         font-weight: bold;
         color: #2e8b8b;
         word-wrap: break-word;
     }
 
-    .game-description-text {
+.game-description-text {
         color: #333;
         line-height: 1.5;
         margin-bottom: 15px;
         font-size: clamp(0.9rem, 2.2vw, 1rem);
         word-wrap: break-word;
-      text-align: center;    
+        text-align: center;    
     }
 
-    .game-difficulty {
+.game-difficulty {
         background: #2e8b8b;
         color: white;
         padding: 5px 12px;
@@ -186,17 +186,17 @@
     }
 
 
-    .github-link {
+.github-link {
         color: #2e8b8b;
         text-decoration: none;
         font-size: clamp(0.9rem, 2.2vw, 1rem);
     }
 
-    .github-link:hover {
+.github-link:hover {
         text-decoration: underline;
     }
 
-    .hidden {
+.hidden {
         display: none;
     }
 
@@ -335,27 +335,27 @@
 }
 
 /* 별모양 버튼들 */
-    .star-button {
-        background: linear-gradient(45deg, #FFD700, #FFA500);
-        border: none;
-        border-radius: 20px;
-        padding: 8px 15px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        position: relative;
-        margin: 5px;
-        transition: all 0.3s ease;
-        font-size: clamp(0.9rem, 2.2vw, 1rem);
+.star-button {
+      background: linear-gradient(45deg, #FFD700, #FFA500);
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      margin: 5px;
+      transition: all 0.3s ease;
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
     }
 
-    .star-button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(255,215,0,0.6);
+.star-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,215,0,0.6);
     }
 
     
-    .footer {
+.footer {
       background: #2e8b8b;
       text-align: center;
       font-size: 14px;
@@ -368,13 +368,13 @@
       padding: 40px 20px;
     }
 
-    .footer a {
+.footer a {
       color: white;
       text-decoration: none;
       margin: 0 10px;
     }
 
-    .footer a:hover {
+.footer a:hover {
       text-decoration: underline;
     }
     
@@ -385,61 +385,61 @@
 
 
 @media (max-width: 668px) {
-        body {
-            padding: 10px;
+body {
+      padding: 10px;
         }
 
-        .games-grid {
-            grid-template-columns: 2fr;
-            gap: 15px;
+.games-grid {
+      grid-template-columns: 2fr;
+      gap: 15px;
         }
 
-        .game-card {
-            padding: 15px;
+.game-card {
+      padding: 15px;
         }
 
-    .test-buttons {
-        flex-direction: column;
-        align-items: center;
+.test-buttons {
+      flex-direction: column;
+      align-items: center;
        }
 
-    .test-btn {
-        width: 80%;
-        max-width: 200px;
+.test-btn {
+      width: 80%;
+      max-width: 200px;
       }
 }
 
-    @media (max-width: 480px) {
-        .hub-title {
-            margin-top: 20px;
+@media (max-width: 480px) {
+.hub-title {
+      margin-top: 20px;
       }
     
 
-    .language-toggle {
-        position: static;
-        margin-top: 10px;
+.language-toggle {
+      position: static;
+      margin-top: 10px;
       }
 
-    .games-hub-header {
-        flex-direction: column;
+.games-hub-header {
+      flex-direction: column;
       }
 }
-    @media (max-height: 500px) and (orientation: landscape) {
-        body {
-            min-height: auto;
+@media (max-height: 500px) and (orientation: landscape) {
+      body {
+      min-height: auto;
         }
 
-        .hub-title {
-            font-size: 2rem;
-            margin-bottom: 15px;
+.hub-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
         }
 
-        .games-grid {
-            gap: 15px;
+.games-grid {
+      gap: 15px;
         }
 
-        .game-card {
-            padding: 15px;
+.game-card {
+      padding: 15px;
         }
     }
 
