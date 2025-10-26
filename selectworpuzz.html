@@ -20,13 +20,30 @@
         flex-direction: column;
         justify-content: center;
     }
-
-
 .container {
     max-width: 800px;
     margin: 0 auto;
 }
+.back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #FFD6BA;
+        color: #7A2E2E;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
 
+    .back-button:hover {
+        background-color: #FF9494;
+        color: white;
+    }
+  
 h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     color: #FF9494;
@@ -218,11 +235,10 @@ h1 {
 </style>
 </head>
 <body>
-
+<button class="back-button" onclick="location.href='https://soosooland.com/'">
+    Soosooland </button>
 <div class="container">
     <h1>WORPUZZ</h1>
-
-
 <div class="screen-info" id="screenInfo">
     현재 화면 크기: <span id="screenWidth"></span>px
 </div>
