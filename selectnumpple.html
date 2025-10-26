@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>select Numpple </title>
+<style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Pretendard', sans-serif;
+        background: #145454;
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .blackboard {
+        width: 750px;
+        height: 95vh;
+        background: #145454;
+        position: relative;
+        overflow-y: auto;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FF9494;
+        margin-bottom: 25px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        font-size: clamp(1.1rem, 3.3vw, 1.3rem);
+        line-height: 1.5;
+        background-color: #f7e6f3;
+        padding: 10px;
+        border-radius: 15px;
+        color: #7A2E2E;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .selection-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .selection-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .selection-button {
+        flex: 1;
+        min-width: 280px;
+        max-width: 350px;
+        padding: 15px 10px;
+        font-size: clamp(1.1rem, 3.3vw, 1.3rem);
+        font-weight: bold;
+        border: none;
+        border-radius: 15px;
+        background-color: #f7e6f3;
+        color: #7A2E2E;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .selection-button:hover {
+        background: linear-gradient(145deg, #FF9494, #FF7373);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(255, 148, 148, 0.3);
+    }
+
+    .selection-button:active {
+        transform: translateY(-1px);
+    }
+
+    .selection-button .emoji {
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+
+    .selection-button .subtitle {
+        font-size: clamp(1.1rem, 3.3vw, 1.3rem);
+        font-weight: normal;
+        opacity: 0.8;
+        margin-top: 5px;
+    }
+
+    .square-button {
+        width: 280px;
+        height: 80px;
+        background-color: #FFB3D9;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: clamp(0.9rem, 2.7vw, 1.1rem);
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2;
+        margin: 6px auto;
+        transition: all 0.3s ease;
+        font-family: Arial, sans-serif;
+    }
+
+    .square-button:hover {
+        background-color: #FF8FAB;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .square-button:active {
+        transform: scale(0.95);
+    }
+
+    .credits {
+        margin-top: 30px;
+        font-size: clamp(0.9rem, 2.7vw, 1.1rem);
+        color: white;
+        background-color: #145454;
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 768px) {
+        .blackboard {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .selection-button {
+            min-width: 250px;
+            max-width: 300px;
+        }
+    }
+
+    @media (max-height: 800px) {
+        .blackboard {
+            border: none;
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="blackboard">
+    <div class="container">
+        <h1>넘플과 넘플X<br><span style="font-size: 1.2em;">Numpple & NumppleX</span></h1>
+
+        <div class="description">
+            <p>숫자카드와 연산기호 카드를 이용해서 수식을 만드세요.<br>
+            원하는 플레이 방식을 선택하세요!<br></p>
+            <span style="font-size: 1.1em;">Create expressions using number cards and operation symbol cards. Choose your preferred play style!</span>
+        </div>
+
+        <div class="selection-container">
+            <div class="selection-row">
+                <button class="selection-button" onclick="location.href='https://soosoohan.github.io/numpple'""goToPage2()">
+                        <span class="emoji">🏆</span>
+                        목표숫자 만들기<br>Make Target Number
+                        <div class="subtitle">넘플 Numpple</div>
+                    </button> 
+                    
+                    <button class="selection-button" onclick="location.href='https://soosoohan.github.io/numpplex'">
+                        <span class="emoji">🏆</span>
+                        최대값 만들기 <br> 최소값 만들기 <br>Make Max/min Values
+                        <div class="subtitle">넘플X NUMPPLE X</div>
+                                    </button>
+            </div>
+        </div>
+
+        <div class="credits">       
+            <button class="square-button" onclick="location.href='https://soosooland.com'">
+                즐거운 퍼즐, 수수랜드<br>Fun puzzles, Soosooland
+            </button>
+            <p>© 2025 Soosoo Han. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
