@@ -33,7 +33,27 @@ h1 {
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
+/* 뒤로가기 버튼 */
+   .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #FFD6BA;
+        color: #7A2E2E;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
 
+    .back-button:hover {
+        background-color: #FF9494;
+        color: white;
+    }
+    
 .step-title {
     font-size: 1.5em;
     color: #FF9494;
@@ -218,11 +238,10 @@ h1 {
 </style>
 </head>
 <body>
-
+<button class="back-button" onclick="location.href='https://soosooland.com/'">
+    Soosooland </button>
 <div class="container">
-    <h1>WORPUZZMATE</h1>
-
-
+    <h1>워퍼즈메이트(worpuzzmate) & 워퍼즈 찌니(Worpuzz zzini) </h1>
 <div class="screen-info" id="screenInfo">
     현재 화면 크기: <span id="screenWidth"></span>px
 </div>
@@ -234,12 +253,12 @@ h1 {
     </div>
 
     <div class="description">
-        워퍼즈메이트는 격자를 클릭하여 숨겨진 단어를 찾는 게임입니다.<br>
+        워퍼즈메이트는 두 사용자가 교대로 격자를 클릭하여 숨겨진 단어를 찾는 게임입니다.<br>
         화면크기를 체크해서 적합한 격자 크기를 알려드립니다.
         <br>
         <div class="english-desc">
-            WORPUZZ is a word-finding game where you click on grid cells to discover hidden words.<br>
-            We check your screen size and recommend the appropriate grid size for you.
+        Worpuzz Mate is a game where two users take turns clicking on a grid to find hidden words.
+        We check your screen size and recommend the appropriate grid size for you.
         </div>
     </div>
 
@@ -262,8 +281,6 @@ h1 {
         </div>
     </div>
 </div>
-
-
 </div>
 
 <div class="alert-modal" id="alertModal">
