@@ -111,49 +111,27 @@
         margin-top: 5px;
     }
 
-    .square-button {
-        width: 280px;
-        height: 80px;
-        background-color: #FFB3D9;
-        color: white;
+  /* 뒤로가기 버튼 */
+   .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #FFD6BA;
+        color: #7A2E2E;
         border: none;
-        border-radius: 12px;
+        border-radius: 8px;
         cursor: pointer;
-        font-size: clamp(0.9rem, 2.7vw, 1.1rem);
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.2;
-        margin: 6px auto;
         transition: all 0.3s ease;
-        font-family: Arial, sans-serif;
+        z-index: 100;
     }
 
-    .square-button:hover {
-        background-color: #FF8FAB;
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .square-button:active {
-        transform: scale(0.95);
-    }
-
-    .credits {
-        margin-top: 30px;
-        font-size: clamp(0.9rem, 2.7vw, 1.1rem);
+    .back-button:hover {
+        background-color: #FF9494;
         color: white;
-        background-color: #145454;
-        padding: 15px;
-        border-radius: 10px;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
     }
-
+   
     /* 모바일 대응 */
     @media (max-width: 768px) {
         .blackboard {
@@ -178,7 +156,9 @@
 </style>
 </head>
 <body>
-<div class="blackboard">
+    <button class="back-button" onclick="location.href='https://soosooland.com/'">
+    Soosooland </button>
+    <div class="blackboard">
     <div class="container">
         <h1>넘플과 넘플X<br><span style="font-size: 1.2em;">Numpple & NumppleX</span></h1>
 
@@ -203,14 +183,7 @@
                                     </button>
             </div>
         </div>
-
-        <div class="credits">       
-            <button class="square-button" onclick="location.href='https://soosooland.com'">
-                즐거운 퍼즐, 수수랜드<br>Fun puzzles, Soosooland
-            </button>
-            <p>© 2025 Soosoo Han. All rights reserved.</p>
-        </div>
-    </div>
+      </div>
 </div>
 </body>
 </html>
