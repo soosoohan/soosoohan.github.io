@@ -2,7 +2,6 @@
 본 저장소의 소스코드와 자료는 작성자의 허락 없이 **복사·수정·배포·상업적 이용**할 수 없습니다.  
 이 저장소는 오픈소스가 아니며, 교육 및 참고 목적으로만 열람 가능합니다.
 
-
 ---
 
 🛡️**워퍼즈 시리즈 , 넘즐 시리즈, 모음퀴즈 시리즈, 트링클은  창작자 한수수의 독창적인 아이디어와 표현을 바탕으로 제작되었으며, 한국저작권위원회에 저작권등록이 완료된 공식 저작물입니다.** 
@@ -458,9 +457,17 @@ Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**
 — a digital playground designed to improve memory, logic, and creativity while having fun!
 
 ---
+## 저작권 (Copyright)
 
-![Copyright](https://img.shields.io/badge/Copyright-Registered-red)
-![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-blue)
+이 저작물은 한국저작권위원회에 등록되어 법적 보호를 받습니다.
+
+| 게임 | 등록번호 | 등록일 |
+|------|----------|--------|
+| 넘즐 (Numzzle) | C-2025-036386| 2025.09.11 |
+| 모음퀴즈(moeum-quiz)| C-2025-031801 | 2025.08.19 |
+| 워퍼즈(worpuzz)| C-2025-031802 | 2025.08.19 |
+| 트링클(trinkle)| C-2025-031800 | 2025.08.19 |
+
 
 👤 만든 사람 / Credits
 
