@@ -28,7 +28,7 @@
         position: absolute;
         top: 20px;
         left: 20px;
-        padding: 10px 20px;
+        padding: 10px 10px;
         font-size: 1em;
         background-color: #FFD6BA;
         color: #7A2E2E;
@@ -261,33 +261,30 @@ h1 {
 
     <div class="selection-container">
         <div class="selection-row">
-            <button class="selection-button" id="miniBtn" data-url="https://soosooland.com/worzzle" data-min-width="0">
+            <button class="selection-button" id="miniBtn" data-url="https://soosooland.com/worzzle/" data-min-width="0">
                 <span class="emoji">📱</span>
                 <div class="main-title">워퍼즈 미니</div>
                 <div class="english-title">WORPUZZ MINI</div>
                 <div class="subtitle">작은 격자 Small Grid<br>영어 8x8 한글 7x7<br>English 8x8, Korean 7x7</div>
             </button>
             
-            <button class="selection-button" id="normalBtn" data-url="https://soosooland.com/worpuzz" data-min-width="580">
+            <button class="selection-button" id="normalBtn" data-url="https://soosooland.com/worpuzz/" data-min-width="580">
                 <span class="emoji">🤖</span>
                 <div class="main-title">워퍼즈</div>
                 <div class="english-title">WORPUZZ</div>
                 <div class="subtitle">중간 격자 Medium Grid<br>영어 12x12 한글 10x10<br>English 12x12, Korean 10x10</div>
             </button>
             
-            <button class="selection-button" id="mongBtn" data-url="https://soosooland.com/mong" data-min-width="860">
+            <button class="selection-button" id="mongBtn" data-url="https://soosooland.com/mong/" data-min-width="860">
                 <span class="emoji">🎪</span>
-                <div class="main-title">워퍼즈몽이</div>
-                <div class="english-title">WORPUZZMONG</div>
+                <div class="main-title">워퍼즈 몽</div>
+                <div class="english-title">WORPUZZ MONG</div>
                 <div class="subtitle">큰 격자 Large Grid<br>영어 19×12, 한글 17×11<br>English 19×12, Korean 17×11</div>
             </button>
         </div>
     </div>
 </div>
-
-
 </div>
-
 <div class="alert-modal" id="alertModal">
     <div class="alert-content">
         <h2>⚠️ 화면 크기 알림</h2>
@@ -295,7 +292,6 @@ h1 {
         <button class="alert-button" onclick="closeAlert()">확인</button>
     </div>
 </div>
-
 <script>
 function updateButtonStates() {
     const screenWidth = window.innerWidth;
