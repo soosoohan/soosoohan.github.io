@@ -459,6 +459,9 @@ Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**
 
 ---
 
+![Copyright](https://img.shields.io/badge/Copyright-Registered-red)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-blue)
+
 👤 만든 사람 / Credits
 
 기획·개발: 한수수   
