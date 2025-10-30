@@ -143,6 +143,9 @@ The goal is to connect dots and create as many non-overlapping triangles as poss
 - 사각형이나 기타 다각형은 점수로 인정되지 않습니다.  
   Squares or other polygons are not counted as valid.
 
+- 똑똑한 트링키와 대결하기, 졸린 트링키와 대결하기, 두 사용자가 대결하기 세 종류가 있습니다. 
+  There are three types: Battle against  Trinky, Battle against Sleepy Trinky, and Battle between Two Users.
+
 -----
 
 ## 👤🆚🤖  워퍼즈 (Worpuzz) 시리즈
@@ -291,12 +294,15 @@ Play 10 rounds. The player with the highest total score wins.
 |-----------|---------|
 |Must use all cards            |Numzzle X, Numpple X    |
 |Allowed to use only some cards|Numzzle, Numpple, Numtter      |
-|Multi-digit numbers prohibited|Numzzle Cho, Numpple Cho, Numzzle X, Numpple X                |
+|Multi-digit numbers prohibited|Numzzle Cho, Numpple Cho, Numzzle X, Numpple X  |
 |Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter|
 
 ---
 
 ## 👤🆚👤 👤🆚🤖오목 OMOK
+
+한중일의 고전게임 , 2000년이 넘은 역사, 오목입니다.    
+A classic game from Korea, China, and Japan with over 2,000 years of history - it’s Gomoku (Five in a Row).    
 
 돌 5개를 한 줄로 놓으면 이깁니다.   
 Get 5 stones in a row to win!  
@@ -341,7 +347,14 @@ Normal: Plays reasonably well.
 Expert: Very strong and rarely makes mistakes.   
 
 ---
-# 👤숫자야구 – Soosooland Edition
+## 야구시리즈(Baseball series)
+
+야구 게임은  고전 게임 bulls and cows 를  다양한 코드를 넣어서 만들었습니다.
+찾아야할 비밀코드에는 숫자, 영어 단어, 한글 단어가 있습니다.
+
+The baseball game is based on the classic Bulls and Cows game, but I created it with various code types. The secret codes to find include numbers, English words, and Korean words.     
+
+# 👤숫자야구 
 
 브라우저에서 바로 즐기는 **숫자야구** 게임입니다.  
 자리 수와 0 포함 여부를 고를 수 있는 **4가지 모드**를 지원합니다.
@@ -458,9 +471,10 @@ Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**
 — a digital playground designed to improve memory, logic, and creativity while having fun!
 
 ---
-## 저작권 (Copyright)
+## ⚠️ **Copyright Protection   
 
-이 저작물은 한국저작권위원회에 등록되어 법적 보호를 받습니다.
+이 저작물은 한국저작권위원회에 등록되어 법적 보호를 받습니다.    
+This project is registered with the Korea Copyright Commission.
 
 | 게임 | 등록번호 | 등록일 |
 |------|----------|--------|
