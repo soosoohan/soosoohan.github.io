@@ -3,12 +3,6 @@
 이 저장소는 오픈소스가 아니며, 교육 및 참고 목적으로만 열람 가능합니다.
 
 # Soosoo Land
-수수랜드는 저작권을 존중하며, 교육·두뇌개발 게임을 함께 나누는 플랫폼입니다.    
-Soosooland respects copyright and serves as a platform for sharing educational and brain-training games.   
-Boost Your Brain and Learn at the Same Time! ✨      
-
-# 온라인 교육·두뇌개발 게임 플랫폼 수수랜드 소개  
-Introducing the Online Educational & Brain Development Game Platform, Soosoland. 
    
 수수랜드는 다운로드 없이, 브라우저에서 바로 즐길 수 있는 교육·두뇌개발용 게임 플랫폼이에요.  
 학습에 도움을 주는 단어 게임부터 추리, 전략, 연산 게임까지 다양하게 준비되어 있어 아이들의 학습 도우미로도 좋고, 어른들의 두뇌 건강에도 딱 맞습니다.  
@@ -98,11 +92,23 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 실패하면 정답 문장이 공개됩니다.  
   If you fail, the correct sentence will be shown.
 
-- 일상 대화, 여행지, 대륙과 나라와 수도, 노래와 가수, 음식 등 다양한 주제가 있습니다.  
-  This game covers various topics including daily conversations, travel destinations, continents with countries and capitals, songs and singers, food, and more.
+- 모음퀴즈는 간단하게 설명하면 한글 행맨입니다.
+- 모음퀴즈에는 힌트가 있는 게임이 있고, 힌트가 없는 게임이 있습니다.
+- 같은 주제일 때 힌트가 있으면  맞추기가 쉬워집니다.
+- 같은 주제인데 힌트가 있는 것과 없는 것으로  두 가지 종류가 있는 것은 음식과 속담입니다. 
+- 현재 일상 대화, 한국의 여행지, 대륙과 나라와 수도, 노래와 가수, 음식,속담과 격언, 초등학교 국사, 중학교 국사, 동물과 식물, 저자와 저서, 고유어, 영화와 드라마 제목  등 다양한 주제가 있습니다. 앞으로 세계사, 상식, 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다. 
+  
+- Moeum-quiz is essentially Korean Hangman.
+- Moeum-quiz has games with hints and games without hints.
+- When the topic is the same, having hints makes it easier to guess the answer.
+- The topics that have both hint and no-hint versions are Food and Proverbs.
+- Current topics include: Daily Conversations, Korean Travel Destinations, Continents/Countries/Capitals, Songs and Singers, Food, Proverbs and Sayings, Elementary School Korean History, Middle School Korean History, Animals and Plants, Authors and Books, Pure Korean Words, Movie and Drama Titles, and more. Future additions will include World History, General Knowledge, and Elementary School Curriculum topics organized by grade level.
 
 - 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
 The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
+
+- 둘이 모음은 두 사용자가 대결하는 모음퀴즈이고  게임이 끝났을 때 많이 맞춘 사용자가 이깁니다.
+Doori Moeum is a two-player competitive version of the vowel quiz where users compete against each other, and whoever gets more correct answers wins.   
 
 | 사용자 user    | 👤혼자 하기   | 👤🆚👤사용자 2인 대결 |
 |------------------|--------------|----------------|
