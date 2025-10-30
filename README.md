@@ -8,26 +8,8 @@
 학습에 도움을 주는 단어 게임부터 추리, 전략, 연산 게임까지 다양하게 준비되어 있어 아이들의 학습 도우미로도 좋고, 어른들의 두뇌 건강에도 딱 맞습니다.  
 Soosoland is an educational and brain-training game platform that runs directly on your browser without any downloads.  
 It offers a wide range of word, logic, strategy, and math games—perfect for children’s learning and for adults’ brain health.  
-   
----
 
-🎲 수수랜드에서 즐길 수 있는 게임  
-🎲 Games Available on Soosoland  
-   
-• 단어 게임 (Word Games): 워퍼즈 시리즈 (Worpuzz series), 모음퀴즈(Moeum Quiz)   
-   
-• 연산 게임 (Math Games): 넘즐 시리즈 (Numzle series)  
-   
-• 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
-   
-• 전략 게임 (Strategy Games): 트링클(Trinkle), 오목(Gomoku)   
-   
-👦 어린이들에게는 어휘력과 사고력 향상에,  
-👵 어르신들에게는 두뇌 건강 관리에 도움이 됩니다.  
-👦 Great for children’s vocabulary and logical thinking.  
-👵 Also helpful for seniors to maintain brain health.  
-   
----
+   ---
 📌 수수랜드만의 특징  
 📌 Features of Soosoland  
    
@@ -70,6 +52,24 @@ Then don’t wait—start playing now on Soosoland!
 
 ---
 
+🎲 수수랜드에서 즐길 수 있는 게임  
+🎲 Games Available on Soosoland  
+   
+• 단어 게임 (Word Games): 워퍼즈 시리즈 (Worpuzz series), 모음퀴즈(Moeum Quiz)   
+   
+• 연산 게임 (Math Games): 넘즐 시리즈 (Numzle series)  
+   
+• 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
+   
+• 전략 게임 (Strategy Games): 트링클(Trinkle), 오목(Gomoku)   
+   
+👦 어린이들에게는 어휘력과 사고력 향상에,  
+👵 어르신들에게는 두뇌 건강 관리에 도움이 됩니다.  
+👦 Great for children’s vocabulary and logical thinking.  
+👵 Also helpful for seniors to maintain brain health.  
+   
+---
+
 ## 👤 모음퀴즈 (Moeum Quiz) 
 
 모음이 공개된 상태에서 자음을 맞춰서 숨어있는 단어, 구절, 문장을 찾는 게임입니다.  
@@ -93,22 +93,25 @@ This is a Korean language puzzle game where players guess the hidden consonants 
   If you fail, the correct sentence will be shown.
 
 - 모음퀴즈는 간단하게 설명하면 한글 행맨입니다.
+  Moeum-quiz is essentially Korean Hangman.
+
 - 모음퀴즈에는 힌트가 있는 게임이 있고, 힌트가 없는 게임이 있습니다.
+  Moeum-quiz has games with hints and games without hints.
+
 - 같은 주제일 때 힌트가 있으면  맞추기가 쉬워집니다.
+  When the topic is the same, having hints makes it easier to guess the answer.
+
 - 같은 주제인데 힌트가 있는 것과 없는 것으로  두 가지 종류가 있는 것은 음식과 속담입니다. 
+  The topics that have both hint and no-hint versions are Food and Proverbs.
+
 - 현재 일상 대화, 한국의 여행지, 대륙과 나라와 수도, 노래와 가수, 음식,속담과 격언, 초등학교 국사, 중학교 국사, 동물과 식물, 저자와 저서, 고유어, 영화와 드라마 제목  등 다양한 주제가 있습니다. 앞으로 세계사, 상식, 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다. 
-  
-- Moeum-quiz is essentially Korean Hangman.
-- Moeum-quiz has games with hints and games without hints.
-- When the topic is the same, having hints makes it easier to guess the answer.
-- The topics that have both hint and no-hint versions are Food and Proverbs.
-- Current topics include: Daily Conversations, Korean Travel Destinations, Continents/Countries/Capitals, Songs and Singers, Food, Proverbs and Sayings, Elementary School Korean History, Middle School Korean History, Animals and Plants, Authors and Books, Pure Korean Words, Movie and Drama Titles, and more. Future additions will include World History, General Knowledge, and Elementary School Curriculum topics organized by grade level.
+  Current topics include: Daily Conversations, Korean Travel Destinations, Continents/Countries/Capitals, Songs and Singers, Food, Proverbs and Sayings, Elementary School Korean History, Middle School Korean History, Animals and Plants, Authors and Books, Pure Korean Words, Movie and Drama Titles, and more. Future additions will include World History, General Knowledge, and Elementary School Curriculum topics organized by grade level.
 
 - 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
-The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
+  The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
 
 - 둘이 모음은 두 사용자가 대결하는 모음퀴즈이고  게임이 끝났을 때 많이 맞춘 사용자가 이깁니다.
-Doori Moeum is a two-player competitive version of the vowel quiz where users compete against each other, and whoever gets more correct answers wins.   
+  Doori Moeum is a two-player competitive version of the vowel quiz where users compete against each other, and whoever gets more correct answers wins.   
 
 | 사용자 user    | 👤혼자 하기   | 👤🆚👤사용자 2인 대결 |
 |------------------|--------------|----------------|
@@ -166,15 +169,16 @@ Worpuzz is a game where you explore a grid to find hidden words!
 
 ### 🎯 특징 / Features
 - 격자 뒤에 행운의 네잎 토끼풀과  데이지와 숨겨진 단어가 있습니다!  
+  Behind the grid are lucky four-leaf clovers, daisies, and hidden words!   
+
 - 네잎 토끼풀을 찾으면 상하좌우 격자가 열리고 턴이 유지됩니다.
+  When you find a four-leaf clover, the cells above, below, left, and right open up, and you keep your turn.    
+
 - 데이지를 찾으면 주변의 8개의 격자가 열리고 턴이 유지됩니다.
+  When you find a daisy, the 8 surrounding cells open up, and you keep your turn.    
 
-- Behind the grid are lucky four-leaf clovers, daisies, and hidden words!   
-- When you find a four-leaf clover, the cells above, below, left, and right open up, and you keep your turn.    
-- When you find a daisy, the 8 surrounding cells open up, and you keep your turn.    
-- 데이지와 토끼풀은 게임이 지루하지 않게 하고, 빈 자리에 랜덤하게 넣은 글자들이 유의미한 단어를 생성하는 가능성을 줄이려고 했고,  단어도 추리하지만 아이템을 고르는 것도 전략입니다.
-
-- The daisies and clovers serve to keep the game from becoming boring, reduce the possibility of randomly placed letters in empty spaces forming meaningful words, and add a strategic element - it’s not just about deducing words, but also about choosing which items to go for.   
+- 데이지와 토끼풀은 게임이 지루하지 않게 하고, 빈 자리에 랜덤하게 넣은 글자들이 유의미한 단어를 생성하는 가능성을 줄이려고 했고,  단어도 추리하지만 아이템을 노리는 것도 전략입니다.
+  The daisies and clovers serve to keep the game from becoming boring, reduce the possibility of randomly placed letters in empty spaces forming meaningful words, and add a strategic element - it’s not just about deducing words, but also about guessing which items to go for.   
 
 - 전략적으로 격자를 공개하여 가능한 한 많은 단어를 찾으세요.  
 - Strategically uncover the grid to find as many words as possible.
@@ -234,34 +238,61 @@ Play 10 rounds. The player with the highest total score wins.
 | 수식 결과 방식       | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤사용자 혼자하기|
 |------------------|--------------|----------------|----|
 | 🎯 목표값 맞추기     | 넘즐         | 넘플           |넘털|
-| 🧮 최대값 만들기    | 넘즐 X 맥시    | 넘플 X 맥시    | |
+| 🧮 최대값 만들기    | 넘즐 X 맥스    | 넘플 X 맥스  | |
 | 🧮 최소값 만들기    | 넘즐 X 미니    | 넘플 X 미니    |  |
 
----
+### 📌 Game Types Comparison
+
+|Formula Result Method |👤🆚🤖 vs Computer|👤🆚👤 2-Player Battle|👤 Solo Play|
+|----------------------|---------------|-------------------|-----------|
+|🎯 Hit the Target Value|Numzzle        |Numpple             |Numtter     |
+|🧮 Create Maximum Value|Numzzle X Max |Numpple X Max     |           |
+|🧮 Create Minimum Value|Numzzle X Mini |Numpple X Mini      |           |
 
 
 ### 🧩 연산기호 조합에 따른 시리즈 정리
 
 | 사용 연산기호              | 넘즐   👤🆚🤖                 | 넘플   👤🆚👤   |👤넘털|               
-|------------------------|-----------------------------|-----------------------------|----|
-| `+`, `-`               |넘즐초, 넘즐초맥시, 넘즐초미니      | 넘플초, 넘플초맥시, 넘플초미니      ||
-| `+`, `-`, `×`          | 넘즐잼, 넘즐잼맥시, 넘즐잼미니      | 넘플잼, 넘플잼맥시, 넘플잼미니      ||
-| `+`, `-`, `×`, `÷`     | 넘즐, 넘즐맥시, 넘즐미니, 넘즐X    | 넘플, 넘플맥시, 넘플미니, 넘플X     ||
-| `+`, `-`, `×`, `÷`, `√`, `π` | **넘즐업** (아주 어려움)   | —                           ||
+|----------------|--------------------|------------------|----|
+| `+`, `-`    |넘즐초, 넘즐초맥스, 넘즐초미니      | 넘플초, 넘플초맥스, 넘플초미니      ||
+| `+`, `-`, `×`    | 넘즐잼, 넘즐잼맥스, 넘즐잼미니    | 넘플잼, 넘플잼맥스, 넘플잼미니      ||
+| `+`, `-`, `×`, `÷`     | 넘즐, 넘즐맥스, 넘즐미니   | 넘플, 넘플맥스, 넘플미니     ||
+| `+`, `-`, `×`, `÷`, `√`, `π` | **넘즐업** (아주 어려움)   | —    ||
 | `+`, `-`, `×`, `÷`, `(`, `)`|||넘털|
 
-※ "잼"은 중간 난이도, "업"은 고난도 확장판을 의미합니다.
+※ "잼"은 중간 난이도, "업"은 고난도 확장판을 의미합니다.    
 
+### 🧩 Series by Operation Symbol Combinations
+
+|Operations Used  |Numzzle   👤🆚🤖 |Numpple   👤🆚👤   |👤Numtter|
+|-----------|---------|----------|-------|
+|`+`, `-`   |Numzzle Cho, Numzzle Cho Max, Numzzle Cho Mini|Numpple Cho, Numpple Cho Max, Numpple Cho Mini     ||
+|`+`, `-`, `×`    |Numzzle Jam, Numzzle Jam Max, Numzzle Jam Mini|Numpple Jam, Numpple Jam Max, Numpple Jam Mini   ||
+|`+`, `-`, `×`, `÷`   |Numzzle, Numzzle Max, Numzzle Mini  |Numpple, Numpple Max, Numple Mini     ||
+|`+`, `-`, `×`, `÷`, `√`, `π`|**Numzzle Up** (Very Difficult)  |—      ||
+|`+`, `-`, `×`, `÷`, `(`, `)`       |||Numtter |
+
+※ “Jam” indicates intermediate difficulty, “Up” indicates advanced/expert expansion.
 
 ---
 
 ### 🃏 카드 사용 규칙에 따른 분류
 
-| 카드 사용 방식                 | 포함된 게임 종류                         |
-|----------------------------|--------------------------------------|
-| 모든 카드 사용                 | 넘즐 X, 넘플 X                         |
-| 카드 일부만 사용 허용            | 넘즐, 넘플, 넘털                             |
-| 여러 장으로 여러자리 숫자만들기 금지 | 넘즐초, 넘플초, 넘즐 X, 넘플 X, 넘털             |
+| 카드 사용 방식                 | 포함된 게임 종류                  |
+|----------------------------|------------------------------|
+| 모든 카드 사용                 | 넘즐 X, 넘플 X                |
+| 카드 일부만 사용하는 것 허용       | 넘즐, 넘플, 넘털      |
+| 여러 장으로 여러자리 숫자만들기 금지 | 넘즐초, 넘플초, 넘즐 X, 넘플 X           |
+| 여러 장으로 여러자리 숫자만들기 허용 | 넘즐잼, 넘즐, 넘즐업, 넘플잼, 넘플, 넘털    |
+
+### 🃏 Classification by Card Usage Rules
+
+|Card Usage Method             |Included Game Types             |
+|-----------|---------|
+|Must use all cards            |Numzzle X, Numpple X    |
+|Allowed to use only some cards|Numzzle, Numpple, Numtter      |
+|Multi-digit numbers prohibited|Numzzle Cho, Numpple Cho, Numzzle X, Numpple X                |
+|Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter|
 
 ---
 
