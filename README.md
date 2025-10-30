@@ -483,6 +483,46 @@ This project is registered with the Korea Copyright Commission.
 | 워퍼즈(worpuzz)| C-2025-031802 | 2025.08.19 |
 | 트링클(trinkle)| C-2025-031800 | 2025.08.19 |
 
+---
+### ✨ 자유롭게 하실 수 있는 것
+
+✅ **무료 플레이** - 언제든 게임을 즐기세요  
+✅ **공유하기** - 친구들에게 수수랜드를 추천해주세요  
+✅ **링크 공유** - SNS에 soosooland.com을 올려주세요  
+✅ **피드백** - 의견을 보내주시면 반영하겠습니다
+
+### ✨ What You Can Do
+
+✅ **Play for free** - Enjoy all games anytime  
+✅ **Share** - Tell your friends about Soosooland  
+✅ **Link** - Share soosooland.com on social media  
+✅ **Feedback** - Help us improve with your suggestions
+
+---
+
+### 🤝 허락이 필요한 경우
+
+📧 **다음의 경우 연락 주세요:**
+- 상업적 이용
+- 2차 창작 또는 변형
+- 재배포 또는 재게시
+- 교육기관 또는 단체 이용
+
+💌 협업과 파트너십은 언제나 환영합니다!  
+[문의하기](https://soosooland.com/Contact.html)
+
+### 🤝 Need Permission For
+
+📧 **Please contact me for:**
+- Commercial use or monetization
+- Creating derivative works
+- Redistribution or republishing
+- Educational or institutional use
+
+💌 I'm open to collaborations and partnerships!  
+[Contact me](https://soosooland.com/Contact.html)
+
+---
 
 👤 만든 사람 / Credits
 
