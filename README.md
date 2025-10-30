@@ -2,24 +2,12 @@
 본 저장소의 소스코드와 자료는 작성자의 허락 없이 **복사·수정·배포·상업적 이용**할 수 없습니다.  
 이 저장소는 오픈소스가 아니며, 교육 및 참고 목적으로만 열람 가능합니다.
 
----
-
-🛡️**워퍼즈 시리즈 , 넘즐 시리즈, 모음퀴즈 시리즈, 트링클은  창작자 한수수의 독창적인 아이디어와 표현을 바탕으로 제작되었으며, 한국저작권위원회에 저작권등록이 완료된 공식 저작물입니다.** 
-무단 복제, 무단 이용, 상업적 사용은 법적 책임을 초래할 수 있습니다.   
-
-🛡️**The Worpuzz series, Numzzle series, Moeum Quiz series and Trinkle
- created by Han Soosoo. 
-and they are officially registered with the Korea Copyright Commission.**
-Unauthorized reproduction, use, or commercial distribution may result
-in legal consequences.
-
----
-
 # Soosoo Land
 수수랜드는 저작권을 존중하며, 교육·두뇌개발 게임을 함께 나누는 플랫폼입니다.    
 Soosooland respects copyright and serves as a platform for sharing educational and brain-training games.   
 Boost Your Brain and Learn at the Same Time! ✨      
-온라인 교육·두뇌개발 게임 플랫폼 수수랜드 소개  
+
+# 온라인 교육·두뇌개발 게임 플랫폼 수수랜드 소개  
 Introducing the Online Educational & Brain Development Game Platform, Soosoland. 
    
 수수랜드는 다운로드 없이, 브라우저에서 바로 즐길 수 있는 교육·두뇌개발용 게임 플랫폼이에요.  
@@ -32,11 +20,11 @@ It offers a wide range of word, logic, strategy, and math games—perfect for ch
 🎲 수수랜드에서 즐길 수 있는 게임  
 🎲 Games Available on Soosoland  
    
-• 단어 게임 (Word Games): 워퍼즈(Worpuzz), 워퍼즈메이트(Worpuzz Mate), 모음퀴즈(Moeum Quiz)   
+• 단어 게임 (Word Games): 워퍼즈 시리즈 (Worpuzz series), 모음퀴즈(Moeum Quiz)   
    
-• 연산 게임 (Math Games): 넘즐(Numzle), 넘즐 X(Numzle X), 넘플(Numple), 넘플 X(Numple X), 넘털(Numtter)  
+• 연산 게임 (Math Games): 넘즐 시리즈 (Numzle series)  
    
-• 추리 게임 (Logic Games): 숫자야구(Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
+• 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
    
 • 전략 게임 (Strategy Games): 트링클(Trinkle), 오목(Gomoku)   
    
@@ -88,7 +76,7 @@ Then don’t wait—start playing now on Soosoland!
 
 ---
 
-## 👤 모음퀴즈 (Moeum Quiz)과 하루 모음(Haroo Moeum)
+## 👤 모음퀴즈 (Moeum Quiz) 
 
 모음이 공개된 상태에서 자음을 맞춰서 숨어있는 단어, 구절, 문장을 찾는 게임입니다.  
 This is a Korean language puzzle game where players guess the hidden consonants to complete sentences with only vowels revealed.
@@ -113,29 +101,12 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 일상 대화, 여행지, 대륙과 나라와 수도, 노래와 가수, 음식 등 다양한 주제가 있습니다.  
   This game covers various topics including daily conversations, travel destinations, continents with countries and capitals, songs and singers, food, and more.
 
------
+- 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
+The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
 
-## 👤🆚👤 둘이 모음 (Doori Moeum )
-
-모음이 공개된 상태에서 자음을 맞춰서 숨어있는 단어, 구절, 문장을 찾는 게임
-This is a Korean language puzzle game where players guess the hidden consonants to complete sentences with only vowels revealed.
-
-### 게임 방법 / How to Play
-
-모음은 모두 공개된 상태에서 게임이 시작됩니다.
-The game starts with all vowels revealed.
-
-화면 아래 자음 버튼을 클릭해 해당 자음이 포함되어 있는지 추리합니다.
-Click the consonant buttons at the bottom to guess if the consonant is in the sentence.
-
-정답을 맞추면 해당 위치에 표시되고 턴이 유지됩니다.
-If you guess correctly, it will be marked in that position and you keep your turn.
-
-정답을 틀리면 자음은 색이 변하고, 턴이 바뀝니다.
-If you guess incorrectly, the consonant changes color and the turn switches to the other player.
-
-모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
-The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.
+| 사용자 user    | 👤혼자 하기   | 👤🆚👤사용자 2인 대결 |
+|------------------|--------------|----------------|
+|  게임 Game| 모음퀴즈 Moeum-quiz         |  둘이 모음 Doori-moeun          |
 
 -----
 
