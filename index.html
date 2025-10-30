@@ -65,9 +65,9 @@ body {
     }
 .games-hub-header {
         display: flex;
-        align-items: center;      /* 수직 가운데 정렬 */
-        justify-content: center;  /* 기본적으로 가운데 정렬 */
-        position: relative;       /* 오른쪽 버튼 위치 조정을 위해 */
+        align-items: center;
+        justify-content: center;
+        position: relative;
         margin-bottom: 20px;
         font-size: clamp(1.3rem, 3.7vw, 1.9rem);
         color: #f0f8ff;
@@ -84,30 +84,34 @@ body {
 
 .language-toggle {
         position: absolute;
-        right: 0;                 /* 오른쪽으로 고정 */
+        left: 20px;
+        top: 0;
    }
     
- 
 .language-btn {
-        background: rgba(255,255,255,0.2);
-        color: #f0f8ff;
-        border: 2px solid rgba(255,255,255,0.3);
-        padding: 8px 16px;
+        background: rgba(255,255,255,0.3);
+        color: #ffffff;
+        border: 2px solid rgba(255,255,255,0.6);
+        padding: 10px 20px;
         margin: 0 5px;
         border-radius: 20px;
         cursor: pointer;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
         transition: all 0.3s ease;
-    }
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 .language-btn.active {
-        background: rgba(255,255,255,0.9);
-        color: #2e8b8b;
-        border-color: rgba(255,255,255,0.9);
+        background: rgba(255,255,255,0.95);
+        color: #2c5f2d;
+        border-color: rgba(255,255,255,1);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
     }
 
 .language-btn:hover {
-        background: rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.4);
+        transform: translateY(-2px);
     }
 
 .games-grid {
@@ -123,12 +127,41 @@ body {
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
         cursor: pointer;
+        position: relative;
     }
 
 .game-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 30px rgba(0,0,0,0.4);
     }
+.welcome-message {
+    background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+    border: 2px solid #2e8b8b;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.start-test-btn {
+    background: linear-gradient(135deg, #2e8b8b, #20676b);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: clamp(0.95rem, 2.3vw, 1.05rem);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 139, 139, 0.4);
+}
+
+.recommended-game:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(46, 139, 139, 0.5);
+}
 
 .test-card {
         cursor: default;
@@ -185,7 +218,6 @@ body {
         text-align: center;        
     }
 
-
 .github-link {
         color: #2e8b8b;
         text-decoration: none;
@@ -200,7 +232,94 @@ body {
         display: none;
     }
 
+/* 순위 배지 스타일 */
+.rank-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.rank-1 {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #8B4513;
+    animation: pulse-gold 2s infinite;
+}
+
+.rank-2 {
+    background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
+    color: #4A4A4A;
+}
+
+.rank-3 {
+    background: linear-gradient(135deg, #CD7F32, #B87333);
+    color: #FFFFFF;
+}
+
+@keyframes pulse-gold {
+    0%, 100% { 
+        transform: scale(1); 
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
+    }
+    50% { 
+        transform: scale(1.1); 
+        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+    }
+}
+
 /* 게임 추천 테스트 스타일 */
+.welcome-message {
+    background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+    border: 2px solid #2e8b8b;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.welcome-message h3 {
+    color: #2e8b8b;
+    font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.welcome-message p {
+    color: #333;
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+    margin: 8px 0;
+}
+
+.welcome-message .highlight {
+    color: #2e8b8b;
+    font-weight: 600;
+}
+
+.start-test-btn {
+    background: linear-gradient(135deg, #2e8b8b, #20676b);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 139, 139, 0.4);
+}
+
+.start-test-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(46, 139, 139, 0.6);
+}
+
 .test-question {
     display: none;
     animation: fadeIn 0.5s ease-in;
@@ -333,27 +452,6 @@ body {
 .test-btn.secondary:hover {
     background: #5a6268;
 }
-
-/* 별모양 버튼들 */
-.star-button {
-      background: linear-gradient(45deg, #FFD700, #FFA500);
-      border: none;
-      border-radius: 20px;
-      padding: 8px 15px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      position: relative;
-      margin: 5px;
-      transition: all 0.3s ease;
-      font-size: clamp(0.9rem, 2.2vw, 1rem);
-    }
-
-.star-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(255,215,0,0.6);
-    }
-
     
 .footer {
       background: #2e8b8b;
@@ -364,7 +462,7 @@ body {
       left: 0;
       width: 90vw;
       max-width: none;
-      margin-left: calc(-50vw + 50%); /* 중앙 정렬 */
+      margin-left: calc(-50vw + 50%);
       padding: 40px 20px;
     }
 
@@ -383,14 +481,13 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-
 @media (max-width: 668px) {
 body {
       padding: 10px;
         }
 
 .games-grid {
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr;
       gap: 15px;
         }
 
@@ -413,7 +510,6 @@ body {
 .hub-title {
       margin-top: 20px;
       }
-    
 
 .language-toggle {
       position: static;
@@ -424,6 +520,7 @@ body {
       flex-direction: column;
       }
 }
+
 @media (max-height: 500px) and (orientation: landscape) {
       body {
       min-height: auto;
@@ -445,22 +542,18 @@ body {
 
 </style>
 
-
 </head>
 <body>
 
 <!-- 수수랜드 인트로 오버레이 -->
 <div id="intro" style="position:fixed;inset:0;z-index:9999;background:#2e8b8b;display:grid;place-items:center;overflow:hidden">
-  <!-- 안전 프레임: 확대 시 클리핑 방지 -->
   <div style="position:absolute;inset:0;display:grid;place-items:center;padding:8vw">
-    <!-- 언덕 -->
     <div style="
       position:absolute;left:-25%;right:-25%;bottom:-18%;
       height:55%;border-radius:50% 50% 0 0 / 100% 100% 0 0;
       background:radial-gradient(120% 100% at 50% 100%, #369e9e 0%, #2e8b8b 60%, #256f6f 100%);
     "></div>
 
-    <!-- 로고 (팔레트 통일) -->
     <div id="intro-logo" style="
       font-family:Pretendard, system-ui, sans-serif;
       font-weight:900; letter-spacing:0.02em;
@@ -470,10 +563,8 @@ body {
       animation:intro-rise 2600ms ease forwards;
     ">Soosooland</div>
 
-    <!-- 작은 꽃잎 몇 개 (초경량) -->
     <div id="petals"></div>
 
-    <!-- 새소리: 첫 탭 시 보장 재생용 버튼(모바일) -->
     <button id="intro-start" style="
       position:absolute;bottom:6vh;left:50%;transform:translateX(-50%);
       background:rgba(255,255,255,.9);color:#2e8b8b;border:0;border-radius:999px;
@@ -483,8 +574,6 @@ body {
   </div>
 
   <audio id="intro-audio" preload="auto">
-    <!-- 1~2초대의 아주 짧은 새소리 mp3/ogg 권장 (용량 50~100KB) -->
-    <!-- 임시 경량 샘플 -->
     <source src="https://actions.google.com/sounds/v1/animals/bird_chirp.ogg" type="audio/ogg">
   </audio>
   
@@ -509,7 +598,6 @@ body {
   const btn   = document.getElementById('intro-start');
   const petalsWrap = document.getElementById('petals');
 
-  // 초경량 꽃잎 10개만
   const N = 10;
   for(let i=0;i<N;i++){
     const p = document.createElement('div');
@@ -524,54 +612,149 @@ body {
     petalsWrap.appendChild(p);
   }
 
-  // 오토플레이 시도
   let unlocked = false;
   audio.volume = 0.9;
   audio.play().then(()=>{ unlocked = true; }).catch(()=> {
-    // 사용자 제스처 필요: 버튼 표시
     btn.style.display = 'inline-flex';
   });
 
   btn.addEventListener('click', ()=>{
-    audio.play().catch(()=>{}); // 제스처 이후 재생
+    audio.play().catch(()=>{});
     btn.style.display = 'none';
     finishSoon();
   });
 
-  // 4초 내 자동 전환(넷플릭스 감각)
   const timer = setTimeout(finishSoon, 3000);
 
   function finishSoon(){
     clearTimeout(timer);
-    // 페이드아웃
     intro.style.transition = 'opacity .45s ease';
     intro.style.opacity = '0';
     setTimeout(()=>{ intro.remove(); }, 460);
   }
-
-  // 안전: 리사이즈 시 가장자리 클리핑 방지 (패딩이 있지만 혹시 몰라서)
-  window.addEventListener('resize', ()=>{/* no-op, 패딩으로 충분 */});
 })();
 </script>
+
 <div class="games-hub">
-  <div class="games-hub-header">Soosooland</h1>
+  <div class="games-hub-header">Soosooland
     <div class="language-toggle">
         <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
         <button class="language-btn" onclick="setLanguage('en')">English</button>
     </div>
   </div>
     
-    
   <div class="games-grid">
       
- <!-- 워퍼즈 게임 -->
+<!-- 게임 추천 테스트 카드 - 간결하게 수정 -->
+<div class="game-card test-card">
+    <!-- 1페이지: 환영 메시지 -->
+    <div class="welcome-message" id="welcomeMessage">
+        <div class="ko-text">
+            <p style="font-size: clamp(1.2rem, 3vw, 1.4rem); font-weight: 600; color: #2e8b8b; margin-bottom: 8px;">환영합니다!</p>
+            <p style="font-size: clamp(1rem, 2.4vw, 1.1rem); line-height: 1.6; margin-bottom: 15px;">
+                즐거운 퍼즐 놀이터, 수수랜드.<br>
+                게임하면서 공부가 되고 사고력이 좋아지고<br>
+                상식이 늘어나는 유익한 플랫폼입니다.
+            </p>
+            <button class="start-test-btn" onclick="startTest()">게임 추천 테스트</button>
+        </div>
+        <div class="en-text hidden">
+            <p style="font-size: clamp(1.2rem, 3vw, 1.4rem); font-weight: 600; color: #2e8b8b; margin-bottom: 8px;">Welcome!</p>
+            <p style="font-size: clamp(1rem, 2.4vw, 1.1rem); line-height: 1.6; margin-bottom: 15px;">
+                Fun puzzle playground, Soosooland.<br>
+                Games that educate, sharpen thinking,<br>
+                and expand knowledge.
+            </p>
+            <button class="start-test-btn" onclick="startTest()">Game Recommendation Test</button>
+        </div>
+    </div>
+       
+    <!-- 2페이지: 첫 번째 질문 - 간격 줄임 -->
+    <div class="test-question" id="question1">
+        <h3 class="ko-text" style="margin-bottom: 10px;">게임에서 얻고 싶은 능력이 있나요?</h3>
+        <h3 class="en-text hidden" style="margin-bottom: 10px;">What ability do you want to gain?</h3>
+        <div class="test-options" style="gap: 8px;">
+            <div class="test-option" data-value="vocabulary" style="padding: 10px;">
+                <span class="option-number">1</span>
+                <span class="option-text ko-text">어휘력과 상식</span>
+                <span class="option-text en-text hidden">Vocabulary & Knowledge</span>
+            </div>
+            <div class="test-option" data-value="calculation" style="padding: 10px;">
+                <span class="option-number">2</span>
+                <span class="option-text ko-text">연산능력</span>
+                <span class="option-text en-text hidden">Calculation Skills</span>
+            </div>
+            <div class="test-option" data-value="logic" style="padding: 10px;">
+                <span class="option-number">3</span>
+                <span class="option-text ko-text">논리력과 추리력</span>
+                <span class="option-text en-text hidden">Logic & Reasoning</span>
+            </div>
+            <div class="test-option" data-value="reading" style="padding: 10px;">
+                <span class="option-number">4</span>
+                <span class="option-text ko-text">예측력과 수 읽기</span>
+                <span class="option-text en-text hidden">Prediction & Reading</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3페이지: 두 번째 질문 - 간격 줄임 -->
+    <div class="test-question" id="question2">
+        <h3 class="ko-text" style="margin-bottom: 10px;">어떻게 하고 싶으신가요?</h3>
+        <h3 class="en-text hidden" style="margin-bottom: 10px;">How do you want to play?</h3>
+        <div class="test-options" style="gap: 8px;">
+            <div class="test-option" data-value="alone" style="padding: 10px;">
+                <span class="option-number">1</span>
+                <span class="option-text ko-text">혼자서 차분하게</span>
+                <span class="option-text en-text hidden">Alone and calmly</span>
+            </div>
+            <div class="test-option" data-value="together" style="padding: 10px;">
+                <span class="option-number">2</span>
+                <span class="option-text ko-text">둘이서 재미있게</span>
+                <span class="option-text en-text hidden">Together and fun</span>
+            </div>
+            <div class="test-option" data-value="computer" style="padding: 10px;">
+                <span class="option-number">3</span>
+                <span class="option-text ko-text">컴퓨터와 대결</span>
+                <span class="option-text en-text hidden">Challenge Computer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4페이지: 결과 화면 - 클릭 가능하게 -->
+<div class="test-result" id="result">
+    <h3 class="result-title ko-text" style="margin-bottom: 10px;">추천 게임</h3>
+    <h3 class="result-title en-text hidden" style="margin-bottom: 10px;">Recommended Game</h3>
+    
+    <div id="gameResult" style="margin: 10px 0;"></div>
+    
+    <p class="ko-text" style="font-size: 0.85rem; color: #666; margin-top: 8px;">👆 클릭하면 게임으로 이동합니다</p>
+    <p class="en-text hidden" style="font-size: 0.85rem; color: #666; margin-top: 8px;">👆 Click to play the game</p>
+    
+    <div class="test-buttons" style="margin-top: 15px;">
+        <button class="test-btn secondary ko-text" onclick="restart()">다시 테스트</button>
+        <button class="test-btn secondary en-text hidden" onclick="restart()">Test Again</button>
+    </div>
+</div>
+    <div class="test-buttons" id="navigationButtons" style="display: none; margin-top: 12px;">
+        <button class="test-btn secondary" onclick="previousQuestion()" id="prevBtn" style="display: none;">
+            <span class="ko-text">이전</span>
+            <span class="en-text hidden">Previous</span>
+        </button>
+        <button class="test-btn" onclick="nextQuestion()" id="nextBtn">
+            <span class="ko-text">다음</span>
+            <span class="en-text hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- 워퍼즈 게임 - 1위 -->
      <div class="game-card" onclick="location.href='selectworpuzz.html'">
+         <div class="rank-badge rank-1">🥇 1st</div>
          <div class="game-card-header">
              <div class="game-emoji">👤</div>
              <div class="game-title">
-                                       <button class="star-button">⭐BEST</button>
- <span class="ko-text">워퍼즈  </span>
-                    <span class="en-text hidden">WORPUZZ </span>
+                 <span class="ko-text">워퍼즈</span>
+                 <span class="en-text hidden">WORPUZZ</span>
              </div>
          </div>
          <div class="game-description-text">
@@ -597,10 +780,10 @@ body {
  <!-- 워퍼즈 메이트 게임 -->
     <div class="game-card" onclick="location.href='selectmate.html'">
         <div class="game-card-header">
-            <div class="game-emoji">👥</div><br><br>
+            <div class="game-emoji">👥</div>
             <div class="game-title">
-                    <span class="ko-text">워퍼즈 메이트 </span>
-                    <span class="en-text hidden">WORPUZZ MATE </span>
+                    <span class="ko-text">워퍼즈 메이트</span>
+                    <span class="en-text hidden">WORPUZZ MATE</span>
             </div>
         </div>
         <div class="game-description-text">
@@ -622,8 +805,10 @@ body {
          </div>
      </div>
    </div>
-<!-- 넘즐 게임 -->
+
+<!-- 넘즐 게임 - 2위 -->
     <div class="game-card" onclick="location.href='selectnumzzle.html'">
+        <div class="rank-badge rank-2">🥈 2nd</div>
         <div class="game-card-header">
             <div class="game-emoji">👤</div>
             <div class="game-title">
@@ -633,7 +818,7 @@ body {
          </div>
          <div class="game-description-text">
              <div class="ko-text">
-                   <strong> 숫자 카드와 연산카드로 수식을 만들기 </strong><br>
+                   <strong>숫자 카드와 연산카드로 수식을 만들기</strong><br>
                  <div align="center">
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number puzzle challenge against computer"><br>
                 </div>
@@ -650,18 +835,19 @@ body {
             </div>
         </div>
     </div>
+
  <!-- 넘플 게임 -->
      <div class="game-card" onclick="location.href='selectnumpple.html'">
          <div class="game-card-header">
              <div class="game-emoji">👥</div>
              <div class="game-title">
-                    <span class="ko-text">넘플 </span>
+                    <span class="ko-text">넘플</span>
                     <span class="en-text hidden">NUMPPLE</span>
              </div>
          </div>
          <div class="game-description-text">
              <div class="ko-text">
-                   <strong> 숫자 카드와 연산카드로 수식을 만들기 </strong><br>
+                   <strong>숫자 카드와 연산카드로 수식을 만들기</strong><br>
                  <div align="center">
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numpple - Target number puzzle with math cards"><br>
                  </div>
@@ -679,21 +865,18 @@ body {
          </div>
      </div>
   
-    
  <!-- 넘털 게임 -->
     <div class="game-card" onclick="location.href='https://soosooland.com/numtter'">
         <div class="game-card-header">
             <div class="game-emoji">👤</div>
             <div class="game-title">
-                    <span class="ko-text">넘털 </span>
+                    <span class="ko-text">넘털</span>
                     <span class="en-text hidden">NUMTTER</span>
             </div>
          </div>
-         <div class="game-description">
-         </div>
          <div class="game-description-text">
              <div class="ko-text">
-                   <strong> 숫자카드를 다  털면 성공  </strong><br>
+                   <strong>숫자카드를 다 털면 성공</strong><br>
                  <div align="center">
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numtter - UNO style solo number card game"><br>
                  </div>
@@ -711,10 +894,11 @@ body {
         </div>
     </div>
  
-<!-- 오목 게임 -->
+<!-- 오목 게임 - 3위 -->
     <div class="game-card" onclick="location.href='https://soosooland.com/omok'">
+        <div class="rank-badge rank-3">🥉 3rd</div>
         <div class="game-card-header">
-            <div class="game-emoji">👤 👥</div><br><br>
+            <div class="game-emoji">👤 👥</div>
             <div class="game-title">
                   <span class="ko-text">오목</span>
                   <span class="en-text hidden">OMOK</span>
@@ -722,7 +906,7 @@ body {
          </div>
          <div class="game-description-text">
               <div class="ko-text">
-                  <strong> 돌 5개를 한 줄로 놓으면 이겨요.</strong><br>
+                  <strong>돌 5개를 한 줄로 놓으면 이겨요.</strong><br>
                   <div align="center">
   <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
                   </div>
@@ -739,8 +923,6 @@ body {
               </div>
          </div>
      </div>
-
- 
   
 <!-- 모음퀴즈 게임 -->
    <div class="game-card" onclick="location.href='https://soosooland.com/moeum-quiz'">
@@ -748,7 +930,7 @@ body {
            <div class="game-emoji">👤</div>
                <div class="game-title">
                     <span class="ko-text">모음 퀴즈</span>
-                    <span class="en-text hidden"> Moeum quiz</span>
+                    <span class="en-text hidden">Moeum quiz</span>
                </div>
            </div>
            <div class="game-description-text">
@@ -759,7 +941,6 @@ body {
                    </div>
               </div>
               <div class="en-text hidden">
-                    
                     <strong>Korean Hangman!</strong><br>
                   <div align="center">
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Quiz - Korean vowel puzzle game where you guess hidden consonants"><br>
@@ -771,7 +952,6 @@ body {
               </div>
          </div>
     </div>
-
           
  <!-- 둘이 모음 게임 -->
      <div class="game-card" onclick="location.href='https://soosooland.com/doori'">
@@ -779,14 +959,14 @@ body {
              <div class="game-emoji">👥</div>
              <div class="game-title">
                     <span class="ko-text">둘이 모음</span>
-                    <span class="en-text hidden"> Doori Moeum </span>
+                    <span class="en-text hidden">Doori Moeum</span>
              </div>
          </div>
          <div class="game-description-text">
              <div class="ko-text">
                      <strong>빈 자리에 자음을 넣어 완성하세요.</strong><br>
                  <div align="center">
-  <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Doori Moeum - Two player Korean vowel guessing gamemoeum quiz"><br>
+  <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Doori Moeum - Two player Korean vowel guessing game"><br>
                  </div>
              </div>
              <div class="en-text hidden">
@@ -805,21 +985,21 @@ body {
  <!-- 야구시리즈 -->
     <div class="game-card" onclick="location.href='https://soosooland.com/yagoo'">
        <div class="game-card-header">
-          <div class="game-emoji">⚾</div><br><br>
+          <div class="game-emoji">⚾</div>
           <div class="game-title">
                     <span class="ko-text">야구게임</span>
-                    <span class="en-text hidden"> Baseball Game</span>
+                    <span class="en-text hidden">Baseball Game</span>
           </div>     
        </div>
        <div class="game-description-text">
            <div class="ko-text">
-                  <strong> 비밀코드를 맞추는 퍼즐</strong><br>
+                  <strong>비밀코드를 맞추는 퍼즐</strong><br>
                <div align="center">
   <img src="https://soosooland.com/images/yagoo.png" width="150" alt="Bulls and Cows - Number and word guessing game"><br>
                 </div>
            </div>
            <div class="en-text hidden">
-             <strong>Guess the secret code puzzle <br></strong>
+             <strong>Guess the secret code puzzle<br></strong>
                <div align="center">
   <img src="https://soosooland.com/images/yagoo.png" width="150" alt="Bulls and Cows - Number and word guessing game"><br>
                </div>
@@ -834,7 +1014,7 @@ body {
 <!-- 트링클 게임 -->
    <div class="game-card" onclick="location.href='https://soosooland.com/trinkle'">
        <div class="game-card-header">
-          <div class="game-emoji">👤 👥</div><br><br>
+          <div class="game-emoji">👤 👥</div>
               <div class="game-title">
                    <span class="ko-text">트링클</span>
                    <span class="en-text hidden">TRINKLE</span>
@@ -848,7 +1028,7 @@ body {
                   </div>
               </div>
               <div class="en-text hidden">
-                    <strong>Connect dots to form triangles </strong>
+                    <strong>Connect dots to form triangles</strong>
                   <div align="center">
    <img src="https://soosooland.com/images/trinkle.png" width="150" alt="Trinkle - Triangle strategy game connecting dots"><br>
                   </div>
@@ -859,300 +1039,254 @@ body {
               </div>
          </div>
     </div>
-   
-<!-- 게임 추천 테스트 카드 -->
-    <div class="game-card test-card">
-        <div class="game-card-header">
-            <div class="game-emoji">🎯</div>
-            <div class="game-title ko-text">게임 추천 테스트</div>
-            <div class="game-title en-text hidden">Game Recommendation Test</div>
-        </div>
-           
-        <!-- 첫 번째 질문 -->
-        <div class="test-question active" id="question1">
-            <h3 class="ko-text">게임에서 얻고 싶은 능력이 있나요?</h3>
-            <h3 class="en-text hidden">What ability do you want to gain from games?</h3>
-            <div class="test-options">
-                <div class="test-option" data-value="vocabulary">
-                    <span class="option-number">1</span>
-                    <span class="option-text ko-text">어휘력과 상식</span>
-                    <span class="option-text en-text hidden">Vocabulary & Knowledge</span>
-                </div>
-                <div class="test-option" data-value="calculation">
-                    <span class="option-number">2</span>
-                    <span class="option-text ko-text">연산능력</span>
-                    <span class="option-text en-text hidden">Calculation Skills</span>
-                </div>
-                <div class="test-option" data-value="logic">
-                    <span class="option-number">3</span>
-                    <span class="option-text ko-text">논리력과 추리력</span>
-                    <span class="option-text en-text hidden">Logic & Reasoning</span>
-                </div>
-                <div class="test-option" data-value="reading">
-                    <span class="option-number">4</span>
-                    <span class="option-text ko-text">예측력과 수 읽기 능력</span>
-                    <span class="option-text en-text hidden">Prediction & Pattern Reading</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- 두 번째 질문 -->
-        <div class="test-question" id="question2">
-            <h3 class="ko-text">지금 게임을 어떻게 하고 싶으신가요?</h3>
-            <h3 class="en-text hidden">How do you want to play right now?</h3>
-            <div class="test-options">
-                <div class="test-option" data-value="alone">
-                    <span class="option-number">1</span>
-                    <span class="option-text ko-text">혼자서 차분하게</span>
-                    <span class="option-text en-text hidden">Alone and calmly</span>
-                </div>
-                <div class="test-option" data-value="together">
-                    <span class="option-number">2</span>
-                    <span class="option-text ko-text">둘이서 재미있게</span>
-                    <span class="option-text en-text hidden">Together and fun</span>
-                </div>
-                <div class="test-option" data-value="computer">
-                    <span class="option-number">3</span>
-                    <span class="option-text ko-text">컴퓨터와 대결하기</span>
-                    <span class="option-text en-text hidden">Challenge vs Computer</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- 결과 화면 -->
-        <div class="test-result" id="result">
-            <h3 class="result-title ko-text">추천 게임</h3>
-            <h3 class="result-title en-text hidden">Recommended Game</h3>
-            <div class="recommended-game" id="gameTitle"></div>
-            <div class="test-buttons">
-                <button class="test-btn secondary ko-text" onclick="restart()">다시 테스트</button>
-                <button class="test-btn secondary en-text hidden" onclick="restart()">Test Again</button>
-            </div>
-        </div>
-
-<div class="test-buttons" id="navigationButtons">
-    <button class="test-btn secondary" onclick="previousQuestion()" id="prevBtn" style="display: none;">
-        <span class="ko-text">이전</span>
-        <span class="en-text hidden">Previous</span>
-    </button>
-    <button class="test-btn" onclick="nextQuestion()" id="nextBtn">
-        <span class="ko-text">다음</span>
-        <span class="en-text hidden">Next</span>
-    </button>
-</div>
-
-</div>
 </div>
 </div>
 
 <!-- 푸터 영역 -->
 <div class="footer">
   <div class="ko-text">
-<span class="ko-text" onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">블로그</span>|
-<span class="ko-text" onclick="location.href='https://youtube.com/@Soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">유튜브</span>|
-<span class="ko-text" onclick="location.href='https://instagram.com/Soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">인스타그램</span>|
-<span class="ko-text" onclick="location.href='News-ko.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소식</span>|
-<span class="ko-text" onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">개인정보 처리방침</span>|
+<span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">블로그</span>|
+<span onclick="location.href='https://youtube.com/@Soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">유튜브</span>|
+<span onclick="location.href='https://instagram.com/Soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">인스타그램</span>|
+<span onclick="location.href='News-ko.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소식</span>|
+<span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">개인정보 처리방침</span>|
 <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">연락처와 지원</span>|    
-<span class="ko-text" onclick="location.href='Wordbaby.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">첫번째 게임</span>|
-<p>© 2025 한수수 . All rights reserved.</p><br>
-    
+<span onclick="location.href='Wordbaby.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">첫번째 게임</span>
+<p>© 2025 한수수 . All rights reserved.</p>
   </div>
 
   <div class="en-text hidden">
 <span onclick="location.href='https://youtube.com/@Soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">YouTube</span>|
-<span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;"> Blog</span>|
-<span onclick="location.href='https://instagram.com/soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;"> instgram</span>|
+<span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Blog</span>|
+<span onclick="location.href='https://instagram.com/soosooland2025'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Instagram</span>|
 <span onclick="location.href='News-en.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Soosooland News</span>|
 <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Privacy Policy</span>|
 <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Contact & Support</span>|    
-<span onclick="location.href='Wordbaby.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Our first game</span>|
-<br><br><p>© 2025 Soosoo Han . All rights reserved.</p> 
+<span onclick="location.href='Wordbaby.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Our first game</span>
+<p>© 2025 Soosoo Han . All rights reserved.</p> 
   </div>
-</div>        
 </div>
+
 <script>
-  let currentQuestion = 1;
-    let answers = {};
-    const totalQuestions = 2;
+let currentQuestion = 1;
+let answers = {};
+const totalQuestions = 2;
 
-    // 게임 데이터 (한국어/영어)
-    const games = {
-        'vocabulary-alone': {
-            ko: '모음퀴즈/하루모음',
-            en: 'Moeum Quiz/Haroo Moeum'
-        },
-        'vocabulary-together': {
-            ko: '워퍼즈 메이트 / 둘이 모음',
-            en: 'Worpuzz Mate / Doori Moeum'
-        },
-        'vocabulary-computer': {
-            ko: '워퍼즈',
-            en: 'Worpuzz'
-        },
-        'calculation-alone': {
-            ko: '넘털',
-            en: 'Numtter'
-        },
-        'calculation-together': {
-            ko: '넘플 ',
-            en: 'Numpple/ NumppleX'
-        },
-        'calculation-computer': {
-            ko: '넘즐',
-            en: 'Numzzle / NumzzleX'
-        },
-        'logic-alone': {
-            ko: '야구게임',
-            en: 'Baseball Game'
-        },
-        'logic-together': {
-            ko: '야구게임 ',
-            en: 'Baseball Game'
-        },
-        'logic-computer': {
-            ko: '야구게임',
-            en: 'Baseball Game'
-        },
-        'reading-alone': {
-            ko: '트링클 / 오목',
-            en: 'Trinkle / Omok'
-        },
-        'reading-together': {
-            ko: '트링클 / 오목',
-            en: 'Trinkle / Omok'
-        },
-        'reading-computer': {
-            ko: '트링클 / 오목',
-            en: 'Trinkle / Omok'
-        }
-    };
-
-    function setLanguage(lang) {
-        const koTexts = document.querySelectorAll('.ko-text');
-        const enTexts = document.querySelectorAll('.en-text');
-        const koBtns = document.querySelector('.language-btn:first-child');
-        const enBtns = document.querySelector('.language-btn:last-child');
-
-        if (lang === 'ko') {
-            koTexts.forEach(el => el.classList.remove('hidden'));
-            enTexts.forEach(el => el.classList.add('hidden'));
-            koBtns.classList.add('active');
-            enBtns.classList.remove('active');
-            document.title = '수수랜드';
-        } else {
-            koTexts.forEach(el => el.classList.add('hidden'));
-            enTexts.forEach(el => el.classList.remove('hidden'));
-            koBtns.classList.remove('active');
-            enBtns.classList.add('active');
-            document.title = 'Soosoo\'s Game Terminal';
-        }
+const games = {
+    'vocabulary-alone': { 
+        ko: ['모음퀴즈'], 
+        en: ['Moeum Quiz'] 
+    },
+    'vocabulary-together': { 
+        ko: ['워퍼즈 메이트', '둘이 모음'], 
+        en: ['Worpuzz Mate', 'Doori Moeum'] 
+    },
+    'vocabulary-computer': { 
+        ko: ['워퍼즈'], 
+        en: ['Worpuzz'] 
+    },
+    'calculation-alone': { 
+        ko: ['넘털'], 
+        en: ['Numtter'] 
+    },
+    'calculation-together': { 
+        ko: ['넘플/넘플X'], 
+        en: ['Numpple/NumppleX'] 
+    },
+    'calculation-computer': { 
+        ko: ['넘즐/넘즐X'], 
+        en: ['Numzzle/NumzzleX'] 
+    },
+    'logic-alone': { 
+        ko: ['야구게임'], 
+        en: ['Baseball Game'] 
+    },
+    'logic-together': { 
+        ko: ['야구게임'], 
+        en: ['Baseball Game'] 
+    },
+    'logic-computer': { 
+        ko: ['야구게임'], 
+        en: ['Baseball Game'] 
+    },
+    'reading-alone': { 
+        ko: ['트링클', '오목'], 
+        en: ['Trinkle', 'Omok'] 
+    },
+    'reading-together': { 
+        ko: ['트링클', '오목'], 
+        en: ['Trinkle', 'Omok'] 
+    },
+    'reading-computer': { 
+        ko: ['트링클', '오목'], 
+        en: ['Trinkle', 'Omok'] 
     }
+};
 
-    function showQuestion(questionNum) {
-        document.querySelectorAll('.test-question').forEach(q => q.classList.remove('active'));
-        document.getElementById(`question${questionNum}`).classList.add('active');
-        
-        // 버튼 상태 업데이트
-        const prevBtn = document.getElementById('prevBtn');
-        const prevBtnEn = document.getElementById('prevBtnEn');
-        const nextBtn = document.getElementById('nextBtn');
-        const nextBtnEn = document.getElementById('nextBtnEn');
-        
-        if (questionNum === 1) {
-    prevBtn.style.display = 'none';
-    prevBtnEn.style.display = 'none';  
-} else {
-    prevBtn.style.display = 'inline-block';
-    prevBtnEn.style.display = 'inline-block';  
-        }
-        
-        if (questionNum === totalQuestions && Object.keys(answers).length === totalQuestions) {
-            nextBtn.textContent = '결과 보기';
-            nextBtnEn.textContent = 'Show Result';
-        } else {
-            nextBtn.textContent = '다음';
-            nextBtnEn.textContent = 'Next';
-        }
+
+const gameLinks = {
+    '모음퀴즈': 'https://soosooland.com/moeum-quiz/',
+    'Moeum Quiz': 'https://soosooland.com/moeum-quiz/',
+    
+    '워퍼즈메이트': 'selectmate.html',
+    'WorpuzzMate': 'selectmate.html',
+    
+    '둘이 모음': 'https://soosooland.com/doori/',
+    'Doori Moeum': 'https://soosooland.com/doori/',
+    
+    '워퍼즈': 'selectworpuzz.html',
+    'Worpuzz': 'selectworpuzz.html',
+    
+    '넘털': 'https://soosooland.com/numtter/',
+    'Numtter': 'https://soosooland.com/numtter/',
+    
+    '넘플/넘플X': 'selectnumpple.html',
+    'Numpple/NumppleX': 'selectnumpple.html',
+   
+    '넘즐/넘즐X': 'selectnumzzle.html',
+    'Numzzle/NumzzleX': 'selectnumzzle.html',
+    
+    '야구게임': 'https://soosooland.com/yagoo/',
+    'Baseball Game': 'https://soosooland.com/yagoo/',
+    
+    '트링클': 'https://soosooland.com/trinkle/',
+    'Trinkle': 'https://soosooland.com/trinkle/',
+    
+    '오목': 'https://soosooland.com/omok/',
+    'Omok': 'https://soosooland.com/omok/'
+};
+
+
+
+function setLanguage(lang) {
+    const koTexts = document.querySelectorAll('.ko-text');
+    const enTexts = document.querySelectorAll('.en-text');
+    const koBtns = document.querySelector('.language-btn:first-child');
+    const enBtns = document.querySelector('.language-btn:last-child');
+
+    if (lang === 'ko') {
+        koTexts.forEach(el => el.classList.remove('hidden'));
+        enTexts.forEach(el => el.classList.add('hidden'));
+        koBtns.classList.add('active');
+        enBtns.classList.remove('active');
+        document.title = '수수랜드';
+    } else {
+        koTexts.forEach(el => el.classList.add('hidden'));
+        enTexts.forEach(el => el.classList.remove('hidden'));
+        koBtns.classList.remove('active');
+        enBtns.classList.add('active');
+        document.title = 'Soosooland';
     }
+}
 
-    function nextQuestion() {
-        const currentQuestionElement = document.getElementById(`question${currentQuestion}`);
-        const selectedOption = currentQuestionElement.querySelector('.test-option.selected');
-        
-        if (!selectedOption) {
-            const isKorean = !document.querySelector('.ko-text').classList.contains('hidden');
-            alert(isKorean ? '선택지를 골라주세요!' : 'Please select an option!');
-            return;
-        }
-        
-        // 답변 저장
-        if (currentQuestion === 1) {
-            answers.interest = selectedOption.dataset.value;
-        } else if (currentQuestion === 2) {
-            answers.mode = selectedOption.dataset.value;
-        }
-        
-        if (currentQuestion < totalQuestions) {
-            currentQuestion++;
-            showQuestion(currentQuestion);
-        } else {
-            showResult();
-        }
+function startTest() {
+    document.getElementById('welcomeMessage').style.display = 'none';
+    document.getElementById('question1').classList.add('active');
+    document.getElementById('navigationButtons').style.display = 'flex';
+}
+
+function showQuestion(questionNum) {
+    document.querySelectorAll('.test-question').forEach(q => q.classList.remove('active'));
+    document.getElementById(`question${questionNum}`).classList.add('active');
+    
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    prevBtn.style.display = questionNum === 1 ? 'none' : 'inline-block';
+    
+    if (questionNum === totalQuestions && Object.keys(answers).length === totalQuestions) {
+        nextBtn.querySelector('.ko-text').textContent = '결과 보기';
+        nextBtn.querySelector('.en-text').textContent = 'Show Result';
+    } else {
+        nextBtn.querySelector('.ko-text').textContent = '다음';
+        nextBtn.querySelector('.en-text').textContent = 'Next';
     }
+}
 
-    function previousQuestion() {
-        if (currentQuestion > 1) {
-            currentQuestion--;
-            showQuestion(currentQuestion);
-        }
-    }
-
-    function showResult() {
-        document.querySelectorAll('.test-question').forEach(q => q.classList.remove('active'));
-        document.getElementById('navigationButtons').style.display = 'none';
-        document.getElementById('result').classList.add('active');
-        
-        // 게임 추천
-        const gameKey = `${answers.interest}-${answers.mode}`;
-        const recommendedGame = games[gameKey] || {
-            ko: '추천 게임을 찾을 수 없습니다',
-            en: 'No game recommendation found'
-        };
-        
+function nextQuestion() {
+    const currentQuestionElement = document.getElementById(`question${currentQuestion}`);
+    const selectedOption = currentQuestionElement.querySelector('.test-option.selected');
+    
+    if (!selectedOption) {
         const isKorean = !document.querySelector('.ko-text').classList.contains('hidden');
-        document.getElementById('gameTitle').textContent = isKorean ? recommendedGame.ko : recommendedGame.en;
+        alert(isKorean ? '선택지를 골라주세요!' : 'Please select an option!');
+        return;
     }
-
-    function restart() {
-        currentQuestion = 1;
-        answers = {};
-        document.getElementById('result').classList.remove('active');
-        document.getElementById('navigationButtons').style.display = 'flex';
-        document.querySelectorAll('.test-option').forEach(option => {
-            option.classList.remove('selected');
-        });
-        showQuestion(1);
+    
+    if (currentQuestion === 1) {
+        answers.interest = selectedOption.dataset.value;
+    } else if (currentQuestion === 2) {
+        answers.mode = selectedOption.dataset.value;
     }
+    
+    if (currentQuestion < totalQuestions) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+    } else {
+        showResult();
+    }
+}
 
-    // 옵션 클릭 이벤트
-    document.addEventListener('click', function(e) {
-        if (e.target.closest('.test-option')) {
-            const option = e.target.closest('.test-option');
-            const questionElement = option.closest('.test-question');
-            
-            // 같은 질문의 다른 선택지들 비활성화
-            questionElement.querySelectorAll('.test-option').forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // 클릭한 선택지 활성화
-            option.classList.add('selected');
-        }
+function previousQuestion() {
+    if (currentQuestion > 1) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+    }
+}
+function showResult() {
+    document.querySelectorAll('.test-question').forEach(q => q.classList.remove('active'));
+    document.getElementById('navigationButtons').style.display = 'none';
+    document.getElementById('result').classList.add('active');
+    
+    const gameKey = `${answers.interest}-${answers.mode}`;
+    const recommendedGame = games[gameKey];
+    
+    const isKorean = !document.querySelector('.ko-text').classList.contains('hidden');
+    const gameList = isKorean ? recommendedGame.ko : recommendedGame.en;
+    
+    // 결과 HTML 생성
+    const resultContainer = document.getElementById('gameResult');
+    resultContainer.innerHTML = '';
+    
+    gameList.forEach(gameName => {
+        const gameBtn = document.createElement('div');
+        gameBtn.className = 'recommended-game';
+        gameBtn.style.cursor = 'pointer';
+        gameBtn.style.marginBottom = '10px';
+        gameBtn.textContent = gameName;
+        gameBtn.onclick = () => {
+            const link = gameLinks[gameName];
+            if (link) location.href = link;
+        };
+        resultContainer.appendChild(gameBtn);
     });
+}
 
-    // 초기화
-    showQuestion(1);
+function restart() {
+    currentQuestion = 1;
+    answers = {};
+    document.getElementById('result').classList.remove('active');
+    document.getElementById('welcomeMessage').style.display = 'block';
+    document.getElementById('navigationButtons').style.display = 'none';
+    document.querySelectorAll('.test-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    document.querySelectorAll('.test-question').forEach(q => q.classList.remove('active'));
+}
+
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.test-option')) {
+        const option = e.target.closest('.test-option');
+        const questionElement = option.closest('.test-question');
+        
+        questionElement.querySelectorAll('.test-option').forEach(opt => {
+            opt.classList.remove('selected');
+        });
+        
+        option.classList.add('selected');
+    }
+});
 </script>
 
 </body>
