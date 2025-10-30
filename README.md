@@ -144,8 +144,8 @@ The goal is to connect dots and create as many non-overlapping triangles as poss
 
 ## 👤🆚🤖  워퍼즈 (Worpuzz) 시리즈
 
-Worpuzz는 지뢰찾기에서 영감을 받은 단어 퍼즐 게임으로, 격자를 탐험하여 숨겨진 단어를 찾는 게임입니다!  
-Worpuzz is a word puzzle game inspired by Minesweeper, where you explore a grid to uncover hidden words!
+Worpuzz는 격자를 탐험하여 숨겨진 단어를 찾는 게임입니다!  
+Worpuzz is a game where you explore a grid to find hidden words!   
 
 (“Worpuzz”라는 이름은 “Word”와 “Puzzle”의 조합입니다.)  
 (The name “Worpuzz” is a combination of “Word” and “Puzzle.”)
@@ -165,8 +165,16 @@ Worpuzz is a word puzzle game inspired by Minesweeper, where you explore a grid 
   🌼 If you click on a daisy, the surrounding tiles open and you get an extra turn.
 
 ### 🎯 특징 / Features
-- 지뢰찾기에서 영감을 받았지만, 대신 행운의 네잎클로버와 데이지와 숨겨진 단어가 있습니다!  
-- Inspired by Minesweeper, but with lucky four-leaf clovers, daisies and hidden words instead!
+- 격자 뒤에 행운의 네잎 토끼풀과  데이지와 숨겨진 단어가 있습니다!  
+- 네잎 토끼풀을 찾으면 상하좌우 격자가 열리고 턴이 유지됩니다.
+- 데이지를 찾으면 주변의 8개의 격자가 열리고 턴이 유지됩니다.
+
+- Behind the grid are lucky four-leaf clovers, daisies, and hidden words!   
+- When you find a four-leaf clover, the cells above, below, left, and right open up, and you keep your turn.    
+- When you find a daisy, the 8 surrounding cells open up, and you keep your turn.    
+- 데이지와 토끼풀은 게임이 지루하지 않게 하고, 빈 자리에 랜덤하게 넣은 글자들이 유의미한 단어를 생성하는 가능성을 줄이려고 했고,  단어도 추리하지만 아이템을 고르는 것도 전략입니다.
+
+- The daisies and clovers serve to keep the game from becoming boring, reduce the possibility of randomly placed letters in empty spaces forming meaningful words, and add a strategic element - it’s not just about deducing words, but also about choosing which items to go for.   
 
 - 전략적으로 격자를 공개하여 가능한 한 많은 단어를 찾으세요.  
 - Strategically uncover the grid to find as many words as possible.
@@ -179,39 +187,24 @@ Worpuzz is a word puzzle game inspired by Minesweeper, where you explore a grid 
 
 ### 📝 게임 주제 / Game Topics
 
-**영어:** 동물과 식물, 유네스코 문화유산, 자연경관, 의성어, 의태어  
-**English:** Animals and plants, UNESCO World Heritage sites, natural landscapes, onomatopoeia, and mimetic words
+**영어:** 동물과 식물, 여행(나라, 도시, 랜드마크, 유네스코 문화유산, 자연경관), 음성상징어 (의성어, 의태어),생명 (동물과 식물 이름)  
 
-**한글:** 사자성어, 음성상징어(의성어, 의태어), 자연경관, 사자숙어, 동물과 식물  
-**Korean:** Four-character idioms (sajaseong-eo), sound-symbolic words (onomatopoeia and mimetic words), natural landscapes, four-character proverbs (sajasuk-eo), and animals and plants
+**한글:** 사자성어/고사성어, 음성상징어(의성어,의태어), 여행(나라, 도시, 자연경관,유적지), 생활한자어, 기초단어, (동물과 식물)  
+
+**English:** Animals and Plants, Travel (Countries, Cities, Landmarks, UNESCO Cultural Heritage Sites, Natural Landscapes), Onomatopoeia and Mimetic Words (Sound Words, Motion Words), Life (Animal and Plant Names)
+
+**Korean:** Four-Character Idioms/Historical Idioms, Onomatopoeia and Mimetic Words (Sound Words, Motion Words), Travel (Countries, Cities, Natural Landscapes, Historical Sites), Everyday Sino-Korean Words, Basic Vocabulary, Life (Animals and Plants)
 
 앞으로 더 다양한 주제와 중국어, 일본어 같은 다양한 언어로 게임을 개발할 계획입니다.  
 We plan to develop games with more diverse topics and in various languages such as Chinese and Japanese in the future.
-
-### 워퍼즈 시리즈 / Worpuzz Series
-
-**워퍼즈 :** npc와 대결하는 버전 (영어 12*12 한글 10*10) 
-**Worpuzz :**  user compete against npc (12*12 for English, 10*10 for Korean)   
-
-**워퍼즈메이트 :** 두 사용자가 대결하는 버전 (영어 12*12 한글 10*10)     
-**Worpuzz Mate:** Two users compete against each other (12*12 for English, 10*10 for Korean)  
-
-**워퍼즈 미니 :** 모바일 사용자를 위한 버전 (영어 8×8, 한글 7×7)  
-**Worpuzz Mini:** For mobile users (8×8 for English, 7×7 for Korean)
-
-**워퍼즈 몽 :** 더 긴 영어 단어를 위한 버전 (영어 18×12, 한글 15×11)  
-**Worpuzz Mong:** Created to accommodate longer English words (18×12 for English, 15×11 for Korean)
-
-**워퍼즈 찌니 :** 큰 격자에서 두 사용자가 단어 찾기 대결을 하는 버전 (영어 18×12, 한글 15×11)  
-**Worpuzz ZZini:** Features a large grid where two users compete in word-finding battles  (18×12 for English, 15×11 for Korean)
   
 ### 📌 격자 크기와 게임 종류
 
 | 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |
 |------------------|--------------|----------------|
-|small  영 8x8 한 7x7  | 워퍼즈미니         |        -    |
-|medium  영 12x12 한 10x10    | 워퍼즈   | 워퍼즈 메이트    |
-|large 영 18x12 한 15x11    | 워퍼즈 몽이    | 워퍼즈 찌니   |
+|small  영 8x8 한 7x7  | 워퍼즈미니 (Worpuzz Mini)        |        -    |
+|medium  영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    |
+|large 영 18x12 한 15x11    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 찌니(Worpuzz ZZini)   |
 
 -----
 
