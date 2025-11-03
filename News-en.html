@@ -82,6 +82,7 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#nov">november 2025</a>
     <a href="#oct">octover 2025</a>
     <a href="#sep">September 2025</a>
     <a href="#aug">August 2025</a>
@@ -89,10 +90,19 @@ transform: scale(0.95);
     <a href="#timeline">Full Timeline</a>
   </nav>
 
+  <!-- 11월 -->
+
+  
+  <section class="card">
+    <div class="section-title">📅 November 2025 Timeline</div>
+    <div class="timeline" id="novTimeline"></div>
+  </section>
+  <button class="square-button" onclick="location.href='/'">
+   Fun Puzzles, Soosooland<br><br> 🎮 Play Games Now ✨  </button>
   <!-- 10월 -->
 
   <section class="card" id="sep">
-    <div class="section-title">September 2025 Popularity Rankings</div>
+    <div class="section-title">October 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="octBody"></tbody>
@@ -100,11 +110,9 @@ transform: scale(0.95);
   </section>
 
   <section class="card">
-    <div class="section-title">📅 September 2025 Timeline</div>
+    <div class="section-title">📅 October 2025 Timeline</div>
     <div class="timeline" id="octTimeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br><br> 🎮 Play Games Now ✨  </button>
   <!-- 9월 -->
 
   <section class="card" id="sep">
@@ -181,7 +189,10 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
-  "2025-10": [
+   "2025-11": [
+    "2025-11-01: SoosooLand reached 700 users"
+],  
+    "2025-10": [
     "2025-10-05: SoosooLand reached 500 users",
     "2025-10-05: SoosooLand reached 100 overseas users",
     "2015-10-14: Launched soosooland.com",
@@ -338,12 +349,14 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2025-11", "novBody", "2025-10");
   drawRankingTable("2025-10", "octBody", "2025-09");
   drawRankingTable("2025-09", "sepBody", "2025-08");
   drawRankingTable("2025-08", "augBody", "2025-07");
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2025-11", "novTimeline");
   drawTimeline("2025-10", "octTimeline");
   drawTimeline("2025-09", "sepTimeline");
   drawTimeline("2025-08", "augTimeline");
