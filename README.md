@@ -1,9 +1,11 @@
 # SoosooLand
    
 수수랜드는 다운로드 없이, 브라우저에서 바로 즐길 수 있는 교육·두뇌개발용 게임 플랫폼이에요.  
-학습에 도움을 주는 단어 게임부터 추리, 전략, 연산 게임까지 다양하게 준비되어 있어 아이들의 학습 도우미로도 좋고, 어른들의 두뇌 건강에도 딱 맞습니다.  
+학습에 도움을 주는 단어 게임부터 추리, 전략, 연산 게임까지 다양하게 준비되어 있습니다.
+수수랜드의 게임들은 사고력, 학습 능력, 어휘력, 연산 능력을 향상하여 두뇌 개발과 두뇌 건강에 도움이 됩니다.
 Soosoland is an educational and brain-training game platform that runs directly on your browser without any downloads.  
-It offers a wide range of word, logic, strategy, and math games—perfect for children’s learning and for adults’ brain health.  
+It offers a wide range of word, logic, strategy, and math games.
+Soosooland’s games enhance critical thinking, learning ability, vocabulary, and math skills, supporting both brain development and cognitive health.
 
    ---
 📌 수수랜드만의 특징  
@@ -58,12 +60,7 @@ Then don’t wait—start playing now on Soosoland!
 • 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
    
 • 전략 게임 (Strategy Games): 트링클(Trinkle), 오목(Gomoku)   
-   
-👦 어린이들에게는 어휘력과 사고력 향상에,  
-👵 어르신들에게는 두뇌 건강 관리에 도움이 됩니다.  
-👦 Great for children’s vocabulary and logical thinking.  
-👵 Also helpful for seniors to maintain brain health.  
-   
+      
 ---
 
 ## 👤 모음퀴즈 (Moeum Quiz) 
