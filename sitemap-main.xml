@@ -62,24 +62,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인 정보 보호-->
-
-  <url>
-    <loc>https://soosooland.com/Privacy.html</loc>
-    <lastmod>2025-11-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- 지원/피드백 -->
-
-  <url>
-    <loc>https://soosooland.com/Contact.html</loc>
-    <lastmod>2025-11-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-</urlset>
+ </urlset>
 
 
 
