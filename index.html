@@ -114,6 +114,28 @@ body {
         transform: translateY(-2px);
     }
 
+.sponsor-btn {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: rgba(255,255,255,0.3);
+    color: #ffffff;
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sponsor-btn:hover {
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+}
 .games-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -641,6 +663,14 @@ body {
         <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
         <button class="language-btn" onclick="setLanguage('en')">English</button>
     </div>
+<div class="ko-text">
+<a href="sponsor.html" class="sponsor-btn">후원하기</a>
+</div>
+
+<div class="en-text hidden">
+<a href="sponsor.html" class="sponsor-btn">Support</a>
+</div>
+
   </div>
     
   <div class="games-grid">
@@ -806,9 +836,9 @@ body {
      </div>
    </div>
 
-<!-- 넘즐 게임 - 2위 -->
+<!-- 넘즐 게임 - 3위 -->
     <div class="game-card" onclick="location.href='selectnumzzle.html'">
-        <div class="rank-badge rank-2">🥈 2nd</div>
+        <div class="rank-badge rank-3">🥉 3rd</div>
         <div class="game-card-header">
             <div class="game-emoji">👤</div>
             <div class="game-title">
@@ -894,39 +924,11 @@ body {
         </div>
     </div>
  
-<!-- 오목 게임 - 3위 -->
-    <div class="game-card" onclick="location.href='https://soosooland.com/omok'">
-        <div class="rank-badge rank-3">🥉 3rd</div>
-        <div class="game-card-header">
-            <div class="game-emoji">👤 👥</div>
-            <div class="game-title">
-                  <span class="ko-text">오목</span>
-                  <span class="en-text hidden">OMOK</span>
-            </div>
-         </div>
-         <div class="game-description-text">
-              <div class="ko-text">
-                  <strong>돌 5개를 한 줄로 놓으면 이겨요.</strong><br>
-                  <div align="center">
-  <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
-                  </div>
-              </div>
-              <div class="en-text hidden">
-       <strong>Get 5 stones in a row to win!<br></strong>
-                  <div align="center">
-  <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
-                  </div>
-              </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">오목 하기</span>
-                   <span class="en-text hidden">play Omok</span>
-              </div>
-         </div>
-     </div>
   
-<!-- 모음퀴즈 게임 -->
+<!-- 모음퀴즈 게임 2위 -->
    <div class="game-card" onclick="location.href='https://soosooland.com/moeum-quiz'">
-       <div class="game-card-header">
+               <div class="rank-badge rank-2">🥈 2nd</div>
+<div class="game-card-header">
            <div class="game-emoji">👤</div>
                <div class="game-title">
                     <span class="ko-text">모음 퀴즈</span>
@@ -1039,6 +1041,34 @@ body {
               </div>
          </div>
     </div>
+<!-- 오목 게임 -->
+    <div class="game-card" onclick="location.href='https://soosooland.com/omok'">
+        <div class="game-card-header">
+            <div class="game-emoji">👤 👥</div>
+            <div class="game-title">
+                  <span class="ko-text">오목</span>
+                  <span class="en-text hidden">OMOK</span>
+            </div>
+         </div>
+         <div class="game-description-text">
+              <div class="ko-text">
+                  <strong>돌 5개를 한 줄로 놓으면 이겨요.</strong><br>
+                  <div align="center">
+  <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
+                  </div>
+              </div>
+              <div class="en-text hidden">
+       <strong>Get 5 stones in a row to win!<br></strong>
+                  <div align="center">
+  <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
+                  </div>
+              </div>
+              <div class="game-difficulty">
+                   <span class="ko-text">오목 하기</span>
+                   <span class="en-text hidden">play Omok</span>
+              </div>
+         </div>
+     </div>
 
 </div>
 </div>
@@ -1052,8 +1082,7 @@ body {
 <span onclick="location.href='News-ko.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소식</span>|
 <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">개인정보 처리방침</span>|
 <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">연락처와 지원</span>|    
-<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소개</span> |
-<span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 후원</span>
+<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소개</span> 
 <p>© 2025 한수수 . All rights reserved.</p>
   </div>
 
@@ -1064,8 +1093,7 @@ body {
 <span onclick="location.href='News-en.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Soosooland News</span>|
 <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Privacy Policy</span>|
 <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Contact & Support</span>|    
-<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">About Soosooland</span> |
-<span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Support Soosooland</span>
+<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">About Soosooland</span> 
 <p>© 2025 Soosoo Han . All rights reserved.</p> 
   </div>
 </div>
