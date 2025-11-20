@@ -58,7 +58,7 @@
 
 body {
         font-family: 'Pretendard', sans-serif;
-        background: #2e8b8b;
+        background: #145454;
         min-height: 100vh;
         padding: 20px;
         overflow-y: auto;
@@ -81,7 +81,11 @@ body {
         margin-bottom: 20px;
         color: #f0f8ff;
    }
-
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 언어 버튼과 후원 버튼 사이 간격 */
+}
 .language-toggle {
         position: absolute;
         left: 20px;
@@ -92,11 +96,11 @@ body {
         background: rgba(255,255,255,0.3);
         color: #ffffff;
         border: 2px solid rgba(255,255,255,0.6);
-        padding: 10px 20px;
+        padding: 10px;
         margin: 0 5px;
-        border-radius: 20px;
+        border-radius: 10px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: clamp(0.9rem,2vw,1rem);
         font-weight: 600;
         transition: all 0.3s ease;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -118,13 +122,13 @@ body {
     position: absolute;
     right: 20px;
     top: 0;
-    background: rgba(255,255,255,0.3);
+    background: #145454;
     color: #ffffff;
     border: 2px solid rgba(255,255,255,0.6);
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: clamp(0.9rem,2vw,1rem);
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -133,7 +137,7 @@ body {
 }
 
 .sponsor-btn:hover {
-    background: rgba(255,255,255,0.4);
+    background: #2e8b8b;
     transform: translateY(-2px);
 }
 .games-grid {
@@ -532,6 +536,10 @@ body {
 .hub-title {
       margin-top: 20px;
       }
+.header-buttons {
+      flex-direction: inline;
+      gap: 10px;
+    }
 
 .language-toggle {
       position: static;
@@ -541,6 +549,12 @@ body {
 .games-hub-header {
       flex-direction: column;
       }
+.sponsor-btn {
+        position: static; /* 기존 absolute 해제 */
+        margin-top: 10px;
+    }
+
+
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
@@ -656,23 +670,22 @@ body {
   }
 })();
 </script>
-
 <div class="games-hub">
   <div class="games-hub-header">Soosooland
-    <div class="language-toggle">
-        <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
-        <button class="language-btn" onclick="setLanguage('en')">English</button>
+    <div class="header-buttons">
+      <div class="language-toggle">
+      <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
+      <button class="language-btn" onclick="setLanguage('en')">English</button>
+      </div>
+        
+      <div class="ko-text">
+      <a href="sponsor.html" class="sponsor-btn">후원하기☕</a>
+      </div>
+      <div class="en-text hidden">
+      <a href="sponsor.html" class="sponsor-btn">☕Support</a>
+      </div>
     </div>
-<div class="ko-text">
-<a href="sponsor.html" class="sponsor-btn">후원하기</a>
-</div>
-
-<div class="en-text hidden">
-<a href="sponsor.html" class="sponsor-btn">Support</a>
-</div>
-
-  </div>
-    
+  </div> 
   <div class="games-grid">
       
 <!-- 게임 추천 테스트 카드 - 간결하게 수정 -->
