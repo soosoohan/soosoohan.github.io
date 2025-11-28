@@ -632,6 +632,7 @@ body {
 </head>
 <body>
 
+===
 <!-- 수수랜드 인트로 오버레이 -->
 <div id="intro" style="position:fixed;inset:0;z-index:9999;background:#2e8b8b;display:grid;place-items:center;overflow:hidden">
   <div style="position:absolute;inset:0;display:grid;place-items:center;padding:8vw">
@@ -666,6 +667,11 @@ body {
   
 </div>
 
+<!-- 메인 페이지 배경 꽃잎 (인트로 후에도 계속) -->
+<div id="background-petals" style="
+  position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden;opacity:0;
+"></div>
+
 <style>
 @keyframes intro-rise{
   0%   {opacity:0; transform:scale(.8)}
@@ -676,56 +682,78 @@ body {
   0% {transform:translate3d(var(--x,0), 0, 0) rotate(0deg); opacity:.95}
   100% {transform:translate3d(calc(var(--x,0) + 220px), -520px, 0) rotate(360deg); opacity:0}
 }
+@keyframes bg-petal-fly{
+  0% {transform:translate3d(var(--x,0), 0, 0) rotate(0deg); opacity:.4}
+  100% {transform:translate3d(calc(var(--x,0) + 180px), -450px, 0) rotate(360deg); opacity:0}
+}
 </style>
 
 <script>
-function goFullscreen() {
-  if (document.documentElement.requestFullscreen) {
-    document.documentElement.requestFullscreen();
-  }
-}
-(function(){
+(function() {
+  // PWA 감지
+  const isPWA = window.matchMedia('(display-mode: standalone)').matches;
+  const introDelay = isPWA ? 4500 : 3000; // PWA면 4.5초, 브라우저면 3초
+  
   const intro = document.getElementById('intro');
+  const petals = document.getElementById('petals');
+  const bgPetals = document.getElementById('background-petals');
+  const startBtn = document.getElementById('intro-start');
   const audio = document.getElementById('intro-audio');
-  const btn   = document.getElementById('intro-start');
-  const petalsWrap = document.getElementById('petals');
 
-  const N = 10;
-  for(let i=0;i<N;i++){
-    const p = document.createElement('div');
-    p.style.cssText = `
-      position:absolute;bottom:${Math.random()*180+10}px;left:${Math.random()*100}vw;
-      width:14px;height:14px;border-radius:50% 50% 50% 10%;
-      background:linear-gradient(145deg,#ffd1dc,#ff9ab0);
-      filter:drop-shadow(0 2px 4px rgba(0,0,0,.15));
-      animation:petal-fly ${3+Math.random()*3}s linear ${Math.random()*1.2}s infinite;
-      --x:${Math.random()*60-30}px;
+  // 꽃잎 생성 함수
+  function createPetal(container, animationName = 'petal-fly', duration = 3500) {
+    const petal = document.createElement('div');
+    const startX = Math.random() * window.innerWidth;
+    const drift = (Math.random() - 0.5) * 100;
+    
+    petal.style.cssText = `
+      position:absolute;
+      left:${startX}px;
+      bottom:-20px;
+      width:12px;
+      height:12px;
+      background:#ffc0cb;
+      border-radius:50% 0;
+      opacity:.95;
+      animation:${animationName} ${duration}ms linear forwards;
+      --x:${drift}px;
     `;
-    petalsWrap.appendChild(p);
+    
+    container.appendChild(petal);
+    setTimeout(() => petal.remove(), duration);
   }
 
-  let unlocked = false;
-  audio.volume = 0.9;
-  audio.play().then(()=>{ unlocked = true; }).catch(()=> {
-    btn.style.display = 'inline-flex';
-  });
+  // 인트로 꽃잎 (많이, 빠르게)
+  const introInterval = setInterval(() => createPetal(petals), 180);
 
-  btn.addEventListener('click', ()=>{
-    audio.play().catch(()=>{});
-    btn.style.display = 'none';
-    finishSoon();
-  });
-
-  const timer = setTimeout(finishSoon, 3000);
-
-  function finishSoon(){
-    clearTimeout(timer);
-    intro.style.transition = 'opacity .45s ease';
-    intro.style.opacity = '0';
-    setTimeout(()=>{ intro.remove(); }, 460);
+  // 배경 꽃잎 시작 함수 (적게, 천천히)
+  function startBackgroundPetals() {
+    setInterval(() => createPetal(bgPetals, 'bg-petal-fly', 4500), 1200);
   }
+
+  // 인트로 종료
+  setTimeout(() => {
+    clearInterval(introInterval);
+    startBtn.textContent = '시작하기';
+    startBtn.style.display = 'block';
+    
+    startBtn.onclick = () => {
+      audio.play().catch(() => {});
+      intro.style.transition = 'opacity 800ms';
+      intro.style.opacity = '0';
+      
+      setTimeout(() => {
+        intro.remove();
+        // 배경 꽃잎 시작
+        bgPetals.style.transition = 'opacity 1s';
+        bgPetals.style.opacity = '1';
+        startBackgroundPetals();
+      }, 800);
+    };
+  }, introDelay);
 })();
 </script>
+
 <div class="games-hub">
   <div class="games-hub-header">Soosooland
     <div class="header-buttons">
