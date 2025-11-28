@@ -1,0 +1,17 @@
+{
+  "name": "Soosooland",
+  "short_name": "Soosooland",
+  "description": "Brain games for word, math, strategy, and logic",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#145454",
+  "theme_color": "#145454",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon-237.jpeg",
+      "sizes": "237x237",
+      "type": "image/jpeg"
+    }
+  ]
+}
