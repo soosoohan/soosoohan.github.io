@@ -47,7 +47,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="install-box">
         <img src="https://soosooland.com/images/icon-167.png" width="100" alt="Soosooland">
@@ -75,7 +74,7 @@
         if (window.matchMedia('(display-mode: standalone)').matches) {
             title.textContent = '수수랜드';
             description.textContent = '이미 설치되어 있습니다!';
-            installBtn.textContent = '🎮 플레이하기';
+            installBtn.textContent = '🎮 플레이';
             installBtn.onclick = () => {
                 window.location.href = '/';
             };
