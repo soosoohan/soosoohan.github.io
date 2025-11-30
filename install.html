@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>수수랜드 설치</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #145454, #2a8888);
+            color: white;
+        }
+        .install-box {
+            background: white;
+            color: #145454;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .install-btn {
+            background: #145454;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        img {
+            width: 150px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="install-box">
+        <img src="/images/icon-237.jpeg" alt="Soosooland">
+        <h1>수수랜드 설치</h1>
+        <p>두뇌 게임 플랫폼을 홈 화면에 추가하세요!</p>
+        <button class="install-btn" id="installBtn">📱 지금 설치하기</button>
+        <p id="instruction" style="display:none; color: #666; font-size: 14px;">
+            Safari: 공유버튼 → 홈 화면에 추가<br>
+            Chrome: 메뉴 → 홈 화면에 추가
+        </p>
+    </div>
+
+    <script>
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        const instruction = document.getElementById('instruction');
+
+        // PWA 설치 가능할 때
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.style.display = 'block';
+        });
+
+        // 설치 버튼 클릭
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                
+                if (outcome === 'accepted') {
+                    // 설치 성공
+                    window.location.href = '/';
+                }
+                deferredPrompt = null;
+            } else {
+                // Safari나 이미 설치된 경우
+                instruction.style.display = 'block';
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 3000);
+            }
+        });
+
+        // 이미 설치되어 있으면 메인으로
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html>
