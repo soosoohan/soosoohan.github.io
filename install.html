@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>수수랜드 설치</title>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/images/icon-237.jpeg">
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4YZHC1G9FN');
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>수수랜드 설치</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" sizes="167x167" href="/images/icon-167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon-180.png">
  <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background: linear-gradient(135deg, #145454, #2a8888);
+            background: #145454;
             color: white;
         }
         .install-box {
@@ -36,53 +47,60 @@
         }
     </style>
 </head>
+
 <body>
     <div class="install-box">
-        <img src="/images/icon-237.jpeg" alt="Soosooland">
-        <h1>수수랜드 설치</h1>
-        <p>두뇌 게임 플랫폼을 홈 화면에 추가하세요!</p>
-        <button class="install-btn" id="installBtn">📱 지금 설치하기</button>
+        <img src="https://soosooland.com/images/icon-167.png" width="100" alt="Soosooland">
+        <h1 id="title">수수랜드</h1>
+        <p id="description">📱 앱처럼 편하게 즐기세요!<br>📱 Enjoy like an app!
+</p>
+        <button class="install-btn" id="installBtn">📱 설치 </button>
         <p id="instruction" style="display:none; color: #666; font-size: 14px;">
-            Safari: 공유버튼 → 홈 화면에 추가<br>
-            Chrome: 메뉴 → 홈 화면에 추가
+        💡주소 입력 없이 한 번에 접속<br>
+        💡홈 화면에서 바로 게임 시작<br>
+        💡아이폰, 아이패드는 오른쪽 위에 있는 공유 버튼(<img src="https://soosooland.com/images/IMG.jpeg" width="20" alt="공유">)을 누른 다음 "홈 화면에 추가"를 선택하세요!
+<br>      💡One-tap access without typing URL<br>
+        💡Launch games directly from home screen<br> 
+        💡On iPhone/iPad, tap the share button (<img src="https://soosooland.com/images/IMG.jpeg" width="20" alt="share">) at the top right, then select "Add to Home Screen"!
         </p>
     </div>
-
     <script>
         let deferredPrompt;
         const installBtn = document.getElementById('installBtn');
         const instruction = document.getElementById('instruction');
+        const title = document.getElementById('title');
+        const description = document.getElementById('description');
 
-        // PWA 설치 가능할 때
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installBtn.style.display = 'block';
-        });
-
-        // 설치 버튼 클릭
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                
-                if (outcome === 'accepted') {
-                    // 설치 성공
-                    window.location.href = '/';
-                }
-                deferredPrompt = null;
-            } else {
-                // Safari나 이미 설치된 경우
-                instruction.style.display = 'block';
-                setTimeout(() => {
-                    window.location.href = '/';
-                }, 3000);
-            }
-        });
-
-        // 이미 설치되어 있으면 메인으로
+        // 이미 설치되어 있으면
         if (window.matchMedia('(display-mode: standalone)').matches) {
-            window.location.href = '/';
+            title.textContent = '수수랜드';
+            description.textContent = '이미 설치되어 있습니다!';
+            installBtn.textContent = '🎮 플레이하기';
+            installBtn.onclick = () => {
+                window.location.href = '/';
+            };
+        } else {
+            // 설치 안 되어 있으면 기존 로직
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                installBtn.style.display = 'block';
+            });
+
+            installBtn.addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    
+                    if (outcome === 'accepted') {
+                        window.location.href = '/';
+                    }
+                    deferredPrompt = null;
+                } else {
+                    
+                        window.location.href = '/';
+                     }
+            });
         }
     </script>
 </body>
