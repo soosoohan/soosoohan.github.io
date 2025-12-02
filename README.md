@@ -106,9 +106,9 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 둘이 모음은 두 사용자가 대결하는 모음퀴즈이고  게임이 끝났을 때 많이 맞춘 사용자가 이깁니다.
   Doori Moeum is a two-player competitive version of the vowel quiz where users compete against each other, and whoever gets more correct answers wins.   
 
-| 사용자 user    | 👤혼자 하기   | 👤🆚👤사용자 2인 대결 |
-|------------------|--------------|----------------|
-|  게임 Game| 모음퀴즈 Moeum-quiz         |  둘이 모음 Doori-moeun          |
+| 사용자 user    | 👤혼자 하기   | 👤🆚👤사용자 2인 대결 |하루 1개 풀기 |
+|------------------|--------------|----------------|----|
+|  게임 Game| 모음퀴즈 Moeum-quiz         |  둘이 모음 Doori-moeun          |하루 모음 Haroo Moeum |
 
 -----
 
@@ -200,11 +200,11 @@ We plan to develop games with more diverse topics and in various languages such 
   
 ### 📌 격자 크기와 게임 종류
 
-| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |
-|------------------|--------------|----------------|
-|small  영 8x8 한 7x7  | 워퍼즈미니 (Worpuzz Mini)        |        -    |
-|medium  영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    |
-|large 영 18x12 한 15x11    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 찌니(Worpuzz ZZini)   |
+| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |
+|------------------|--------------|----------------|------|
+|small  영 8x8 한 7x7  | 워퍼즈미니 (Worpuzz Mini)        |        -    | 개발중 |
+|medium  영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|
+|large 영 18x12 한 15x11    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 찌니(Worpuzz ZZini)   | 개발중|
 
 -----
 
