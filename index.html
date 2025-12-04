@@ -708,7 +708,7 @@ body {
 (function() {
   // PWA 감지
   const isPWA = window.matchMedia('(display-mode: standalone)').matches;
-  const introDelay = isPWA ? 4500 : 3000; // PWA면 4.5초, 브라우저면 3초
+  const introDelay = isPWA ? 3500 : 2000; // PWA면 3.5초, 브라우저면 2초
   
   const intro = document.getElementById('intro');
   const petals = document.getElementById('petals');
