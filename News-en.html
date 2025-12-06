@@ -82,6 +82,7 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#dec">december 2025</a>
     <a href="#nov">november 2025</a>
     <a href="#oct">octover 2025</a>
     <a href="#sep">September 2025</a>
@@ -90,7 +91,12 @@ transform: scale(0.95);
     <a href="#timeline">Full Timeline</a>
   </nav>
 
-  <!-- 11월 -->
+  <!-- 12월 -->
+  <section class="card">
+    <div class="section-title">📅 December 2025 Timeline</div>
+    <div class="timeline" id="decTimeline"></div>
+  </section>
+ <!-- 11월 -->
   <section class="card" id="nov">
     <div class="section-title">November 2025 Popularity Rankings</div>
     <table>
@@ -183,7 +189,7 @@ transform: scale(0.95);
 
 
 <script>
-// =================== 여기서 데이터를 관리하세요! ===================
+// =================== 여기서 데이터를 관리하세요! 
 
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
@@ -196,7 +202,11 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
-   "2025-11": [
+   "2025-12": [
+    "2025-12-02: Worpuzz Breeze released",
+    "2025-12-04: SoosooLand reached 900 users",
+    "2025-11-19: Moeum Round released"
+], "2025-11": [
     "2025-11-01: SoosooLand reached 700 users",
     "2025-11-19: SoosooLand reached 800 users"
 ],  
@@ -213,18 +223,17 @@ const monthlyNews = {
 ],
   "2025-08": [
     "2025-08-01: Doori Moeum released",
-    "2025-08-02: Gomoku game launched",
+    "2025-08-02: Gomoku game released",
     "2025-08-02: Numpplex released",
     "2025-08-04: Numtter released",
-    "2025-08-11: Number Baseball game development announced",
-    "2025-08-13: Word Baseball game development announced",
+    "2025-08-11: Number Baseball game released",
+    "2025-08-13: Word Baseball game released",
     "2025-08-15: SoosooLand News published",
     "2025-08-15: Daily Moeum released",
     "2025-08-19: SoosooLand reached 200 users",
     "2025-08-19: Trinkle, Worpuzz, Moeum Quiz copyright registration completed",
-    "2025-08-23: Featured in Naver AI Brief as 'Educational Game Platform'",
-    "2025-08-25: Korean Baseball game development announced",
-    "2025-08-25: SoosooLand Baseball game development announced"
+    "2025-08-25: Korean Baseball released",
+    "2025-08-25: Baseball game released"
   ],
   "2025-07": [
     "2025-07-06: NumppleX released",
@@ -356,6 +365,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2025-12", "decBody", "2025-11");
   drawRankingTable("2025-11", "novBody", "2025-10");
   drawRankingTable("2025-10", "octBody", "2025-09");
   drawRankingTable("2025-09", "sepBody", "2025-08");
@@ -363,6 +373,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2025-12", "decTimeline");
   drawTimeline("2025-11", "novTimeline");
   drawTimeline("2025-10", "octTimeline");
   drawTimeline("2025-09", "sepTimeline");
