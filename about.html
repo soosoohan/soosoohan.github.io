@@ -101,8 +101,9 @@
     p {
         margin-bottom: 15px;
         text-align: justify;
-    }
-
+        font-size: 16px;
+ }
+        
     .subtitle {
         text-align: center;
         color: #666;
@@ -144,15 +145,21 @@
     th {
         background: #145454;
         color: white;
-        padding: 15px;
+        padding: 8px;
         text-align: left;
         font-weight: bold;
-    }
+        font-size: 16px;
+        border: 1px solid #ddd;  /* 이게 필요할 수도 */
+        display: table-cell;  /* 확인 */
+}
 
     td {
-        padding: 12px 15px;
+        padding: 8px;
         border-bottom: 1px solid #eee;
-    }
+        font-size: 16px;
+        border: 1px solid #ddd;  /* 이게 필요할 수도 */
+        display: table-cell;  /* 확인 */
+ }
 
     tr:hover {
         background: #f5f5f5;
@@ -176,7 +183,8 @@
 
     li {
         margin-bottom: 8px;
-    }
+        font-size: 16px;
+}
 
     .divider {
         border: none;
@@ -257,9 +265,9 @@
         table {
             font-size: 0.9em;
         }
-
         th, td {
             padding: 10px;
+        
         }
     }
 </style>
@@ -274,15 +282,9 @@
 <div class="container">
     <!-- 한국어 버전 -->
     <div id="ko-content" class="lang-content active">
-        <h1>🎮 Soosooland</h1>
-        <p class="subtitle">수수랜드 - 교육·두뇌개발 게임 플랫폼</p>
-
-        <div class="center">
-            <a href="https://soosooland.com/" class="link-button">🌐 게임 플레이하러 가기</a>
-        </div>
-
-        <hr class="divider">
-
+        <h1>Soosooland</h1>
+        <h2>🎮 교육·두뇌개발 게임 플랫폼</h2>
+        
         <p>수수랜드는 다운로드 없이, 브라우저에서 바로 즐길 수 있는 교육·두뇌개발용 게임 플랫폼이에요.</p>
         <p>학습에 도움을 주는 단어 게임부터 추리, 전략, 연산 게임까지 다양하게 준비되어 있어  사고력, 학습 능력, 어휘력, 연산 능력을 향상하여 두뇌 개발과 두뇌 건강에 도움이 됩니다. </p>
 
@@ -312,20 +314,20 @@
 
         <div class="game-list">
             <div class="game-card">
-                <h4>📝 단어 게임 (Word Games)</h4>
-                <p>워퍼즈 시리즈 (Worpuzz series), 모음퀴즈 (Moeum Quiz)</p>
+                <h4>📝 단어 게임</h4>
+                <p>워퍼즈 시리즈 <br> 모음퀴즈 시리즈</p>
             </div>
             <div class="game-card">
-                <h4>🔢 연산 게임 (Math Games)</h4>
-                <p>넘즐 시리즈 (Numzzle series)</p>
+                <h4>🔢 연산 게임</h4>
+                <p>넘즐 시리즈 </p>
             </div>
             <div class="game-card">
-                <h4>🔍 추리 게임 (Logic Games)</h4>
-                <p>숫자야구, 한글단어야구, 영어단어야구</p>
+                <h4>🔍 추리 게임</h4>
+                <p>숫자야구<br>한글단어야구<br>영어단어야구</p>
             </div>
             <div class="game-card">
-                <h4>♟️ 전략 게임 (Strategy Games)</h4>
-                <p>트링클 (Trinkle), 오목 (Gomoku)</p>
+                <h4>♟️ 전략 게임</h4>
+                <p>트링클<br>오목</p>
             </div>
         </div>
 
@@ -354,23 +356,33 @@
             <li>일상 대화</li>
             <li>한국의 여행지</li>
             <li>대륙과 나라와 수도</li>
+            <li>속담 (힌트 있음)</li>
+            <li>어린이(힌트 있음)</li>
+            <li>어른 (힌트 있음)</li>
             <li>노래와 가수</li>
-            <li>음식 (힌트 있음/없음)</li>
-            <li>속담과 격언 (힌트 있음/없음)</li>
+            <li>속담과 격언 (힌트 없음)</li>
+            <li>사자성어(힌트 있음)</li>
+            <li>수수께끼(힌트 있음)</li>
+            <li>음식(힌트 있음/없음)</li>
             <li>초등학교 국사</li>
             <li>중학교 국사</li>
-            <li>동물과 식물</li>
+            <li>동물(힌트 있음)</li>
+            <li>동물이 아닌 생물(힌트 있음)</li>
             <li>저자와 저서</li>
-            <li>고유어</li>
+            <li>고유어(힌트 있음)</li>
             <li>영화와 드라마 제목</li>
+            <li>커피와 원두(힌트 있음)</li>
+            <li>대한민국 헌법</li>
         </ul>
-        <p>앞으로 세계사, 상식, 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다.</p>
+        <p>앞으로 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다.</p>
 
         <h4>게임 모드</h4>
         <table>
             <thead>
                 <tr>
                     <th>사용자</th>
+                    <th>혼자 하기</th>
+                    <th>혼자 하기</th>
                     <th>혼자 하기</th>
                     <th>사용자 2인 대결</th>
                 </tr>
@@ -379,13 +391,21 @@
                 <tr>
                     <td>게임</td>
                     <td>모음퀴즈</td>
+                    <td>하루 모음</td>
+                    <td>모음 라운드</td>
                     <td>둘이 모음</td>
+                </tr>
+<tr>
+                    <td>게임 종료</td>
+                    <td>실수 6회</td>
+                    <td>실수 6회</td>
+                    <td>정답을 찾았을 때</td>
+                    <td>정답을 찾았을 때</td>
                 </tr>
             </tbody>
         </table>
 
-        <p><strong>둘이 모음</strong>은 두 사용자가 대결하는 모음퀴즈이고, 모든 자음을 다 찾을 때까지 계속되며, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다. 게임이 끝났을 때 많이 맞춘 사용자가 이깁니다.</p>
-
+        
         <hr class="divider">
 
         <h2>🔺 트링클 (TRINKLE)</h2>
@@ -436,10 +456,12 @@
         <h3>📝 게임 주제</h3>
         <h4>영어 (English)</h4>
         <ul>
+            <li>옥스포드 단어 목록 (A1, A2, B1, B2, C1)</li>
             <li>동물과 식물 (Animals and Plants)</li>
             <li>여행: 나라, 도시, 랜드마크, 유네스코 문화유산, 자연경관</li>
             <li>음성상징어: 의성어, 의태어</li>
             <li>생명: 동물과 식물 이름</li>
+            <li>미국의 주와 주도</li>
         </ul>
 
         <h4>한글 (Korean)</h4>
@@ -461,6 +483,8 @@
                     <th>격자 크기</th>
                     <th>컴퓨터와 대결</th>
                     <th>사용자 2인 대결</th>
+                    <th>혼자 하기</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -468,16 +492,19 @@
                     <td>Small (영 8x8, 한 7x7)</td>
                     <td>워퍼즈미니</td>
                     <td>-</td>
+               <td>브리즈 팝</td>
                 </tr>
                 <tr>
                     <td>Medium (영 12x12, 한 10x10)</td>
                     <td>워퍼즈</td>
                     <td>워퍼즈 메이트</td>
+<td>워퍼즈 브리즈</td>
                 </tr>
                 <tr>
                     <td>Large (영 18x12, 한 15x11)</td>
                     <td>워퍼즈 몽</td>
                     <td>워퍼즈 찌니</td>
+                    <td>브리즈 젠</td>
                 </tr>
             </tbody>
         </table>
@@ -534,31 +561,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>+, -</td>
+                    <td>+ -</td>
                     <td>넘즐초, 넘즐초맥스, 넘즐초미니</td>
                     <td>넘플초, 넘플초맥스, 넘플초미니</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×</td>
+                    <td>+ - ×</td>
                     <td>넘즐잼, 넘즐잼맥스, 넘즐잼미니</td>
                     <td>넘플잼, 넘플잼맥스, 넘플잼미니</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷</td>
+                    <td>+ - × ÷</td>
                     <td>넘즐, 넘즐맥스, 넘즐미니</td>
                     <td>넘플, 넘플맥스, 넘플미니</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷, √, π</td>
+                    <td>+ - × ÷ √ π</td>
                     <td><strong>넘즐업</strong> (아주 어려움)</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷, (, )</td>
+                    <td>+ - × ÷ ( )</td>
                     <td>-</td>
                     <td>-</td>
                     <td>넘털</td>
@@ -579,7 +606,7 @@
             <tbody>
                 <tr>
                     <td>모든 카드 사용</td>
-                    <td>넘즐 X, 넘플 X</td>
+                    <td>넘즐X, 넘플X</td>
                 </tr>
                 <tr>
                     <td>카드 일부만 사용하는 것 허용</td>
@@ -587,7 +614,7 @@
                 </tr>
                 <tr>
                     <td>여러 장으로 여러자리 숫자만들기 금지</td>
-                    <td>넘즐초, 넘플초, 넘즐 X, 넘플 X</td>
+                    <td>넘즐초, 넘플초, 넘즐X, 넘플 X</td>
                 </tr>
                 <tr>
                     <td>여러 장으로 여러자리 숫자만들기 허용</td>
@@ -814,15 +841,8 @@
 
     <!-- 영어 버전 -->
     <div id="en-content" class="lang-content">
-        <h1>🎮 Soosooland</h1>
-        <p class="subtitle">Educational & Brain-Training Game Platform</p>
-
-        <div class="center">
-            <a href="https://soosooland.com/" class="link-button">🌐 Play Games Now</a>
-        </div>
-
-        <hr class="divider">
-
+        <h1>Soosooland</h1>
+        <h2>🎮 Educational & Brain-Training Game Platform</h2>
         <p>Soosooland is an educational and brain-training game platform that runs directly on your browser without any downloads.</p>
         <p>It offers a wide range of word, logic, strategy, and math games.</p>
         <p> Soosooland’s games enhance critical thinking, learning ability, vocabulary, and math skills, supporting both brain development and cognitive health.</p>  
@@ -872,7 +892,7 @@
         
         <hr class="divider">
 
-        <h2>🎯 Moeum Quiz</h2>
+        <h2>🎯 Moeum Quiz Series</h2>
         <p>This is a Korean language puzzle game where players guess the hidden consonants to complete sentences with only vowels revealed.</p>
 
         <h3>How to Play</h3>
@@ -892,16 +912,22 @@
         <p>Current topics include:</p>
         <ul>
             <li>Daily Conversations</li>
+            <li>kids(with hints)</li>
+            <li>adult(with hints)</li>
             <li>Korean Travel Destinations</li>
             <li>Continents/Countries/Capitals</li>
+            <li>Non-Animal Organisms(with hints)</li>
+            <li>riddle(with hints)</li>
             <li>Songs and Singers</li>
             <li>Food (with/without hints)</li>
             <li>Proverbs and Sayings (with/without hints)</li>
             <li>Elementary School Korean History</li>
             <li>Middle School Korean History</li>
-            <li>Animals and Plants</li>
+            <li>Animals(with hints)</li>
             <li>Authors and Books</li>
+            <li>coffee & coffee bean (with hints)</li>
             <li>Pure Korean Words</li>
+            <li>Korean Constitution</li>
             <li>Movie and Drama Titles</li>
         </ul>
         <p>Future additions will include World History, General Knowledge, and Elementary School Curriculum topics organized by grade level.</p>
@@ -912,6 +938,8 @@
                 <tr>
                     <th>User</th>
                     <th>Solo Play</th>
+                    <th>Solo Play</th>
+                    <th>Solo Play</th>
                     <th>Two-Player Battle</th>
                 </tr>
             </thead>
@@ -919,8 +947,18 @@
                 <tr>
                     <td>Game</td>
                     <td>Moeum-quiz</td>
+                    <td>Haroo Moeum</td>
+                    <td>Moeum Round</td>
                     <td>Doori-moeun</td>
                 </tr>
+<tr>
+                    <td>End conditions</td>
+                    <td>6 mistakes</td>
+                    <td>6 mistakes</td>
+                    <td>Correct answer guessed</td>
+                    <td>Correct answer guessed</td>
+                </tr>
+
             </tbody>
         </table>
 
@@ -928,7 +966,7 @@
 
         <hr class="divider">
 
-        <h2>🔺 TRINKLE</h2>
+        <h2>🔺TRINKLE</h2>
         <p><strong>Trinkle = Triangle + Twinkle</strong></p>
         <p>The goal is to connect dots and create as many non-overlapping triangles as possible.</p>
 
@@ -1001,6 +1039,7 @@
                     <th>Grid Size</th>
                     <th>vs Computer</th>
                     <th>Two-Player Battle</th>
+                    <th>Solo</th>
                 </tr>
             </thead>
             <tbody>
@@ -1008,16 +1047,20 @@
                     <td>Small (En 8x8, Ko 7x7)</td>
                     <td>Worpuzz Mini</td>
                     <td>-</td>
+                    <td>Breeze pop</td>
+          
                 </tr>
                 <tr>
                     <td>Medium (En 12x12, Ko 10x10)</td>
                     <td>Worpuzz</td>
                     <td>Worpuzz Mate</td>
+                    <td>Worpuzz Breeze</td>
                 </tr>
                 <tr>
                     <td>Large (En 18x12, Ko 15x11)</td>
                     <td>Worpuzz Mong</td>
                     <td>Worpuzz ZZini</td>
+                    <td>Breeze Zen</td>
                 </tr>
             </tbody>
         </table>
@@ -1074,31 +1117,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>+, -</td>
+                    <td>+ -</td>
                     <td>Numzzle Cho, Numzzle Cho Max, Numzzle Cho Mini</td>
                     <td>Numpple Cho, Numpple Cho Max, Numpple Cho Mini</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×</td>
+                    <td>+ - ×</td>
                     <td>Numzzle Jam, Numzzle Jam Max, Numzzle Jam Mini</td>
                     <td>Numpple Jam, Numpple Jam Max, Numpple Jam Mini</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷</td>
+                    <td>+ - × ÷</td>
                     <td>Numzzle, Numzzle Max, Numzzle Mini</td>
                     <td>Numpple, Numpple Max, Numpple Mini</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷, √, π</td>
-                    <td><strong>Numzzle Up</strong> (Very Difficult)</td>
+                    <td>+ - × ÷ √ π</td>
+                    <td>Numzzle Up(Very Difficult)</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>+, -, ×, ÷, (, )</td>
+                    <td>+ - × ÷ ( )</td>
                     <td>-</td>
                     <td>-</td>
                     <td>Numtter</td>
@@ -1375,7 +1418,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
-```
 
 </body>
 </html>
