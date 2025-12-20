@@ -1300,20 +1300,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function sortGamesByRank() {
-  const grid = document.querySelector('.games-grid');
-  const cards = Array.from(document.querySelectorAll('.game-card'));
-  
-  // 순위로 정렬
-  cards.sort((a, b) => {
-    return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);
-  });
-  
-  // 재배치
-  cards.forEach(card => grid.appendChild(card));
-}
-
-
 function restart() {
     currentQuestion = 1;
     answers = {};
