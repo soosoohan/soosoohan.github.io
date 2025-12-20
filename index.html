@@ -563,7 +563,7 @@ body {
   </div>
 </div>
 
-<!-- 새로 추가: 카테고리 필터 -->
+<!-- 카테고리 필터 -->
 <div class="category-filter">
   <button class="category-btn active" onclick="filterGames('popular', this)">
     <span class="ko-text">인기</span>
@@ -1169,9 +1169,12 @@ body {
  
   </div>
 </div>
-<script>
 
-// ========== 언어 설정 ==========
+<script>
+//  변수 선언 
+let deferredPrompt;
+
+//  언어 설정 
 function setLanguage(lang) {
     const koTexts = document.querySelectorAll('.ko-text');
     const enTexts = document.querySelectorAll('.en-text');
@@ -1192,9 +1195,8 @@ function setLanguage(lang) {
         document.title = 'Soosooland';
     }
 }
-// ========== PWA 설치 프롬프트 ==========
-let deferredPrompt;
 
+//  PWA 설치 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
@@ -1218,92 +1220,7 @@ function handleInstall() {
     });
 }
 
-// ========== 페이지 로드시 실행 ==========
-document.addEventListener('DOMContentLoaded', function() {
-  // 1. PWA로 실행 중인지 확인 (디버깅 추가)
-  const isStandalone = window.matchMedia('(display-mode: standalone)').matches 
-    || window.navigator.standalone === true;
-  
-  console.log('=== PWA 감지 디버깅 ===');
-  console.log('display-mode standalone:', window.matchMedia('(display-mode: standalone)').matches);
-  console.log('navigator.standalone:', window.navigator.standalone);
-  console.log('최종 isStandalone:', isStandalone);
-  
-  const installCard = document.querySelector('.install-card');
-  console.log('설치 카드 찾음:', installCard);
-  
-  if (isStandalone && installCard) {
-    console.log('✅ 설치 카드 숨김 처리');
-    installCard.style.display = 'none';
-  } else {
-    console.log('❌ 설치 카드 숨기지 않음');
-  }
-  
-  // 2. 설치 버튼 이벤트 연결
-  const installButtonKo = document.getElementById('installButtonKo');
-  const installButtonEn = document.getElementById('installButtonEn');
-  
-  if (installButtonKo) {
-    installButtonKo.addEventListener('click', handleInstall);
-  }
-  if (installButtonEn) {
-    installButtonEn.addEventListener('click', handleInstall);
-  }
-  
-  // 3. 게임 필터링 (인기순 기본 표시)
-  const popularBtn = document.querySelector('.category-btn');
-  filterGames('popular', popularBtn);
-});
-
-// 페이지 로드시 실행
-document.addEventListener('DOMContentLoaded', function() {
-  filterGames('popular'); // 기본으로 인기순 표시
-});
-
-
-function sortGamesByRank() {
-  const grid = document.querySelector('.games-grid');
-  const cards = Array.from(document.querySelectorAll('.game-card'));
-  
-  cards.sort((a, b) => {
-    const rankA = parseInt(a.dataset.rank) || 999;
-    const rankB = parseInt(b.dataset.rank) || 999;
-    return rankA - rankB;
-  });
-  
-  cards.forEach(card => grid.appendChild(card));
-}
-
-function filterGames(category) {
-  const cards = Array.from(document.querySelectorAll('.game-card'));
-  
-  // 버튼 활성화
-  document.querySelectorAll('.category-btn').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  event.target.closest('.category-btn').classList.add('active');
-  
-  // 필터링
-  const filtered = cards.filter(card => {
-    return category === 'all' || card.dataset.category === category;
-  });
-  
-  // 순위순 정렬
-  filtered.sort((a, b) => {
-    const rankA = parseInt(a.dataset.rank) || 999;
-    const rankB = parseInt(b.dataset.rank) || 999;
-    return rankA - rankB;
-  });
-  
-  // 표시
-  cards.forEach(card => card.style.display = 'none');
-  const grid = document.querySelector('.games-grid');
-  filtered.forEach(card => {
-    card.style.display = 'block';
-    grid.appendChild(card);
-  });
-}
-
+// 게임 필터링 
 function filterGames(category, button) {
     const cards = Array.from(document.querySelectorAll('.game-card'));
     
@@ -1318,15 +1235,15 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
+        // 상위 11개 + 항상 보이는 카드
         filtered = cards.filter(card => {
-            // 항상 보이는 카드이거나 순위 11 이내
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
             return rank && rank <= 11;
         });
     } else {
+        // 카테고리별 전체 + 항상 보이는 카드
         filtered = cards.filter(card => {
-            // 항상 보이는 카드이거나 해당 카테고리
             if (card.dataset.alwaysShow === 'true') return true;
             return card.dataset.category === category;
         });
@@ -1341,12 +1258,47 @@ function filterGames(category, button) {
         return rankA - rankB;
     });
     
+    // 표시/숨김
     cards.forEach(card => card.style.display = 'none');
     filtered.forEach(card => card.style.display = 'block');
     
+    // 재배치
     const grid = document.querySelector('.games-grid');
     filtered.forEach(card => grid.appendChild(card));
 }
+
+// 페이지 로드시 실행 (한 번만!) 
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. PWA standalone 모드 확인
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches 
+                      || window.navigator.standalone === true;
+    
+    console.log('=== PWA 감지 ===');
+    console.log('Standalone 모드:', isStandalone);
+    
+    // 2. Standalone이면 바로가기 카드 숨기기
+    const installCard = document.querySelector('.install-card');
+    if (isStandalone && installCard) {
+        console.log('✅ 바로가기 카드 숨김');
+        installCard.style.display = 'none';
+    }
+    
+    // 3. 설치 버튼 이벤트 연결
+    const installButtonKo = document.getElementById('installButtonKo');
+    const installButtonEn = document.getElementById('installButtonEn');
+    
+    if (installButtonKo) {
+        installButtonKo.addEventListener('click', handleInstall);
+    }
+    if (installButtonEn) {
+        installButtonEn.addEventListener('click', handleInstall);
+    }
+    
+    // 4. 기본으로 인기순 표시
+    const popularBtn = document.querySelector('.category-btn');
+    filterGames('popular', popularBtn);
+});
+
 
 function sortGamesByRank() {
   const grid = document.querySelector('.games-grid');
