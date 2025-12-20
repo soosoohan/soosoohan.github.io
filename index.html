@@ -1170,8 +1170,6 @@ body {
   </div>
 </div>
 <script>
-// ========== 변수 선언 ==========
-let deferredPrompt;
 
 // ========== 언어 설정 ==========
 function setLanguage(lang) {
@@ -1194,7 +1192,9 @@ function setLanguage(lang) {
         document.title = 'Soosooland';
     }
 }
-// ========== PWA 설치 ==========
+// ========== PWA 설치 프롬프트 ==========
+let deferredPrompt;
+
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
@@ -1218,9 +1218,18 @@ function handleInstall() {
     });
 }
 
-
-// 페이지 로드시 버튼 찾아서 이벤트 연결
+// ========== 페이지 로드시 실행 (PWA 체크 + 버튼 이벤트 + 게임 필터) ==========
 document.addEventListener('DOMContentLoaded', function() {
+  // 1. PWA로 실행 중인지 확인하고 설치 카드 숨기기
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches 
+    || window.navigator.standalone === true;
+  
+  const installCard = document.querySelector('.install-card');
+  if (isStandalone && installCard) {
+    installCard.style.display = 'none';
+  }
+  
+  // 2. 설치 버튼 이벤트 연결
   const installButtonKo = document.getElementById('installButtonKo');
   const installButtonEn = document.getElementById('installButtonEn');
   
@@ -1231,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', function() {
     installButtonEn.addEventListener('click', handleInstall);
   }
   
-  // 게임 필터링도 여기서
+  // 3. 게임 필터링 (인기순 기본 표시)
   const popularBtn = document.querySelector('.category-btn');
   filterGames('popular', popularBtn);
 });
