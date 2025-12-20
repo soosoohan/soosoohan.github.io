@@ -250,8 +250,8 @@ body {
     }
 
 .hidden {
-        display: none;
-    }
+    display: none !important;
+}
 
 /* 순위 배지 스타일 */
 .rank-badge {
@@ -1109,7 +1109,7 @@ body {
 
       
 <!-- 바로가기 카드 -->
-<div class="game-card install-card" data-always-show="true">
+<div class="game-card install-card" id="pwaCard" data-always-show="true">
    <div class="game-card-header">
       <div class="game-emoji">📱</div>
         <div class="game-title">
@@ -1278,9 +1278,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 2. Standalone이면 바로가기 카드 숨기기
     const installCard = document.querySelector('.install-card');
+    console.log('바로가기 카드 찾음:', installCard);
+    
     if (isStandalone && installCard) {
         console.log('✅ 바로가기 카드 숨김');
-        installCard.style.display = 'none';
+        installCard.classList.add('hidden');
     }
     
     // 3. 설치 버튼 이벤트 연결
@@ -1298,7 +1300,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const popularBtn = document.querySelector('.category-btn');
     filterGames('popular', popularBtn);
 });
-
 
 function restart() {
     currentQuestion = 1;
