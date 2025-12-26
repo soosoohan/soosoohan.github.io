@@ -205,7 +205,7 @@ We plan to develop games with more diverse topics and in various languages such 
 |------------------|--------------|----------------|------|
 |영 8x8 한 7x7  | 워퍼즈미니 (Worpuzz Mini)        |        -    |   브리즈 팝(Breeze Pop) |
 |영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|
-|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 찌니(Worpuzz ZZini)   |브리즈 젠(Breeze Zen)|
+|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 메이트 찌니(Mate ZZini)   |브리즈 젠(Breeze Zen)|
 |영 16X16 한 14X14 | - |-|브리즈 필드(Breeze Field)|
 
 -----
