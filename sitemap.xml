@@ -80,6 +80,15 @@
     <loc>https://soosooland.com/zen/sitemap.xml</loc>
     <lastmod>2025-12-10</lastmod>
   </sitemap>
+    <sitemap>
+    <loc>https://soosooland.com/field/sitemap.xml</loc>
+    <lastmod>2025-12-27</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://soosooland.com/kong/sitemap.xml</loc>
+    <lastmod>2025-12-28</lastmod>
+  </sitemap>
+
 </sitemapindex>
 
 
