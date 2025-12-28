@@ -92,11 +92,18 @@ transform: scale(0.95);
   </nav>
 
   <!-- 12월 -->
+  <section class="card" id="dec">
+    <div class="section-title">December 2025 Popularity Rankings</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="decBody"></tbody>
+    </table>
+  </section>  
   <section class="card">
     <div class="section-title">📅 December 2025 Timeline</div>
     <div class="timeline" id="decTimeline"></div>
   </section>
- <!-- 11월 -->
+  <!-- 11월 -->
   <section class="card" id="nov">
     <div class="section-title">November 2025 Popularity Rankings</div>
     <table>
@@ -193,6 +200,7 @@ transform: scale(0.95);
 
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
+  "2025-12": ["Worpuzz", "Trinkle", "Numzzle", "Moeum Quiz", "Omok", "Baseball Game"],
   "2025-11": ["Numzzle","Moeum Quiz","Worpuzz", "Baseball Game", "Trinkle","Omok"],
   "2025-10": ["Worpuzz","Moeum Quiz","Numzzle", "Baseball Game", "Trinkle","Omok"],
   "2025-09": ["Baseball Game","Moeum Quiz","Trinkle","Omok", "Worpuzz", "Numzzle"],
