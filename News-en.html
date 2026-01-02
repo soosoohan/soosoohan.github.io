@@ -82,6 +82,7 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#jan">january 2026</a>
     <a href="#dec">december 2025</a>
     <a href="#nov">november 2025</a>
     <a href="#oct">octover 2025</a>
@@ -91,6 +92,11 @@ transform: scale(0.95);
     <a href="#timeline">Full Timeline</a>
   </nav>
 
+  <!-- 2026년 1월 -->
+  <section class="card">
+    <div class="section-title">📅 January 2026 Timeline</div>
+    <div class="timeline" id="janTimeline"></div>
+  </section>
   <!-- 12월 -->
   <section class="card" id="dec">
     <div class="section-title">December 2025 Popularity Rankings</div>
@@ -210,6 +216,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+   "2026-01": [
+    "2025-01-02: Triterra released"
+  
    "2025-12": [
     "2025-12-02: Worpuzz Breeze released",
     "2025-12-04: SoosooLand reached 900 users",
@@ -381,6 +390,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-01", "janBody", "2025-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
   drawRankingTable("2025-11", "novBody", "2025-10");
   drawRankingTable("2025-10", "octBody", "2025-09");
@@ -389,6 +399,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
   drawTimeline("2025-11", "novTimeline");
   drawTimeline("2025-10", "octTimeline");
