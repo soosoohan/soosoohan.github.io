@@ -85,6 +85,7 @@ transform: scale(0.95);
 <div class="wrap">
   <h1>📰 수수랜드의 기록</h1>
   <nav class="topnav">
+    <a href="#jan">2026년 01월</a>
     <a href="#dec">2025년 12월</a>
     <a href="#nov">2025년 11월</a>
     <a href="#oct">2025년 10월</a>
@@ -93,6 +94,11 @@ transform: scale(0.95);
     <a href="#jul">2025년 7월</a>
     <a href="#timeline">전체 연표</a>
   </nav>
+<!-- 2026년 1월 -->
+   <section class="card">
+    <div class="section-title">📅 2026년 1월 연표</div>
+    <div class="timeline" id="janTimeline"></div>
+  </section>
 <!-- 12월 -->
    
   <section class="card" id="dec">
@@ -227,6 +233,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+  "2026-01": [
+    "2025-01-02: 트리테라 출시"
+ 
   "2025-12": [
     "2025-12-02: 워퍼즈 브리즈 출시",
     "2025-12-04: 수수랜드 사용자 900명 달성",
@@ -395,6 +404,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-01", "janBody", "2026-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
   drawRankingTable("2025-11", "novBody", "2025-10");
   drawRankingTable("2025-10", "octBody", "2025-09");
@@ -403,6 +413,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
   drawTimeline("2025-11", "novTimeline");
   drawTimeline("2025-10", "octTimeline");
