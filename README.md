@@ -108,7 +108,7 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 
 | 사용자 user    | 👤혼자 하기 |👤혼자 하기   | 👤🆚👤사용자 2인 대결 |  👤혼자 하기|
 |---------|---------|--------------|---------|-------|
-|  게임 Game| 모음퀴즈 Moeum-quiz |모음 라운드Moeum Round  |  둘이 모음 Doori-moeun |하루모음 Haroo Moeum     |
+|  게임 Game| 모음퀴즈 <br>Moeum-quiz |모음 라운드<br>Moeum Round<br> 모음 스쿨<br> Moeum School|  둘이 모음<br> Doori-moeun |하루모음<br> Haroo Moeum     |
 |게임 종료|6회 틀리거나 정답을 맞추면 |100점 만점 |정답을 맞출 때까지| 6회 틀리거나 정답을 맞추면|
 
 -----
