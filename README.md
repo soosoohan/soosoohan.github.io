@@ -59,7 +59,7 @@ Then don’t wait—start playing now on Soosoland!
    
 • 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
    
-• 전략 게임 (Strategy Games): 트링클(Trinkle), 오목(Gomoku)   
+• 전략 게임 (Strategy Games): 트링클 시리즈(Trinkle), 오목(Gomoku)   
       
 ---
 
@@ -135,8 +135,8 @@ The goal is to connect dots and create as many non-overlapping triangles as poss
 - 선분 3개로 완전히 둘러싸이면 삼각형으로 인정되며, 해당 플레이어가 점수를 얻습니다.  
   When three lines form a closed triangle, the player earns a point.
 
-- 선분이 서로 교차해서는 안 됩니다.  
-  Lines must not cross over other lines.
+- 선분이 서로 교차해서는 안 됩니다. 삼각형 안에 점이 있으면 안 됩니다.
+  Lines must not cross over other lines. No points are allowed inside the triangle.
 
 - 가능한 선을 모두 그리면 게임은 종료되며, 삼각형을 많이 그린 사람이 승리합니다.  
   The game ends when no more valid moves remain, and the player with the most triangles wins.
