@@ -502,7 +502,7 @@ body {
 (function() {
   // PWA 감지
   const isPWA = window.matchMedia('(display-mode: standalone)').matches;
-  const introDelay = isPWA ? 3500 : 2000; // PWA면 3.5초, 브라우저면 2초
+  const introDelay = isPWA ? 3500 : 2500; // PWA면 3.5초, 브라우저면 2초
   
   const intro = document.getElementById('intro');
   const petals = document.getElementById('petals');
@@ -532,35 +532,40 @@ body {
     container.appendChild(petal);
     setTimeout(() => petal.remove(), duration);
   }
+// 인트로 꽃잎 (많이, 빠르게)
+const introInterval = setInterval(() => createPetal(petals), 180);
 
-  // 인트로 꽃잎 (많이, 빠르게)
-  const introInterval = setInterval(() => createPetal(petals), 180);
+// 1️⃣ 버튼 안 보이게
+startBtn.style.display = 'none';
 
-  // 배경 꽃잎 시작 함수 (적게, 천천히)
-  function startBackgroundPetals() {
-    setInterval(() => createPetal(bgPetals, 'bg-petal-fly', 4500), 1200);
-  }
+// 배경 꽃잎 시작 함수 (적게, 천천히)
+function startBackgroundPetals() {
+  setInterval(() => createPetal(bgPetals, 'bg-petal-fly', 4500), 1200);
+}
 
-  // 인트로 종료
-  setTimeout(() => {
-    clearInterval(introInterval);
-    startBtn.textContent = 'Start';
-    startBtn.style.display = 'block';
+// 인트로 종료
+setTimeout(() => {
+  clearInterval(introInterval);
+  startBtn.textContent = 'Start';
+  startBtn.style.display = 'block';
+  
+  startBtn.onclick = () => {
+    audio.play().catch(() => {});
+    intro.style.transition = 'opacity 800ms';
+    intro.style.opacity = '0';
     
-    startBtn.onclick = () => {
-      audio.play().catch(() => {});
-      intro.style.transition = 'opacity 800ms';
-      intro.style.opacity = '0';
-      
-      setTimeout(() => {
-        intro.remove();
-        // 배경 꽃잎 시작
-        bgPetals.style.transition = 'opacity 1s';
-        bgPetals.style.opacity = '1';
-        startBackgroundPetals();
-      }, 800);
-    };
-  }, introDelay);
+    setTimeout(() => {
+      intro.remove();
+      // 배경 꽃잎 시작
+      bgPetals.style.transition = 'opacity 1s';
+      bgPetals.style.opacity = '1';
+      startBackgroundPetals();
+    }, 800);
+  };
+}, introDelay);
+
+// 2️⃣ introDelay 후에 버튼을 자동으로 눌러줌
+setTimeout(() => startBtn.onclick(), introDelay);
 })();
 </script>
 
