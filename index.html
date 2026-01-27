@@ -582,35 +582,33 @@ setTimeout(() => startBtn.onclick(), introDelay);
 
 <!-- 카테고리 필터 -->
 <div class="category-filter">
-  <button class="category-btn active" onclick="filterGames('popular', this)">
+  <button class="category-btn active" onclick="filterGames('popular', this); trackCategory('전체')">
     <span class="ko-text">전체</span>
     <span class="en-text hidden">Popular</span>
   </button>
-  <button class="category-btn" onclick="filterGames('word', this)">
+  <button class="category-btn" onclick="filterGames('word', this); trackCategory('단어')">
     <span class="ko-text">단어</span>
     <span class="en-text hidden">Word</span>
   </button>
-  <button class="category-btn" onclick="filterGames('quiz', this)">
+  <button class="category-btn" onclick="filterGames('quiz', this); trackCategory('퀴즈')">
     <span class="ko-text">퀴즈</span>
     <span class="en-text hidden">Quiz</span>
   </button>
-  <button class="category-btn" onclick="filterGames('math', this)">
+  <button class="category-btn" onclick="filterGames('math', this); trackCategory('연산')">
     <span class="ko-text">연산</span>
     <span class="en-text hidden">Math</span>
   </button>
-  <button class="category-btn" onclick="filterGames('logic', this)">
+  <button class="category-btn" onclick="filterGames('logic', this); trackCategory('논리')">
     <span class="ko-text">논리</span>
     <span class="en-text hidden">Logic</span>
   </button>
-  <button class="category-btn" onclick="filterGames('strategy', this)">
+  <button class="category-btn" onclick="filterGames('strategy', this); trackCategory('전략')">
     <span class="ko-text">전략</span>
     <span class="en-text hidden">Strategy</span>
   </button>
 </div>
-
+   
 <div class="games-grid">
-      
-
 <!-- 넘즐 -->
 <div class="game-card" data-category="math" data-rank="2" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
   <div class="rank-badge rank-3">🥈 2nd</div>  
