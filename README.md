@@ -1,5 +1,3 @@
-# SoosooLand
-   
 # 🎮 Soosooland (수수랜드)
 **AI-powered educational gaming platform built through human-AI collaboration**  
 
