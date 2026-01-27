@@ -13,10 +13,9 @@ https://soosooland.com
 
 No downloads, no ads, no data collection - just pure educational fun in your browser.  
 
-다운로드 없이, 광고 없이, 데이터 수집 없이 - 브라우저에서 바로 즐기는 순수한 교육 게임.  
+다운로드 없이, 광고 없이, 데이터 수집 없이  브라우저에서 바로 즐기는 교육·두뇌개발용 게임 플랫폼이에요.   
 
 ## 🎯 Games for Growing Minds
-수수랜드는 다운로드 없이, 브라우저에서 바로 즐길 수 있는 교육·두뇌개발용 게임 플랫폼이에요.  
 
 - 🔤 Word puzzles (단어 게임)  
 - 🔍 Logic games (추리·논리 게임)  
