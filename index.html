@@ -9,6 +9,22 @@
       gtag('js', new Date());
       gtag('config', 'G-4YZHC1G9FN');
     </script>
+   <script>
+function trackCategory(categoryName) {
+  // 현재 접속한 주소가 로컬(localhost 또는 127.0.0.1)인지 확인
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+  if (isLocal) {
+    console.log("로컬 접속이므로 GA4 전송을 중단합니다: " + categoryName);
+    return; // 함수 종료
+  }
+
+  // 로컬이 아닐 때만 실행
+  gtag('event', 'select_category', {
+    'category_name': categoryName
+  });
+}
+</script>
 <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
