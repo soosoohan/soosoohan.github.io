@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4YZHC1G9FN');
-    </script>
-   <script>
-function trackCategory(categoryName) {
-  // 현재 접속한 주소가 로컬(localhost 또는 127.0.0.1)인지 확인
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+ <script>
+  (function() {
+    const hostname = window.location.hostname;
+    const isLocal = hostname === 'localhost' || 
+                   hostname === '127.0.0.1' || 
+                   hostname.startsWith('192.168.') ||
+                   hostname.startsWith('10.') ||
+                   hostname.startsWith('172.16.');
 
-  if (isLocal) {
-    console.log("로컬 접속이므로 GA4 전송을 중단합니다: " + categoryName);
-    return; // 함수 종료
-  }
+    // 1. 로컬이 아닐 때만 GA 스크립트 로드 및 초기화
+    if (!isLocal) {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YZHC1G9FN';
+      
+      script.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){ dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', 'G-4YZHC1G9FN');
+        console.log("GA4 활성화됨 (운용 환경)");
+      };
+      
+      document.head.appendChild(script);
+    } else {
+      // 로컬일 때는 빈 함수 생성
+      window.gtag = function() { 
+        console.log("로컬 환경 - 데이터 전송 차단됨:", arguments); 
+      };
+      console.log("GA4 비활성화됨 (로컬 환경)");
+    }
 
-  // 로컬이 아닐 때만 실행
-  gtag('event', 'select_category', {
-    'category_name': categoryName
-  });
-}
+    // 2. 카테고리 트래킹 함수
+    window.trackCategory = function(categoryName) {
+      if (window.gtag) {
+        gtag('event', 'select_category', {
+          'category_name': categoryName
+        });
+      }
+    };
+  })();
 </script>
+
 <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
