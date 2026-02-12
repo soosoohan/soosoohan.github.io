@@ -96,6 +96,7 @@ transform: scale(0.95);
 <div class="wrap">
   <h1>📰 수수랜드의 기록</h1>
   <nav class="topnav">
+    <a href="#feb">2026년 02월</a>
     <a href="#jan">2026년 01월</a>
     <a href="#dec">2025년 12월</a>
     <a href="#nov">2025년 11월</a>
@@ -105,6 +106,13 @@ transform: scale(0.95);
     <a href="#jul">2025년 7월</a>
     <a href="#timeline">전체 연표</a>
   </nav>
+<!-- 2026년 2월 -->
+   
+   <section class="card">
+    <div class="section-title">📅 2026년 2월 연표</div>
+    <div class="timeline" id="febTimeline"></div>
+  </section>
+
 <!-- 2026년 1월 -->
    
   <section class="card" id="jan">
@@ -118,6 +126,11 @@ transform: scale(0.95);
     <div class="section-title">📅 2026년 1월 연표</div>
     <div class="timeline" id="janTimeline"></div>
   </section>
+<button class="square-button" onclick="location.href='/'">
+   즐거운 퍼즐, 수수랜드<br><br>
+    🎮 지금 게임하러가기 ✨
+  </button>
+
 <!-- 12월 -->
    
   <section class="card" id="dec">
@@ -253,6 +266,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+  "2026-02": [
+    "2026-02-11: 수수랜드 사용자 1,400명 달성"
+],
   "2026-01": [
     "2026-01-02: 트리테라 출시",
     "2026-01-07: 수수랜드 사용자 1,200명 달성",
@@ -427,6 +443,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-02", "febBody", "2026-01");
   drawRankingTable("2026-01", "janBody", "2025-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
   drawRankingTable("2025-11", "novBody", "2025-10");
@@ -436,6 +453,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
   drawTimeline("2025-11", "novTimeline");
@@ -451,23 +469,6 @@ function initializePage() {
 // 페이지 로드 시 실행
 initializePage();
 
-/*
-=== 새로운 소식 추가하는 방법 ===
-
-1. 새로운 달의 순위를 추가하려면:
-   monthlyRanking에 "2025-10": [게임들] 형태로 추가
-
-2. 새로운 소식을 추가하려면:
-   monthlyNews에 "YYYY-MM-DD: 제목" 형태로 추가
-
-3. 새로운 달 섹션을 추가하려면:
-   HTML에 해당 월 섹션을 복사해서 추가하고
-   initializePage() 함수에 해당 월 그리기 함수 추가
-
-예시:
-monthlyRanking["2025-10"] = ["새게임", "모음퀴즈", ...];
-monthlyNews["2025-10"] = ["2025-10-01: 새게임 출시"];
-*/
 </script>
 
 </body>
