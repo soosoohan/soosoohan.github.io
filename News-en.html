@@ -92,15 +92,22 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
-    <a href="#jan">january 2026</a>
-    <a href="#dec">december 2025</a>
-    <a href="#nov">november 2025</a>
-    <a href="#oct">octover 2025</a>
+    <a href="#feb">February 2026</a>
+    <a href="#jan">January 2026</a>
+    <a href="#dec">December 2025</a>
+    <a href="#nov">November 2025</a>
+    <a href="#oct">Octover 2025</a>
     <a href="#sep">September 2025</a>
     <a href="#aug">August 2025</a>
     <a href="#jul">July 2025</a>
     <a href="#timeline">Full Timeline</a>
   </nav>
+
+<!-- 2026년 2월 -->
+  <section class="card">
+    <div class="section-title">📅 February 2026 Timeline</div>
+    <div class="timeline" id="febTimeline"></div>
+  </section>
 
   <!-- 2026년 1월 -->
   <section class="card" id="jan">
@@ -114,6 +121,9 @@ transform: scale(0.95);
     <div class="section-title">📅 January 2026 Timeline</div>
     <div class="timeline" id="janTimeline"></div>
   </section>
+<button class="square-button" onclick="location.href='/'">
+   Fun Puzzles, Soosooland<br><br> 🎮 Play Games Now ✨  </button>
+  
   <!-- 12월 -->
   <section class="card" id="dec">
     <div class="section-title">December 2025 Popularity Rankings</div>
@@ -234,6 +244,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+   "2026-02": [
+    "2026-02-11: SoosooLand reached 1,400 users"
+], 
    "2026-01": [
     "2026-01-02: Triterra released",
     "2026-01-07: SoosooLand reached 1,200 users",
@@ -410,6 +423,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-02", "febBody", "2026-01");
   drawRankingTable("2026-01", "janBody", "2025-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
   drawRankingTable("2025-11", "novBody", "2025-10");
@@ -419,6 +433,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
   drawTimeline("2025-11", "novTimeline");
@@ -434,23 +449,6 @@ function initializePage() {
 // 페이지 로드 시 실행
 initializePage();
 
-/*
-=== 새로운 소식 추가하는 방법 ===
-
-1. 새로운 달의 순위를 추가하려면:
-   monthlyRanking에 "2025-10": [게임들] 형태로 추가
-
-2. 새로운 소식을 추가하려면:
-   monthlyNews에 "YYYY-MM-DD: 제목" 형태로 추가
-
-3. 새로운 달 섹션을 추가하려면:
-   HTML에 해당 월 섹션을 복사해서 추가하고
-   initializePage() 함수에 해당 월 그리기 함수 추가
-
-예시:
-monthlyRanking["2025-10"] = ["새게임", "모음퀴즈", ...];
-monthlyNews["2025-10"] = ["2025-10-01: 새게임 출시"];
-*/
 </script>
 </body>
 </html>
