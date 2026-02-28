@@ -107,6 +107,13 @@ transform: scale(0.95);
     <a href="#timeline">전체 연표</a>
   </nav>
 <!-- 2026년 2월 -->
+  <section class="card" id="feb">
+    <div class="section-title">2026년 2월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="febBody"></tbody>
+    </table>
+  </section>
    
    <section class="card">
     <div class="section-title">📅 2026년 2월 연표</div>
@@ -251,10 +258,9 @@ transform: scale(0.95);
 </div>
 
 <script>
-// =================== 여기서 데이터를 관리하세요! ===================
-
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
+  "2026-02": ["모음퀴즈","오목","트링클","야구","넘즐","워퍼즈"],
   "2026-01": ["모음퀴즈","트링클","넘즐","오목","야구","워퍼즈"],
   "2025-12": ["워퍼즈","트링클","넘즐","모음퀴즈","오목","야구게임"],
   "2025-11": ["넘즐","모음퀴즈","워퍼즈","야구게임","트링클","오목"],
