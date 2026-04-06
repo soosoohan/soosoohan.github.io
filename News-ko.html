@@ -96,6 +96,7 @@ transform: scale(0.95);
 <div class="wrap">
   <h1>📰 수수랜드의 기록</h1>
   <nav class="topnav">
+    <a href="#mar">2026년 03월</a>
     <a href="#feb">2026년 02월</a>
     <a href="#jan">2026년 01월</a>
     <a href="#dec">2025년 12월</a>
@@ -106,6 +107,24 @@ transform: scale(0.95);
     <a href="#jul">2025년 7월</a>
     <a href="#timeline">전체 연표</a>
   </nav>
+<!-- 2026년 3월 -->
+  <section class="card" id="mar">
+    <div class="section-title">2026년 3월 인기순위</div>
+    <table>
+      <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+      <tbody id="marBody"></tbody>
+    </table>
+  </section>
+   
+   <section class="card">
+    <div class="section-title">📅 2026년 3월 연표</div>
+    <div class="timeline" id="marTimeline"></div>
+  </section>
+<button class="square-button" onclick="location.href='/'">
+   즐거운 퍼즐 놀이터, 수수랜드<br><br>
+    🎮 지금 게임하러가기 ✨
+  </button>
+
 <!-- 2026년 2월 -->
   <section class="card" id="feb">
     <div class="section-title">2026년 2월 인기순위</div>
@@ -260,6 +279,7 @@ transform: scale(0.95);
 <script>
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
+  "2026-03": ["모음퀴즈","오목","워퍼즈","야구","트링클","넘즐"],
   "2026-02": ["모음퀴즈","오목","트링클","야구","넘즐","워퍼즈"],
   "2026-01": ["모음퀴즈","트링클","넘즐","오목","야구","워퍼즈"],
   "2025-12": ["워퍼즈","트링클","넘즐","모음퀴즈","오목","야구게임"],
@@ -272,7 +292,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
-  "2026-02": [
+  "2026-03": [
+    "2026-03-26: 수수랜드 사용자 1,600명 달성"
+],"2026-02": [
     "2026-02-11: 수수랜드 사용자 1,400명 달성",
     "2026-02-25: 수수랜드 사용자 1,500명 달성"
 ],
@@ -450,6 +472,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-03", "marBody", "2026-02");
   drawRankingTable("2026-02", "febBody", "2026-01");
   drawRankingTable("2026-01", "janBody", "2025-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
@@ -460,6 +483,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-03", "marTimeline");
   drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
