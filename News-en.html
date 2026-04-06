@@ -92,6 +92,7 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#mar">March 2026</a>
     <a href="#feb">February 2026</a>
     <a href="#jan">January 2026</a>
     <a href="#dec">December 2025</a>
@@ -102,6 +103,21 @@ transform: scale(0.95);
     <a href="#jul">July 2025</a>
     <a href="#timeline">Full Timeline</a>
   </nav>
+
+<!-- 2026년 3월 -->
+  <section class="card" id="mar">
+    <div class="section-title">March 2026 Popularity Rankings</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="marBody"></tbody>
+    </table>
+  </section>  
+  <section class="card">
+    <div class="section-title">📅 March 2026 Timeline</div>
+    <div class="timeline" id="marTimeline"></div>
+  </section>
+<button class="square-button" onclick="location.href='/'">
+   Fun Puzzles Playground, Soosooland<br><br> 🎮 Play Games Now ✨  </button>
 
 <!-- 2026년 2월 -->
   <section class="card" id="feb">
@@ -236,10 +252,10 @@ transform: scale(0.95);
 
 
 <script>
-// =================== 여기서 데이터를 관리하세요! 
 
 // 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
+  "2026-03": ["Moeum Quiz","Omok","Worpuzz", "Baseball Game","Trinkle", "Numzzle"],
   "2026-02": ["Moeum Quiz","Omok","Trinkle", "Baseball Game", "Numzzle", "Worpuzz"],
   "2026-01": ["Moeum Quiz", "Trinkle", "Numzzle", "Omok", "Baseball Game","Worpuzz"],
   "2025-12": ["Worpuzz", "Trinkle", "Numzzle", "Moeum Quiz", "Omok", "Baseball Game"],
@@ -252,6 +268,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+   "2026-03": [
+    "2026-03-26: SoosooLand reached 1,600 users"
+], 
    "2026-02": [
     "2026-02-11: SoosooLand reached 1,400 users",
     "2026-02-25: SoosooLand reached 1,500 users"
@@ -432,6 +451,7 @@ function drawAllTimeline() {
 // 모든 데이터 그리기
 function initializePage() {
   // 순위표 그리기
+  drawRankingTable("2026-03", "marBody", "2026-02");
   drawRankingTable("2026-02", "febBody", "2026-01");
   drawRankingTable("2026-01", "janBody", "2025-12");
   drawRankingTable("2025-12", "decBody", "2025-11");
@@ -442,6 +462,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-03", "marTimeline");
   drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
   drawTimeline("2025-12", "decTimeline");
