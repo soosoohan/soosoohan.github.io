@@ -92,6 +92,7 @@ transform: scale(0.95);
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#apr">April 2026</a>
     <a href="#mar">March 2026</a>
     <a href="#feb">February 2026</a>
     <a href="#jan">January 2026</a>
@@ -104,6 +105,11 @@ transform: scale(0.95);
     <a href="#timeline">Full Timeline</a>
   </nav>
 
+<!-- 2026년 4월 -->
+  <section class="card">
+    <div class="section-title">📅 April 2026 Timeline</div>
+    <div class="timeline" id="aprTimeline"></div>
+  </section>
 <!-- 2026년 3월 -->
   <section class="card" id="mar">
     <div class="section-title">March 2026 Popularity Rankings</div>
@@ -268,6 +274,9 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+   "2026-04": [
+    "2026-04-07: SoosooLand reached 1,700 users"
+], 
    "2026-03": [
     "2026-03-26: SoosooLand reached 1,600 users"
 ], 
@@ -462,6 +471,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-04", "aprTimeline");
   drawTimeline("2026-03", "marTimeline");
   drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
