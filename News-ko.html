@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -96,6 +95,7 @@ transform: scale(0.95);
 <div class="wrap">
   <h1>📰 수수랜드의 기록</h1>
   <nav class="topnav">
+    <a href="#apr">2026년 04월</a>
     <a href="#mar">2026년 03월</a>
     <a href="#feb">2026년 02월</a>
     <a href="#jan">2026년 01월</a>
@@ -107,6 +107,11 @@ transform: scale(0.95);
     <a href="#jul">2025년 7월</a>
     <a href="#timeline">전체 연표</a>
   </nav>
+<!-- 2026년 4월 -->
+   <section class="card">
+    <div class="section-title">📅 2026년 4월 연표</div>
+    <div class="timeline" id="aprTimeline"></div>
+  </section>
 <!-- 2026년 3월 -->
   <section class="card" id="mar">
     <div class="section-title">2026년 3월 인기순위</div>
@@ -292,9 +297,13 @@ const monthlyRanking = {
 
 // 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
+  "2026-04": [
+    "2026-04-07: 수수랜드 사용자 1,700명 달성"
+],
   "2026-03": [
     "2026-03-26: 수수랜드 사용자 1,600명 달성"
-],"2026-02": [
+],
+  "2026-02": [
     "2026-02-11: 수수랜드 사용자 1,400명 달성",
     "2026-02-25: 수수랜드 사용자 1,500명 달성"
 ],
@@ -313,8 +322,7 @@ const monthlyNews = {
     "2025-12-14: 브리즈 젠 출시",
     "2025-12-27: 브리즈 필드 출시",
     "2025-12-27: 수수랜드 사용자 1,100명 달성",
-    "2025-12-28: 메이트 콩 출시"
- 
+    "2025-12-28: 메이트 콩 출시" 
   ],    
   "2025-11": [
     "2025-11-01: 수수랜드 사용자 700명 달성",
@@ -483,6 +491,7 @@ function initializePage() {
   drawRankingTable("2025-07", "julBody", null);
   
   // 월별 연표 그리기
+  drawTimeline("2026-04", "aprTimeline");
   drawTimeline("2026-03", "marTimeline");
   drawTimeline("2026-02", "febTimeline");
   drawTimeline("2026-01", "janTimeline");
