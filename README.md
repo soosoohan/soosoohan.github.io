@@ -402,57 +402,26 @@ Master: Computer plays black and goes first!
 
 야구 게임은  고전 게임 bulls and cows 를  다양한 코드를 넣어서 만들었습니다.
 찾아야할 비밀코드에는 숫자, 영어 단어, 한글 단어가 있습니다.
-각 야구 게임의 쉬운 모드는  야구게임 초심자를 위하여 만들었습니다.    
+각 야구게임의 쉬운 버전은 야구 게임의 초심자를 위하여 만들었습니다. 
 
 The baseball game is based on the classic Bulls and Cows game, but I created it with various code types. The secret codes to find include numbers, English words, and Korean words.     
-The easy version of each Baseball Game was created for beginners.  
-
-# 👤숫자야구 
-
-브라우저에서 바로 즐기는 **숫자야구** 게임입니다.  
-자리 수와 0 포함 여부를 고를 수 있는 **4가지 모드**를 지원합니다.
-
-> 1S = 자리·숫자 모두 일치  
-> 1B = 숫자만 존재(자리 다름)  
-> 나머지는 OUT  
-> 예: `0S 0B 3OUT`, `1S 1B 1OUT`
-
-## ✨ 특징
-- **4모드 지원:** 3자리/4자리 × 0 포함/제외
-- **중복 없는 숫자**만 허용
-- **실시간 유효성 검사** → 정확히 N자리 입력 시만 제출 가능
-- 결과는 `S/B/OUT` 형식으로 로그에 표시 (최신 기록이 위로)
-- 모바일 친화 UI (큰 입력창, 큰 글자, 접근성 강화)
-
-## 🎮 게임 규칙
-- 비밀 숫자는 **서로 다른 숫자**로 구성됩니다.
-- (3자리) 정답 길이 3 / (4자리) 정답 길이 4
-- 0 포함 모드에서도 **첫 자리는 0이 되지 않습니다.**
-- 추측을 제출하면 `S`, `B`, `OUT` 개수가 표시됩니다.
-- `S`가 자리 수와 같아지면 승리!
-
-## 🔀 모드
-| 버튼 | 자리 수 | 0 포함 | 비고 |
-|---|---:|:---:|---|
-| **3자리 · 1-9 | 3 | ❌ | 1–9만 사용 |
-| **3자리 · 0-9 | 3 | ✅ | 0–9 사용, 첫 자리는 0 금지 |
-| **4자리 · 1-9 | 4 | ❌ | 1–9만 사용 |
-| **4자리 · 0-9 | 4 | ✅ | 0–9 사용, 첫 자리는 0 금지 |
+The easy version of each Baseball Game was created for beginners.
 
 ---
-# 👤 영어 단어 야구 (English Word Baseball)
+## 📄 영어 야구 (Word Baseball)
 
-## 🎯 게임 소개
-단어 야구는 **단어 맞히기 퍼즐 게임**입니다.  
-주어진 힌트를 바탕으로 정답 단어를 추측하며, 각 시도마다 **스트라이크(S)**와 **볼(B)** 판정을 통해 정답에 가까워집니다.
-전통적인  영어 단어 야구 게임에 자음버튼을 넣어서 난이도를 낮추는 방향으로 변형했습니다.
-워드풀을 제공하여 단어를 쉽게 찾을 수 있습니다. 
+## 🎯 영어 야구 소개
 
-- **스트라이크 (S)** : 글자와 위치가 모두 맞음  
-- **볼 (B)** : 글자는 맞지만 위치가 다름  
-- **아웃** : 해당 글자가 단어에 없음
+영어 야구는 단어 맞히기 퍼즐 게입니다.  
+주어진 힌트를 바탕으로 정답 단어를 추측하며, 각 시도마다 스트라이크(S)와 볼(B) 판정을 통해 정답에 가까워집니다.
+워드풀을 제공하여 단어를  찾을 수 있습니다. 
+
+- 스트라이크 (S) : 글자와 위치가 모두 맞음  
+- 볼 (B): 글자는 맞지만 위치가 다름  
+- 아웃 : 해당 글자가 단어에 없음
 
 ## 🕹️ 플레이 방법
+
 1. 게임 시작 시 단어 길이와 글자 중복 허용 여부를 선택합니다.  
 2. 추측 단어를 입력하고 결과를 확인합니다.  
 3. 결과를 바탕으로 다음 단어를 추측합니다.  
@@ -460,67 +429,181 @@ The easy version of each Baseball Game was created for beginners.
 5. 게임을 포기하면 정답이 공개됩니다.
 
 ## ⚙️ 기능
+
 - 단어 길이 선택 (예: 4글자, 5글자)  
 - 글자 중복 허용 여부 설정  
 - 정답 공개 및 재도전 기능  
 - 잘못된 입력 방지 (단어 사전 검증)
 
+| 버튼 | 단어길이 | 결과 표시 |
+|:---|:---:|:---:|
+|수수영어야구| 3,4,5,6 | S,B,O의 위치 표시 |
+|영어야구| 3,4,5,6 | S,B,O의 개수 표시|
+
+---
+## 🎯 About Word Baseball
+
+Word Baseball is a word-guessing puzzle game.You guess the answer word based on hints, and with each attempt, Strike (S) and Ball (B) judgments guide you closer to the answer.A word pool is provided to help you find words.   
+	•	Strike (S) : Correct letter in the correct position  
+	•	Ball (B) : Correct letter but in the wrong position   
+	•	Out : The letter is not in the word   
+	
+## 🕹️ How to Play   
+
+	1.	At the start of the game, select the word length and whether duplicate letters are allowed.   
+	2.	Enter a guess and check the result.   
+	3.	Use the result to make your next guess.   
+	4.	Guess the answer correctly to win!   
+	5.	If you give up, the answer will be revealed.   
+	
+## ⚙️ Features   
+	•	Word length selection (e.g., 4 letters, 5 letters)  
+	•	Duplicate letter setting   
+	•	Answer reveal and retry function   
+	•	Invalid input prevention (dictionary validation)   
+
+|Button                        |Word Length|Result Display        |
+|:-----------------------------|:---------:|:------------------------|
+|Soosoo Word Baseball |3, 4, 5, 6 |Shows position of S, B, O|
+|Word Baseball |3, 4, 5, 6 |Shows count of S, B, O   |
+
 ---
 
-# 한글야구 (Hangul Baseball)
+## 숫자야구
 
-완성형 한글(가–힣)로 즐기는 **자음 기반 S/B/OUT 추리 게임**입니다.  
-선택한 글자수(2–5글자)의 비밀 단어를 맞히세요. **힌트(모음 시퀀스)** 는 공개되고, **자음만** 점수에 반영됩니다.
+브라우저에서 바로 즐기는 수학야구 게임입니다.  
+자리 수와 0 포함 여부를 고를 수 있는 4가지 모드를 지원합니다.
 
-> S: 자음이 있고 **자리/슬롯까지 일치**  
-> B: 자음이 있지만 **자리/슬롯이 다름**  
-> OUT: **해당 자음 없음**  
-> (항상 `S + B + OUT = 이번 추측의 자음 수`)
+> 1S = 자리·숫자 모두 일치  
+> 1B = 숫자만 존재(자리 다름)  
+> 나머지는 OUT  
+> 예: `0S 0B 3OUT`, `1S 1B 1OUT`
 
 ## ✨ 특징
+- 4모드 지원: 3자리/4자리 × 0 포함/제외
+- 중복 없는 숫자만 허용
+- 실시간 유효성 검사 → 정확히 N자리 입력 시만 제출 가능
+- 결과는 `S/B/OUT` 형식으로 로그에 표시 (최신 기록이 위로)
+- 모바일 친화 UI (큰 입력창, 큰 글자, 접근성 강화)
 
-- **모드 버튼(2·3·4·5글자)**: 선택한 버튼만 강조(색상 변경), 별도의 “2글자” 배지는 표시하지 않음  
-- **단어 목록은 길이 섞어서 한 배열로 관리** → 모드 선택 시 길이로만 필터  
-- **모음 힌트 강제**: 입력 단어의 모음 시퀀스가 힌트와 동일해야 제출 가능  
-- **정확한 S/B/OUT**: 초성·종성(겹받침 포함)을 분해해 위치/슬롯 단위로 채점  
-- **자음 키보드 상태 표시**: `있음(S/B)=하늘색`, `없음(OUT)=분홍`, `미시도=회색`  
-- **중복 추측 방지**, **Enter 제출**, **포기/새 게임** 지원  
-- **단일 HTML**로 오프라인 실행 가능
-- **전통적인 단어야구 게임에 한글단어를 넣고 모음을 공개하고 아래쪽에 자음버튼을 넣어 난이도를 줄였습니다.
-- **한국어기초사전과  한국어능력시험용 단어들이 워드풀에 들어갔습니다.  
+## 🎮 게임 규칙
+- 비밀 숫자는 서로 다른 숫자로 구성됩니다.
+- (3자리) 정답 길이 3 / (4자리) 정답 길이 4
+- 0 포함 모드에서도 첫 자리는 0이 되지 않습니다.
+- 추측을 제출하면 `S`, `B`, `OUT` 개수가 표시됩니다.
+- `S`가 자리 수와 같아지면 승리!
+
+| 버튼 | 자리 수 | 0 포함 | 비고 |
+|:---:|:---:|:---:|:---|
+| 3자리 · 1-9 | 3 | ❌ | 1–9만 사용 |
+| 3자리 · 0-9 | 3 | ✅ | 0–9 사용, 첫 자리는 0 금지 |
+| 4자리 · 1-9 | 4 | ❌ | 1–9만 사용 |
+| 4자리 · 0-9 | 4 | ✅ | 0–9 사용, 첫 자리는 0 금지 |
+
+## 🔀 모드
+
+| 모드 | 자리 수 | 0 포함 | 결과 표시|
+|:---|:---|:---|:---:|
+|수수숫자야구 | 3,4 | ❌ ✅| SBO의 위치|
+|숫자야구|3,4|  ❌ ✅| SBO의 개수|
+|컴퓨터와 숫자야구|3,4,5 | ✅| SBO의 개수|
+|숫자야구 대결|3,4,5|  ✅| SBO의 개수|
+
+---
+## Number Baseball.  
+
+A math baseball game you can enjoy directly in your browser.Supports 4 modes where you can choose the number of digits and whether to include 0.  
+1S = Correct digit in the correct position1B = Correct digit but in the wrong positionThe rest are OUTExample: 0S 0B 3OUT, 1S 1B 1OUT.   
+
+## ✨ Features.  
+	•	4 modes: 3-digit / 4-digit × with 0 / without 0.  
+	•	Only non-repeating digits are allowed.   
+	•	Real-time validation → submission only allowed when exactly N digits are entered  
+	•	Results displayed in S/B/OUT format in the log (newest on top). 
+	•	Mobile-friendly UI (large input field, large text, enhanced accessibility). 
+
+## 🎮 Game Rules  
+	•	The secret number consists of unique digits.  
+	•	(3-digit) Answer length: 3 / (4-digit) Answer length: 4  
+	•	Even in 0-included mode, the first digit cannot be 0.  
+	•	After submitting a guess, the count of S, B, and OUT is displayed.  
+	•	You win when the number of S matches the digit count!  
+
+|Button       |Digits|Includes 0|Notes                            |
+|:-------------:|:-----:|:--------:|:---------------------------------|
+|3-digit · 1–9|3     |❌         |Uses 1–9 only                    |
+|3-digit · 0–9|3     |✅         |Uses 0–9, first digit cannot be 0|
+|4-digit · 1–9|4     |❌         |Uses 1–9 only                    |
+|4-digit · 0–9|4     |✅         |Uses 0–9, first digit cannot be 0|
+
+## 🔀 Modes
+
+|Mode                    |Digits |Includes 0|Result Display     |
+|:------------------------|:------:|:--------|:-------------------|
+|Soosoo Number Baseball|3, 4   |❌ ✅     |Position of S, B, O|
+|Number Baseball |3, 4   |❌ ✅      |Count of S, B, O   |
+|Number Baseball vs AI   |3, 4, 5|✅         |Count of S, B, O   |
+|Number Baseball Battle  |3, 4, 5|✅         |Count of S, B, O   |
+
+---
+
+## 한글야구 (Hangul Baseball)
+
+완성형 한글(가–힣)로 즐기는 자음 기반 S/B/OUT 추리 게임입니다.  
+선택한 글자수(2–5글자)의 비밀 단어를 맞히세요. 
+힌트(모음 시퀀스)는 공개되고, 자음만 점수에 반영됩니다.
+
+ S: 자음이 있고 자리/슬롯까지 일치    
+ B: 자음이 있지만 자리/슬롯이 다름     
+ OUT: 해당 자음 없음  
+ (항상 `S + B + OUT = 이번 추측의 자음 수`)
+
+## ✨ 한글 야구의 특징
+
+- 모드 버튼(2·3·4·5글자)   
+- 단어 목록은 길이 섞어서 한 배열로 관리 → 모드 선택 시 길이로만 필터  
+- 모음 힌트 강제: 입력 단어의 모음 시퀀스가 힌트와 동일해야 제출 가능  
+- 정확한 S/B/OUT: 초성·종성(겹받침 포함)을 분해해 위치/슬롯 단위로 채점  
+- 자음 키보드 상태 표시: `있음(S/B)=하늘색`, `없음(OUT)=분홍`, `미시도=회색`  
+- 중복 추측 방지, Enter 제출, 포기/새 게임 지원  
+- 단일 HTML로 오프라인 실행 가능
+- 전통적인 단어야구 게임에 한글단어를 넣고 모음을 공개하고 아래쪽에 자음버튼을 넣어 난이도를 줄였습니다.   
+- 한국어기초사전과  한국어능력시험용 단어들이 워드풀에 들어갔습니다.
 
 ## 🎮 플레이 방법
 
-1. 상단에서 **글자 수**(2–5글자)를 선택하세요.  
-2. 화면에 보이는 **모음 힌트**(예: `ㅗㅣㅏ`)를 확인하세요.  
-3. 힌트와 **같은 모음 시퀀스**를 갖는 단어를 입력하고 **제출**합니다.  
+1. 상단에서 글자 수(2–5글자)를 선택하세요.  
+2. 화면에 보이는 모음 힌트(예: `ㅗㅣㅏ`)를 확인하세요.  
+3. 힌트와 같은 모음 시퀀스를 갖는 단어를 입력하고 제출합니다.  
    - 예: 힌트가 `ㅗㅣㅏ`이면 `모이라`, `고이다`처럼 모음만 같아야 합니다.  
 4. 결과 표의 `S/B/OUT`을 보고 다음 추측을 조정하세요.  
-5. **정답**을 맞히거나, 정해진 시도 내에 못 맞히면 게임이 종료됩니다. (포기 가능)
+5. 정답을 맞히거나, 정해진 시도 내에 못 맞히면 게임이 종료됩니다. (포기 가능)
 
 ## 🧠 채점 규칙(요약)
 
-- 한 글자를 **초성/중성/종성**으로 분해합니다.  
-- 점수에는 **자음(초성 + 종성)**만 사용하며, **모음(중성)**은 제외합니다.  
-- **겹받침**(예: ㄳ, ㄵ, ㅄ…)은 각각의 자모로 나눠서 처리합니다.  
-- **S**: 같은 글자 인덱스, 같은 슬롯(초/종), 같은 순번(겹받침 위치), 같은 자음일 때 카운트  
-- **B**: 남은 자음들 간 **멀티셋 교집합** 개수  
-- **OUT**: 이번 추측 자음 수 − (S + B)
+- 한 글자를 초성/중성/종성으로 분해합니다.  
+- 점수에는 자음(초성 + 종성)만 사용하며, 모음(중성)은 제외합니다.  
+- 겹받침(예: ㄳ, ㄵ, ㅄ…)은 각각의 자모로 나눠서 처리합니다.  
+- S: 같은 글자 인덱스, 같은 슬롯(초/종), 같은 순번(겹받침 위치), 같은 자음일 때 카운트  
+- B: 남은 자음들 간 멀티셋 교집합 개수  
+- OUT: 이번 추측 자음 수 − (S + B).  
 
-Hangul Baseball is a consonant-based deduction game for Korean words (2–5 syllables).  
-- You see the vowel sequence as a hint, and must guess words with the same vowels.  
-- Scoring uses only consonants (initial + final; double finals decomposed).  
-- S: same position/slot/index & consonant   
-- B: consonant exists but at a different position/slot  
-- OUT: consonant not in the secret   
+| 모드 | 정답에 받침 없음 | 받침 있는 단어 포함 |비고|
+|:---:|:---|:---|:---|
+|SBO의 위치|수수한글야구(쉬움)  |수수한글야구 |아무 단어나 입력 가능|
+|SBO의 개수|한글야구(쉬움)|한글야구| 워드풀의 단어만 입력 가능|
+
+---
+
+## 야구게임 주소 : https://soosooland.com/yagoo/  
 
 ---
 
 ## 🌟 Soosooland - Puzzle Game Hub by Han Soosoo
 
-> "Learning through fun, and fun through learning."
+ "Learning through fun, and fun through learning."
 
-Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**    
+Explore more brain games and puzzles in **[Soosooland](https://soosooland.com/)**    
 — a digital playground designed to improve memory, logic, and creativity while having fun!
 
 ---
