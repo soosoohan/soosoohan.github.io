@@ -382,18 +382,21 @@ The game ends immediately when a player forms a line of 5.
 여러분은 서로 다른 실력의 컴퓨터와 대결할 수 있습니다.  
 You can play against the computer with different difficulty levels.  
                 
-사용자는 하수, 중수, 고수 중에서 고를 수 있습니다.  
-You can choose the computer's level: Beginner, Normal, or Expert.     
+사용자는 하수, 중수, 고수, 달인 중에서 고를 수 있습니다.  
+You can choose the computer's level: Beginner, Normal, Expert, or Master        
         
-하수 컴퓨터는 가끔 실수를 합니다.  
+하수 모드: 컴퓨터는 가끔 실수를 합니다.  
 Beginner: Sometimes makes mistakes.      
 
-중수 컴퓨터도 잘 합니다.  
+중수 모드: 컴퓨터가 잘 합니다.  
 Normal: Plays reasonably well.   
 
-고수 컴퓨터는 실수가 없으니 이기기가 쉽지 않을 겁니다.  
+고수 모드: 컴퓨터는 실수가 없으니 이기기가 쉽지 않을 겁니다.  
 Expert: Very strong and rarely makes mistakes.   
 
+달인 모드: 컴퓨터가 흑돌을 쥐고 먼저 둡니다.   
+Master: Computer plays black and goes first!    
+  
 ---
 ## 야구시리즈(Baseball series)
 
