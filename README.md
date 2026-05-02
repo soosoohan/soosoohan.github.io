@@ -1,13 +1,6 @@
 # 🎮 Soosooland (수수랜드)
 **AI-powered educational gaming platform built through human-AI collaboration**  
 
-코딩도 모르면서 ChatGPT, Claude와 함께 만든 게임 놀이터 수수랜드입니다.  
-
-## 🤝 Built with AI, Designed by Humans
-A retired elementary school teacher with no coding background partnered with AI to create 24+ educational games in Korean and English. This project demonstrates how AI can empower anyone to build meaningful digital experiences.  
-
-초등학교 퇴직 교사가 코딩 배경 없이 AI와 협업하여 한국어와 영어로 24개 이상의 교육 게임을 만들었습니다. 이 프로젝트는 AI가 누구나 의미 있는 디지털 경험을 만들 수 있도록 돕는다는 것을 보여줍니다.  
-
 ## 🌐 Play Now
 https://soosooland.com
 
@@ -44,11 +37,6 @@ All games available in **Korean and English** for learners worldwide.
 Making quality educational content accessible to all - no coding skills, no budget, no barriers. Just creativity, AI partnership, and dedication to learning.  
 
 양질의 교육 콘텐츠를 모두에게 - 코딩 기술 없이, 예산 없이, 장벽 없이. 오직 창의성, AI 파트너십, 그리고 배움에 대한 헌신으로.  
-
----
-
-**"This is what happens when you give teachers AI tools."** 🎓✨  
-**"교사에게 AI 도구를 주면 이런 일이 일어납니다."**
 
    ---
 📌 수수랜드만의 특징  
