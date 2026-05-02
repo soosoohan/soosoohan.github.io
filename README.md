@@ -27,7 +27,7 @@ Designed to enhance:
 ## 🌍 Global Reach
 Used by users across South Korea 🇰🇷, Vietnam 🇻🇳, USA 🇺🇸, Turkey 🇹🇷, Germany 🇩🇪, Finland 🇫🇮, Ghana 🇬🇭, India 🇮🇳, Pakistan 🇵🇰, Morocco 🇲🇦, Taiwan 🇹🇼, Chile 🇨🇱, and more.  
 
-대한민국, 베트남, 미국, 터키, 독일, 핀란드, 가나, 인도, 파키스탄, 모로코, 타이완, 칠레 등 전 세계자여러나라에서 이용하고 있습니다.  
+대한민국, 베트남, 미국, 터키, 독일, 핀란드, 가나, 인도, 파키스탄, 모로코, 타이완, 칠레 등 전 세계 여러나라에서 이용하고 있습니다.  
 
 All games available in **Korean and English** for learners worldwide.  
 
