@@ -240,6 +240,7 @@ body {
         font-weight: bold;
         color: #2e8b8b;
         word-wrap: break-word;
+        text-align: center;
     }
 
 .game-description-text {
@@ -252,14 +253,14 @@ body {
     }
 
 .game-difficulty {
-        background: #2e8b8b;
-        color: white;
+        background: #89c9c9;
+        color: #145454;
         padding: 5px 12px;
         border-radius: 15px;
         font-size: clamp(0.8rem, 2vw, 0.9rem);
         display: inline-block;
         margin-bottom: 10px;
-        text-align: center;        
+        text-align: left;        
     }
 
 .github-link {
@@ -605,14 +606,8 @@ setTimeout(() => startBtn.onclick(), introDelay);
 </script>
 
 <div class="games-hub">
-
 <div class="games-hub-header">Soosooland
   <div class="header-buttons">
-    <a href="https://www.producthunt.com/products/soosooland?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-soosooland" target="_blank" rel="noopener noreferrer">
-      <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1143871&theme=light" 
-           alt="Featured on Product Hunt" 
-           style="height:36px; vertical-align:middle; margin-right:8px;" />
-    </a>
     <div class="language-toggle">
       <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
       <button class="language-btn" onclick="setLanguage('en')">English</button>
@@ -652,7 +647,10 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <!-- 넘즐 -->
 <div class="game-card" data-category="math" data-rank="5" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
       <div class="game-card-header">
-      <div class="game-emoji">👤</div>
+      <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+      </div>
         <div class="game-title">
         <span class="ko-text">넘즐</span>
         <span class="en-text hidden">NUMZZLE</span>
@@ -671,16 +669,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number puzzle challenge against computer"><br>
           </div>
         </div>
-        <div class="game-difficulty">
-        <span class="ko-text">넘즐 하기</span>
-        <span class="en-text hidden">play Numzzle</span>
-        </div>
-      </div>
+          </div>
     </div>
 <!-- 넘즐X -->
 <div class="game-card" data-category="math" data-rank="12" data-mobile="true" onclick="location.href='https://soosooland.com/numzzlex'">
     <div class="game-card-header">
-      <div class="game-emoji">👤</div>
+      <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+      </div>
         <div class="game-title">
         <span class="ko-text">넘즐X</span>
         <span class="en-text hidden">NUMZZLEX</span>
@@ -699,17 +696,17 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game"><br>
           </div>
         </div>
-        <div class="game-difficulty">
-        <span class="ko-text">넘즐X 하기</span>
-        <span class="en-text hidden">play NumzzleX</span>
-        </div>
       </div>
     </div>
 
+ 
  <!-- 넘플 -->
 <div class="game-card" data-category="math" data-rank="18" data-mobile="true" onclick="location.href='https://soosooland.com/numpple'">
   <div class="game-card-header">
-    <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
       <div class="game-title">
       <span class="ko-text">넘플</span>
       <span class="en-text hidden">NUMPPLE</span>
@@ -728,16 +725,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game"><br>
         </div>
       </div>
-      <div class="game-difficulty">
-      <span class="ko-text">넘플 하기</span>
-      <span class="en-text hidden">play Numpple</span>
-    </div>
+
   </div>
 </div>
  <!-- 넘플X-->
 <div class="game-card" data-category="math" data-rank="23" data-mobile="true" onclick="location.href='https://soosooland.com/numpplex'">
   <div class="game-card-header">
-    <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
       <div class="game-title">
       <span class="ko-text">넘플X</span>
       <span class="en-text hidden">NUMPPLEX</span>
@@ -756,17 +753,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game"><br>
         </div>
       </div>
-      <div class="game-difficulty">
-      <span class="ko-text">넘플X 하기</span>
-      <span class="en-text hidden">play NumppleX</span>
-    </div>
   </div>
 </div>
   
  <!-- 넘털 게임 -->
 <div class="game-card" data-category="math" data-rank="11" data-mobile="true" onclick="location.href='https://soosooland.com/numtter'">
         <div class="game-card-header">
-            <div class="game-emoji">👤</div>
+  <div class="game-difficulty">
+                <span class="ko-text">👤 혼자하기</span>
+                <span class="en-text hidden">👤 Solo</span>
+            </div>
             <div class="game-title">
                     <span class="ko-text">넘털</span>
                     <span class="en-text hidden">NUMTTER</span>
@@ -785,19 +781,19 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game"><br>
                  </div>
              </div>
-             <div class="game-difficulty">
-                <span class="ko-text">넘털 하기</span>
-                <span class="en-text hidden">play numtter</span>
-            </div>
+             
         </div>
     </div>
  
 <!-- 모음스쿨 -->
 <div class="game-card" data-category="quiz" data-rank="3" data-mobile="true" onclick="location.href='https://soosooland.com/school'">
-      <div class="rank-badge rank-2">🥉3rd</div> 
-   <div class="game-card-header">
-           <div class="game-emoji">👤</div>
-               <div class="game-title">
+  <div class="rank-badge rank-2">🥉3rd</div> 
+    <div class="game-card-header">
+       <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
+       <div class="game-title">
                     <span class="ko-text">모음 스쿨</span>
                     <span class="en-text hidden">Moeum School</span>
                </div>
@@ -815,18 +811,18 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum School"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">모음스쿨 하기</span>
-                   <span class="en-text hidden">play Moeum school</span>
-              </div>
+              
          </div>
     </div>
   
 <!-- 모음퀴즈 -->
 <div class="game-card" data-category="quiz" data-rank="16" data-mobile="true" onclick="location.href='https://soosooland.com/moeum-quiz'">
 <div class="game-card-header">
-           <div class="game-emoji">👤</div>
-               <div class="game-title">
+    <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
+              <div class="game-title">
                     <span class="ko-text">모음 퀴즈 </span>
                     <span class="en-text hidden">Moeum quiz</span>
                </div>
@@ -844,16 +840,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Quiz - Korean vowel puzzle"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">모음퀴즈 하기</span>
-                   <span class="en-text hidden">play Moeum-quiz</span>
-              </div>
          </div>
     </div>
 <!-- 둘이모음 -->
 <div class="game-card" data-category="quiz" data-rank="22" data-mobile="true" onclick="location.href='https://soosooland.com/doori'">
 <div class="game-card-header">
-           <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
                <div class="game-title">
                     <span class="ko-text">둘이 모음</span>
                     <span class="en-text hidden">Doori Moeum</span>
@@ -872,17 +867,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Quiz - Korean vowel puzzle"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">둘이 모음 하기</span>
-                   <span class="en-text hidden">play Doori Moeum</span>
-              </div>
          </div>
     </div>
       <!-- 모음 라운드 -->
 <div class="game-card" data-category="quiz" data-rank="6" data-mobile="true" onclick="location.href='https://soosooland.com/round'">
      <div class="game-card-header">
-           <div class="game-emoji">👤</div>
-               <div class="game-title">
+     <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
+       <div class="game-title">
                     <span class="ko-text">모음 라운드</span>
                     <span class="en-text hidden">Moeum Round</span>
                </div>
@@ -900,16 +894,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Quiz - Korean vowel puzzle"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">모음 라운드 하기</span>
-                   <span class="en-text hidden">play Moeum Round</span>
-              </div>
+              
          </div>
     </div>
 <!-- 워퍼즈-->
 <div class="game-card" data-category="word" data-rank="13" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzz'">
          <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+             <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+             </div>
              <div class="game-title">
                  <span class="ko-text">워퍼즈</span>
                  <span class="en-text hidden">WORPUZZ</span>
@@ -928,16 +922,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">워퍼즈 하기</span>
-                <span class="en-text hidden">play Worpuzz </span>
-            </div>
        </div>  
     </div>
 <!-- 워퍼즈 메이트-->
 <div class="game-card" data-category="word" data-rank="21" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzzmate'">
          <div class="game-card-header">
-             <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
              <div class="game-title">
                  <span class="ko-text">워퍼즈 메이트</span>
                  <span class="en-text hidden">WORPUZZ MATE</span>
@@ -956,16 +949,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">워퍼즈 메이트 하기</span>
-                <span class="en-text hidden">play Worpuzzmate</span>
-            </div>
        </div>  
     </div>
  <!-- 워퍼즈 브리즈 -->
 <div class="game-card" data-category="word" data-rank="19" data-mobile="false" onclick="location.href='https://soosooland.com/breeze'">
             <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+       <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
              <div class="game-title">
                  <span class="ko-text">워퍼즈 브리즈</span>
                  <span class="en-text hidden">WORPUZZ BREEZE</span>
@@ -984,16 +976,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">워퍼즈 브리즈 하기</span>
-                <span class="en-text hidden">play Worpuzz Breeze</span>
-            </div>
+            
        </div>  
     </div>
  <!-- 브리즈 젠-->
 <div class="game-card" data-category="word" data-rank="17" data-mobile="false" onclick="location.href='https://soosooland.com/zen'">
          <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+             <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
              <div class="game-title">
                  <span class="ko-text">브리즈 젠</span>
                  <span class="en-text hidden">BREEZE ZEN</span>
@@ -1012,20 +1004,19 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">브리즈 젠 하기</span>
-                <span class="en-text hidden">play Breeze Zen</span>
-            </div>
        </div>  
     </div>
  <!-- 브리즈 팝-->
 <div class="game-card" data-category="word" data-rank="14" data-mobile="true"  onclick="location.href='https://soosooland.com/pop'">
-         <div class="game-card-header">
-             <div class="game-emoji">👤</div>
-             <div class="game-title">
-                 <span class="ko-text">브리즈 팝</span>
-                 <span class="en-text hidden">BREEZE pop</span>
-             </div>
+    <div class="game-card-header">
+       <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
+       <div class="game-title">
+            <span class="ko-text">브리즈 팝</span>
+            <span class="en-text hidden">BREEZE pop</span>
+       </div>
          </div>
          <div class="game-description-text">
              <div class="ko-text">
@@ -1040,16 +1031,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">브리즈 팝 하기</span>
-                <span class="en-text hidden">play Breeze pop</span>
-            </div>
        </div>  
     </div>
 <!-- 브리즈 필드-->
 <div class="game-card" data-category="word" data-rank="9" data-mobile="false" onclick="location.href='https://soosooland.com/field'">
          <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+             <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
              <div class="game-title">
                  <span class="ko-text">브리즈 필드</span>
                  <span class="en-text hidden">BREEZE FIELD</span>
@@ -1068,17 +1058,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">브리즈 필드 하기</span>
-                <span class="en-text hidden">play Breeze Field</span>
-            </div>
        </div>  
     </div>
  
 <!-- 메이트 콩-->
 <div class="game-card" data-category="word" data-rank="10" data-mobile="true"  onclick="location.href='https://soosooland.com/kong'">
          <div class="game-card-header">
-             <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
              <div class="game-title">
                  <span class="ko-text">메이트 콩</span>
                  <span class="en-text hidden">Mate Kong</span>
@@ -1097,17 +1086,17 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">메이트 콩 하기</span>
-                <span class="en-text hidden">play Mate Kong</span>
-            </div>
        </div>  
     </div>
  <!-- 야구시리즈 -->
 <div class="game-card" data-category="logic" data-rank="2" data-mobile="true"  onclick="location.href='https://soosooland.com/yagoo'">
       <div class="rank-badge rank-3">🥈 2nd</div>  
-<div class="game-card-header">
-          <div class="game-emoji">⚾</div>
+      <div class="game-card-header">
+          <div class="game-difficulty">
+            <span class="ko-text">👤🤖👥 </span>
+            <span class="en-text hidden">👤🤖👥 </span>
+       </div>
+            
           <div class="game-title">
                     <span class="ko-text">야구게임</span>
                     <span class="en-text hidden">Baseball Game</span>
@@ -1126,17 +1115,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/yagoo.png" width="150" alt="Bulls and Cows - Number and word guessing game"><br>
                </div>
            </div>
-           <div class="game-difficulty">
-                <span class="ko-text">야구 게임 하기</span>
-                <span class="en-text hidden">Play BaseBall Game</span>
-           </div>
        </div>
    </div>
     
 <!-- 트링클 게임 -->
 <div class="game-card" data-category="strategy" data-rank="4" data-mobile="true"  onclick="location.href='https://soosooland.com/trinkle'">
        <div class="game-card-header">
-          <div class="game-emoji">🤩</div>
+          <div class="game-difficulty">
+            <span class="ko-text">👤🤖👥 </span>
+            <span class="en-text hidden">👤🤖👥 </span>
+       </div>
               <div class="game-title">
                    <span class="ko-text">트링클</span>
                    <span class="en-text hidden">TRINKLE</span>
@@ -1155,16 +1143,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
    <img src="https://soosooland.com/images/trinkle.png" width="150" alt="Trinkle - Triangle strategy game connecting dots"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                <span class="ko-text">트링클 하기</span>
-                <span class="en-text hidden">play trinkle</span>
-              </div>
          </div>
     </div>
 <!-- 트리테라 -->
 <div class="game-card" data-category="strategy" data-rank="7" data-mobile="true"  onclick="location.href='https://soosooland.com/triterra'">
        <div class="game-card-header">
-          <div class="game-emoji">🤩</div>
+          <div class="game-difficulty">
+            <span class="ko-text">👤🤖👥 </span>
+            <span class="en-text hidden">👤🤖👥 </span>
+       </div>
               <div class="game-title">
                    <span class="ko-text">트리테라</span>
                    <span class="en-text hidden">Triterra</span>
@@ -1183,17 +1170,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
    <img src="https://soosooland.com/images/trinkle.png" width="150" alt="Trinkle - Triangle strategy game connecting dots"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                <span class="ko-text">트리테라 하기</span>
-                <span class="en-text hidden">Play Triterra</span>
-              </div>
          </div>
     </div>
 <!-- 오목 게임 -->
 <div class="game-card" data-category="strategy" data-rank="1" data-mobile="true" onclick="location.href='https://soosooland.com/omok'">
    <div class="rank-badge rank-1">🥇1st</div>
        <div class="game-card-header">
-            <div class="game-emoji"></div>
+            <div class="game-difficulty">
+            <span class="ko-text">👤🤖👥 </span>
+            <span class="en-text hidden">👤🤖👥 </span>
+       </div>
             <div class="game-title">
                   <span class="ko-text">오목</span>
                   <span class="en-text hidden">OMOK</span>
@@ -1212,16 +1198,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/omok.jpeg" width="150" alt="Omok - Five in a row strategy board game (Gomoku)"><br>
                   </div>
               </div>
-              <div class="game-difficulty">
-                   <span class="ko-text">오목 하기</span>
-                   <span class="en-text hidden">play Omok</span>
-              </div>
-         </div>
+          </div>
      </div>
  <!-- 워퍼즈 미니 -->
 <div class="game-card" data-category="word" data-rank="8" data-mobile="true" onclick="location.href='https://soosooland.com/worzzle'">
          <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+          <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+      </div>
              <div class="game-title">
                  <span class="ko-text">워퍼즈 미니</span>
                  <span class="en-text hidden">WORPUZZ mini</span>
@@ -1240,16 +1225,15 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">워퍼즈 미니 하기</span>
-                <span class="en-text hidden">play Worpuzz mini</span>
-            </div>
        </div>  
     </div>
  <!-- 워퍼즈 몽 -->
 <div class="game-card" data-category="word" data-rank="15" data-mobile="false" onclick="location.href='https://soosooland.com/mong'">
          <div class="game-card-header">
-             <div class="game-emoji">👤</div>
+                  <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+      </div>
              <div class="game-title">
                  <span class="ko-text">워퍼즈 몽</span>
                  <span class="en-text hidden">WORPUZZ MONG</span>
@@ -1268,16 +1252,16 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Worpuzz - Word search puzzle"><br>
                  </div>
             </div>
-            <div class="game-difficulty">
-                <span class="ko-text">워퍼즈 몽 하기</span>
-                <span class="en-text hidden">play Worpuzz Mong</span>
-            </div>
+            
        </div>  
     </div>
  <!-- 메이트 찌니-->
 <div class="game-card" data-category="word" data-rank="20" data-mobile="false" onclick="location.href='https://soosooland.com/zzini'">
          <div class="game-card-header">
-             <div class="game-emoji">👥</div>
+      <div class="game-difficulty">
+      <span class="ko-text">👥 2인 대결</span>
+      <span class="en-text hidden">👥 2 Players</span>
+    </div>
              <div class="game-title">
                  <span class="ko-text">메이트 찌니</span>
                  <span class="en-text hidden">Mate	Zzini</span>
@@ -1295,10 +1279,6 @@ setTimeout(() => startBtn.onclick(), introDelay);
                  <div align="center">
   <img src="https://soosooland.com/images/worpuzz.jpeg" width="150" alt="Mate Zzini"><br>
                  </div>
-            </div>
-            <div class="game-difficulty">
-                <span class="ko-text">메이트 찌니 하기</span>
-                <span class="en-text hidden">play Mate Zzini</span>
             </div>
        </div>  
     </div>
@@ -1321,18 +1301,13 @@ setTimeout(() => startBtn.onclick(), introDelay);
         💡홈 화면에서 바로 게임 시작<br>
         💡아이폰, 아이패드는 공유 버튼을 누른 다음 "홈 화면에 추가"를 선택하세요!
 </strong><br>
-         <div align="center"><button id="installButtonKo" style="display:block;">
-        바로가기 만들기</button>
-         </div>
       </div> 
       <div class="en-text hidden">
            <strong>
         💡Launch games directly from home screen<br> 
         💡On iPhone/iPad, tap the share button, then select "Add to Home Screen"!
 </strong><br>
-         <div align="center"><button id="installButtonEn" style="display:block;">
-         Add to Home Screen </button>
-         </div>
+         
       </div>
    </div>
 </div>
@@ -1341,26 +1316,30 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <!-- 푸터 영역 -->
 <div class="footer">
   <div class="ko-text">
-<span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">게임 개발 기록</span>|
-<span onclick="location.href='News-ko.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소식</span>|
-<span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">개인정보 처리방침</span>|
-<span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">연락처와 지원</span>|    
-<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">수수랜드 소개</span>|
-<span onclick="location.href='credits-ko.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">크레딧</span> |
-<span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration: underline; margin: 0 10px;">후원하기☕</span> 
+<span onclick="location.href='https://www.producthunt.com/products/soosooland?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-soosooland'" 
+      style="cursor:pointer;text-decoration:underline;margin:0 10px;">Product Hunt</span>|
+    <span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">게임 개발 일지</span>|
+    <span onclick="location.href='News-ko.html'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">수수랜드 소식</span>|
+    <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">개인정보 처리방침</span>|
+    <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">연락처와 지원</span>|
+    <span onclick="location.href='about.html'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">수수랜드 소개</span>|
+    <span onclick="location.href='credits-ko.html'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">크레딧</span>|
+    <span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration:underline;margin:0 10px;">후원하기☕</span>
   </div>
 
   <div class="en-text hidden">
-<span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Development Blog</span>|
-<span onclick="location.href='News-en.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Soosooland News</span>|
-<span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Privacy Policy</span>|
-<span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Contact & Support</span>|    
-<span onclick="location.href='about.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">About Soosooland</span>|
-<span onclick="location.href='credits-en.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">Credits</span> |
-<span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration: underline; margin: 0 5px;">☕Support</span> 
- 
+<span onclick="location.href='https://www.producthunt.com/products/soosooland?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-soosooland'" 
+      style="cursor:pointer;text-decoration:underline;margin:0 10px;">Product Hunt</span>|
+    <span onclick="location.href='https://soosooland2025.blogspot.com'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Development Blog</span>|
+    <span onclick="location.href='News-en.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Soosooland News</span>|
+    <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Privacy Policy</span>|
+    <span onclick="location.href='Contact.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Contact & Support</span>|
+    <span onclick="location.href='about.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">About Soosooland</span>|
+    <span onclick="location.href='credits-en.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Credits</span>|
+    <span onclick="location.href='sponsor.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">☕Support</span>
   </div>
 </div>
+
 
 <script>
 //  변수 선언 
@@ -1465,35 +1444,23 @@ function filterGames(category, button) {
     filtered.forEach(card => grid.appendChild(card));
 }
 
-// 페이지 로드시 실행 (한 번만!) 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. PWA standalone 모드 확인
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches 
                       || window.navigator.standalone === true;
     
-    console.log('=== PWA 감지 ===');
-    console.log('Standalone 모드:', isStandalone);
-    
-    // 2. Standalone이면 바로가기 카드 숨기기
     const installCard = document.querySelector('.install-card');
-    console.log('바로가기 카드 찾음:', installCard);
     
     if (isStandalone && installCard) {
-        console.log('✅ 바로가기 카드 숨김');
         installCard.classList.add('hidden');
     }
     
-    // 3. 설치 버튼 이벤트 연결
-    const installButtonKo = document.getElementById('installButtonKo');
-    const installButtonEn = document.getElementById('installButtonEn');
-    
-    if (installButtonKo) {
-        installButtonKo.addEventListener('click', handleInstall);
+    // ✅ 여기에 추가
+    if (installCard) {
+        installCard.addEventListener('click', function(e) {
+            handleInstall();
+        });
     }
-    if (installButtonEn) {
-        installButtonEn.addEventListener('click', handleInstall);
-    }
-    
+        
     // 4. 기본으로 인기순 표시
     const popularBtn = document.querySelector('.category-btn');
     filterGames('popular', popularBtn);
