@@ -84,7 +84,7 @@ Then don’t wait—start playing now on Soosoland!
 🎲 수수랜드에서 즐길 수 있는 게임  
 🎲 Games Available on Soosoland  
    
-• 단어 게임 (Word Games): 워퍼즈 시리즈 (Worpuzz series), 모음퀴즈(Moeum Quiz)   
+• 단어 게임 (Word Games): 워퍼즈 시리즈 (Worpuzz series), 모음퀴즈 시리즈(Moeum Quiz series) ,  
    
 • 연산 게임 (Math Games): 넘즐 시리즈 (Numzle series)  
    
@@ -321,7 +321,7 @@ Results must be natural numbers only.
 | `+`, `-`    |넘즐초, 넘즐초맥스, 넘즐초미니      | 넘플초, 넘플초맥스, 넘플초미니      |넘틀 어려움|
 | `+`, `-`, `×`    | 넘즐잼, 넘즐잼맥스, 넘즐잼미니    | 넘플잼, 넘플잼맥스, 넘플잼미니      ||
 | `+`, `-`, `×`, `÷`     | 넘즐, 넘즐맥스, 넘즐미니   | 넘플, 넘플맥스, 넘플미니     |넘틀 쉬움|
-| `+`, `-`, `×`, `÷`, `√`, `π` | **넘즐업** (아주 어려움)   | —    ||
+| `+`, `-`, `×`, `÷`, `√`, `π` | 넘즐업 (아주 어려움)   | —    ||
 | `+`, `-`, `×`, `÷`, `(`, `)`|||넘털|
 
 ※ "잼"은 중간 난이도, "업"은 고난도 확장판을 의미합니다.    
@@ -333,7 +333,7 @@ Results must be natural numbers only.
 |`+`, `-`   |Numzzle Cho, Numzzle Cho Max, Numzzle Cho Mini|Numpple Cho, Numpple Cho Max, Numpple Cho Mini     |Numtle hard|
 |`+`, `-`, `×`    |Numzzle Jam, Numzzle Jam Max, Numzzle Jam Mini|Numpple Jam, Numpple Jam Max, Numpple Jam Mini   ||
 |`+`, `-`, `×`, `÷`   |Numzzle, Numzzle Max, Numzzle Mini  |Numpple, Numpple Max, Numple Mini     |Numtle easy|
-|`+`, `-`, `×`, `÷`, `√`, `π`|**Numzzle Up** (Very Difficult)  |—      ||
+|`+`, `-`, `×`, `÷`, `√`, `π`|Numzzle Up (Very Difficult)  |—      ||
 |`+`, `-`, `×`, `÷`, `(`, `)`       |||Numtter |
 
 ※ “Jam” indicates intermediate difficulty, “Up” indicates advanced/expert expansion.
@@ -357,11 +357,6 @@ Results must be natural numbers only.
 |Allowed to use only some cards|Numzzle, Numpple, Numtter, Numtle      |
 |Multi-digit numbers prohibited|Numzzle Cho, Numpple Cho, Numzzle X, Numpple X  |
 |Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter, Numtle|
-
----
-
-
-## Play Numtter :https://soosooland.com/numtter/   
 
 ---
 
