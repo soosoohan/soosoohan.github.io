@@ -266,7 +266,9 @@ Each round, you build an expression using cards to get as close as possible to t
 총 10라운드 동안 플레이하며 누적 점수로 승패를 결정합니다.  
 Play 10 rounds. The player with the highest total score wins.
 
+---
 ### 넘털 (Numtter)
+
 넘털 = 넘버 + 털다  
 Numtter = Number + Toss Out  
 원카드의 재미에 연산학습 효과까지!  
@@ -280,7 +282,10 @@ Fail to match? Cards are added. Two-digit combinations are allowed.
 카드를 1장 이하로 줄이면 성공!  
 Clear down to 1 card or fewer to win!  
 
+---
+
 ### 넘틀 (Numtle)
+
 넘틀 = 넘버 + 뜀틀  
 Numtle = Number + Hurdle  
 뜀틀처럼 한 칸씩 높이 뛰어라!  
@@ -357,6 +362,37 @@ Results must be natural numbers only.
 |Allowed to use only some cards|Numzzle, Numpple, Numtter, Numtle      |
 |Multi-digit numbers prohibited|Numzzle Cho, Numpple Cho, Numzzle X, Numpple X  |
 |Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter, Numtle|
+
+---
+  ## 👤 넘스톤( Numstone)
+
+넘스톤(Numstone)은 넘버(Number)와 스톤(Stone)을 결합한 이름입니다.
+
+넘스톤은 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다.  
+열을 선택해 카드를 드롭하고, 숫자를 합체시켜 더 큰 수를 만드세요 — 시간 압박은 없습니다.  
+Numstone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers together.  
+Choose a column, drop your card, and merge your way to bigger numbers — no time pressure. 
+
+### 게임 방법 / How to Play  
+
+- 격자 안에 숨겨진 숫자를 품은 바위가 있어 카드가 통과할 수 없습니다.   
+  Rocks block your cards and hide secret numbers inside.
+
+- 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바위나 다른 카드 위에 얹힙니다.    
+  Choose a column to drop the first card — it lands on top of a rock or another card.
+
+- 상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 먼저 있던 카드에 흡수되어 2배가 됩니다. 연쇄 합체도 가능합니다.   
+  Matching numbers adjacent in any direction merge. The newer card is absorbed into the older one, doubling its value. Chain merges are possible.
+
+- 바위 안에는 숫자가 숨겨져 있습니다. 숨겨진 숫자의 절반이 인접하면 숫자가 노출됩니다. 같은 숫자가 인접하면 바위가 깨지며 합체됩니다.   
+  Each rock hides a secret number. When half that number touches it, the number is revealed. When the same number touches it, the rock shatters and merges.
+
+- 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
+  The game ends when the top row is full — even if space remains below. Watch the top.
+
+---
+
+## Play Numstone :https://soosooland.com/stone/   
 
 ---
 
