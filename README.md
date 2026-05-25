@@ -23,12 +23,11 @@ Designed to enhance:
 - Memory & logic (기억력·논리력)  
 
 학습 능력, 사고력, 어휘력, 연산 능력, 논리력, 기억력을 향상시켜 두뇌 개발과 두뇌 건강에 도움이 됩니다.  
+## 🌍 Global Reach
 
-🌍 Global Reach
+Used by users across South Korea 🇰🇷, USA 🇺🇸, Germany 🇩🇪, Ghana 🇬🇭, Turkey 🇹🇷, Morocco 🇲🇦, Vietnam 🇻🇳, Canada 🇨🇦, India 🇮🇳, Taiwan 🇹🇼, Bangladesh 🇧🇩, Finland 🇫🇮, and more.
 
-Used by users across South Korea 🇰🇷, USA 🇺🇸, Germany 🇩🇪, Russia 🇷🇺, India 🇮🇳, Ghana 🇬🇭, Pakistan 🇵🇰, Canada 🇨🇦, Turkey 🇹🇷, Vietnam 🇻🇳, Morocco 🇲🇦, Taiwan 🇹🇼, Bangladesh 🇧🇩, and more.
-
-대한민국, 미국, 독일, 러시아, 인도, 가나, 파키스탄, 캐나다, 터키, 베트남, 모로코, 대만, 방글라데시 등 전 세계 여러 나라에서 이용하고 있습니다.  
+대한민국, 미국, 독일, 가나, 튀르키예, 모로코, 베트남, 캐나다, 인도, 대만, 방글라데시, 핀란드 등 전 세계 여러 나라에서 이용하고 있습니다.
 
 All games available in **Korean and English** for learners worldwide.  
 
