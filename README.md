@@ -673,7 +673,7 @@ Explore more brain games and puzzles in **[Soosooland](https://soosooland.com/)*
 이 저작물은 한국저작권위원회에 등록되어 법적 보호를 받습니다.    
 This project is registered with the Korea Copyright Commission.
 
-| 게임 | 등록번호 | 등록일 |
+| 제호 | 등록번호 | 등록일자 |
 |------|----------|--------|
 | 넘즐 (Numzzle) | C-2025-036386| 2025.09.11 |
 | 모음퀴즈(moeum-quiz)| C-2025-031801 | 2025.08.19 |
