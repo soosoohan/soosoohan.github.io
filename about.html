@@ -272,7 +272,7 @@
 </style>
 
 </head>
-<body>
+    <body onload="initLanguage()">
     <div class="lang-toggle">
         <button class="lang-btn active" onclick="switchLang('ko')">한국어</button>
         <button class="lang-btn" onclick="switchLang('en')">English</button>
@@ -1440,26 +1440,30 @@
 </div>
 
 <script>
-    function switchLang(lang) {
-        // 모든 언어 버튼에서 active 클래스 제거
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        
-        // 선택된 버튼에 active 클래스 추가
-        event.target.classList.add('active');
-        
-        // 모든 콘텐츠 숨기기
-        document.querySelectorAll('.lang-content').forEach(content => {
-            content.classList.remove('active');
-        });
-        
-        // 선택된 언어 콘텐츠 표시
-        document.getElementById(lang + '-content').classList.add('active');
-        
-        // 페이지 맨 위로 스크롤
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+  function applyLang(lang) {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick').includes(`'${lang}'`)) {
+            btn.classList.add('active');
+        }
+    });
+    document.querySelectorAll('.lang-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    document.getElementById(lang + '-content').classList.add('active');
+    localStorage.setItem('soosoo-lang', lang);
+}
+
+function switchLang(lang) {
+    applyLang(lang);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function initLanguage() {
+    const saved = localStorage.getItem('soosoo-lang');
+    const lang = saved || (navigator.language.startsWith('ko') ? 'ko' : 'en');
+    applyLang(lang);
+}
 </script>
 
 </body>
