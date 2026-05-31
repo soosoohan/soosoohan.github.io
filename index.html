@@ -1484,7 +1484,7 @@ function filterGames(category, button) {
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 12) return false;
+            if (!rank || rank > 10) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
