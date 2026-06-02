@@ -13,6 +13,7 @@ https://soosooland.com
 No downloads, no ads, no data collection - just pure educational fun in your browser.  
 
 다운로드 없이, 광고 없이, 데이터 수집 없이  브라우저에서 바로 즐기는 교육·두뇌개발용 게임 플랫폼이에요.   
+수수랜드는 개인정보를 수집하지 않습니다. 점수 등록에 사용되는 ID는 기기에서 자동 생성된 익명 코드입니다.
 
 ## 🎯 Games for Growing Minds
 
