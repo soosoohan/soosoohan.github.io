@@ -589,8 +589,8 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <!-- 카테고리 필터 -->
 <div class="category-filter">
 <button class="category-btn active" onclick="filterGames('popular', this)">
-    <span class="ko-text">인기</span>
-    <span class="en-text hidden">Popular</span>
+    <span class="ko-text">모두 보기</span>
+    <span class="en-text hidden">All Games</span>
   </button>
   <button class="category-btn" onclick="filterGames('word', this)">
     <span class="ko-text">단어</span>
@@ -1455,7 +1455,7 @@ function filterGames(category, button) {
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 10) return false;
+            if (!rank || rank > 26) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
