@@ -42,19 +42,24 @@ th:first-child,td:first-child{text-align:left}
 .timeline{position:relative;padding-left:14px;border-left:3px solid #e7dccc}
 .item{margin:10px 0 14px;position:relative}
 .dot{position:absolute;left:-17px;top:6px;width:12px;height:12px;border-radius:50%;background:var(–dot);border:2px solid #eee}
-.date-ttl{font-weight: 500;margin: 2px 0;white-space: nowrap;}
+.date-ttl {
+  font-weight: 500;
+  margin: 2px 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 .desc{color:#4f4a43;font-size:20px;margin:0}
 
 .square-button {
-width: 350px;
-height: 100px;
+width: 300px;
+height: 80px;
 background:white;
 color:  #2c3e50;
 border: none;
 border-radius: 12px;
 border: 2px solid  #2c3e50;
 cursor: pointer;
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 display: flex;
 flex-direction: column;
@@ -72,6 +77,11 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .square-button:active {
 transform: scale(0.95);
+}
+  @media (max-width: 480px) {
+  .desc { font-size: 18px; }
+  table { font-size: 18px; }
+ .timeline { font-size: 18px; }  
 }
 </style>
 
