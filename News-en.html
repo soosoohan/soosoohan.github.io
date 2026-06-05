@@ -18,279 +18,226 @@
 <link rel="alternate" hreflang="en" href="https://soosooland.com/News-en.html">
 <link rel="alternate" hreflang="ko" href="https://soosooland.com/News-ko.html">
 <style>
-body{margin:0;background:#faf7f3;color:var(–ink);font-family:system-ui,apple-system,Segoe UI,Roboto,sans-serif; font-size: 20px;}
+body{margin:0;background:#faf7f3;color:var(--ink);font-family:system-ui,apple-system,Segoe UI,Roboto,sans-serif; font-size: 20px;}
 .wrap{max-width:600px;margin:auto;padding:18px}
 h1{font-size:18px;margin:0 0 10px}
 .topnav{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
-.topnav a{padding:6px 10px;border:1px solid var(–frame);border-radius:8px;background:#fff;text-decoration:none;color:#333;font-weight:600}
+.topnav a{padding:6px 10px;border:1px solid var(--frame);border-radius:8px;background:#fff;text-decoration:none;color:#333;font-weight:600;white-space:nowrap;}
 .section-title{margin:20px 0 8px;font-size:20px;font-weight:800;color:#4a3c2b}
-.card{background:#fff;border:1px solid var(–frame);border-radius:12px;padding:12px;margin:10px 0}
-table{width:100%;border-collapse:collapse;font-size:20px;background:#fff;border:1px solid var(–frame);border-radius:8px;overflow:hidden}
+.card{background:#fff;border:1px solid var(--frame);border-radius:12px;padding:12px;margin:10px 0}
+table{width:100%;border-collapse:collapse;font-size:20px;background:#fff;border:1px solid var(--frame);border-radius:8px;overflow:hidden}
 th,td{border-bottom:1px solid #efe5d6;padding:8px;text-align:center}
 th:first-child,td:first-child{text-align:left}
 .up{color:#0b7a3e;font-weight:700}
 .down{color:#b12a2a;font-weight:700}
 .new{color:#6b5a45;font-weight:700}
 
-    
-/* 연표 스타일 */
-.hint{color:var(–muted);font-size:13px;margin-bottom:8px}
+.hint{color:var(--muted);font-size:13px;margin-bottom:8px}
 .year{font-weight:800;margin:18px 0 8px;font-size:20px;color:#4a3c2b}
 .timeline{position:relative;padding-left:14px;border-left:3px solid #e7dccc}
 .item{margin:10px 0 14px;position:relative}
-.dot{position:absolute;left:-17px;top:6px;width:12px;height:12px;border-radius:50%;background:var(–dot);border:2px solid #eee}
-.date-ttl {
-  font-weight: 500;
-  margin: 2px 0;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
+.dot{position:absolute;left:-17px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--dot);border:2px solid #eee}
+.date-ttl{font-weight:500;margin:2px 0;word-break:keep-all;overflow-wrap:break-word;}
 .desc{color:#4f4a43;font-size:20px;margin:0}
 
+.square-button{width:300px;height:80px;background:white;color:#2c3e50;border:none;border-radius:12px;border:2px solid #2c3e50;cursor:pointer;font-size:18px;font-weight:bold;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:1.2;margin:8px;transition:all 0.3s ease;font-family:Arial,sans-serif;}
+.square-button:hover{background-color:#d7f5f5;transform:scale(1.05);box-shadow:0 4px 8px rgba(0,0,0,0.2);}
+.square-button:active{transform:scale(0.95);}
 
-.square-button {
-width: 300px;
-height: 80px;
-background:white;
-color:  #2c3e50;
-border: none;
-border-radius: 12px;
-border: 2px solid  #2c3e50;
-cursor: pointer;
-font-size: 18px;
-font-weight: bold;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-line-height: 1.2;
-margin: 8px;
-transition: all 0.3s ease;
-font-family: Arial, sans-serif;
-}
-.square-button:hover {
-background-color: #d7f5f5;
-transform: scale(1.05);
-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.square-button:active {
-transform: scale(0.95);
-}
-  
 @media (max-width: 480px) {
-  .desc { font-size: 18px; }
-  table { font-size: 18px; }
- .timeline { font-size: 18px; }
-   
+  .desc{font-size:15px;}
+  table{font-size:15px;}
+  .timeline{font-size:15px;}
 }
-
 </style>
-
 </head>
 <body>
 <div class="wrap">
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
-    <a href="#may">May 2026</a>
-    <a href="#apr">April 2026</a>
-    <a href="#mar">March 2026</a>
-    <a href="#feb">February 2026</a>
-    <a href="#jan">January 2026</a>
-    <a href="#dec">December 2025</a>
-    <a href="#nov">November 2025</a>
-    <a href="#oct">Octover 2025</a>
-    <a href="#sep">September 2025</a>
-    <a href="#aug">August 2025</a>
-    <a href="#jul">July 2025</a>
+    <a href="#may-2026">May 2026</a>
+    <a href="#apr-2026">April 2026</a>
+    <a href="#mar-2026">March 2026</a>
+    <a href="#feb-2026">February 2026</a>
+    <a href="#jan-2026">January 2026</a>
+    <a href="#dec-2025">December 2025</a>
+    <a href="#nov-2025">November 2025</a>
+    <a href="#oct-2025">October 2025</a>
+    <a href="#sep-2025">September 2025</a>
+    <a href="#aug-2025">August 2025</a>
+    <a href="#jul-2025">July 2025</a>
     <a href="#timeline">Full Timeline</a>
   </nav>
 
-<!-- 2026년 6월 -->
+  <!-- 2026년 6월 -->
   <section class="card">
     <div class="section-title">📅 June 2026 Timeline</div>
     <div class="timeline" id="junTimeline"></div>
   </section>
 
-<!-- 2026년 5월 -->
-  <section class="card" id="may">
+  <!-- 2026년 5월 -->
+  <section class="card" id="may-2026">
     <div class="section-title">May 2026 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="mayBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 May 2026 Timeline</div>
     <div class="timeline" id="mayTimeline"></div>
   </section>
-<button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
-<!-- 2026년 4월 -->
-  <section class="card" id="apr">
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
+
+  <!-- 2026년 4월 -->
+  <section class="card" id="apr-2026">
     <div class="section-title">April 2026 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="aprBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 April 2026 Timeline</div>
     <div class="timeline" id="aprTimeline"></div>
   </section>
 
-<!-- 2026년 3월 -->
-  <section class="card" id="mar">
+  <!-- 2026년 3월 -->
+  <section class="card" id="mar-2026">
     <div class="section-title">March 2026 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="marBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 March 2026 Timeline</div>
     <div class="timeline" id="marTimeline"></div>
   </section>
-<button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
-<!-- 2026년 2월 -->
-  <section class="card" id="feb">
+  <!-- 2026년 2월 -->
+  <section class="card" id="feb-2026">
     <div class="section-title">February 2026 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="febBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 February 2026 Timeline</div>
     <div class="timeline" id="febTimeline"></div>
   </section>
 
   <!-- 2026년 1월 -->
-  <section class="card" id="jan">
+  <section class="card" id="jan-2026">
     <div class="section-title">January 2026 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="janBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 January 2026 Timeline</div>
     <div class="timeline" id="janTimeline"></div>
   </section>
-<button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br> 🎮 Play Games Now ✨  </button>
-  
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
+
   <!-- 12월 -->
-  <section class="card" id="dec">
+  <section class="card" id="dec-2025">
     <div class="section-title">December 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="decBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 December 2025 Timeline</div>
     <div class="timeline" id="decTimeline"></div>
   </section>
+
   <!-- 11월 -->
-  <section class="card" id="nov">
+  <section class="card" id="nov-2025">
     <div class="section-title">November 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="novBody"></tbody>
     </table>
-  </section>  
+  </section>
   <section class="card">
     <div class="section-title">📅 November 2025 Timeline</div>
     <div class="timeline" id="novTimeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
-  <!-- 10월 -->
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
-  <section class="card" id="sep">
+  <!-- 10월 -->
+  <section class="card" id="oct-2025">
     <div class="section-title">October 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="octBody"></tbody>
     </table>
   </section>
-
   <section class="card">
     <div class="section-title">📅 October 2025 Timeline</div>
     <div class="timeline" id="octTimeline"></div>
   </section>
-  <!-- 9월 -->
 
-  <section class="card" id="sep">
+  <!-- 9월 -->
+  <section class="card" id="sep-2025">
     <div class="section-title">September 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="sepBody"></tbody>
     </table>
   </section>
-
   <section class="card">
     <div class="section-title">📅 September 2025 Timeline</div>
     <div class="timeline" id="sepTimeline"></div>
   </section>
-
-  <button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 8월 -->
-
-  <section class="card" id="aug">
+  <section class="card" id="aug-2025">
     <div class="section-title">August 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="augBody"></tbody>
     </table>
   </section>
-
   <section class="card">
     <div class="section-title">📅 August 2025 Timeline</div>
     <div class="timeline" id="augTimeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 7월 -->
-
-  <section class="card" id="jul">
+  <section class="card" id="jul-2025">
     <div class="section-title">July 2025 Popularity Rankings</div>
     <table>
       <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
       <tbody id="julBody"></tbody>
     </table>
   </section>
-
   <section class="card">
     <div class="section-title">📅 July 2025 Timeline</div>
     <div class="timeline" id="julTimeline"></div>
   </section>
-<button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
-  
-  <!-- 전체 연표 -->
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
+  <!-- 전체 연표 -->
   <section class="card" id="timeline">
     <div class="section-title">📅 Full Timeline</div>
     <div id="allTimeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">
-   Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨  </button>
+  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
 </div>
 
-
 <script>
-
-// 월별 인기순위 (최신 월부터 순서대로)
 const monthlyRanking = {
-  "2026-05": ["Numstone","Baseball Game", "Moeum Quiz", "Trinkle", "Numzzle","Worpuzz","Omok" ],
+  "2026-05": ["Numstone","Baseball Game", "Moeum Quiz", "Trinkle", "Numzzle","Worpuzz","Omok"],
   "2026-04": ["Omok", "Baseball Game", "Moeum Quiz", "Trinkle", "Numzzle","Worpuzz"],
   "2026-03": ["Moeum Quiz","Omok","Worpuzz", "Baseball Game","Trinkle", "Numzzle"],
   "2026-02": ["Moeum Quiz","Omok","Trinkle", "Baseball Game", "Numzzle", "Worpuzz"],
@@ -300,15 +247,14 @@ const monthlyRanking = {
   "2025-10": ["Worpuzz","Moeum Quiz","Numzzle", "Baseball Game", "Trinkle","Omok"],
   "2025-09": ["Baseball Game","Moeum Quiz","Trinkle","Omok", "Worpuzz", "Numzzle"],
   "2025-08": ["Omok", "Moeum Quiz", "Baseball Game", "Worpuzz","Trinkle", "Numzzle"],
-  "2025-07": ["Moeum Quiz", "Worpuzz", "Trinkle", "Numzzle" ]
-  };
+  "2025-07": ["Moeum Quiz", "Worpuzz", "Trinkle", "Numzzle"]
+};
 
-// 월별 연표 (새로운 소식을 여기에 추가하세요!)
 const monthlyNews = {
-   "2026-06": [
+  "2026-06": [
     "2026-06-04: Launched dev blog on Brunch"
-],
-   "2026-05": [
+  ],
+  "2026-05": [
     "2026-05-08: SoosooLand reached 2,100 users",
     "2026-05-12: Launched Soosooland on Product Hunt",
     "2026-05-13: SoosooLand reached 2,200 users",
@@ -316,27 +262,27 @@ const monthlyNews = {
     "2026-05-19: SoosooLand reached 2,300 users",
     "2026-05-24: Numstone development announced",
     "2026-05-28: SoosooLand reached 2,400 users"
-],
-   "2026-04": [
+  ],
+  "2026-04": [
     "2026-04-07: SoosooLand reached 1,700 users",
     "2026-04-09: SoosooLand reached 1,800 users",
     "2026-04-12: SoosooLand reached 1,900 users",
     "2026-04-16: SoosooLand reached 2,000 users"
-], 
-   "2026-03": [
+  ],
+  "2026-03": [
     "2026-03-26: SoosooLand reached 1,600 users"
-], 
-   "2026-02": [
+  ],
+  "2026-02": [
     "2026-02-11: SoosooLand reached 1,400 users",
     "2026-02-25: SoosooLand reached 1,500 users"
-], 
-   "2026-01": [
+  ],
+  "2026-01": [
     "2026-01-02: Triterra released",
     "2026-01-07: SoosooLand reached 1,200 users",
     "2026-01-18: Moeum School Beta released",
-    "2026-01-25: Soosooland reached 1,300 users"          
-],    
-   "2025-12": [
+    "2026-01-25: Soosooland reached 1,300 users"
+  ],
+  "2025-12": [
     "2025-12-02: Worpuzz Breeze released",
     "2025-12-04: SoosooLand reached 900 users",
     "2025-12-05: Moeum Round released",
@@ -346,22 +292,21 @@ const monthlyNews = {
     "2025-12-27: Breeze Field released",
     "2025-12-27: SoosooLand reached 1,100 users",
     "2025-12-28: Mate Kong released"
-], 
-    "2025-11": [
+  ],
+  "2025-11": [
     "2025-11-01: SoosooLand reached 700 users",
     "2025-11-19: SoosooLand reached 800 users"
-],  
-    "2025-10": [
+  ],
+  "2025-10": [
     "2025-10-05: SoosooLand reached 500 users",
     "2025-10-14: Launched soosooland.com",
     "2025-10-16: SoosooLand reached 600 users"
-],
+  ],
   "2025-09": [
     "2025-09-03: SoosooLand reached 300 users",
     "2025-09-11: Numzzle copyright registration completed",
     "2025-09-18: SoosooLand reached 400 users"
-      
-],
+  ],
   "2025-08": [
     "2025-08-01: Doori Moeum released",
     "2025-08-02: Omok game released",
@@ -400,68 +345,50 @@ const monthlyNews = {
   ]
 };
 
-// 순위 변동 계산
 function calculateRankChange(current, previous, gameName) {
   const currentRank = current.indexOf(gameName) + 1;
   const previousRank = previous ? previous.indexOf(gameName) + 1 : 0;
-  
   if (previousRank === 0) return { text: "NEW", class: "new" };
   if (currentRank < previousRank) return { text: `▲ ${previousRank - currentRank}spots`, class: "up" };
   if (currentRank > previousRank) return { text: `▼ ${currentRank - previousRank}spots`, class: "down" };
   return { text: "Same", class: "" };
 }
 
-// 순위표 그리기
 function drawRankingTable(monthKey, tableBodyId, previousMonthKey) {
   const current = monthlyRanking[monthKey] || [];
   const previous = previousMonthKey ? monthlyRanking[previousMonthKey] : null;
   const tbody = document.getElementById(tableBodyId);
-  
   if (!tbody || current.length === 0) return;
-  
   tbody.innerHTML = "";
   current.forEach((gameName, index) => {
     const rank = index + 1;
     const change = calculateRankChange(current, previous, gameName);
     const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>${rank}</td>
-      <td>${gameName}</td>
-      <td class="${change.class}">${change.text}</td>
-    `;
+    row.innerHTML = `<td>${rank}</td><td>${gameName}</td><td class="${change.class}">${change.text}</td>`;
     tbody.appendChild(row);
   });
 }
 
-// 연표 그리기
 function drawTimeline(monthKey, timelineId) {
   const news = monthlyNews[monthKey] || [];
   const timeline = document.getElementById(timelineId);
-  
   if (!timeline) return;
-  
   timeline.innerHTML = "";
   news.forEach(item => {
     const [date, title] = item.split(": ");
     const div = document.createElement("div");
     div.className = "item";
-    div.innerHTML = `
-      <span class="dot"></span>
-      <div class="date-ttl">${date} ${title}</div>
-    `;
+    div.innerHTML = `<span class="dot"></span><div class="date-ttl">${date} ${title}</div>`;
     timeline.appendChild(div);
   });
-  
   if (news.length === 0) {
-    timeline.innerHTML = '<div class="item"><div class="date-ttl">아직 소식이 없습니다</div></div>';
+    timeline.innerHTML = '<div class="item"><div class="date-ttl">No news yet</div></div>';
   }
 }
 
-// 전체 연표 그리기
 function drawAllTimeline() {
   const timeline = document.getElementById("allTimeline");
   if (!timeline) return;
-  
   const allNews = [];
   Object.keys(monthlyNews).forEach(month => {
     monthlyNews[month].forEach(item => {
@@ -469,45 +396,32 @@ function drawAllTimeline() {
       allNews.push({ date, title });
     });
   });
-  
-  // 날짜순으로 정렬
   allNews.sort((a, b) => a.date.localeCompare(b.date));
-  
-  // 연도별로 그룹화
   const byYear = {};
   allNews.forEach(item => {
     const year = item.date.substring(0, 4);
     if (!byYear[year]) byYear[year] = [];
     byYear[year].push(item);
   });
-  
   timeline.innerHTML = "";
   Object.keys(byYear).sort().forEach(year => {
     const yearDiv = document.createElement("div");
     yearDiv.className = "year";
     yearDiv.textContent = year;
     timeline.appendChild(yearDiv);
-    
     const timelineDiv = document.createElement("div");
     timelineDiv.className = "timeline";
-    
     byYear[year].forEach(item => {
       const div = document.createElement("div");
       div.className = "item";
-      div.innerHTML = `
-        <span class="dot"></span>
-        <div class="date-ttl">${item.date} ${item.title}</div>
-      `;
+      div.innerHTML = `<span class="dot"></span><div class="date-ttl">${item.date} ${item.title}</div>`;
       timelineDiv.appendChild(div);
     });
-    
     timeline.appendChild(timelineDiv);
   });
 }
 
-// 모든 데이터 그리기
 function initializePage() {
-  // 순위표 그리기
   drawRankingTable("2026-05", "mayBody", "2026-04");
   drawRankingTable("2026-04", "aprBody", "2026-03");
   drawRankingTable("2026-03", "marBody", "2026-02");
@@ -519,8 +433,7 @@ function initializePage() {
   drawRankingTable("2025-09", "sepBody", "2025-08");
   drawRankingTable("2025-08", "augBody", "2025-07");
   drawRankingTable("2025-07", "julBody", null);
-  
-  // 월별 연표 그리기
+
   drawTimeline("2026-06", "junTimeline");
   drawTimeline("2026-05", "mayTimeline");
   drawTimeline("2026-04", "aprTimeline");
@@ -533,14 +446,11 @@ function initializePage() {
   drawTimeline("2025-09", "sepTimeline");
   drawTimeline("2025-08", "augTimeline");
   drawTimeline("2025-07", "julTimeline");
-  
-  // 전체 연표 그리기
+
   drawAllTimeline();
 }
 
-// 페이지 로드 시 실행
 initializePage();
-
 </script>
 </body>
 </html>
