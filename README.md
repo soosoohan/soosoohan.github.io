@@ -403,6 +403,40 @@ Choose a column, drop your card, and merge your way to bigger numbers — no tim
 
 ---
 
+  ##  👤 넘드롭스( Numdrops)
+
+넘드롭스(Numdrops)는  넘스톤(NumStone)의 바위가 없는 버전입니다.
+
+넘드롭스는 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다.  
+열을 선택해 카드를 드롭하고, 숫자를 합체시켜 더 큰 수를 만드세요 — 시간 압박은 없습니다.  
+Numstone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers together.  
+Choose a column, drop your card, and merge your way to bigger numbers — no time pressure. 
+
+### 게임 방법 / How to Play  
+느
+- 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바닥이나 다른 카드 위에 얹힙니다.    
+  3 cards wait in queue. Choose a column to drop the first card — it lands on the bottom or on top of another card.  
+  
+- 상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 먼저 있던 카드에 흡수되어 2배가 됩니다. 연쇄 합체도 가능합니다.    
+  Matching numbers adjacent in any direction merge. The newer card is absorbed into the older one, doubling its value. Chain merges are possible.  
+
+- 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
+  The game ends when the top row is full — even if space remains below. Watch the top.
+
+
+## 🌟 Soosooland - Puzzle Game Hub by Han Soosoo
+
+> "Learning through fun, and fun through learning."
+
+Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**    
+— a digital playground designed to improve memory, logic, and creativity while having fun!
+
+---  
+
+##Play Numdrops : https://soosooland.drop/  
+
+---  
+
 ## 👤🆚👤 👤🆚🤖오목 OMOK
 
 한중일의 고전게임 , 2000년이 넘은 역사, 오목입니다.    
