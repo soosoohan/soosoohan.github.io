@@ -104,6 +104,10 @@
     <loc>https://soosooland.com/stone/sitemap.xml</loc>
     <lastmod>2026-05-24</lastmod>
   </sitemap>
+ <sitemap>
+    <loc>https://soosooland.com/drop/sitemap.xml</loc>
+    <lastmod>2026-06-07</lastmod>
+  </sitemap>
 
 </sitemapindex>
 
