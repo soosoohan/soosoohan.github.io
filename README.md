@@ -423,17 +423,9 @@ Choose a column, drop your card, and merge your way to bigger numbers — no tim
 - 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
   The game ends when the top row is full — even if space remains below. Watch the top.
 
-
-## 🌟 Soosooland - Puzzle Game Hub by Han Soosoo
-
-> "Learning through fun, and fun through learning."
-
-Explore more brain games and puzzles in **[Soosooland](https://soosooland.com)**    
-— a digital playground designed to improve memory, logic, and creativity while having fun!
-
 ---  
 
-##Play Numdrops : https://soosooland.drop/  
+##Play Numdrops : https://soosooland.com/drop/  
 
 ---  
 
