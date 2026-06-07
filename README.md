@@ -413,7 +413,7 @@ Numstone is a strategic puzzle game where you drop number cards onto a grid and 
 Choose a column, drop your card, and merge your way to bigger numbers — no time pressure. 
 
 ### 게임 방법 / How to Play  
-느
+
 - 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바닥이나 다른 카드 위에 얹힙니다.    
   3 cards wait in queue. Choose a column to drop the first card — it lands on the bottom or on top of another card.  
   
