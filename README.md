@@ -393,8 +393,8 @@ All games are registered copyrights. Unauthorized copying or redistribution is p
 |--------|------|-----------------------|-----------------------|---|
 |**넘스톤**|숫자 카드만  (2·4·8·16)   |없음                     |바위|4×4 / 5×5 / 6×6|
 |**넘드롭스**|숫자 카드만  (2·4·8·16)   |없음                     |-|4×4 / 5×5 / 6×6|
-|**넘카오스**        |숫자(2·4·8·16) <br> 특수 카드 혼합|💣÷2 💥÷4 ☢️소멸 <br>🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
-|**넘붐**      |숫자(2·4·8·16) <br>특수 카드 혼합|💣÷2 💥÷4 ☢️소멸          |-|4×6 / 5×5 / 6×6|
+|**넘카오스**        |숫자(2·4·8·16) <br> 특수 카드 혼합|🔥÷2 💥÷4 ☢️소멸 <br>🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
+|**넘붐**      |숫자(2·4·8·16) <br>특수 카드 혼합|🔥÷2 💥÷4 ☢️소멸          |-|4×6 / 5×5 / 6×6|
 |**넘넘**        |숫자(2·4·8·16) <br> 특수 카드 혼합| 🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
                          
  
@@ -414,8 +414,8 @@ NumStone is a strategic puzzle game where you drop number cards onto a grid and 
 |------------|--------------|----------------------------|--------|---------------|
 |**NumStone**|Number cards only<br>(2·4·8·16)|None|Rock    |4×4 / 5×5 / 6×6|
 |**NumDrops**|Number cards only<br>(2·4·8·16)|None|—       |4×4 / 5×5 / 6×6|
-|**NumChaos**|Number cards (2·4·8·16)<br>special cards mixed|💣÷2 💥÷4 ☢️destroy<br>🍎×2 🍒×4 🍇×8|—       |4×6 / 5×5 / 6×6|
-|**NumBoom** |Number cards (2·4·8·16) <br> special cards mixed|💣÷2 💥÷4 ☢️destroy            |—       |4×6 / 5×5 / 6×6|
+|**NumChaos**|Number cards (2·4·8·16)<br>special cards mixed|🔥÷2 💥÷4 ☢️destroy<br>🍎×2 🍒×4 🍇×8|—       |4×6 / 5×5 / 6×6|
+|**NumBoom** |Number cards (2·4·8·16) <br> special cards mixed|🔥÷2 💥÷4 ☢️destroy            |—       |4×6 / 5×5 / 6×6|
 |**NumNum**  |Number cards (2·4·8·16) <br> special cards mixed|🍎×2 🍒×4 🍇×8                 |—       |4×6 / 5×5 / 6×6|
 
 ---  
