@@ -371,61 +371,52 @@ Results must be natural numbers only.
 |Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter, Numtle|
 
 ---
-  ## 👤 넘스톤( Numstone)
+  ## ⚠️ Copyright Notice | 저작권 안내 | کاپی رائٹ نوٹس  
 
-넘스톤(Numstone)은 넘버(Number)와 스톤(Stone)을 결합한 이름입니다.
+All games are registered copyrights. Unauthorized copying or redistribution is prohibited.  
+모든 게임은 저작권 등록된 창작물입니다. 무단 복제 및 배포를 금합니다.  
+تمام گیمز کاپی رائٹ محفوظ ہیں۔ غیر مجاز نقل ممنوع ہے۔
+ 
+## 넘스톤 시리즈 / NumStone Series
 
-넘스톤은 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다.  
-열을 선택해 카드를 드롭하고, 숫자를 합체시켜 더 큰 수를 만드세요 — 시간 압박은 없습니다.  
-Numstone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers together.  
-Choose a column, drop your card, and merge your way to bigger numbers — no time pressure. 
+넘스톤은 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다. 시간 압박 없이, 열을 선택해 카드를 드롭하고 연쇄 합체로 더 큰 수를 만들어가세요.  
 
-### 게임 방법 / How to Play  
+## 공통 규칙  
 
-- 격자 안에 숨겨진 숫자를 품은 바위가 있어 카드가 통과할 수 없습니다.   
-  Rocks block your cards and hide secret numbers inside.
+* 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바닥이나 다른 카드 위에 얹힙니다.  
+* 상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 먼저 있던 카드에 흡수되어 2배가 됩니다. 연쇄 합체도 가능합니다.  
+* 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
+* 넘붐 / 넘넘 / 넘카오스는 숫자 카드(2, 4, 8, 16)와 특수 카드가 함께 랜덤으로 대기 큐에 섞여 있습니다. 플레이어가 열을 선택하면 맨 앞 카드가 해당 위치로 낙하합니다.
+* 특수카드는 닿는 숫자카드가 없으면 효과가 없습니다.
 
-- 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바위나 다른 카드 위에 얹힙니다.    
-  Choose a column to drop the first card — it lands on top of a rock or another card.
+|게임            |큐 구성                   |특수 카드  |장애물 |격자 크기 |
+|--------|------|-----------------------|-----------------------|---|
+|**넘스톤**|숫자 카드만  (2·4·8·16)   |없음                     |바위|4×4 / 5×5 / 6×6|
+|**넘드롭스**|숫자 카드만  (2·4·8·16)   |없음                     |-|4×4 / 5×5 / 6×6|
+|**넘카오스**        |숫자(2·4·8·16) <br> 특수 카드 혼합|💣÷2 💥÷4 ☢️소멸 <br>🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
+|**넘붐**      |숫자(2·4·8·16) <br>특수 카드 혼합|💣÷2 💥÷4 ☢️소멸          |-|4×6 / 5×5 / 6×6|
+|**넘넘**        |숫자(2·4·8·16) <br> 특수 카드 혼합| 🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
+                         
+ 
+## NumStone Series (English)
 
-- 상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 먼저 있던 카드에 흡수되어 2배가 됩니다. 연쇄 합체도 가능합니다.   
-  Matching numbers adjacent in any direction merge. The newer card is absorbed into the older one, doubling its value. Chain merges are possible.
+NumStone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers. No time pressure — just think, drop, and chain your way to bigger numbers.
 
-- 바위 안에는 숫자가 숨겨져 있습니다. 숨겨진 숫자의 절반이 인접하면 숫자가 노출됩니다. 같은 숫자가 인접하면 바위가 깨지며 합체됩니다.   
-  Each rock hides a secret number. When half that number touches it, the number is revealed. When the same number touches it, the rock shatters and merges.
+## Core Rules
 
-- 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
-  The game ends when the top row is full — even if space remains below. Watch the top.
+* 3 cards wait in queue. Choose a column to drop the first card — it lands on the bottom or stacks on top of another card.  
+* Matching numbers adjacent in any direction merge. The newer card is absorbed into the older one, doubling its value. Chain merges are possible.  
+* The game ends when the top row is full — even if space remains below.  
+* In NumBoom / NumNum / NumChaos, number cards (2, 4, 8, 16) and special cards are shuffled together randomly in the queue. The player chooses a column, and the front card drops into that position.  
+* Special cards have no effect if they land without touching a number card.
 
----
-
-## Play Numstone :https://soosooland.com/stone/   
-
----
-
-  ##  👤 넘드롭스( Numdrops)
-
-넘드롭스(Numdrops)는  넘스톤(NumStone)의 바위가 없는 버전입니다.
-
-넘드롭스는 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다.  
-열을 선택해 카드를 드롭하고, 숫자를 합체시켜 더 큰 수를 만드세요 — 시간 압박은 없습니다.  
-Numstone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers together.  
-Choose a column, drop your card, and merge your way to bigger numbers — no time pressure. 
-
-### 게임 방법 / How to Play  
-
-- 대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바닥이나 다른 카드 위에 얹힙니다.    
-  3 cards wait in queue. Choose a column to drop the first card — it lands on the bottom or on top of another card.  
-  
-- 상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 먼저 있던 카드에 흡수되어 2배가 됩니다. 연쇄 합체도 가능합니다.    
-  Matching numbers adjacent in any direction merge. The newer card is absorbed into the older one, doubling its value. Chain merges are possible.  
-
-- 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
-  The game ends when the top row is full — even if space remains below. Watch the top.
-
----  
-
-##Play Numdrops : https://soosooland.com/drop/  
+|Game        |Queue         |Special Cards       |Obstacle|Grid Size      |
+|------------|--------------|----------------------------|--------|---------------|
+|**NumStone**|Number cards only<br>(2·4·8·16)|None|Rock    |4×4 / 5×5 / 6×6|
+|**NumDrops**|Number cards only<br>(2·4·8·16)|None|—       |4×4 / 5×5 / 6×6|
+|**NumChaos**|Number cards (2·4·8·16)<br>special cards mixed|💣÷2 💥÷4 ☢️destroy<br>🍎×2 🍒×4 🍇×8|—       |4×6 / 5×5 / 6×6|
+|**NumBoom** |Number cards (2·4·8·16) <br> special cards mixed|💣÷2 💥÷4 ☢️destroy            |—       |4×6 / 5×5 / 6×6|
+|**NumNum**  |Number cards (2·4·8·16) <br> special cards mixed|🍎×2 🍒×4 🍇×8                 |—       |4×6 / 5×5 / 6×6|
 
 ---  
 
