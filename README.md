@@ -41,19 +41,19 @@ All games available in **Korean and English** for learners worldwide.
 모든 게임은 전 세계 학습자를 위해 **한국어와 영어**로 제공됩니다.  
 
 ## 💡 The Vision
-Making quality educational content accessible to all - no coding skills, no budget, no barriers. Just creativity, AI partnership, and dedication to learning.  
+Making quality educational content accessible to all 
 
-양질의 교육 콘텐츠를 모두에게 - 코딩 기술 없이, 예산 없이, 장벽 없이. 오직 창의성, AI 파트너십, 그리고 배움에 대한 헌신으로.  
+양질의 교육 콘텐츠를 모두에게 
 
    ---
 📌 수수랜드만의 특징  
 📌 Features of Soosoland  
    
-• 저작권 등록 완료 (2025년 8월-9월)   
-워퍼즈 시리즈, 모음퀴즈, 트링클은 8월에, 넘즐 시리즈는 9월에 저작권 등록을 마쳐 독창성과 소유권을 인정받았습니다.  
-• Official Copyright Registration (August-September 2025)   
-The Worpuzz series, Vowel Quiz, and Trinkle were registered in August,   
-while the Numzzle series was registered in September, ensuring originality and ownership for all titles.​​​​​​​​​​​​​​​​   
+• 저작권 등록 완료 (2025년 8월- 2026년 6월 )   
+워퍼즈 시리즈, 모음퀴즈, 트링클은 2025년 8월에, 넘즐 시리즈는 2025년 9월에, 넘스톤 시리즈는 2026년 6월에 저작권 등록을 마쳐 독창성과 소유권을 인정받았습니다.  
+• Official Copyright Registration (August 2025-June 2026)   
+The Worpuzz series, Moeum Quiz, and Trinkle were registered in August 2025,    
+while the Numzzle series was registered in September 2025, Numstone series was registered in June 2026 ensuring originality and ownership for all titles.​​​​​​​​​​​​​​​​   
   
 • 건강한 게임 환경    
 중독성을 줄이고, 과도한 몰입을 방지할 수 있도록 설계되었습니다.   
@@ -97,7 +97,7 @@ Then don’t wait—start playing now on Soosoland!
    
 • 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
    
-• 전략 게임 (Strategy Games): 트링클 시리즈(Trinkle), 오목(Gomoku)   
+• 전략 게임 (Strategy Games): 트링클 시리즈(Trinkle), 넘스톤 시리즈 (Numstone), 오목(Gomoku)   
       
 ---
 
