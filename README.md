@@ -53,7 +53,9 @@ Making quality educational content accessible to all
 워퍼즈 시리즈, 모음퀴즈, 트링클은 2025년 8월에, 넘즐 시리즈는 2025년 9월에, 넘스톤 시리즈는 2026년 6월에 저작권 등록을 마쳐 독창성과 소유권을 인정받았습니다.  
 • Official Copyright Registration (August 2025-June 2026)   
 The Worpuzz series, Moeum Quiz, and Trinkle were registered in August 2025,    
-while the Numzzle series was registered in September 2025, Numstone series was registered in June 2026 ensuring originality and ownership for all titles.​​​​​​​​​​​​​​​​   
+while the Numzzle series was registered in September 2025, 
+Numstone series was registered in June 2026 
+ensuring originality and ownership for all titles.​​​​​​​​​​​​​​​​   
   
 • 건강한 게임 환경    
 중독성을 줄이고, 과도한 몰입을 방지할 수 있도록 설계되었습니다.   
