@@ -371,11 +371,6 @@ Results must be natural numbers only.
 |Multi-digit numbers allowed   |Numzzle Jam, Numzzle, Numzzle Up, Numpple Jam, Numpple, Numtter, Numtle|
 
 ---
-  ## ⚠️ Copyright Notice | 저작권 안내 | کاپی رائٹ نوٹس  
-
-All games are registered copyrights. Unauthorized copying or redistribution is prohibited.  
-모든 게임은 저작권 등록된 창작물입니다. 무단 복제 및 배포를 금합니다.  
-تمام گیمز کاپی رائٹ محفوظ ہیں۔ غیر مجاز نقل ممنوع ہے۔
  
 ## 넘스톤 시리즈 / NumStone Series
 
