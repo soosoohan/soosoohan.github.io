@@ -143,13 +143,15 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
   The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
 
-- 둘이 모음은 두 사용자가 대결하는 모음퀴즈이고  게임이 끝났을 때 많이 맞춘 사용자가 이깁니다.
-  Doori Moeum is a two-player competitive version of the vowel quiz where users compete against each other, and whoever gets more correct answers wins.   
+- 모음딕과 모음스쿨은 대한민국 초등학교 교과서 어휘로 만든 학습 퀴즈입니다. 현재 1학년부터 5학년 1학기까지 어휘 4,000여 개를 수록하였으며, 이후 학기 어휘는 순차적으로 추가될 예정입니다.
+  Moeum-Dic and Moeum-School are learning quizzes built from Korean elementary school textbook vocabulary. The current version covers 4,000+ words spanning Grade 1 through the first semester of Grade 5, with additional vocabulary to be added in future updates.
 
-| 사용자 user    | 👤혼자 하기 |👤혼자 하기   | 👤🆚👤사용자 2인 대결 |  👤혼자 하기|
-|---------|---------|--------------|---------|-------|
-|  게임 Game| 모음퀴즈 <br>Moeum-quiz |모음 라운드<br>Moeum Round<br> 모음 스쿨<br> Moeum School|  둘이 모음<br> Doori-moeun |하루모음<br> Haroo Moeum     |
-|게임 종료|6회 틀리거나 정답을 맞추면 |100점 만점 |정답을 맞출 때까지| 6회 틀리거나 정답을 맞추면|
+---
+
+| 사용자 | 👤 혼자 하기 | 👤 혼자 하기 | 👤🆚👤 2인 대결 | 👤 학습 퀴즈 |
+|---|---|---|---|---|
+| **게임** | 모음퀴즈<br>Moeum Quiz | 모음 라운드<br>Moeum Round | 둘이 모음<br>Doori-moeun | 모음스쿨 Moeum School<br>모음딕 Moeum Dict |
+| **게임 종료** | 6회 틀리거나 정답을 맞추면 | 10라운드 끝나면 | 정답을 맞출 때까지 | 모두 맞출 때까지<br>틀리면 다시 풀기 |
 
 -----
 
