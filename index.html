@@ -26,16 +26,11 @@
         window.gtag = function(){ dataLayer.push(arguments); };
         gtag('js', new Date());
         gtag('config', 'G-4YZHC1G9FN');
-        console.log("GA4 활성화됨 (운용 환경)");
-      };
-      
+      };      
       document.head.appendChild(script);
     } else {
-      // 로컬일 때는 빈 함수 생성
       window.gtag = function() { 
-        console.log("로컬 환경 - 데이터 전송 차단됨:", arguments); 
       };
-      console.log("GA4 비활성화됨 (로컬 환경)");
     }
 
     // 2. 카테고리 트래킹 함수
