@@ -117,8 +117,12 @@
     <lastmod>2026-06-14</lastmod>
   </sitemap>
  <sitemap>
-    <loc>https://soosooland.com/nuchaos/sitemap.xml</loc>
+    <loc>https://soosooland.com/numchaos/sitemap.xml</loc>
     <lastmod>2026-06-14</lastmod>
+  </sitemap>
+ <sitemap>
+    <loc>https://soosooland.com/dict/sitemap.xml</loc>
+    <lastmod>2026-06-21</lastmod>
   </sitemap>
 
 </sitemapindex>
