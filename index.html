@@ -596,6 +596,10 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <span class="ko-text">단어</span>
     <span class="en-text hidden">Word</span>
   </button>
+  <button class="category-btn" onclick="filterGames('learning', this)">
+    <span class="ko-text">학습</span>
+    <span class="en-text hidden">Learning</span>
+  </button>
   <button class="category-btn" onclick="filterGames('quiz', this)">
     <span class="ko-text">퀴즈</span>
     <span class="en-text hidden">Quiz</span>
@@ -927,7 +931,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 
 
  <!-- 모음스쿨 -->
-<div class="game-card" data-category="quiz" data-rank="10" data-mobile="true" onclick="location.href='https://soosooland.com/school'">
+<div class="game-card" data-category="learning" data-rank="10" data-mobile="true" onclick="location.href='https://soosooland.com/school/'">
      <div class="game-card-header">
        <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -946,7 +950,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
                    </div>
               </div>
               <div class="en-text hidden">
-                    <strong>Korean Hangman</strong><br>
+                    <strong>Learning Quiz</strong><br>
                   <div align="center">
   <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum School"><br>
                   </div>
@@ -954,9 +958,37 @@ setTimeout(() => startBtn.onclick(), introDelay);
               
          </div>
     </div>
-  
+   <!-- 모음사전 -->
+<div class="game-card" data-category="learning" data-rank="10" data-mobile="true" onclick="location.href='https://soosooland.com/dict/'">
+     <div class="game-card-header">
+       <div class="game-difficulty">
+            <span class="ko-text">👤 혼자하기</span>
+            <span class="en-text hidden">👤 Solo</span>
+       </div>
+       <div class="game-title">
+                    <span class="ko-text">모음 사전</span>
+                    <span class="en-text hidden">Moeum Dict</span>
+               </div>
+           </div>
+           <div class="game-description-text">
+               <div class="ko-text">
+                    <strong>초등학생 학습 퀴즈</strong><br>
+                   <div align="center">
+  <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Dict"><br>
+                   </div>
+              </div>
+              <div class="en-text hidden">
+                    <strong>Learning Quiz</strong><br>
+                  <div align="center">
+  <img src="https://soosooland.com/images/moeum.jpeg" width="150" alt="Moeum Dict"><br>
+                  </div>
+              </div>
+              
+         </div>
+    </div>
+
 <!-- 모음퀴즈 -->
-<div class="game-card" data-category="quiz" data-rank="18" data-mobile="true" onclick="location.href='https://soosooland.com/moeum-quiz'">
+<div class="game-card" data-category="quiz" data-rank="18" data-mobile="true" onclick="location.href='https://soosooland.com/moeum-quiz/'">
 <div class="game-card-header">
     <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -983,7 +1015,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
     </div>
 <!-- 둘이모음 -->
-<div class="game-card" data-category="quiz" data-rank="28" data-mobile="true" onclick="location.href='https://soosooland.com/doori'">
+<div class="game-card" data-category="quiz" data-rank="28" data-mobile="true" onclick="location.href='https://soosooland.com/doori/'">
 <div class="game-card-header">
       <div class="game-difficulty">
       <span class="ko-text">👥 2인 대결</span>
@@ -1010,7 +1042,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
     </div>
       <!-- 모음 라운드 -->
-<div class="game-card" data-category="quiz" data-rank="6" data-mobile="true" onclick="location.href='https://soosooland.com/round'">
+<div class="game-card" data-category="quiz" data-rank="6" data-mobile="true" onclick="location.href='https://soosooland.com/round/'">
      <div class="game-card-header">
      <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -1038,7 +1070,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
     </div>
 <!-- 워퍼즈-->
-<div class="game-card" data-category="word" data-rank="19" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzz'">
+<div class="game-card" data-category="word" data-rank="19" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzz/'">
          <div class="game-card-header">
              <div class="game-difficulty">
         <span class="ko-text">🤖 NPC 대결</span>
@@ -1065,7 +1097,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
        </div>  
     </div>
 <!-- 워퍼즈 메이트-->
-<div class="game-card" data-category="word" data-rank="21" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzzmate'">
+<div class="game-card" data-category="word" data-rank="21" data-mobile="false" onclick="location.href='https://soosooland.com/worpuzzmate/'">
          <div class="game-card-header">
       <div class="game-difficulty">
       <span class="ko-text">👥 2인 대결</span>
@@ -1092,7 +1124,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
        </div>  
     </div>
  <!-- 워퍼즈 브리즈 -->
-<div class="game-card" data-category="word" data-rank="14" data-mobile="false" onclick="location.href='https://soosooland.com/breeze'">
+<div class="game-card" data-category="word" data-rank="14" data-mobile="false" onclick="location.href='https://soosooland.com/breeze/'">
             <div class="game-card-header">
        <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -1120,7 +1152,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
        </div>  
     </div>
  <!-- 브리즈 젠-->
-<div class="game-card" data-category="word" data-rank="23" data-mobile="false" onclick="location.href='https://soosooland.com/zen'">
+<div class="game-card" data-category="word" data-rank="23" data-mobile="false" onclick="location.href='https://soosooland.com/zen/'">
          <div class="game-card-header">
              <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -1563,7 +1595,7 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
-        // 상위 26개 + 항상 보이는 카드
+        // 상위 30개 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
