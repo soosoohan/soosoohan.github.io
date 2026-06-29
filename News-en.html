@@ -56,6 +56,7 @@ th:first-child,td:first-child{text-align:left}
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#jun-2026">June 2026</a>
     <a href="#may-2026">May 2026</a>
     <a href="#apr-2026">April 2026</a>
     <a href="#mar-2026">March 2026</a>
@@ -71,6 +72,13 @@ th:first-child,td:first-child{text-align:left}
   </nav>
 
   <!-- 2026년 6월 -->
+  <section class="card" id="jun-2026">
+    <div class="section-title">June 2026 Popularity Rankings</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="junBody"></tbody>
+    </table>
+  </section>
   <section class="card">
     <div class="section-title">📅 June 2026 Timeline</div>
     <div class="timeline" id="junTimeline"></div>
@@ -261,7 +269,8 @@ const monthlyNews = {
     "2026-06-14: Numboom released",
     "2026-06-14: Numchaos released",
     "2026-06-19: SoosooLand reached 3,000 users",
-    "2026-06-21: Moeum Dict released"
+    "2026-06-21: Moeum Dict released",
+    "2026-06-29: SoosooLand reached 3,400 users"
   ],
   "2026-05": [
     "2026-05-08: SoosooLand reached 2,100 users",
@@ -431,6 +440,7 @@ function drawAllTimeline() {
 }
 
 function initializePage() {
+  drawRankingTable("2026-06", "junBody", "2026-05");
   drawRankingTable("2026-05", "mayBody", "2026-04");
   drawRankingTable("2026-04", "aprBody", "2026-03");
   drawRankingTable("2026-03", "marBody", "2026-02");
