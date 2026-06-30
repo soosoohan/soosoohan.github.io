@@ -76,6 +76,13 @@ th:first-child,td:first-child{text-align:left}
 
  <!-- 2026년 6월 -->
  <section class="card" id="jun-2026">
+   <div class="section-title">2026년 6월 인기순위</div>
+   <table>
+     <thead><tr><th>순위</th><th>게임</th><th>순위변동</th></tr></thead>
+     <tbody id="junBody"></tbody>
+   </table>
+ </section>
+ <section class="card" id="jun-2026">
    <div class="section-title">📅 2026년 6월 연표</div>
    <div class="timeline" id="junTimeline"></div>
  </section>
@@ -240,7 +247,8 @@ th:first-child,td:first-child{text-align:left}
 
 <script>
 const monthlyRanking = {
- "2026-05": ["넘스톤","야구게임","모음퀴즈","트링클","넘즐","워퍼즈","오목"],
+ "2026-06": ["넘스톤","오목","모음퀴즈","워퍼즈","넘즐","야구게임","트링클"],
+ "2026-05": ["오목", "넘스톤","야구게임","모음퀴즈","트링클","넘즐","워퍼즈"],
  "2026-04": ["오목","야구게임","모음퀴즈","트링클","넘즐","워퍼즈"],
  "2026-03": ["모음퀴즈","오목","워퍼즈","야구게임","트링클","넘즐"],
  "2026-02": ["모음퀴즈","오목","트링클","야구게임","넘즐","워퍼즈"],
@@ -263,8 +271,8 @@ const monthlyNews = {
    "2026-06-14: 넘붐 출시",
    "2026-06-14: 넘카오스 출시",
    "2026-06-19: 수수랜드 사용자 3,000명 달성",
-   "2026-06-21: 모음 사전 출시"
-
+   "2026-06-21: 모음 사전 출시",
+   "2026-06-29: 수수랜드 사용자 3,400명 달성"
  ],
  "2026-05": [
    "2026-05-08: 수수랜드 사용자 2,100명 달성",
@@ -432,6 +440,7 @@ function drawAllTimeline() {
 }
 
 function initializePage() {
+ drawRankingTable("2026-06", "junBody", "2026-05");
  drawRankingTable("2026-05", "mayBody", "2026-04");
  drawRankingTable("2026-04", "aprBody", "2026-03");
  drawRankingTable("2026-03", "marBody", "2026-02");
