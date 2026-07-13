@@ -56,6 +56,7 @@ th:first-child,td:first-child{text-align:left}
 
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
+    <a href="#jul-2026">July 2026</a>
     <a href="#jun-2026">June 2026</a>
     <a href="#may-2026">May 2026</a>
     <a href="#apr-2026">April 2026</a>
@@ -71,7 +72,13 @@ th:first-child,td:first-child{text-align:left}
     <a href="#timeline">Full Timeline</a>
   </nav>
 
-  <!-- 2026년 6월 -->
+  <!-- 2026년 7월 -->
+  <section class="card">
+    <div class="section-title">📅 July 2026 Timeline</div>
+    <div class="timeline" id="jul26Timeline"></div>
+  </section>
+
+<!-- 2026년 6월 -->
   <section class="card" id="jun-2026">
     <div class="section-title">June 2026 Popularity Rankings</div>
     <table>
@@ -81,7 +88,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 June 2026 Timeline</div>
-    <div class="timeline" id="junTimeline"></div>
+    <div class="timeline" id="jun26Timeline"></div>
   </section>
 
   <!-- 2026년 5월 -->
@@ -94,7 +101,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 May 2026 Timeline</div>
-    <div class="timeline" id="mayTimeline"></div>
+    <div class="timeline" id="may26Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -108,7 +115,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 April 2026 Timeline</div>
-    <div class="timeline" id="aprTimeline"></div>
+    <div class="timeline" id="apr26Timeline"></div>
   </section>
 
   <!-- 2026년 3월 -->
@@ -121,7 +128,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 March 2026 Timeline</div>
-    <div class="timeline" id="marTimeline"></div>
+    <div class="timeline" id="mar26Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -135,7 +142,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 February 2026 Timeline</div>
-    <div class="timeline" id="febTimeline"></div>
+    <div class="timeline" id="feb26Timeline"></div>
   </section>
 
   <!-- 2026년 1월 -->
@@ -148,7 +155,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 January 2026 Timeline</div>
-    <div class="timeline" id="janTimeline"></div>
+    <div class="timeline" id="jan26Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -162,7 +169,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 December 2025 Timeline</div>
-    <div class="timeline" id="decTimeline"></div>
+    <div class="timeline" id="dec25Timeline"></div>
   </section>
 
   <!-- 11월 -->
@@ -175,7 +182,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 November 2025 Timeline</div>
-    <div class="timeline" id="novTimeline"></div>
+    <div class="timeline" id="nov25Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -189,7 +196,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 October 2025 Timeline</div>
-    <div class="timeline" id="octTimeline"></div>
+    <div class="timeline" id="oct25Timeline"></div>
   </section>
 
   <!-- 9월 -->
@@ -202,7 +209,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 September 2025 Timeline</div>
-    <div class="timeline" id="sepTimeline"></div>
+    <div class="timeline" id="sep25Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -216,7 +223,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 August 2025 Timeline</div>
-    <div class="timeline" id="augTimeline"></div>
+    <div class="timeline" id="aug25Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -230,7 +237,7 @@ th:first-child,td:first-child{text-align:left}
   </section>
   <section class="card">
     <div class="section-title">📅 July 2025 Timeline</div>
-    <div class="timeline" id="julTimeline"></div>
+    <div class="timeline" id="jul25Timeline"></div>
   </section>
   <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
@@ -260,6 +267,9 @@ const monthlyRanking = {
 };
 
 const monthlyNews = {
+  "2026-07": [
+    "2026-07-09: SoosooLand reached 4,000 users"
+  ],
   "2026-06": [
     "2026-06-04: Launched dev blog on Brunch",
     "2026-06-06: SoosooLand reached 2,500 users",
@@ -453,18 +463,19 @@ function initializePage() {
   drawRankingTable("2025-08", "aug25Body", "2025-07");
   drawRankingTable("2025-07", "jul25Body", null);
 
-  drawTimeline("2026-06", "junTimeline");
-  drawTimeline("2026-05", "mayTimeline");
-  drawTimeline("2026-04", "aprTimeline");
-  drawTimeline("2026-03", "marTimeline");
-  drawTimeline("2026-02", "febTimeline");
-  drawTimeline("2026-01", "janTimeline");
-  drawTimeline("2025-12", "decTimeline");
-  drawTimeline("2025-11", "novTimeline");
-  drawTimeline("2025-10", "octTimeline");
-  drawTimeline("2025-09", "sepTimeline");
-  drawTimeline("2025-08", "augTimeline");
-  drawTimeline("2025-07", "julTimeline");
+  drawTimeline("2026-07", "jul26Timeline");
+  drawTimeline("2026-06", "jun26Timeline");
+  drawTimeline("2026-05", "may26Timeline");
+  drawTimeline("2026-04", "apr26Timeline");
+  drawTimeline("2026-03", "mar26Timeline");
+  drawTimeline("2026-02", "feb26Timeline");
+  drawTimeline("2026-01", "jan26Timeline");
+  drawTimeline("2025-12", "dec25Timeline");
+  drawTimeline("2025-11", "nov25Timeline");
+  drawTimeline("2025-10", "oct25Timeline");
+  drawTimeline("2025-09", "sep25Timeline");
+  drawTimeline("2025-08", "aug25Timeline");
+  drawTimeline("2025-07", "jul25Timeline");
 
   drawAllTimeline();
 }
