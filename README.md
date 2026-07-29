@@ -5,18 +5,12 @@ All games are registered copyrights. Unauthorized copying or redistribution is p
 تمام گیمز کاپی رائٹ محفوظ ہیں۔ غیر مجاز نقل ممنوع ہے۔
 
 # 🎮 Soosooland (수수랜드)
-**AI-powered educational gaming platform built through human-AI collaboration**  
-
-## 🌐 Play Now
-https://soosooland.com
 
 No downloads, no ads, no data collection - just pure educational fun in your browser.  
-
+Soosooland does not collect personal information. The ID used for score submissions is an anonymous code automatically generated on your device.  
+All games available in **Korean and English** for learners worldwide.    
 다운로드 없이, 광고 없이, 데이터 수집 없이  브라우저에서 바로 즐기는 퍼즐 게임 플랫폼이에요.   
 수수랜드는 개인정보를 수집하지 않습니다. 점수 등록에 사용되는 ID는 기기에서 자동 생성된 익명 코드입니다.  
-
-All games available in **Korean and English** for learners worldwide.  
-
 모든 게임은 전 세계 학습자를 위해 **한국어와 영어**로 제공됩니다.  
 
 
@@ -57,9 +51,6 @@ Games like Gomoku and Baseball-style logic games are reinterpreted for modern ga
 • Accessible via Chrome, Safari, or other browsers   
 • No downloads required!   
      
-그렇다면 지금 바로 수수랜드에서 만나보세요!     
-Then don’t wait—start playing now on Soosoland!    
- https://soosooland.com/   
 
 ---
 
@@ -654,7 +645,7 @@ Hangul Baseball is a consonant-based deduction game for Korean words (2–5 syll
 
  "Learning through fun, and fun through learning."
 
-Explore more brain games and puzzles in **[Soosooland](https://soosooland.com/)**    
+Explore more puzzles in **[Soosooland](https://soosooland.com/)**    
 — a digital playground designed to improve memory, logic, and creativity while having fun!
 
 ---
@@ -718,4 +709,3 @@ This project is registered with the Korea Copyright Commission.
 Created and Developed by: Soosoo Han  
 ⓒ 2025 한수수. 모든 권리는 제작자인 한수수에게 있습니다.   
 © 2025 Soosoo Han. All rights reserved.​​​​​​​​​​​​​​​​   
-
