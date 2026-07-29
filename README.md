@@ -12,38 +12,13 @@ https://soosooland.com
 
 No downloads, no ads, no data collection - just pure educational fun in your browser.  
 
-다운로드 없이, 광고 없이, 데이터 수집 없이  브라우저에서 바로 즐기는 교육·두뇌개발용 게임 플랫폼이에요.   
-수수랜드는 개인정보를 수집하지 않습니다. 점수 등록에 사용되는 ID는 기기에서 자동 생성된 익명 코드입니다.
-
-## 🎯 Games for Growing Minds
-
-- 🔤 Word puzzles (단어 게임)  
-- 🔍 Logic games (추리·논리 게임)  
-- 🎲 Strategy games (전략 게임)  
-- ➕ Math games (연산 게임)  
-
-## 🧠 Educational Impact
-Designed to enhance:  
-- Critical thinking (사고력)  
-- Vocabulary (어휘력)  
-- Arithmetic skills (연산 능력)  
-- Memory & logic (기억력·논리력)  
-
-학습 능력, 사고력, 어휘력, 연산 능력, 논리력, 기억력을 향상시켜 두뇌 개발과 두뇌 건강에 도움이 됩니다.  
-## 🌍 Global Reach
-
-Used by users across South Korea 🇰🇷, USA 🇺🇸, Germany 🇩🇪, Ghana 🇬🇭, Turkey 🇹🇷, Morocco 🇲🇦, Vietnam 🇻🇳, Canada 🇨🇦, India 🇮🇳, Taiwan 🇹🇼, Bangladesh 🇧🇩, Finland 🇫🇮, Russia 🇷🇺, Poland 🇵🇱, New Zealand 🇳🇿, and more.  
-
-대한민국, 미국, 독일, 가나, 튀르키예, 모로코, 베트남, 캐나다, 인도, 대만, 방글라데시, 핀란드, 러시아, 폴란드, 뉴질랜드 등 전 세계 여러 나라에서 이용하고 있습니다.  
+다운로드 없이, 광고 없이, 데이터 수집 없이  브라우저에서 바로 즐기는 퍼즐 게임 플랫폼이에요.   
+수수랜드는 개인정보를 수집하지 않습니다. 점수 등록에 사용되는 ID는 기기에서 자동 생성된 익명 코드입니다.  
 
 All games available in **Korean and English** for learners worldwide.  
 
 모든 게임은 전 세계 학습자를 위해 **한국어와 영어**로 제공됩니다.  
 
-## 💡 The Vision
-Making quality educational content accessible to all 
-
-양질의 교육 콘텐츠를 모두에게 
 
    ---
 📌 수수랜드만의 특징  
@@ -79,10 +54,8 @@ Games like Gomoku and Baseball-style logic games are reinterpreted for modern ga
  https://soosooland.com/    
 • 크롬, 사파리 등 브라우저에서 바로 접속 가능   
 • 다운로드 불필요!   
-• 언제 어디서든 가볍게 두뇌 개발 게임을 즐길 수 있습니다.  
 • Accessible via Chrome, Safari, or other browsers   
 • No downloads required!   
-• Play brain-training games anytime, anywhere.   
      
 그렇다면 지금 바로 수수랜드에서 만나보세요!     
 Then don’t wait—start playing now on Soosoland!    
@@ -472,7 +445,7 @@ Master: Computer plays black and goes first!
 ---
 ## 야구시리즈(Baseball series)
 
-야구 게임은  고전 게임 bulls and cows 를  다양한 코드를 넣어서 만들었습니다.
+야구 게임은  고전 게임 bulls and cows를  다양한 코드를 넣어서 만들었습니다.
 찾아야할 비밀코드에는 숫자, 영어 단어, 한글 단어가 있습니다.
 각 야구게임의 쉬운 버전은 야구 게임의 초심자를 위하여 만들었습니다. 
 
