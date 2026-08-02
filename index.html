@@ -245,6 +245,14 @@ body {
     margin: 0 auto;
     border-radius: 12px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
 }
+.game-alpha {
+    width: 80%;        
+    max-width: 180px;  /* 큰 화면에서 너무 커지는 거 방지 */
+    height: auto;      /* 비율 유지 */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
+}
 
 .game-emoji {
         font-size:1.0rem;
@@ -694,7 +702,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
         <div class="game-title">
         <span class="ko-text">넘즐</span>
-        <span class="en-text hidden">NUMZZLE</span>
+        <span class="en-text hidden">Numzzle</span>
         </div>
       </div>
     
@@ -717,7 +725,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <div class="game-card-header">
         <div class="game-title">
         <span class="ko-text">넘즐X</span>
-        <span class="en-text hidden">NUMZZLEX</span>
+        <span class="en-text hidden">NumzzleX</span>
         </div>
       </div>
 
@@ -740,7 +748,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
       <div class="game-title">
       <span class="ko-text">넘플</span>
-      <span class="en-text hidden">NUMPPLE</span>
+      <span class="en-text hidden">Numpple</span>
       </div>
     </div>
   
@@ -762,7 +770,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
       <div class="game-title">
       <span class="ko-text">넘플X</span>
-      <span class="en-text hidden">NUMPPLEX</span>
+      <span class="en-text hidden">NumppleX</span>
       </div>
   </div>
 </div>
@@ -784,7 +792,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘털</span>
-                    <span class="en-text hidden">NUMTTER</span>
+                    <span class="en-text hidden">Numtter</span>
             </div>
          </div>
         
@@ -807,14 +815,14 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘틀</span>
-                    <span class="en-text hidden">NUMTLE</span>
+                    <span class="en-text hidden">Numtle</span>
             </div>
          </div>
 
     </div>
   <!-- 넘스톤 -->
 <div class="game-card" data-category="strategy" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/stone/'">
- <div class="rank-badge rank-2">🥉 June 3rd</div> 
+ <div class="rank-badge rank-2">🥉 June</div> 
          <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
@@ -830,14 +838,14 @@ setTimeout(() => startBtn.onclick(), introDelay);
  <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘스톤</span>
-                    <span class="en-text hidden">NUMSTONE</span>
+                    <span class="en-text hidden">NumStone</span>
             </div>
          </div>
 
     </div>
   <!-- 넘드롭스 -->
 <div class="game-card" data-category="strategy" data-rank="3" data-mobile="true" onclick="location.href='https://soosooland.com/drop/'">
-  <div class="rank-badge rank-2">🥉 July 3rd</div> 
+  <div class="rank-badge rank-2">🥉 July</div> 
         <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
@@ -853,14 +861,14 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘드롭스</span>
-                    <span class="en-text hidden">NUMDROPS</span>
+                    <span class="en-text hidden">NumDrops</span>
             </div>
          </div>
 
     </div>
   <!-- 넘넘 -->
 <div class="game-card" data-category="strategy" data-rank="2" data-mobile="true" onclick="location.href='https://soosooland.com/numnum/'">
-         <div class="rank-badge rank-3">🥈 June 2nd / July 2nd</div>  
+         <div class="rank-badge rank-3">🥈 June / 🥈 July</div>  
 <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
@@ -876,7 +884,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
  <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘넘</span>
-                    <span class="en-text hidden">NUMNUM</span>
+                    <span class="en-text hidden">NumNum</span>
             </div>
          </div>
 
@@ -899,7 +907,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘카오스</span>
-                    <span class="en-text hidden">NUMCHAOS</span>
+                    <span class="en-text hidden">NumChaos</span>
             </div>
          </div>
     </div>
@@ -921,29 +929,29 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
             <div class="game-title">
                     <span class="ko-text">넘붐</span>
-                    <span class="en-text hidden">NUMBOOM</span>
+                    <span class="en-text hidden">NumBoom</span>
             </div>
          </div>
     </div>
   <!-- 넘스탬프 -->
 <div class="game-card" data-category="strategy" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/numstamp/'">
-  <div class="rank-badge rank-new">🌱 beta</div>
+  <div class="rank-badge rank-new">🌱 Alpha</div>
  <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
-  <img src="https://soosooland.com/images/hook.png" class="game-thumb" alt="numstamp in development">
+  <img src="https://soosooland.com/images/hook.png" class="game-alpha" alt="numstamp in development">
                  </div>
              </div>
              <div class="en-text hidden">
                  <div align="center">
-  <img src="https://soosooland.com/images/hook.png" class="game-thumb" alt="numstamp in development">
+  <img src="https://soosooland.com/images/hook.png" class="game-alpha" alt="numstamp in development">
                  </div>
              </div>             
         </div>
 <div class="game-card-header">
             <div class="game-title">
-                    <span class="ko-text">넘스탬프(개발중)</span>
-                    <span class="en-text hidden">NUMSTAMP(in development)</span>
+                    <span class="ko-text">넘스탬프<br>(개발중)</span>
+                    <span class="en-text hidden">NumStamp<br>(Alpha)</span>
             </div>
          </div>
     </div>
@@ -1012,7 +1020,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="game-card-header">
               <div class="game-title">
                     <span class="ko-text">모음 퀴즈 </span>
-                    <span class="en-text hidden">Moeum quiz</span>
+                    <span class="en-text hidden">Moeum Quiz</span>
                </div>
            </div>
     </div>
@@ -1061,7 +1069,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
  </div>
 
     <!-- 하루 모음 -->
-<div class="game-card" data-category="quiz" data-rank="18" data-mobile="true" onclick="location.href='https://soosooland.com/haroo/'">
+<div class="game-card" data-category="quiz" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/haroo/'">
     <div class="rank-badge rank-new">🌱 NEW</div>
        <div class="game-description-text">
                <div class="ko-text">
@@ -1100,7 +1108,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          <div class="game-card-header">
              <div class="game-title">
                  <span class="ko-text">워퍼즈</span>
-                 <span class="en-text hidden">WORPUZZ</span>
+                 <span class="en-text hidden">Worpuzz</span>
              </div>
          </div>
     </div>
@@ -1121,7 +1129,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          <div class="game-card-header">
              <div class="game-title">
                  <span class="ko-text">워퍼즈 메이트</span>
-                 <span class="en-text hidden">WORPUZZ MATE</span>
+                 <span class="en-text hidden">Worpuzz Mate</span>
              </div>
          </div>
     </div>
@@ -1143,7 +1151,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
             <div class="game-card-header">
              <div class="game-title">
                  <span class="ko-text">워퍼즈 브리즈</span>
-                 <span class="en-text hidden">WORPUZZ BREEZE</span>
+                 <span class="en-text hidden">Worpuzz Breeze</span>
              </div>
          </div>
     </div>
@@ -1165,7 +1173,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
              
              <div class="game-title">
                  <span class="ko-text">브리즈 젠</span>
-                 <span class="en-text hidden">BREEZE ZEN</span>
+                 <span class="en-text hidden">Breeze Zen</span>
              </div>
          </div>
     </div>
@@ -1186,7 +1194,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <div class="game-card-header">
        <div class="game-title">
             <span class="ko-text">브리즈 팝</span>
-            <span class="en-text hidden">BREEZE pop</span>
+            <span class="en-text hidden">Breeze pop</span>
        </div>
          </div>
     </div>
@@ -1208,7 +1216,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
              
              <div class="game-title">
                  <span class="ko-text">브리즈 필드</span>
-                 <span class="en-text hidden">BREEZE FIELD</span>
+                 <span class="en-text hidden">Breeze Field</span>
              </div>
          </div>
     </div>
@@ -1276,7 +1284,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
           
               <div class="game-title">
                    <span class="ko-text">트링클</span>
-                   <span class="en-text hidden">TRINKLE</span>
+                   <span class="en-text hidden">Trinkle</span>
               </div>
           </div>
     </div>
@@ -1304,7 +1312,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 <!-- 오목 게임 -->
 <div class="game-card" data-category="strategy" data-rank="1" data-mobile="true" onclick="location.href='https://soosooland.com/omok'">
-  <div class="rank-badge rank-1">🥇 June 1st / July 1st</div>
+  <div class="rank-badge rank-1">🥇 June / 🥇 July</div>
          <div class="game-description-text">
               <div class="ko-text">
                   <div align="center">
@@ -1321,7 +1329,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
             
             <div class="game-title">
                   <span class="ko-text">오목</span>
-                  <span class="en-text hidden">OMOK</span>
+                  <span class="en-text hidden">Omok</span>
             </div>
          </div>
      </div>
@@ -1343,7 +1351,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          
              <div class="game-title">
                  <span class="ko-text">워퍼즈 미니</span>
-                 <span class="en-text hidden">WORPUZZ mini</span>
+                 <span class="en-text hidden">Worpuzz mini</span>
              </div>
          </div>
     </div>
@@ -1365,7 +1373,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <div class="game-card-header">
                   <div class="game-title">
                  <span class="ko-text">워퍼즈 몽</span>
-                 <span class="en-text hidden">WORPUZZ MONG</span>
+                 <span class="en-text hidden">Worpuzz Mong</span>
              </div>
          </div>
          </div>
