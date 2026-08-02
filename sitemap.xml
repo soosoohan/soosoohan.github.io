@@ -128,6 +128,10 @@
     <loc>https://soosooland.com/haroo/sitemap.xml</loc>
     <lastmod>2026-08-01</lastmod>
   </sitemap>
+ <sitemap>
+    <loc>https://soosooland.com/numstamp/sitemap.xml</loc>
+    <lastmod>2026-08-02</lastmod>
+  </sitemap>
 
 </sitemapindex>
 
