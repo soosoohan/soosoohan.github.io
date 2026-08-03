@@ -59,13 +59,14 @@ th:first-child,td:first-child{text-align:left}
 <div class="wrap">
  <h1>📰 수수랜드의 기록</h1>
  <nav class="topnav">
-   <a href="#jul-2026">2026년 07월</a>
-   <a href="#jun-2026">2026년 06월</a>
-   <a href="#may-2026">2026년 05월</a>
-   <a href="#apr-2026">2026년 04월</a>
-   <a href="#mar-2026">2026년 03월</a>
-   <a href="#feb-2026">2026년 02월</a>
-   <a href="#jan-2026">2026년 01월</a>
+   <a href="#jul-2026">2026년 8월</a>
+   <a href="#jul-2026">2026년 7월</a>
+   <a href="#jun-2026">2026년 6월</a>
+   <a href="#may-2026">2026년 5월</a>
+   <a href="#apr-2026">2026년 4월</a>
+   <a href="#mar-2026">2026년 3월</a>
+   <a href="#feb-2026">2026년 2월</a>
+   <a href="#jan-2026">2026년 1월</a>
    <a href="#dec-2025">2025년 12월</a>
    <a href="#nov-2025">2025년 11월</a>
    <a href="#oct-2025">2025년 10월</a>
@@ -74,12 +75,24 @@ th:first-child,td:first-child{text-align:left}
    <a href="#jul-2025">2025년 7월</a>
    <a href="#timeline">전체 연표</a>
  </nav>
+<!-- 2026년 8월 -->
+  <section class="card">
+    <div class="section-title">📅 2026년 8월 타임라인</div>
+    <div class="timeline" id="aug26Timeline"></div>
+  </section>
 
- <!-- 2026년 7월 -->
- <section class="card" id="jul-2026">
-   <div class="section-title">📅 2026년 7월 연표</div>
-   <div class="timeline" id="jul26Timeline"></div>
- </section>
+  <!-- 2026년 7월 -->
+  <section class="card" id="jul-2026">
+    <div class="section-title">2026년 7월 인기순위</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="jul26Body"></tbody>
+    </table>
+  </section>
+  <section class="card">
+    <div class="section-title">📅 2026년 7월 타임라인</div>
+    <div class="timeline" id="jul26Timeline"></div>
+  </section>
 <!-- 2026년 6월 -->
  <section class="card" id="jun-2026">
    <div class="section-title">2026년 6월 인기순위</div>
@@ -254,6 +267,7 @@ th:first-child,td:first-child{text-align:left}
 
 <script>
 const monthlyRanking = {
+ "2026-07": ["오목", "넘스톤", "넘즐", "트링클", "야구게임", "모음퀴즈", "워퍼즈" ],
  "2026-06": ["넘스톤","오목","모음퀴즈","워퍼즈","넘즐","트링클", "야구게임"],
  "2026-05": ["오목", "넘스톤","야구게임","모음퀴즈","트링클","넘즐","워퍼즈"],
  "2026-04": ["오목","야구게임","모음퀴즈","트링클","넘즐","워퍼즈"],
@@ -269,6 +283,10 @@ const monthlyRanking = {
 };
 
 const monthlyNews = {
+"2026-08": [
+  "2026-08-02: 하루모음 재출시",
+  "2026-08-02: 넘스탬프 알파 출시"
+],
 "2026-07": [
   "2026-07-09: 수수랜드 사용자 4,000명 달성",
   "2026-07-15: 넘넘, 게임픽스와 잇치닷아이오에서 라이브 시작"
@@ -282,7 +300,7 @@ const monthlyNews = {
    "2026-06-14: 넘붐 출시",
    "2026-06-14: 넘카오스 출시",
    "2026-06-19: 수수랜드 사용자 3,000명 달성",
-   "2026-06-21: 모음 사전 출시",
+   "2026-06-21: 모음 사전 베타 출시",
    "2026-06-29: 수수랜드 사용자 3,400명 달성"
  ],
  "2026-05": [
@@ -451,6 +469,7 @@ function drawAllTimeline() {
 }
 
 function initializePage() {
+ drawRankingTable("2026-07", "jul26Body", "2026-06");
  drawRankingTable("2026-06", "jun26Body", "2026-05");
  drawRankingTable("2026-05", "may26Body", "2026-04");
  drawRankingTable("2026-04", "apr26Body", "2026-03");
@@ -464,6 +483,7 @@ function initializePage() {
  drawRankingTable("2025-08", "aug25Body", "2025-07");
  drawRankingTable("2025-07", "jul25Body", null);
 
+ drawTimeline("2026-08", "jul26Timeline");
  drawTimeline("2026-07", "jul26Timeline");
  drawTimeline("2026-06", "jun26Timeline");
  drawTimeline("2026-05", "may26Timeline");
