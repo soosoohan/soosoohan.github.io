@@ -73,7 +73,20 @@ th:first-child,td:first-child{text-align:left}
     <a href="#timeline">Full Timeline</a>
   </nav>
 
+  <!-- 2026년 8월 -->
+  <section class="card">
+    <div class="section-title">📅 August 2026 Timeline</div>
+    <div class="timeline" id="aug26Timeline"></div>
+  </section>
+
   <!-- 2026년 7월 -->
+  <section class="card" id="jul-2026">
+    <div class="section-title">July 2026 Popularity Rankings</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="jul26Body"></tbody>
+    </table>
+  </section>
   <section class="card">
     <div class="section-title">📅 July 2026 Timeline</div>
     <div class="timeline" id="jul26Timeline"></div>
@@ -255,6 +268,7 @@ th:first-child,td:first-child{text-align:left}
 
 <script>
 const monthlyRanking = {
+  "2026-07": ["Omok", "Numstone",  "Numzzle", "Trinkle", "Baseball Game", "Moeum Quiz", "Worpuzz" ],
   "2026-06": ["Numstone", "Omok", "Moeum Quiz", "Worpuzz", "Numzzle",  "Trinkle", "Baseball Game"],
   "2026-05": ["Omok", "Numstone","Baseball Game", "Moeum Quiz", "Trinkle", "Numzzle","Worpuzz"],
   "2026-04": ["Omok", "Baseball Game", "Moeum Quiz", "Trinkle", "Numzzle","Worpuzz"],
@@ -270,6 +284,10 @@ const monthlyRanking = {
 };
 
 const monthlyNews = {
+  "2026-08": [
+  "2026-08-02: Haroo Moeum re-released",
+  "2026-08-02: NumStamp Alpha released"
+],
   "2026-07": [
   "2026-07-09: SoosooLand reached 4,000 users",
   "2026-07-15: NumNum went live on GamePix and itch.io"
@@ -283,7 +301,7 @@ const monthlyNews = {
     "2026-06-14: Numboom released",
     "2026-06-14: Numchaos released",
     "2026-06-19: SoosooLand reached 3,000 users",
-    "2026-06-21: Moeum Dict released",
+    "2026-06-21: Moeum Dict Beta released",
     "2026-06-29: SoosooLand reached 3,400 users"
   ],
   "2026-05": [
@@ -454,6 +472,7 @@ function drawAllTimeline() {
 }
 
 function initializePage() {
+  drawRankingTable("2026-07", "jul26Body", "2026-06");
   drawRankingTable("2026-06", "jun26Body", "2026-05");
   drawRankingTable("2026-05", "may26Body", "2026-04");
   drawRankingTable("2026-04", "apr26Body", "2026-03");
