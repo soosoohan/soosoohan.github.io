@@ -123,8 +123,11 @@ body {
         align-items: center;
         justify-content: center;
         position: relative;
-        margin-bottom: 20px;
-        font-size: clamp(1.5rem, 4.3vw, 2.1rem);
+        margin-bottom: 50px;
+        margin-top: 20px;
+        font-size: clamp(2rem, 5vw, 3rem);   
+        letter-spacing: 2px;                
+        font-weight: 700;
         color: #f0f8ff;
    }
 
@@ -173,20 +176,28 @@ body {
         transform: translateY(-2px);
     }
 
+.content-wrapper {
+  max-width: 1100px;  
+  margin: 0 auto;     
+  box-sizing: border-box;
+}
+
 
 .games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 210px);
-    justify-content: center;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 210px);
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
+
 
 .game-card {
         background: rgba(255,255,255,0.95);
         border-radius: 15px;
-    max-width: 210px; 
-    width: 100%;
-    padding: 15px; 
+        max-width: 210px; 
+        width: 100%;
+        padding: 15px; 
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
         cursor: pointer;
@@ -257,66 +268,6 @@ body {
 .github-link:hover {
         text-decoration: underline;
     }
-.category-filter {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 60px;
-margin: 30px;
-flex-wrap: wrap;
-}
-
-
-.category-btn {
-  padding: 10px 20px;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  background: white;
-  cursor: pointer;
-  font-size: clamp(18px, 4vw, 24px);
-  transition: all 0.3s;
-}
-
-.category-btn.active {
-  background: #4CAF50;
-  color: white;
-  border-color: #4CAF50;
-}
-
-.category-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.column {
-flex: 1 1 300px;
-}
-
-
-.btn-list {
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: stretch;
-}
-
-.btn-list button {
-padding: 10px;
-font-size: 15px;
-border: none;
-border-radius: 8px;
-background-color: #FFD6BA; /* 버튼 기본색: 살구톤 */
-color: #7A2E2E;
-cursor: pointer;
-transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-list button:hover {
-background-color: #FF9494;
-color: white;
-}
-
-
 
 /* 순위 배지 스타일 */
 .rank-badge {
@@ -379,8 +330,8 @@ color: white;
 .install-card {
         background: rgba(255,255,255,0.95);
         border-radius: 15px;
-    max-width: 210px; 
-    padding: 15px; 
+        max-width: 210px; 
+        padding: 15px; 
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
         cursor: pointer;
@@ -422,16 +373,87 @@ color: white;
   background-color: #45a049;
 }
  
-.game-catego {
-    width: 20%;        
-    max-width: 200px;  /* 큰 화면에서 너무 커지는 거 방지 */
-    height: auto;      /* 비율 유지 */
-       .back-button {position: fixed;top: 12px; left: 12px;display: block;
-    margin: 20px;
-    border-radius: 12px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 16px;
+  column-gap: 60px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  max-width: 900px;
 }
 
-  
+
+.category-btn {
+  display: flex;
+  align-items: center;      
+  gap: 0px;
+  height: 100px;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 40px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: clamp(8.5px, 1.9vw, 1.05px);
+  transition: all 0.3s;
+}
+
+.category-btn.active {
+  background: #59b55c;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.column {
+flex: 1 1 300px;
+}
+
+.btn-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: stretch;
+}
+
+.btn-list button {
+padding: 10px;
+font-size: 15px;
+border: none;
+border-radius: 8px;
+background-color: white; 
+color: #145454;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-list button:hover {
+background-color: #59b55c;
+color: white;
+}
+
+.game-catego {
+  margin: 20px;
+  border-radius: 12px; 
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.category-btn .ko-text,
+.category-btn .en-text {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 600;
+}
+
 .footer {
       background: #145454;
       text-align: center;
@@ -454,6 +476,9 @@ color: white;
 .footer a:hover {
       text-decoration: underline;
     }
+.footer span {
+  color: white;
+}
     
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -533,16 +558,10 @@ body {
         font-size: 15px;
         border: none;
         border-radius: 8px;
-        background-color: #FFD6BA;
-        color: #7A2E2E;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
     }
 
-.btn-list button:hover {
-        background-color: #FF9494;
-        color: white;
-    }
 
 
 }
@@ -735,7 +754,8 @@ setTimeout(() => startBtn.onclick(), introDelay);
 </div>
 
 
-   
+ <div class="content-wrapper">
+  
 <div class="games-grid">
 <!-- 넘즐 -->
 <div class="game-card" data-category="math" data-rank="5" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
@@ -1489,14 +1509,14 @@ setTimeout(() => startBtn.onclick(), introDelay);
   </button>
    <button class="category-btn" onclick="filterGames('strategy', this)">
           <img src="https://soosooland.com/images/trinkle.png" class="game-catego" alt="전략 게임">
-    <span class="ko-text">전략</span>
-    <span class="en-text hidden">Strategy</span>
+    <span class="ko-text">전략  게임</span>
+    <span class="en-text hidden">Strategy Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('quiz', this)">
   <img src="https://soosooland.com/images/moeum.jpeg" class="game-catego" alt="퀴즈">
 
-    <span class="ko-text">퀴즈</span>
-    <span class="en-text hidden">Quiz</span>
+    <span class="ko-text">퀴즈 퍼즐</span>
+    <span class="en-text hidden">Quiz Puzzle</span>
   </button>
  </div>
     </div>
@@ -1504,18 +1524,18 @@ setTimeout(() => startBtn.onclick(), introDelay);
   <div class="btn-list">
       <button class="category-btn" onclick="filterGames('math', this)">
     <img src="https://soosooland.com/images/numzzle.jpeg" class="game-catego" alt="연산 게임">
-<span class="ko-text">연산</span>
-    <span class="en-text hidden">Math</span>
+<span class="ko-text">수학 게임</span>
+    <span class="en-text hidden">Math Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('logic', this)">
     <img src="https://soosooland.com/images/yagoo.png" class="game-catego" alt="논리">
-<span class="ko-text">논리</span>
-    <span class="en-text hidden">Logic</span>
+<span class="ko-text">논리 게임</span>
+    <span class="en-text hidden">Logic Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('word', this)">
     <img src="https://soosooland.com/images/worpuzz.jpeg" class="game-catego" alt="단어 게임">
- <span class="ko-text">단어</span>
-    <span class="en-text hidden">Word</span>
+ <span class="ko-text">단어 게임</span>
+    <span class="en-text hidden">Word Game</span>
   </button>
   </div>
   </div>
@@ -1551,7 +1571,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <span onclick="location.href='credits-en.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Credits</span>|<br>
      © 2025-2026 Han Soosoo. All rights reserved.  </div>
 </div>
-
+</div>
 <script>
 //  변수 선언 
 let deferredPrompt;
