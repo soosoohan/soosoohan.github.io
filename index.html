@@ -150,6 +150,7 @@ body {
    }
     
 .language-btn {
+        min-width:40px;
         background: rgba(255,255,255,0.3);
         color: #ffffff;
         border: 2px solid rgba(255,255,255,0.6);
@@ -176,7 +177,7 @@ body {
     }
 
 .content-wrapper {
-  max-width: 1100px;  
+  max-width: 1200px;  
   margin: 0 auto;     
   box-sizing: border-box;
 }
@@ -184,7 +185,7 @@ body {
 
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 210px);
+  grid-template-columns: repeat(auto-fill, 190px);
   justify-content: center;
   gap: 20px;
   width: 100%;
@@ -194,7 +195,7 @@ body {
 .game-card {
         background: rgba(255,255,255,0.95);
         border-radius: 15px;
-        max-width: 210px; 
+        max-width: 190px; 
         width: 100%;
         padding: 15px; 
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
@@ -221,27 +222,19 @@ body {
 
 .game-thumb {
     width: 99%;        
-    max-width: 210px;  /* 큰 화면에서 너무 커지는 거 방지 */
+    max-width: 190px;  /* 큰 화면에서 너무 커지는 거 방지 */
     height: auto;      /* 비율 유지 */
     display: block;
     margin: 0 auto;
     border-radius: 12px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
-}
-.game-alpha {
-    width: 80%;        
-    max-width: 180px;  /* 큰 화면에서 너무 커지는 거 방지 */
-    height: auto;      /* 비율 유지 */
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
 }
 
 .game-emoji {
         font-size:1.0rem;
     }
 .game-title {
-    width: 100%;
-        font-size: clamp(1.2rem, 3vw, 1.4rem);
+        width: 100%;
+        font-size: clamp(1.1rem, 2.7vw, 1.15rem);
         font-weight: bold;
         color: #2e8b8b;
         word-wrap: break-word;
@@ -252,7 +245,7 @@ body {
         color: #333;
         line-height: 1.5;
         margin-bottom: 15px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         word-wrap: break-word;
         text-align: center;    
     }
@@ -329,7 +322,7 @@ body {
 .install-card {
         background: rgba(255,255,255,0.95);
         border-radius: 15px;
-        max-width: 210px; 
+        max-width: 190px; 
         padding: 15px; 
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
@@ -392,11 +385,10 @@ body {
   max-width: 400px;
   padding: 10px 20px;
   border: 2px solid #ddd;
-  border-radius: 40px;
+  border-radius: 20px;
   background: white;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: clamp(1px, 2.2vw, 1.2px);
   transition: all 0.3s;
 }
 
@@ -422,21 +414,6 @@ gap: 10px;
 align-items: stretch;
 }
 
-.btn-list button {
-padding: 10px;
-border: none;
-border-radius: 8px;
-background-color: white; 
-color: #145454;
-cursor: pointer;
-transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-list button:hover {
-background-color: #59b55c;
-color: white;
-}
-
 .game-catego {
   margin: 20px;
   border-radius: 12px; 
@@ -448,8 +425,8 @@ color: white;
 
 .category-btn .ko-text,
 .category-btn .en-text {
-  font-size: clamp(20px, 4vw, 28px);
-  font-weight: 600;
+  font-size: clamp(16px, 3.2vw, 22px);
+  font-weight: 500;
 }
 
 .footer {
@@ -551,20 +528,13 @@ body {
         align-items: stretch;
     }
 
-.btn-list button {
-        padding: 10px;
-        font-size: 15px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-
 
 }
-
 @media (max-width: 480px) {
+.header-buttons {
+      flex-direction: inline;
+      gap: 10px;
+    }
 .hub-title {
       margin-top: 20px;
       }
@@ -745,8 +715,8 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <div class="games-hub-header">Soosooland
   <div class="header-buttons">
     <div class="language-toggle">
-      <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
-      <button class="language-btn" onclick="setLanguage('en')">English</button>
+      <button class="language-btn active" onclick="setLanguage('ko')">한</button>
+      <button class="language-btn" onclick="setLanguage('en')">EN</button>
     </div>
   </div>
 </div>
@@ -1011,19 +981,19 @@ setTimeout(() => startBtn.onclick(), introDelay);
  <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
-  <img src="https://soosooland.com/images/stone.png" class="game-alpha" alt="numstamp">
+  <img src="https://soosooland.com/images/stone.png" class="game-thumb" alt="numstamp">
                  </div>
              </div>
              <div class="en-text hidden">
                  <div align="center">
-  <img src="https://soosooland.com/images/stone.png" class="game-alpha" alt="numstamp">
+  <img src="https://soosooland.com/images/stone.png" class="game-thumb" alt="numstamp">
                  </div>
              </div>             
         </div>
 <div class="game-card-header">
             <div class="game-title">
-                    <span class="ko-text">넘스탬프<br>(개발중)</span>
-                    <span class="en-text hidden">NumStamp<br>(Alpha)</span>
+                    <span class="ko-text">넘스탬프</span>
+                    <span class="en-text hidden">NumStamp</span>
             </div>
          </div>
     </div>
@@ -1532,7 +1502,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
   </button>
   <button class="category-btn" onclick="filterGames('word', this)">
     <img src="https://soosooland.com/images/worpuzz.jpeg" class="game-catego" alt="단어 게임">
- <span class="ko-text">단어 게임</span>
+    <span class="ko-text">단어 게임</span>
     <span class="en-text hidden">Word Game</span>
   </button>
   </div>
