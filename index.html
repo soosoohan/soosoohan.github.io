@@ -173,34 +173,6 @@ body {
         transform: translateY(-2px);
     }
 
-.category-filter {
-  display: flex;
-  gap: 10px;
-  padding: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.category-btn {
-  padding: 10px 20px;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  background: white;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s;
-}
-
-.category-btn.active {
-  background: #4CAF50;
-  color: white;
-  border-color: #4CAF50;
-}
-
-.category-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
 .games-grid {
     display: grid;
@@ -285,22 +257,66 @@ body {
 .github-link:hover {
         text-decoration: underline;
     }
-
-
-.install-card {
-        background: rgba(255,255,255,0.95);
-        border-radius: 15px;
-    max-width: 210px; 
-    padding: 15px; 
-        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: relative;
-    }
-
-.hidden {
-    display: none !important;
+.category-filter {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 60px;
+margin: 30px;
+flex-wrap: wrap;
 }
+
+
+.category-btn {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: clamp(18px, 4vw, 24px);
+  transition: all 0.3s;
+}
+
+.category-btn.active {
+  background: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.column {
+flex: 1 1 300px;
+}
+
+
+.btn-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: stretch;
+}
+
+.btn-list button {
+padding: 10px;
+font-size: 15px;
+border: none;
+border-radius: 8px;
+background-color: #FFD6BA; /* 버튼 기본색: 살구톤 */
+color: #7A2E2E;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-list button:hover {
+background-color: #FF9494;
+color: white;
+}
+
+
 
 /* 순위 배지 스타일 */
 .rank-badge {
@@ -360,6 +376,18 @@ body {
     }
 }
 
+.install-card {
+        background: rgba(255,255,255,0.95);
+        border-radius: 15px;
+    max-width: 210px; 
+    padding: 15px; 
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+
  
 #installButtonKo {
   background: #2e8b8b;
@@ -393,7 +421,17 @@ body {
 #installButtonEn:hover {
   background-color: #45a049;
 }
-   
+ 
+.game-catego {
+    width: 20%;        
+    max-width: 200px;  /* 큰 화면에서 너무 커지는 거 방지 */
+    height: auto;      /* 비율 유지 */
+       .back-button {position: fixed;top: 12px; left: 12px;display: block;
+    margin: 20px;
+    border-radius: 12px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
+}
+
+  
 .footer {
       background: #145454;
       text-align: center;
@@ -421,7 +459,9 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
+.hidden {
+    display: none !important;
+}
 
 @media (max-width: 1100px) {
     .games-grid {
@@ -434,8 +474,6 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
 
 
 @media (max-width: 668px) {
@@ -460,7 +498,53 @@ body {
 #installButtonEn {
      padding: 15px;
         }
- 
+     .row-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    
+
+.column {
+        flex: 1 1 300px;
+    }
+
+.column h2 {
+        color: #FF9494;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #FF9494;
+        padding-bottom: 5px;
+        font-size: 1.3em;
+    }
+
+.btn-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+.btn-list button {
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #FFD6BA;
+        color: #7A2E2E;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+.btn-list button:hover {
+        background-color: #FF9494;
+        color: white;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -650,33 +734,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
   </div>
 </div>
 
-<!-- 카테고리 필터 -->
-<div class="category-filter">
-<button class="category-btn active" onclick="filterGames('popular', this)">
-    <span class="ko-text">모두 보기</span>
-    <span class="en-text hidden">All Games</span>
-  </button>
-   <button class="category-btn" onclick="filterGames('strategy', this)">
-    <span class="ko-text">전략</span>
-    <span class="en-text hidden">Strategy</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('quiz', this)">
-    <span class="ko-text">퀴즈</span>
-    <span class="en-text hidden">Quiz</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('math', this)">
-    <span class="ko-text">연산</span>
-    <span class="en-text hidden">Math</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('logic', this)">
-    <span class="ko-text">논리</span>
-    <span class="en-text hidden">Logic</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('word', this)">
-    <span class="ko-text">단어</span>
-    <span class="en-text hidden">Word</span>
-  </button>
- </div>
+
    
 <div class="games-grid">
 <!-- 넘즐 -->
@@ -1418,6 +1476,52 @@ setTimeout(() => startBtn.onclick(), introDelay);
 </div>
 </div>
 </div>
+
+<!-- 카테고리 필터 -->
+<div class="category-filter">
+
+    <div class="column">
+      <div class="btn-list">
+        <button class="category-btn active" onclick="filterGames('popular', this)">
+     <img src="https://soosooland.com/images/home.png" class="game-catego" alt="전체">
+<span class="ko-text">모두 보기</span>
+    <span class="en-text hidden">All Games</span>
+  </button>
+   <button class="category-btn" onclick="filterGames('strategy', this)">
+          <img src="https://soosooland.com/images/trinkle.png" class="game-catego" alt="전략 게임">
+    <span class="ko-text">전략</span>
+    <span class="en-text hidden">Strategy</span>
+  </button>
+  <button class="category-btn" onclick="filterGames('quiz', this)">
+  <img src="https://soosooland.com/images/moeum.jpeg" class="game-catego" alt="퀴즈">
+
+    <span class="ko-text">퀴즈</span>
+    <span class="en-text hidden">Quiz</span>
+  </button>
+ </div>
+    </div>
+<div class="column">
+  <div class="btn-list">
+      <button class="category-btn" onclick="filterGames('math', this)">
+    <img src="https://soosooland.com/images/numzzle.jpeg" class="game-catego" alt="연산 게임">
+<span class="ko-text">연산</span>
+    <span class="en-text hidden">Math</span>
+  </button>
+  <button class="category-btn" onclick="filterGames('logic', this)">
+    <img src="https://soosooland.com/images/yagoo.png" class="game-catego" alt="논리">
+<span class="ko-text">논리</span>
+    <span class="en-text hidden">Logic</span>
+  </button>
+  <button class="category-btn" onclick="filterGames('word', this)">
+    <img src="https://soosooland.com/images/worpuzz.jpeg" class="game-catego" alt="단어 게임">
+ <span class="ko-text">단어</span>
+    <span class="en-text hidden">Word</span>
+  </button>
+  </div>
+  </div>
+  </div>
+
+
 <!-- 푸터 영역 -->
 <div class="footer">
   <div class="ko-text">
