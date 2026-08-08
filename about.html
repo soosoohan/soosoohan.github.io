@@ -623,7 +623,7 @@
 
 <p>넘스톤 시리즈는 숫자 카드를 격자에 떨어뜨려 같은 숫자끼리 합체시키는 전략 퍼즐 게임입니다. 열을 선택해 카드를 드롭하고, 연쇄 합체로 더 큰 수를 만들어가세요 — 시간 압박은 없습니다.</p>
 
-<h3>공통 규칙 </h3>
+<h3>게임 규칙 </h3>
 <ul>
   <li>대기 카드 3장이 순서대로 준비됩니다. 열을 선택해 카드를 떨어뜨리면 바닥이나 다른 카드 위에 얹힙니다.</li>
   <li>상하좌우로 같은 숫자가 인접하면 합체됩니다. 나중에 온 카드가 2배가 되며, 연쇄 합체도 가능합니다.</li>
@@ -631,9 +631,7 @@
 <li>넘붐 / 넘넘 / 넘카오스는 숫자 카드(2, 4, 8, 16)와 특수 카드가 함께 랜덤으로 대기 큐에 섞여 있습니다.</li> 
 <li>플레이어가 열을 선택하면 맨 앞 카드가 해당 위치로 낙하합니다.</li>
 <li>특수카드는 닿는 숫자카드가 없으면 효과가 없습니다.</li>
-
-
-
+<li>넘스탬프는  3개의 바위를 깨면 맨 윗줄이 차지 않아도 게임이 끝납니다.</li>
 </ul>
 
 <h3>게임 비교</h3>
@@ -663,19 +661,25 @@
       <td><strong>넘붐</strong></td>
       <td>🔥÷2 &nbsp;💥÷4 &nbsp;⚡소멸</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
     </tr>
     <tr>
       <td><strong>넘넘</strong></td>
       <td>🍎×2 &nbsp;🍒×4 &nbsp;🍇×8</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
     </tr>
     <tr>
       <td><strong>넘카오스</strong></td>
-      <td>🔥÷2 &nbsp;💥÷4 &nbsp;⚡소멸 <br>🍎×2 &nbsp;🍒×4 &nbsp;🍇×8</td>
+      <td>🔥÷2 ;💥÷4 ;⚡소멸 <br>🍎×2 ;🍒×4 ;🍇×8</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
+    </tr>
+     <tr>
+      <td><strong>넘스탬프</strong></td>
+      <td>🔥÷2 ;💥÷4 ;⚡소멸 <br>🍎×2 ;🍒×4 ;🍇×8</td>
+      <td>바위</td>
+      <td>3×3 · 5×5 · 4×4</td>
     </tr>
   </tbody>
 </table>
@@ -1254,13 +1258,14 @@
 
 <p>NumStone Series is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers. No time pressure — just think, drop, and chain your way to bigger numbers.</p>
 
-<h3>Core Rules</h3>
+<h3>Game Rules</h3>
 <ul>
   <li>3 cards wait in queue. Choose a column to drop the first card — it lands on the bottom or stacks on top.</li>
   <li>Matching numbers adjacent in any direction merge — the newer card doubles in value. Chain merges are possible.</li>
   <li>The game ends when the top row is full. — even if space remains below.</li>
-<li>In NumBoom / NumNum / NumChaos, number cards (2, 4, 8, 16) and special cards are shuffled together randomly in the queue.</li> <li>The player chooses a column, and the front card drops into that position.</li>
-<li>Special cards have no effect if they land without touching a number card.</li>
+  <li>In NumBoom / NumNum / NumChaos, number cards (2, 4, 8, 16) and special cards are shuffled together randomly in the queue.</li> <li>The player chooses a column, and the front card drops into that position.</li>
+  <li>Special cards have no effect if they land without touching a number card.</li>
+  <li>In NumStamp, breaking 3 rocks ends the game even if the top row isn’t full.</li>
 </ul>
 
 <h3>Game Comparison</h3>
@@ -1290,19 +1295,25 @@
       <td><strong>NumBoom</strong></td>
       <td>🔥÷2 &nbsp;💥÷4 &nbsp;⚡destroys</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
     </tr>
     <tr>
       <td><strong>NumNum</strong></td>
       <td>🍎×2 &nbsp;🍒×4 &nbsp;🍇×8</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
     </tr>
     <tr>
       <td><strong>NumChaos</strong></td>
       <td>🔥÷2 &nbsp;💥÷4 &nbsp;⚡destroys <br>🍎×2 &nbsp;🍒×4 &nbsp;🍇×8</td>
       <td>—</td>
-      <td>4×6 · 5×5 · 6×6</td>
+      <td>4×4 · 5×5 · 6×6</td>
+    </tr>
+     <tr>
+      <td><strong>NumStamp</strong></td>
+      <td>🔥÷2 &nbsp;💥÷4 &nbsp;⚡destroys <br>🍎×2 &nbsp;🍒×4 &nbsp;🍇×8</td>
+      <td>3 Rocks</td>
+      <td>4×4 · 5×5 · 3×3</td>
     </tr>
   </tbody>
 </table>
