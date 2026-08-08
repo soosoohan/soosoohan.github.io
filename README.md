@@ -351,17 +351,20 @@ Results must be natural numbers only.
 * 맨 윗줄이 가득 차면 게임이 종료됩니다. 중간에 빈 자리가 있어도 맨 윗줄 기준으로 판단합니다.  
 * 넘붐 / 넘넘 / 넘카오스는 숫자 카드(2, 4, 8, 16)와 특수 카드가 함께 랜덤으로 대기 큐에 섞여 있습니다. 플레이어가 열을 선택하면 맨 앞 카드가 해당 위치로 낙하합니다.
 * 특수카드는 닿는 숫자카드가 없으면 효과가 없습니다.
-
+* 넘스탬프는  3개의 바위를 깨면 맨 윗줄이 차지 않아도 게임이 끝납니다.
+  
 |게임            |큐 구성                   |특수 카드  |장애물 |격자 크기 |
 |--------|------|-----------------------|-----------------------|---|
 |**넘스톤**|숫자 카드만  (2·4·8·16)   |없음                     |바위|4×4 / 5×5 / 6×6|
 |**넘드롭스**|숫자 카드만  (2·4·8·16)   |없음                     |-|4×4 / 5×5 / 6×6|
-|**넘카오스**        |숫자(2·4·8·16) <br> 특수 카드 혼합|🔥÷2 💥÷4 ⚡소멸 <br>🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
-|**넘붐**      |숫자(2·4·8·16) <br>특수 카드 혼합|🔥÷2 💥÷4 ⚡소멸          |-|4×6 / 5×5 / 6×6|
-|**넘넘**        |숫자(2·4·8·16) <br> 특수 카드 혼합| 🍎×2 🍒×4 🍇×8|-|4×6 / 5×5 / 6×6|
-                         
+|**넘카오스**        |숫자(2·4·8·16) <br> 특수 카드 혼합|🔥÷2 💥÷4 ⚡소멸 <br>🍎×2 🍒×4 🍇×8|-|4×4 / 5×5 / 6×6|
+|**넘붐**      |숫자(2·4·8·16) <br>특수 카드 혼합|🔥÷2 💥÷4 ⚡소멸          |-|4×4 / 5×5 / 6×6|
+|**넘넘**        |숫자(2·4·8·16) <br> 특수 카드 혼합| 🍎×2 🍒×4 🍇×8|-|4×4 / 5×5 / 6×6|
+|**넘스탬프**        |숫자(2·4·8) <br> 특수 카드 혼합|🔥÷2 💥÷4 ⚡소멸 <br>🍎×2 🍒×4 🍇×8|바위| 3×3/4×4/5×5|
+
+——-						 
  
-## NumStone Series (English)
+## NumStone Series
 
 NumStone is a strategic puzzle game where you drop number cards onto a grid and merge matching numbers. No time pressure — just think, drop, and chain your way to bigger numbers.
 
@@ -372,14 +375,16 @@ NumStone is a strategic puzzle game where you drop number cards onto a grid and 
 * The game ends when the top row is full — even if space remains below.  
 * In NumBoom / NumNum / NumChaos, number cards (2, 4, 8, 16) and special cards are shuffled together randomly in the queue. The player chooses a column, and the front card drops into that position.  
 * Special cards have no effect if they land without touching a number card.
+* In NumStamp, breaking 3 rocks ends the game even if the top row isn’t full.
 
 |Game        |Queue         |Special Cards       |Obstacle|Grid Size      |
 |------------|--------------|----------------------------|--------|---------------|
-|**NumStone**|Number cards only<br>(2·4·8·16)|None|Rock    |4×4 / 5×5 / 6×6|
+|**NumStone**|Number cards only<br>(2·4·8·16)|None|Rocks    |4×4 / 5×5 / 6×6|
 |**NumDrops**|Number cards only<br>(2·4·8·16)|None|—       |4×4 / 5×5 / 6×6|
-|**NumChaos**|Number cards (2·4·8·16)<br>special cards mixed|🔥÷2 💥÷4 ⚡destroy<br>🍎×2 🍒×4 🍇×8|—       |4×6 / 5×5 / 6×6|
-|**NumBoom** |Number cards (2·4·8·16) <br> special cards mixed|🔥÷2 💥÷4 ⚡destroy            |—       |4×6 / 5×5 / 6×6|
-|**NumNum**  |Number cards (2·4·8·16) <br> special cards mixed|🍎×2 🍒×4 🍇×8                 |—       |4×6 / 5×5 / 6×6|
+|**NumChaos**|Number cards (2·4·8·16)<br>special cards mixed|🔥÷2 💥÷4 ⚡destroy<br>🍎×2 🍒×4 🍇×8|—       |4×4 / 5×5 / 6×6|
+|**NumBoom** |Number cards (2·4·8·16) <br> special cards mixed|🔥÷2 💥÷4 ⚡destroy            |—       |4×4 / 5×5 / 6×6|
+|**NumNum**  |Number cards (2·4·8·16) <br> special cards mixed|🍎×2 🍒×4 🍇×8                 |—       |4×4 / 5×5 / 6×6|
+|**NumStamp**|Number cards (2·4·8)<br>special cards mixed|🔥÷2 💥÷4 ⚡destroy<br>🍎×2 🍒×4 🍇×8|3 Rocks       |4×4 / 5×5 / 3×3|
 
 ---  
 
