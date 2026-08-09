@@ -116,7 +116,8 @@ body {
         background: #145454;
         min-height: 100vh;
         padding: 20px;
-        overflow-y: auto;
+        overflow-y: scroll; 
+
     }
 .games-hub-header {
         display: flex;
@@ -176,14 +177,43 @@ body {
         transform: translateY(-2px);
     }
 
-.content-wrapper {
-  max-width: 1200px;  
-  margin: 0 auto;     
-  box-sizing: border-box;
+.category-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5등분, 강제로 폭 고정 */
+  gap: 6px;
+  width: 100%;
+  margin-bottom:30px;
+  align-items: center;
+
+}
+
+.cat-btn {
+  max-width:200px;
+  white-space: normal;      
+  word-break: keep-all;   
+  overflow-wrap: normal;    
+  overflow: hidden;
+  text-overflow: clip;     
+  font-size: clamp(10px, 3vw, 14px);
+  line-height: 1.2;
+  padding: 4px 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  }
+  min-height: 2.4em;  
+  border-radius:5px;
+}
+.cat-btn.active {
+  background: #59b55c;
+  color: white;
+  border-color: $4caf50;
+}
 
-
+.cat-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 150px);
@@ -338,49 +368,6 @@ body {
   background-color: #45a049;
 }
  
-.category-filter {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  row-gap: 16px;
-  column-gap: 60px;
-  margin: 30px auto;
-  flex-wrap: wrap;
-  max-width: 900px;
-}
-
-
-.category-btn {
-  display: flex;
-  align-items: center;      
-  gap: 0px;
-  height: 80px;
-  max-width: 300px;
-  padding: 10px 20px;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.category-btn.active {
-  background: #59b55c;
-  color: white;
-  border-color: #4CAF50;
-}
-
-.category-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.category-btn .ko-text,
-.category-btn .en-text {
-  font-size: clamp(16px, 3.2vw, 22px);
-  font-weight: 400;
-}
 
 .footer {
       background: #145454;
@@ -440,29 +427,6 @@ body {
         flex-wrap: wrap;
     }
     
-.column {
-        flex: 1 1 300px;
-    }
-
-.column h2 {
-        color: #FF9494;
-        margin-bottom: 10px;
-        border-bottom: 2px solid #FF9494;
-        padding-bottom: 5px;
-        font-size: 1.3em;
-    }
-
-.btn-list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: stretch;
-    }
-.category-btn {
-  height: 75px;
-  max-width: 270px;
-}
-
 }
 @media (max-width: 480px) {
 .header-buttons {
@@ -483,15 +447,12 @@ body {
       }
 
 .games-hub-header {
+      margin-bottom: 30px;
       flex-direction: column;
       }
 .games-grid {
   grid-template-columns: repeat(auto-fill, 130px);
 
-}
-.category-btn {
-  height: 70px;
-  max-width: 250px;
 }
 
 }
@@ -655,8 +616,32 @@ setTimeout(() => startBtn.onclick(), introDelay);
   </div>
 </div>
 
+<!-- 카테고리 필터 -->
+<div class="category-bar">
+  <button class="cat-btn  active" onclick="filterGames('popular', this)">
+    <span class="ko-text">모두 보기</span>
+    <span class="en-text hidden">All  Games</span>
+</button>
+  <button class="cat-btn" onclick="filterGames('math', this)">
+    <span class="ko-text">수학 게임</span>
+    <span class="en-text hidden">Math Game</span>
+</button>
+  <button class="cat-btn" onclick="filterGames('word', this)">
+    <span class="ko-text">단어 게임</span>
+    <span class="en-text hidden">Word Game</span>
+</button>
+  <button class="cat-btn" onclick="filterGames('strategy', this)">
+    <span class="ko-text">전략  게임</span>
+    <span class="en-text hidden">Strategy Game</span>
+</button>
+  <button class="cat-btn"  onclick="filterGames('quiz', this)">
+    <span class="ko-text">퀴즈 퍼즐</span>
+    <span class="en-text hidden">Quiz Puzzle</span>
+</button>
+</div>
 
- <div class="content-wrapper">
+
+
   
 <div class="games-grid">
 
@@ -1189,7 +1174,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
     </div>
  <!-- 야구시리즈 -->
-<div class="game-card" data-category="logic" data-rank="7" data-mobile="true"  onclick="location.href='https://soosooland.com/yagoo'">
+<div class="game-card" data-category="quiz" data-rank="7" data-mobile="true"  onclick="location.href='https://soosooland.com/yagoo'">
        <div class="game-description-text">
            <div class="ko-text">
                <div align="center">
@@ -1233,28 +1218,18 @@ setTimeout(() => startBtn.onclick(), introDelay);
               </div>
           </div>
     </div>
-<!-- 트리테라 -->
-<div class="game-card" data-category="strategy" data-rank="11" data-mobile="true"  onclick="location.href='https://soosooland.com/triterra'">
-          <div class="game-description-text">
-              <div class="ko-text">
-                  <div align="center">
-   <img src="https://soosooland.com/images/trinkle.png" class="game-thumb" alt="Trinkle - Triangle strategy game connecting dots">
-                  </div>
-              </div>
-              <div class="en-text hidden">
-                  <div align="center">
-   <img src="https://soosooland.com/images/trinkle.png" class="game-thumb" alt="Trinkle - Triangle strategy game connecting dots">
-                  </div>
-              </div>
-         </div>
-       <div class="game-card-header">
-          
-              <div class="game-title">
-                   <span class="ko-text">트리테라</span>
-                   <span class="en-text hidden">Triterra</span>
-              </div>
-          </div>
-    </div>
+<!-- 트리테라 포스터-->
+<a href="https://soosooland.com/triterra/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="11" 
+   data-mobile="true"
+   aria-label="Triterra">
+  <img src="https://soosooland.com/poster/triterra.png" 
+       class="game-thumb" 
+       alt="Triterra"
+       loading="lazy">
+</a>
  <!-- 워퍼즈 미니 -->
 <div class="game-card" data-category="word" data-rank="27" data-mobile="true" onclick="location.href='https://soosooland.com/worzzle'">
          <div class="game-description-text">
@@ -1343,42 +1318,6 @@ setTimeout(() => startBtn.onclick(), introDelay);
 </div>
 </div>
 
-<!-- 카테고리 필터 -->
-<div class="category-filter">
-
-  <div class="column">
-  <div class="btn-list">
-  <button class="category-btn active" onclick="filterGames('popular', this)">
-    <span class="ko-text">모두 보기</span>
-    <span class="en-text hidden">All Games</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('strategy', this)">
-    <span class="ko-text">전략  게임</span>
-    <span class="en-text hidden">Strategy Game</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('quiz', this)">
-    <span class="ko-text">퀴즈 퍼즐</span>
-    <span class="en-text hidden">Quiz Puzzle</span>
-  </button>
-   </div>
-   </div>
-<div class="column">
-  <div class="btn-list">
-  <button class="category-btn" onclick="filterGames('math', this)">
-    <span class="ko-text">수학 게임</span>
-    <span class="en-text hidden">Math Game</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('logic', this)">
-    <span class="ko-text">논리 게임</span>
-    <span class="en-text hidden">Logic Game</span>
-  </button>
-  <button class="category-btn" onclick="filterGames('word', this)">
-    <span class="ko-text">단어 게임</span>
-    <span class="en-text hidden">Word Game</span>
-  </button>
-  </div>
-  </div>
-  </div>
 
 
 <!-- 푸터 영역 -->
@@ -1408,7 +1347,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     <span onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSejAMCBuCmEYPZZiabKI_pl9KXbnCFEmU4RikG7pBlyrclqRA/viewform')" style="cursor:pointer;text-decoration:underline;margin:0 10px;">Bug Report</span>|
     <span onclick="location.href='Privacy.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Privacy Policy</span>|
     <span onclick="location.href='credits-en.html'" style="cursor:pointer;text-decoration:underline;margin:0 5px;">Credits</span>|<br>
-     © 2025-2026 Han Soosoo. All rights reserved.  </div>
+     © 2025-2026 Han Soosoo. All rights reserved. 
 </div>
 </div>
 <script>
@@ -1498,7 +1437,7 @@ function filterGames(category, button) {
     const isMobile = window.innerWidth <= 560; // 모바일 감지
     
     // 버튼 활성화
-    document.querySelectorAll('.category-btn').forEach(btn => {
+    document.querySelectorAll('.cat-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     
@@ -1508,11 +1447,11 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
-        // 상위 30개 + 항상 보이는 카드
+        // 상위 33개 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 30) return false;
+            if (!rank || rank > 33) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
@@ -1563,7 +1502,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
         
     // 4. 기본으로 인기순 표시
-    const popularBtn = document.querySelector('.category-btn');
+    const popularBtn = document.querySelector('.cat-btn');
     filterGames('popular', popularBtn);
 });
 
