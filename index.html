@@ -180,36 +180,45 @@ body {
   max-width: 1200px;  
   margin: 0 auto;     
   box-sizing: border-box;
-}
+  justify-content: center;
+  }
 
 
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 190px);
+  grid-template-columns: repeat(auto-fill, 150px);
   justify-content: center;
   gap: 20px;
   width: 100%;
 }
 
-
 .game-card {
-        background: rgba(255,255,255,0.95);
-        border-radius: 15px;
-        max-width: 190px; 
-        width: 100%;
-        padding: 15px; 
-        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: relative;
-    }
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
 
-.game-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.4);
-    }
+/* 기본: 이미지가 카드 전체를 채움 */
+.game-thumb-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-
+.game-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 .game-card-header {
     display: flex;
@@ -220,18 +229,6 @@ body {
 
 }
 
-.game-thumb {
-    width: 99%;        
-    max-width: 190px;  /* 큰 화면에서 너무 커지는 거 방지 */
-    height: auto;      /* 비율 유지 */
-    display: block;
-    margin: 0 auto;
-    border-radius: 12px; /* 살짝 둥글게, 더 둥글게 하려면 값 올리면 됨 */
-}
-
-.game-emoji {
-        font-size:1.0rem;
-    }
 .game-title {
         width: 100%;
         font-size: clamp(1.1rem, 2.7vw, 1.15rem);
@@ -263,50 +260,26 @@ body {
 
 /* 순위 배지 스타일 */
 .rank-badge {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 10;
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 10;
 }
 
-.rank-1 {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #8B4513;
-    
-}
-
-.rank-2 {
-    background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
-    color: #4A4A4A;
-}
-
-.rank-3 {
-    background: linear-gradient(135deg, #CD7F32, #B87333);
-    color: #FFFFFF;
-}
 .rank-new {
     background: #6bfa69;
     color: #FFFFFF;
 }
 
-.construction-badge {
+.rank-beta {
     background: linear-gradient(45deg, #FFD700, #FFA500);
     color: #000;
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 10;
-}
+    }
 
 @keyframes pulse-gold {
     0%, 100% { 
@@ -381,8 +354,8 @@ body {
   display: flex;
   align-items: center;      
   gap: 0px;
-  height: 100px;
-  max-width: 400px;
+  height: 80px;
+  max-width: 300px;
   padding: 10px 20px;
   border: 2px solid #ddd;
   border-radius: 20px;
@@ -403,30 +376,10 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.column {
-flex: 1 1 300px;
-}
-
-.btn-list {
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: stretch;
-}
-
-.game-catego {
-  margin: 20px;
-  border-radius: 12px; 
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 .category-btn .ko-text,
 .category-btn .en-text {
   font-size: clamp(16px, 3.2vw, 22px);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer {
@@ -463,35 +416,14 @@ align-items: stretch;
     display: none !important;
 }
 
-@media (max-width: 1100px) {
-    .games-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .games-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 
 @media (max-width: 668px) {
 body {
       padding: 10px;
         }
+.games-grid {
+  grid-template-columns: repeat(auto-fill, 140px);
 
-    .games-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
-    }
-
-.game-card {
-      padding: 10px;
-        }
-.game-title {
-        font-size: clamp(0.9rem, 3vw, 1.1rem);
-}
 #installButtonKo {
      padding: 15px;
         }
@@ -503,12 +435,11 @@ body {
         justify-content: center;
         align-items: flex-start;
         gap: 60px;
-        max-width: 800px;
+        max-width: 680px;
         margin: 0 auto;
         flex-wrap: wrap;
     }
     
-
 .column {
         flex: 1 1 300px;
     }
@@ -527,7 +458,10 @@ body {
         gap: 10px;
         align-items: stretch;
     }
-
+.category-btn {
+  height: 75px;
+  max-width: 270px;
+}
 
 }
 @media (max-width: 480px) {
@@ -551,9 +485,16 @@ body {
 .games-hub-header {
       flex-direction: column;
       }
+.games-grid {
+  grid-template-columns: repeat(auto-fill, 130px);
 
 }
+.category-btn {
+  height: 70px;
+  max-width: 250px;
+}
 
+}
 @media (max-height: 500px) and (orientation: landscape) {
       body {
       min-height: auto;
@@ -564,13 +505,6 @@ body {
       margin-bottom: 15px;
         }
 
-.games-grid {
-      gap: 15px;
-        }
-
-.game-card {
-      padding: 15px;
-        }
 #installButtonKo {
       padding: 15px;
         }
@@ -725,7 +659,86 @@ setTimeout(() => startBtn.onclick(), introDelay);
  <div class="content-wrapper">
   
 <div class="games-grid">
-<!-- 넘즐 -->
+
+
+
+<!-- 넘드롭스 포스터-->
+<a href="https://soosooland.com/drop/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="3" 
+   data-mobile="true"
+   aria-label="NumDrops">
+  <img src="https://soosooland.com/poster/numdrops.png" 
+       class="game-thumb" 
+       alt="NumDrops"
+       loading="lazy">
+</a>
+
+<!-- 넘스톤 포스터-->
+<a href="https://soosooland.com/stone/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="4" 
+   data-mobile="true"
+   aria-label="NumStone">
+  <img src="https://soosooland.com/poster/numstone1.png" 
+       class="game-thumb" 
+       alt="NumStone"
+       loading="lazy">
+</a>
+
+<!-- 넘카오스 포스터-->
+<a href="https://soosooland.com/numchaos/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="6" 
+   data-mobile="true"
+   aria-label="NumChaos">
+  <img src="https://soosooland.com/poster/numchaos.png" 
+       class="game-thumb" 
+       alt="NumChaos"
+       loading="lazy">
+</a>
+
+<!-- 넘붐 포스터-->
+<a href="https://soosooland.com/numboom/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="8" 
+   data-mobile="true"
+   aria-label="NumBoom">
+  <img src="https://soosooland.com/poster/numboom.png" 
+       class="game-thumb" 
+       alt="NumBoom"
+       loading="lazy">
+</a>
+
+<!-- 넘넘 포스터-->
+<a href="https://soosooland.com/numnum/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="2" 
+   data-mobile="true"
+   aria-label="NumNum">
+  <img src="https://soosooland.com/poster/numnum.png" 
+       class="game-thumb" 
+       alt="NumNum"
+       loading="lazy">
+</a>
+<!-- 오목 포스터-->
+<a href="https://soosooland.com/omok/" 
+   class="game-card" 
+   data-category="strategy" 
+   data-rank="1" 
+   data-mobile="true"
+   aria-label="Omok">
+  <img src="https://soosooland.com/poster/omok.png" 
+       class="game-thumb" 
+       alt="Omok"
+       loading="lazy">
+</a>
+<!-- 넘즐-->
 <div class="game-card" data-category="math" data-rank="5" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
       <div class="game-description-text">
         <div class="ko-text">    
@@ -862,122 +875,10 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
 
     </div>
-  <!-- 넘스톤 -->
-<div class="game-card" data-category="strategy" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/stone/'">
- <div class="rank-badge rank-2">🥉 June</div> 
-         <div class="game-description-text">
-             <div class="ko-text">
-                 <div align="center">
-  <img src="https://soosooland.com/stone/stone1.png" class="game-thumb" alt="stone - Merge Game">
-                 </div>
-             </div>
-             <div class="en-text hidden">
-                 <div align="center">
-  <img src="https://soosooland.com/stone/stone1.png" class="game-thumb" alt="Stone - Merge Game">
-                 </div>
-             </div>             
-        </div>
- <div class="game-card-header">
-            <div class="game-title">
-                    <span class="ko-text">넘스톤</span>
-                    <span class="en-text hidden">NumStone</span>
-            </div>
-         </div>
-
-    </div>
-  <!-- 넘드롭스 -->
-<div class="game-card" data-category="strategy" data-rank="3" data-mobile="true" onclick="location.href='https://soosooland.com/drop/'">
-  <div class="rank-badge rank-2">🥉 July</div> 
-        <div class="game-description-text">
-             <div class="ko-text">
-                 <div align="center">
-  <img src="https://soosooland.com/drop/drop1.png" class="game-thumb" alt="stone - Merge Game">
-                 </div>
-             </div>
-             <div class="en-text hidden">
-                 <div align="center">
-  <img src="https://soosooland.com/drop/drop1.png" class="game-thumb" alt="Stone - Merge Game">
-                 </div>
-             </div>             
-        </div>
-<div class="game-card-header">
-            <div class="game-title">
-                    <span class="ko-text">넘드롭스</span>
-                    <span class="en-text hidden">NumDrops</span>
-            </div>
-         </div>
-
-    </div>
-  <!-- 넘넘 -->
-<div class="game-card" data-category="strategy" data-rank="2" data-mobile="true" onclick="location.href='https://soosooland.com/numnum/'">
-         <div class="rank-badge rank-3">🥈 June / 🥈 July</div>  
-<div class="game-description-text">
-             <div class="ko-text">
-                 <div align="center">
-  <img src="https://soosooland.com/numnum/numnum1.png" class="game-thumb" alt="Numnum - Merge Game">
-                 </div>
-             </div>
-             <div class="en-text hidden">
-                 <div align="center">
-  <img src="https://soosooland.com/numnum/numnum1.png" class="game-thumb" alt="Numnum - Merge Game">
-                 </div>
-             </div>             
-        </div>
- <div class="game-card-header">
-            <div class="game-title">
-                    <span class="ko-text">넘넘</span>
-                    <span class="en-text hidden">NumNum</span>
-            </div>
-         </div>
-
-    </div>
-
-  <!-- 넘카오스 -->
-<div class="game-card" data-category="strategy" data-rank="6" data-mobile="true" onclick="location.href='https://soosooland.com/numchaos/'">
-         <div class="game-description-text">
-             <div class="ko-text">
-                 <div align="center">
-  <img src="https://soosooland.com/numchaos/numchaos1.png" class="game-thumb" alt="stone - Merge Game">
-                 </div>
-             </div>
-             <div class="en-text hidden">
-                 <div align="center">
-  <img src="https://soosooland.com/numchaos/numchaos1.png" class="game-thumb" alt="Stone - Merge Game">
-                 </div>
-             </div>             
-        </div>
-<div class="game-card-header">
-            <div class="game-title">
-                    <span class="ko-text">넘카오스</span>
-                    <span class="en-text hidden">NumChaos</span>
-            </div>
-         </div>
-    </div>
-
-  <!-- 넘붐 -->
-<div class="game-card" data-category="strategy" data-rank="8" data-mobile="true" onclick="location.href='https://soosooland.com/numboom/'">
-   <div class="game-description-text">
-             <div class="ko-text">
-                 <div align="center">
-  <img src="https://soosooland.com/numboom/numboom1.png" class="game-thumb" alt="stone - Merge Game">
-                 </div>
-             </div>
-             <div class="en-text hidden">
-                 <div align="center">
-  <img src="https://soosooland.com/numboom/numboom1.png" class="game-thumb" alt="Stone - Merge Game">
-                 </div>
-             </div>             
-        </div>
-<div class="game-card-header">
-            <div class="game-title">
-                    <span class="ko-text">넘붐</span>
-                    <span class="en-text hidden">NumBoom</span>
-            </div>
-         </div>
-    </div>
+  
   <!-- 넘스탬프 -->
 <div class="game-card" data-category="strategy" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/numstamp/'">
-  <div class="rank-badge rank-new">🌱 Alpha</div>
+<span class="rank-badge rank-beta">🌱 Alpha</span>
  <div class="game-description-text">
              <div class="ko-text">
                  <div align="center">
@@ -1001,7 +902,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
 
  <!-- 모음스쿨 -->
 <div class="game-card" data-category="quiz" data-rank="14" data-mobile="true" onclick="location.href='https://soosooland.com/school/'">
-    <div class="rank-badge rank-new">🌱 Beta</div>
+    <span class="rank-badge rank-beta">🌱 Beta</span>
               <div class="game-description-text">
                <div class="ko-text">
                    <div align="center">
@@ -1025,7 +926,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
    <!-- 모음사전 -->
 <div class="game-card" data-category="quiz" data-rank="20" data-mobile="true" onclick="location.href='https://soosooland.com/dict/'">
-    <div class="rank-badge rank-new">🌱 Beta</div>
+    <div class="rank-badge rank-beta">🌱 Beta</div>
           <div class="game-description-text">
                <div class="ko-text">
                    <div align="center">
@@ -1354,29 +1255,6 @@ setTimeout(() => startBtn.onclick(), introDelay);
               </div>
           </div>
     </div>
-<!-- 오목 게임 -->
-<div class="game-card" data-category="strategy" data-rank="1" data-mobile="true" onclick="location.href='https://soosooland.com/omok'">
-  <div class="rank-badge rank-1">🥇 June / 🥇 July</div>
-         <div class="game-description-text">
-              <div class="ko-text">
-                  <div align="center">
-  <img src="https://soosooland.com/images/omok.jpeg" class="game-thumb" alt="Omok - Five in a row strategy board game (Gomoku)">
-                  </div>
-              </div>
-              <div class="en-text hidden">
-                  <div align="center">
-  <img src="https://soosooland.com/images/omok.jpeg" class="game-thumb" alt="Omok - Five in a row strategy board game (Gomoku)">
-                  </div>
-              </div>
-          </div>
-   <div class="game-card-header">
-            
-            <div class="game-title">
-                  <span class="ko-text">오목</span>
-                  <span class="en-text hidden">Omok</span>
-            </div>
-         </div>
-     </div>
  <!-- 워퍼즈 미니 -->
 <div class="game-card" data-category="word" data-rank="27" data-mobile="true" onclick="location.href='https://soosooland.com/worzzle'">
          <div class="game-description-text">
@@ -1468,40 +1346,33 @@ setTimeout(() => startBtn.onclick(), introDelay);
 <!-- 카테고리 필터 -->
 <div class="category-filter">
 
-    <div class="column">
-      <div class="btn-list">
-        <button class="category-btn active" onclick="filterGames('popular', this)">
-     <img src="https://soosooland.com/images/home.png" class="game-catego" alt="전체">
-<span class="ko-text">모두 보기</span>
+  <div class="column">
+  <div class="btn-list">
+  <button class="category-btn active" onclick="filterGames('popular', this)">
+    <span class="ko-text">모두 보기</span>
     <span class="en-text hidden">All Games</span>
   </button>
-   <button class="category-btn" onclick="filterGames('strategy', this)">
-          <img src="https://soosooland.com/images/trinkle.png" class="game-catego" alt="전략 게임">
+  <button class="category-btn" onclick="filterGames('strategy', this)">
     <span class="ko-text">전략  게임</span>
     <span class="en-text hidden">Strategy Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('quiz', this)">
-  <img src="https://soosooland.com/images/moeum.jpeg" class="game-catego" alt="퀴즈">
-
     <span class="ko-text">퀴즈 퍼즐</span>
     <span class="en-text hidden">Quiz Puzzle</span>
   </button>
- </div>
-    </div>
+   </div>
+   </div>
 <div class="column">
   <div class="btn-list">
-      <button class="category-btn" onclick="filterGames('math', this)">
-    <img src="https://soosooland.com/images/numzzle.jpeg" class="game-catego" alt="연산 게임">
-<span class="ko-text">수학 게임</span>
+  <button class="category-btn" onclick="filterGames('math', this)">
+    <span class="ko-text">수학 게임</span>
     <span class="en-text hidden">Math Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('logic', this)">
-    <img src="https://soosooland.com/images/yagoo.png" class="game-catego" alt="논리">
-<span class="ko-text">논리 게임</span>
+    <span class="ko-text">논리 게임</span>
     <span class="en-text hidden">Logic Game</span>
   </button>
   <button class="category-btn" onclick="filterGames('word', this)">
-    <img src="https://soosooland.com/images/worpuzz.jpeg" class="game-catego" alt="단어 게임">
     <span class="ko-text">단어 게임</span>
     <span class="en-text hidden">Word Game</span>
   </button>
