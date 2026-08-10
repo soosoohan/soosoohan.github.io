@@ -1406,9 +1406,11 @@ function filterGames(category, button) {
             if (isMobile && card.dataset.mobile === 'false') return false;
             return true;
         });
-    } else {
+        } else {
+        // 카테고리별 전체 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
+            if (isMobile && card.dataset.mobile === 'false') return false;
             return card.dataset.category === category;
         });
     }
