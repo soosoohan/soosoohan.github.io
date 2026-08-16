@@ -184,7 +184,7 @@ Worpuzz is a game where you explore a grid to find hidden words!
   🌼 If you click on a daisy, the surrounding tiles open and you get an extra turn.
 
 - 워드마인 시리즈에서는 숫자 힌트를 이용해서 숨겨진 단어를 찾으세요.  
-- In the Wordmine series, use the number hints to find the hidden words.   
+  In the Wordmine series, use the number hints to find the hidden words.   
 
 ### 🎯 특징 / Features
 - 격자 뒤에 행운의 네잎 토끼풀과  데이지와 숨겨진 단어가 있습니다!  
