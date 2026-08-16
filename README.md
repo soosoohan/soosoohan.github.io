@@ -190,19 +190,19 @@ Worpuzz is a game where you explore a grid to find hidden words!
 - 격자 뒤에 행운의 네잎 토끼풀과  데이지와 숨겨진 단어가 있습니다!  
   Behind the grid are lucky four-leaf clovers, daisies, and hidden words!   
 
-- 네잎 토끼풀을 찾으면 상하좌우 격자가 열리고 턴이 유지됩니다.
+- 네잎 토끼풀을 찾으면 상하좌우 격자가 열리고 턴이 유지됩니다.  
   When you find a four-leaf clover, the cells above, below, left, and right open up, and you keep your turn.    
 
-- 데이지를 찾으면 주변의 8개의 격자가 열리고 턴이 유지됩니다.
+- 데이지를 찾으면 주변의 8개의 격자가 열리고 턴이 유지됩니다.  
   When you find a daisy, the 8 surrounding cells open up, and you keep your turn.    
 
-- 데이지와 토끼풀은 게임이 지루하지 않게 하고, 빈 자리에 랜덤하게 넣은 글자들이 유의미한 단어를 생성하는 가능성을 줄이려고 했고,  단어도 추리하지만 아이템을 노리는 것도 전략입니다.
+- 데이지와 토끼풀은 게임이 지루하지 않게 하고, 빈 자리에 랜덤하게 넣은 글자들이 유의미한 단어를 생성하는 가능성을 줄이려고 했고,  단어도 추리하지만 아이템을 노리는 것도 전략입니다.   
   The daisies and clovers serve to keep the game from becoming boring, reduce the possibility of randomly placed letters in empty spaces forming meaningful words, and add a strategic element - it’s not just about deducing words, but also about guessing which items to go for.   
 
-- 전략적으로 격자를 공개하여 가능한 한 많은 단어를 찾으세요.  
+- 전략적으로 격자를 공개하여 가능한 한 많은 단어를 찾으세요.   
 - Strategically uncover the grid to find as many words as possible.
 
-- 옥스퍼드 사전의 단어 난이도 수준을 사용하여 흥미로운 도전을 제공합니다.  
+- 옥스퍼드 사전의 단어 난이도 수준을 사용하여 흥미로운 도전을 제공합니다.   
 - Uses the Oxford dictionary’s word difficulty levels for an engaging challenge.
 
 - 한국어와 영어 모두 플레이 가능합니다! 게임은 계속해서 개선되고 업그레이드될 예정입니다.    
