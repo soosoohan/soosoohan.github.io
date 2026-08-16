@@ -132,6 +132,14 @@
     <loc>https://soosooland.com/numstamp/sitemap.xml</loc>
     <lastmod>2026-08-02</lastmod>
   </sitemap>
+ <sitemap>
+    <loc>https://soosooland.com/wordmine/sitemap.xml</loc>
+    <lastmod>2026-08-13</lastmod>
+  </sitemap>
+ <sitemap>
+    <loc>https://soosooland.com/wordminemini/sitemap.xml</loc>
+    <lastmod>2026-08-14</lastmod>
+  </sitemap>
 
 </sitemapindex>
 
