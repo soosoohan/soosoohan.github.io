@@ -166,6 +166,9 @@ Worpuzz is a game where you explore a grid to find hidden words!
 (“Worpuzz”라는 이름은 “Word”와 “Puzzle”의 조합입니다.)  
 (The name “Worpuzz” is a combination of “Word” and “Puzzle.”)
 
+(“Wordmine”라는 이름은 “Word”와 “mine”의 조합입니다.)  
+(The name “Wordmine” is a combination of “Word” and “mine.”)
+
 ### 🔎 게임 방법 / How to Play
 
 - 단어들이 격자 내에서 가로, 세로, 대각선으로 숨겨져 있습니다.  
@@ -179,6 +182,9 @@ Worpuzz is a game where you explore a grid to find hidden words!
 
 - 🌼 데이지를 클릭하면 주변 타일이 열리고 추가 턴을 얻습니다.  
   🌼 If you click on a daisy, the surrounding tiles open and you get an extra turn.
+
+- 워드마인 시리즈에서는 숫자 힌트를 이용해서 숨겨진 단어를 찾으세요.  
+- In the Wordmine series, use the number hints to find the hidden words.   
 
 ### 🎯 특징 / Features
 - 격자 뒤에 행운의 네잎 토끼풀과  데이지와 숨겨진 단어가 있습니다!  
@@ -199,9 +205,12 @@ Worpuzz is a game where you explore a grid to find hidden words!
 - 옥스퍼드 사전의 단어 난이도 수준을 사용하여 흥미로운 도전을 제공합니다.  
 - Uses the Oxford dictionary’s word difficulty levels for an engaging challenge.
 
-- 한국어와 영어 모두 플레이 가능합니다! 게임은 계속해서 개선되고 업그레이드될 예정입니다.  
-- Playable in both Korean and English! The game will continue to be improved and upgraded.
+- 한국어와 영어 모두 플레이 가능합니다! 게임은 계속해서 개선되고 업그레이드될 예정입니다.    
+- Playable in both Korean and English! The game will continue to be improved and upgraded.   
 
+- 워드마인 시리즈는 일부 게임만 공개되었으며 아직 개발중입니다.   
+- The Wordmine series has only had some of its games released so far, and it is still under development.
+  
 ### 📝 게임 주제 / Game Topics
 
 **영어:** 동물과 식물, 여행(나라, 도시, 랜드마크, 유네스코 문화유산, 자연경관), 음성상징어 (의성어, 의태어),생명 (동물과 식물 이름)  
@@ -215,7 +224,7 @@ Worpuzz is a game where you explore a grid to find hidden words!
 앞으로 더 다양한 주제와 중국어, 일본어 같은 다양한 언어로 게임을 개발할 계획입니다.  
 We plan to develop games with more diverse topics and in various languages such as Chinese and Japanese in the future.
   
-### 📌 격자 크기와 게임 종류
+### 📌 워퍼즈 시리즈의 격자 크기와 게임 종류
 
 | 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |
 |------------------|--------------|----------------|------|
@@ -223,6 +232,16 @@ We plan to develop games with more diverse topics and in various languages such 
 |영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|
 |영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 메이트 찌니(Mate ZZini)   |브리즈 젠(Breeze Zen)|
 |영 16X16 한 14X14 | - |-|브리즈 필드(Breeze Field)|
+
+### 📌 워드마인 시리즈의 격자 크기와 게임 종류 
+
+| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |
+|------------------|--------------|----------------|------|
+|영 8x8 한 7x7  | 워드마인 미니 (Wordmine mini)        | 마인워더 미니(MineWorder mini)    | 워드마인 솔로 미니(Wordmine Solo mini) |
+|영 12x12 한 10x10    | 워드마인 (Wordmine)   | 마인워더 (MineWorder)    | 워드마인 솔로(Wordmine Solo)|
+|영 14x14 한 12x12    | 워드마인 라지(Wordmine large)    | 마인워더 라지(MineWorder large)   |워드마인 솔로 라지(Wordmine Solo large)|
+|영 16X16 한 14X14 | 워드마인 XL (Wordmine XL) |마인워더 XL (MineWorder XL) |워드마인 솔로 XL(Wordmine Solo XL)|
+
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
