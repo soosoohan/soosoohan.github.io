@@ -650,7 +650,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
    
 <div class="games-grid">
 <!-- 넘즐 -->
-<div class="game-card" data-category="math" data-rank="10" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
+<div class="game-card" data-category="math" data-rank="8" data-mobile="true" onclick="location.href='https://soosooland.com/numzzle'">
     <div class="game-card-header">
       <div class="game-difficulty">
         <span class="ko-text">🤖 👤</span>
@@ -848,7 +848,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 
   <!-- 넘드롭스 -->
-<div class="game-card" data-category="strategy" data-rank="7" data-mobile="true" onclick="location.href='https://soosooland.com/drop/'">
+<div class="game-card" data-category="strategy" data-rank="5" data-mobile="true" onclick="location.href='https://soosooland.com/drop/'">
 <div class="rank-badge rank-3">🥉 July</div> 
 <div class="game-card-header">
   <div class="game-difficulty">
@@ -876,7 +876,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
         </div>
     </div>
   <!-- 넘넘 -->
-<div class="game-card" data-category="strategy" data-rank="6" data-mobile="true" onclick="location.href='https://soosooland.com/numnum/'">
+<div class="game-card" data-category="strategy" data-rank="4" data-mobile="true" onclick="location.href='https://soosooland.com/numnum/'">
 <div class="rank-badge rank-2">🥈 July</div>  
  <div class="game-card-header">
   <div class="game-difficulty">
@@ -905,7 +905,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 
   <!-- 넘카오스 -->
-<div class="game-card" data-category="strategy" data-rank="11" data-mobile="true" onclick="location.href='https://soosooland.com/numchaos/'">
+<div class="game-card" data-category="strategy" data-rank="9" data-mobile="true" onclick="location.href='https://soosooland.com/numchaos/'">
 <div class="game-card-header">
   <div class="game-difficulty">
                 <span class="ko-text">👤 혼자하기</span>
@@ -1160,7 +1160,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 
 <!-- 워드마인-->
-<div class="game-card" data-category="word" data-rank="4" data-mobile="false" onclick="location.href='https://soosooland.com/wordmine/'">
+<div class="game-card" data-category="word" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/wordmine/'">
   <div class="rank-badge rank-new">🌱 NEW</div>
          <div class="game-card-header">
              <div class="game-difficulty">
@@ -1188,7 +1188,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
        </div>  
     </div>
 <!-- 워드마인 미니-->
-<div class="game-card" data-category="word" data-rank="5" data-mobile="true" onclick="location.href='https://soosooland.com/wordminemini/'">
+<div class="game-card" data-category="word" data-rank="12" data-mobile="true" onclick="location.href='https://soosooland.com/wordminemini/'">
   <div class="rank-badge rank-new">🌱 NEW</div>
          <div class="game-card-header">
              <div class="game-difficulty">
@@ -1329,7 +1329,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 
  <!-- 브리즈 팝-->
-<div class="game-card" data-category="word" data-rank="9" data-mobile="true"  onclick="location.href='https://soosooland.com/pop'">
+<div class="game-card" data-category="word" data-rank="7" data-mobile="true"  onclick="location.href='https://soosooland.com/pop'">
     <div class="game-card-header">
        <div class="game-difficulty">
             <span class="ko-text">👤 혼자하기</span>
@@ -1442,7 +1442,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
    </div>
 
 <!-- 트링클 게임 -->
-<div class="game-card" data-category="strategy" data-rank="8" data-mobile="true"  onclick="location.href='https://soosooland.com/trinkle'">
+<div class="game-card" data-category="strategy" data-rank="6" data-mobile="true"  onclick="location.href='https://soosooland.com/trinkle'">
        <div class="game-card-header">
           <div class="game-difficulty">
             <span class="ko-text">👤🤖👥 </span>
@@ -1554,7 +1554,7 @@ setTimeout(() => startBtn.onclick(), introDelay);
     </div>
 
  <!-- 워퍼즈 몽 -->
-<div class="game-card" data-category="word" data-rank="12" data-mobile="false" onclick="location.href='https://soosooland.com/mong'">
+<div class="game-card" data-category="word" data-rank="10" data-mobile="false" onclick="location.href='https://soosooland.com/mong'">
          <div class="game-card-header">
                   <div class="game-difficulty">
         <span class="ko-text">🤖 NPC 대결</span>
@@ -1756,11 +1756,11 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
-        // 상위 11개 + 항상 보이는 카드
+        // 상위 12개 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 11) return false;
+            if (!rank || rank > 12) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
