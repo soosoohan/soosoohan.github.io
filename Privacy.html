@@ -32,8 +32,42 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+ .language-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #333;
+        padding: 3px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 100;
+    }
+
+    .language-button {
+        background: #2e8b8b;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        margin: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Pretendard', sans-serif;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        transition: all 0.3s ease;
+    }
+
+    .language-button:hover {
+        background: #20b2aa;
+        color: #333;
+    }
+
+    .language-button.active {
+        background: #ff69b4;
+        color: #333;
+    }
     h1 {
       color: #2c3e50;
+      text-align: center;
       border-bottom: 3px solid #3498db;
       padding-bottom: 10px;
       margin-bottom: 1.5rem;
@@ -93,13 +127,30 @@
     }
   @media (max-width: 480px) {
   .back-button { top: max(30px, env(safe-area-inset-top) + 10px); left: 10px;  width: 40px; height: 40px; }
+  .language-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 6px;
+        max-width: 150px; /* 최대 너비 제한 */
+    }
+    
+  .language-button {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+        white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    }
 }
 
   </style>
 </head>
-<body>
+<body onload="initLanguage()">
   <button class="back-button" onclick="location.href='https://soosooland.com/'" aria-label="수수랜드 홈으로">
    <img src="https://soosooland.com/images/home.png" alt="수수랜드 홈"></button>
+   <div class="language-toggle">
+  <button class="language-button" onclick="toggleLanguage('ko')">한</button>
+  <button class="language-button" onclick="toggleLanguage('en')">EN</button>
+</div>
+
   <div class="container">
     
 <div class="language-toggle">
@@ -110,7 +161,7 @@
 <h1 class="lang-ko">개인정보처리방침</h1>
 <h1 class="lang-en" style="display:none;">Privacy Policy</h1>
 
-  ======
+  
     
     
 <div class="description">
@@ -143,7 +194,6 @@
       </div>
     </div>
 
-  </div>
   <div id="english-description" class="lang-en">
           <div class="highlight">
         <strong>Soosooland does not collect personal information.</strong>
@@ -173,10 +223,7 @@
       </div>
     </div>
   </div>
-</div>
       
-  <hr class="divider">
-
     <p class="stamp">Last updated: October 18, 2025 | 최종 업데이트: 2025년 10월 18일</p>
   </div>
 
@@ -206,6 +253,16 @@
   const lang = browserLang.startsWith('ko') ? 'ko' : 'en';
   toggleLanguage(lang);
 })();
+
+function initLanguage() {
+  const saved = localStorage.getItem('soosoo-lang');
+  if (saved) {
+    toggleLanguage(saved); // 저장된 값 우선
+  } else {
+    const lang = navigator.language.startsWith('ko') ? 'ko' : 'en';
+    toggleLanguage(lang); // 브라우저 언어 감지
+  }
+}
 
   </script>
 </body>
