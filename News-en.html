@@ -20,6 +20,11 @@
 <link rel="alternate" hreflang="ko" href="https://soosooland.com/News-ko.html">
 <style>
 body{margin:0;background:#faf7f3;color:var(--ink);font-family:system-ui,apple-system,Segoe UI,Roboto,sans-serif; font-size: 20px;}
+.back-button { position: fixed;  top: max(48px, env(safe-area-inset-top) + 20px);  left: 22px;  width: 44px; height: 44px; padding: 0; background: transparent; order: none; border-radius: 22%; cursor: pointer; z-index: 100; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+
+.back-button img {width: 100%;height: 100%;object-fit: cover;display: block;}
+
+.back-button:active {transform: scale(0.92);transition: transform 0.1s;}
 .wrap{max-width:600px;margin:auto;padding:18px}
 h1{font-size:18px;margin:0 0 10px}
 .topnav{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
@@ -41,11 +46,9 @@ th:first-child,td:first-child{text-align:left}
 .date-ttl{font-weight:500;margin:2px 0;word-break:keep-all;overflow-wrap:break-word;}
 .desc{color:#4f4a43;font-size:20px;margin:0}
 
-.square-button{width:300px;height:80px;background:white;color:#2c3e50;border:none;border-radius:12px;border:2px solid #2c3e50;cursor:pointer;font-size:18px;font-weight:bold;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:1.2;margin:8px;transition:all 0.3s ease;font-family:Arial,sans-serif;}
-.square-button:hover{background-color:#d7f5f5;transform:scale(1.05);box-shadow:0 4px 8px rgba(0,0,0,0.2);}
-.square-button:active{transform:scale(0.95);}
-
+ 
 @media (max-width: 480px) {
+  .back-button { top: max(30px, env(safe-area-inset-top) + 10px); left: 10px;  width: 40px; height: 40px; }
   .desc{font-size:15px;}
   table{font-size:15px;}
   .timeline{font-size:15px;}
@@ -53,8 +56,9 @@ th:first-child,td:first-child{text-align:left}
 </style>
 </head>
 <body>
-<div class="wrap">
-
+<button class="back-button" onclick="location.href='https://soosooland.com/'" aria-label="수수랜드 홈으로">
+  <div class="wrap">
+  <img src="https://soosooland.com/images/home.png" alt="수수랜드 홈"></button>
   <h1>📰 SoosooLand Records</h1>
   <nav class="topnav">
     <a href="#aug-2026">August 2026</a>
@@ -101,7 +105,6 @@ th:first-child,td:first-child{text-align:left}
       <tbody id="jun26Body"></tbody>
     </table>
   </section>
-    <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <section class="card">
     <div class="section-title">📅 June 2026 Timeline</div>
@@ -120,7 +123,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 May 2026 Timeline</div>
     <div class="timeline" id="may26Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 2026년 4월 -->
   <section class="card" id="apr-2026">
@@ -147,7 +149,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 March 2026 Timeline</div>
     <div class="timeline" id="mar26Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 2026년 2월 -->
   <section class="card" id="feb-2026">
@@ -174,7 +175,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 January 2026 Timeline</div>
     <div class="timeline" id="jan26Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 12월 -->
   <section class="card" id="dec-2025">
@@ -201,7 +201,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 November 2025 Timeline</div>
     <div class="timeline" id="nov25Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 10월 -->
   <section class="card" id="oct-2025">
@@ -228,7 +227,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 September 2025 Timeline</div>
     <div class="timeline" id="sep25Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 8월 -->
   <section class="card" id="aug-2025">
@@ -242,7 +240,6 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 August 2025 Timeline</div>
     <div class="timeline" id="aug25Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 7월 -->
   <section class="card" id="jul-2025">
@@ -256,14 +253,12 @@ th:first-child,td:first-child{text-align:left}
     <div class="section-title">📅 July 2025 Timeline</div>
     <div class="timeline" id="jul25Timeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
   <!-- 전체 연표 -->
   <section class="card" id="timeline">
     <div class="section-title">📅 Full Timeline</div>
     <div id="allTimeline"></div>
   </section>
-  <button class="square-button" onclick="location.href='/'">Fun Puzzles, Soosooland<br>🎮 Play Games Now ✨</button>
 
 </div>
 
