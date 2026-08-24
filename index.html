@@ -1159,6 +1159,34 @@ setTimeout(() => startBtn.onclick(), introDelay);
          </div>
     </div>
 
+<!-- 워드마인 라지 -->
+<div class="game-card" data-category="word" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/wordminelarge/'">
+  <div class="rank-badge rank-new">🌱 NEW</div>
+         <div class="game-card-header">
+             <div class="game-difficulty">
+        <span class="ko-text">🤖 NPC 대결</span>
+        <span class="en-text hidden">🤖 vs NPC</span>
+             </div>
+             <div class="game-title">
+                 <span class="ko-text">워드마인 라지</span>
+                 <span class="en-text hidden">Wordmine large</span>
+             </div>
+         </div>
+         <div class="game-description-text">
+             <div class="ko-text">
+                    <strong>숫자 힌트를 보고 큰 격자 속에 숨은 단어를 찾으세요.</strong><br>
+                 <div align="center">
+  <img src="https://soosooland.com/images/wordmine.png" width="150" alt="Wordmine">
+                 </div>
+            </div> 
+            <div class="en-text hidden">
+                    <strong>Find the hidden word within large grid using the number hints.</strong><br>
+                 <div align="center">
+  <img src="https://soosooland.com/images/wordmine.png" width="150" alt="Wordmine">
+                 </div>
+            </div>
+       </div>  
+    </div>
 <!-- 워드마인-->
 <div class="game-card" data-category="word" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/wordmine/'">
   <div class="rank-badge rank-new">🌱 NEW</div>
@@ -1756,11 +1784,11 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
-        // 상위 12개 + 항상 보이는 카드
+        // 상위 13개 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 12) return false;
+            if (!rank || rank > 13) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
