@@ -98,15 +98,24 @@
   </style>
 </head>
 <body>
-  <div class="container">
   <button class="back-button" onclick="location.href='https://soosooland.com/'" aria-label="수수랜드 홈으로">
    <img src="https://soosooland.com/images/home.png" alt="수수랜드 홈"></button>
+  <div class="container">
+    
+<div class="language-toggle">
+  <button class="language-button" onclick="toggleLanguage('ko')">한</button>
+  <button class="language-button" onclick="toggleLanguage('en')">EN</button>
+</div>
 
-    <!-- 한국어 버전 -->
-    <div class="lang-section" lang="ko">
-      <h1>개인정보처리방침</h1>
-      
-      <div class="highlight">
+<h1 class="lang-ko">개인정보처리방침</h1>
+<h1 class="lang-en" style="display:none;">Privacy Policy</h1>
+
+  ======
+    
+    
+<div class="description">
+  <div id="korean-description" class="lang-ko">
+        <div class="highlight">
         <strong>수수랜드는 개인정보를 수집하지 않습니다.</strong>
       </div>
 
@@ -134,13 +143,9 @@
       </div>
     </div>
 
-    <hr class="divider">
-
-    <!-- English Version -->
-    <div class="lang-section" lang="en">
-      <h1>Privacy Policy</h1>
-      
-      <div class="highlight">
+  </div>
+  <div id="english-description" class="lang-en">
+          <div class="highlight">
         <strong>Soosooland does not collect personal information.</strong>
       </div>
 
@@ -167,8 +172,41 @@
         <p><strong>Email:</strong> <a href="mailto:soosooland2025@gmail.com">soosooland2025@gmail.com</a></p>
       </div>
     </div>
+  </div>
+</div>
+      
+  <hr class="divider">
 
     <p class="stamp">Last updated: October 18, 2025 | 최종 업데이트: 2025년 10월 18일</p>
   </div>
+
+  <script>
+    function toggleLanguage(lang) {
+  document.querySelectorAll('.lang-ko').forEach(el => {
+    el.style.display = (lang === 'ko') ? '' : 'none';
+  });
+  document.querySelectorAll('.lang-en').forEach(el => {
+    el.style.display = (lang === 'en') ? '' : 'none';
+  });
+  document.querySelectorAll('.language-button').forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.language-button[onclick*="'${lang}'"]`).classList.add('active');
+
+  // 사용자가 수동으로 고른 언어는 기억해두기
+  localStorage.setItem('preferredLang', lang);
+}
+
+// 페이지 로드시 자동 감지
+(function detectLanguage() {
+  const saved = localStorage.getItem('preferredLang');
+  if (saved) {
+    toggleLanguage(saved);
+    return;
+  }
+  const browserLang = navigator.language || navigator.userLanguage;
+  const lang = browserLang.startsWith('ko') ? 'ko' : 'en';
+  toggleLanguage(lang);
+})();
+
+  </script>
 </body>
 </html>
