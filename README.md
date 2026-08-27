@@ -89,27 +89,26 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 실패하면 정답 문장이 공개됩니다.  
   If you fail, the correct sentence will be shown.
 
-- 모음퀴즈는 간단하게 설명하면 한글 행맨입니다.
+- 모음퀴즈는 간단하게 설명하면 한글 행맨입니다.  
   Moeum-quiz is essentially Korean Hangman.
 
-- 모음퀴즈에는 힌트가 있는 게임이 있고, 힌트가 없는 게임이 있습니다.
+- 모음퀴즈에는 힌트가 있는 게임이 있고, 힌트가 없는 게임이 있습니다.   
   Moeum-quiz has games with hints and games without hints.
 
-- 같은 주제일 때 힌트가 있으면  맞추기가 쉬워집니다.
+- 같은 주제일 때 힌트가 있으면  맞추기가 쉬워집니다.  
   When the topic is the same, having hints makes it easier to guess the answer.
 
-- 같은 주제인데 힌트가 있는 것과 없는 것으로  두 가지 종류가 있는 것은 음식과 속담입니다. 
+- 같은 주제인데 힌트가 있는 것과 없는 것으로  두 가지 종류가 있는 것은 음식과 속담입니다.   
   The topics that have both hint and no-hint versions are Food and Proverbs.
 
-- 현재 일상 대화, 한국의 여행지, 대륙과 나라와 수도, 노래와 가수, 음식,속담과 격언, 초등학교 국사, 중학교 국사, 동물과 식물, 저자와 저서, 고유어, 영화와 드라마 제목  등 다양한 주제가 있습니다. 앞으로 세계사, 상식, 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다. 
+- 현재 일상 대화, 한국의 여행지, 대륙과 나라와 수도, 노래와 가수, 음식,속담과 격언, 초등학교 국사, 중학교 국사, 동물과 식물, 저자와 저서, 고유어, 영화와 드라마 제목  등 다양한 주제가 있습니다. 앞으로 세계사, 상식, 초등학교 교육과정 학년별로 넣는 등 계속 추가될 예정입니다.   
   Current topics include: Daily Conversations, Korean Travel Destinations, Continents/Countries/Capitals, Songs and Singers, Food, Proverbs and Sayings, Elementary School Korean History, Middle School Korean History, Animals and Plants, Authors and Books, Pure Korean Words, Movie and Drama Titles, and more. Future additions will include World History, General Knowledge, and Elementary School Curriculum topics organized by grade level.
 
-- 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
+- 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.   
   The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
 
-
 - 하루모음은 하루 1문제씩 매일 새로운 문제가 출제됩니다.  
-- One new question is presented each day in Haroo Moeum.  
+ One new question is presented each day in Haroo Moeum.  
   
 ## 둘이 모음 (Doori Moeum)
 
@@ -118,9 +117,6 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 풀이 순서는 라운드마다 교대됩니다. (1라운드: 1팀 풀이 / 2라운드: 2팀 풀이 / …)  
 - 문제마다 10점 만점에서 시작해서, 틀린 자음을 클릭할 때마다 1점씩 삭감됩니다.  
 - 10라운드가 끝나면 각 팀의 점수를 합산해 총점이 높은 팀(실수가 적은 팀)이 승리합니다.  
-
-## Doori Moeum
-
 - A two-player Moeum quiz battle where each team solves its own separate set of questions.  
 - Each round, only one team solves while the other waits. To keep the waiting team from getting bored, they get to preview the question their team will solve in the next round.  
 - The solving turn alternates by round (Round 1: Team 1 solves / Round 2: Team 2 solves / and so on).  
@@ -134,9 +130,6 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 정답을 먼저 완성하면 2점, 동시에 완성하면 1점씩 받습니다.  
 - 10라운드 후 점수를 비교해 승패 또는 무승부가 결정됩니다.  
 - 내 문제와 상대방의 문제를 동시에 추리하면서, 내 문제에 있을 것 같은 자음을 클릭하도록 노력하세요.  
-
-## Moeum Battle
-
 - A two-player Moeum quiz battle where players take turns revealing consonants that appear in each other's separate word.  
 - Whenever a consonant is clicked, it's revealed simultaneously in both players' words if present.  
 - Completing your word first earns 2 points; completing it at the same time as your opponent earns 1 point each.  
@@ -153,9 +146,6 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 이렇게 한 번이라도 틀렸던 문제만 복습 일정에 등록되어, 위 4단계 복습을 거칩니다.  
 - 날짜를 지켜서 반복하면 오래 기억됩니다.  
 - 현재 1학년부터 5학년 1학기까지 어휘 4,000여 개를 수록하였으며, 이후 학기 어휘는 순차적으로 추가될 예정입니다.  
-
-## Moeum Dictionary (Moeum Dict) / Moeum School  
-
 - Both Moeum Dictionary and Moeum School are study quizzes built from vocabulary extracted from Korean elementary school textbooks.  
 - In Moeum Dictionary, you see a word and guess its meaning. In Moeum School, you see a hint and guess the word.  
 - The system applies the scientific learning method (the forgetting curve) discovered by German psychologist Hermann Ebbinghaus, which is highly effective for foreign language learning and long-term memory.  
@@ -165,12 +155,10 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - The current version covers 4,000+ words spanning Grade 1 through the first semester of Grade 5, with additional vocabulary to be added in future updates.
 
 
-
 | 사용자 user    | 👤혼자 하기 |👤혼자 하기   | 👤🆚👤 2인 대결 | 👤혼자 하기|
 |----|----|----|----|----|
 |  게임 Game| 모음퀴즈 <br>Moeum-quiz <br>하루모음<br> Haroo Moeum|모음 라운드<br>Moeum Round<br> |  둘이 모음<br> Doori-moeun <br> 모음 겨루기<br> Moeum Battle |모음 스쿨<br> Moeum School<br>모음 사전 <br> Moeum dict|
 |게임 종료|6회 틀리거나 정답을 맞추면 |10라운드 끝나면 | 한 팀의 정답을 맞출 때까지| 모두 맞출 때까지 틀리면 다시 풀기 |
-
 
 -----
 
