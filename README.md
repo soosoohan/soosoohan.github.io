@@ -61,7 +61,7 @@ Games like Gomoku and Baseball-style logic games are reinterpreted for modern ga
    
 • 연산 게임 (Math Games): 넘즐 시리즈 (Numzle series)  
    
-• 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball) 
+• 추리 게임 (Logic Games): 숫자야구 (Number Baseball), 한글단어야구(Korean Word Baseball), 영어단어야구(English Word Baseball), 수식 야구(Equation Baseball)
    
 • 전략 게임 (Strategy Games): 트링클 시리즈(Trinkle), 넘스톤 시리즈 (Numstone), 오목(Gomoku)   
       
