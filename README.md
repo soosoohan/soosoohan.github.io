@@ -107,15 +107,70 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 모든 자음을 다 찾을 때까지 계속되고, 다 찾으면 맞춘 자음 수에 따라 승패가 결정됩니다.
   The game continues until all consonants are found, and when all are found, the winner is determined based on the number of consonants each player guessed correctly.  
 
-- 모음딕과 모음스쿨은 대한민국 초등학교 교과서 어휘로 만든 학습 퀴즈입니다. 현재 1학년부터 5학년 1학기까지 어휘 4,000여 개를 수록하였으며, 이후 학기 어휘는 순차적으로 추가될 예정입니다.
-  Moeum-Dic and Moeum-School are learning quizzes built from Korean elementary school textbook vocabulary. The current version covers 4,000+ words spanning Grade 1 through the first semester of Grade 5, with additional vocabulary to be added in future updates.
 
----
+- 하루모음은 하루 1문제씩 매일 새로운 문제가 출제됩니다.  
+- One new question is presented each day in Haroo Moeum.  
+  
+## 둘이 모음 (Doori Moeum)
 
-| 사용자 | 👤 혼자 하기 | 👤 혼자 하기 | 👤🆚👤 2인 대결 | 👤 학습 퀴즈 |
-|---|---|---|---|---|
-| **게임** | 모음퀴즈<br>Moeum Quiz<br>하루모음<br>Haroo Moeum | 모음 라운드<br>Moeum Round | 둘이 모음<br>Doori-moeun | 모음스쿨<br>Moeum School<br>모음 사전<br> Moeum Dict |
-| **게임 종료** | 6회 틀리거나 정답을 맞추면 | 10라운드 끝나면 | 정답을 맞출 때까지 | 모두 맞출 때까지<br>틀리면 다시 풀기 |
+- 두 사용자가 대결하는 모음퀴즈로, 각 팀은 서로 다른 자기만의 문제 세트를 풉니다.   
+- 라운드마다 한 팀만 문제를 풀고, 다른 팀은 대기합니다. 대기 팀은 지루하지 않도록 자기 팀이 다음 라운드에 풀 문제를 미리 보면서 기다립니다.  
+- 풀이 순서는 라운드마다 교대됩니다. (1라운드: 1팀 풀이 / 2라운드: 2팀 풀이 / …)  
+- 문제마다 10점 만점에서 시작해서, 틀린 자음을 클릭할 때마다 1점씩 삭감됩니다.  
+- 10라운드가 끝나면 각 팀의 점수를 합산해 총점이 높은 팀(실수가 적은 팀)이 승리합니다.  
+
+## Doori Moeum
+
+- A two-player Moeum quiz battle where each team solves its own separate set of questions.  
+- Each round, only one team solves while the other waits. To keep the waiting team from getting bored, they get to preview the question their team will solve in the next round.  
+- The solving turn alternates by round (Round 1: Team 1 solves / Round 2: Team 2 solves / and so on).  
+- Each question starts at a maximum of 10 points, losing 1 point for every wrong consonant clicked.  
+- After 10 rounds, each team's points are totaled — the team with the higher score (fewer mistakes) wins.  
+
+## 모음 겨루기 (Moeum Battle)
+ 
+- 두 사용자가 대결하는 모음퀴즈로, 서로 다른 문제에 있는 자음을 동시에 공개하며 진행됩니다.  
+- 교대로 자음을 클릭하면, 그 자음이 두 사람의 문제에서 동시에 공개됩니다.  
+- 정답을 먼저 완성하면 2점, 동시에 완성하면 1점씩 받습니다.  
+- 10라운드 후 점수를 비교해 승패 또는 무승부가 결정됩니다.  
+- 내 문제와 상대방의 문제를 동시에 추리하면서, 내 문제에 있을 것 같은 자음을 클릭하도록 노력하세요.  
+
+## Moeum Battle
+
+- A two-player Moeum quiz battle where players take turns revealing consonants that appear in each other's separate word.  
+- Whenever a consonant is clicked, it's revealed simultaneously in both players' words if present.  
+- Completing your word first earns 2 points; completing it at the same time as your opponent earns 1 point each.  
+- After 10 rounds, scores are compared to determine a win, loss, or tie.  
+- Try to guess both your own word and your opponent's at the same time, and click consonants you think are likely to appear in your own word.  
+   
+## 모음 사전 (Moeum dict) / 모음 스쿨 (Moeum School)  
+
+- 모음사전과 모음 스쿨은 한국 초등학교 교과서에서 추출한 단어로 만든 학습 퀴즈입니다.  
+- 모음사전은 단어나 어휘를 보고 뜻을 맞춰야 하고, 모음 스쿨은 힌트를 보고 단어나 어휘를 맞춰야 합니다.  
+- 독일 심리학자 헤르만 에빙하우스가 발견한 과학적 학습법(망각곡선)을 적용했습니다. 외국어 학습과 장기기억에 매우 효과적입니다.  
+- 학습 1회 + 복습 4회(3일 후 → 7일 후 → 14일 후 → 28일 후), 총 5단계를 거치면 장기기억으로 저장됩니다.  
+- 첫 학습에서 틀린 문제는 그 자리에서 바로 다시 풀어 정답을 확인합니다. (당일 학습 완료)  
+- 이렇게 한 번이라도 틀렸던 문제만 복습 일정에 등록되어, 위 4단계 복습을 거칩니다.  
+- 날짜를 지켜서 반복하면 오래 기억됩니다.  
+- 현재 1학년부터 5학년 1학기까지 어휘 4,000여 개를 수록하였으며, 이후 학기 어휘는 순차적으로 추가될 예정입니다.  
+
+## Moeum Dictionary (Moeum Dict) / Moeum School  
+
+- Both Moeum Dictionary and Moeum School are study quizzes built from vocabulary extracted from Korean elementary school textbooks.  
+- In Moeum Dictionary, you see a word and guess its meaning. In Moeum School, you see a hint and guess the word.  
+- The system applies the scientific learning method (the forgetting curve) discovered by German psychologist Hermann Ebbinghaus, which is highly effective for foreign language learning and long-term memory.  
+- One initial study session plus four review sessions (after 3, 7, 14, and 28 days) — five stages in total — move a word into long-term memory.  
+- Any question missed during the first study session is immediately retried on the spot to confirm the correct answer (completing that day's study).  
+- Only questions missed at least once are added to the review schedule and go through the four review stages above. - Repeating on schedule is what makes the memory last.
+- The current version covers 4,000+ words spanning Grade 1 through the first semester of Grade 5, with additional vocabulary to be added in future updates.
+
+
+
+| 사용자 user    | 👤혼자 하기 |👤혼자 하기   | 👤🆚👤 2인 대결 | 👤혼자 하기|
+|----|----|----|----|----|
+|  게임 Game| 모음퀴즈 <br>Moeum-quiz <br>하루모음<br> Haroo Moeum|모음 라운드<br>Moeum Round<br> |  둘이 모음<br> Doori-moeun <br> 모음 겨루기<br> Moeum Battle |모음 스쿨<br> Moeum School<br>모음 사전 <br> Moeum dict|
+|게임 종료|6회 틀리거나 정답을 맞추면 |10라운드 끝나면 | 한 팀의 정답을 맞출 때까지| 모두 맞출 때까지 틀리면 다시 풀기 |
+
 
 -----
 
