@@ -545,16 +545,27 @@ body {
 
 <script>
 (function() {
-  // PWA 감지
-  const isPWA = window.matchMedia('(display-mode: standalone)').matches;
-  const introDelay = isPWA ? 3000 : 2500; 
-  
+  // ⭐ 추가: 이번 세션에 이미 인트로를 봤는지 체크
+  const alreadyPlayed = sessionStorage.getItem('introPlayed');
+
   const intro = document.getElementById('intro');
   const petals = document.getElementById('petals');
   const bgPetals = document.getElementById('background-petals');
   const startBtn = document.getElementById('intro-start');
   const audio = document.getElementById('intro-audio');
 
+  // ⭐ 추가: 이미 봤으면 인트로 즉시 제거하고 배경 꽃잎만 바로 시작
+  if (alreadyPlayed) {
+    intro.remove();
+    bgPetals.style.transition = 'none';
+    bgPetals.style.opacity = '1';
+    startBackgroundPetalsOnly();
+    return; // 아래 애니메이션 로직 전부 스킵
+  }
+// PWA 감지
+  const isPWA = window.matchMedia('(display-mode: standalone)').matches;
+  const introDelay = isPWA ? 3000 : 2500; 
+  
   // 꽃잎 생성 함수
   function createPetal(container, animationName = 'petal-fly', duration = 3500) {
     const petal = document.createElement('div');
@@ -601,16 +612,23 @@ setTimeout(() => {
     
     setTimeout(() => {
       intro.remove();
-      // 배경 꽃잎 시작
-      bgPetals.style.transition = 'opacity 1s';
-      bgPetals.style.opacity = '1';
-      startBackgroundPetals();
-    }, 800);
-  };
-}, introDelay);
+     // 배경 꽃잎 시작
+        bgPetals.style.transition = 'opacity 1s';
+        bgPetals.style.opacity = '1';
+        startBackgroundPetals();
+        // ⭐ 추가: 인트로 한 번 봤다고 기록
+        sessionStorage.setItem('introPlayed', 'true');
+      }, 800);
+    };
+  }, introDelay);
 
-// 2️⃣ introDelay 후에 버튼을 자동으로 눌러줌
-setTimeout(() => startBtn.onclick(), introDelay);
+  // 2️⃣ introDelay 후에 버튼을 자동으로 눌러줌
+  setTimeout(() => startBtn.onclick(), introDelay);
+
+  // ⭐ 추가: alreadyPlayed일 때 쓸 배경 꽃잎 전용 함수 (스코프 밖에서도 접근 가능하게)
+  function startBackgroundPetalsOnly() {
+    setInterval(() => createPetal(bgPetals, 'bg-petal-fly', 4500), 1200);
+  }
 })();
 </script>
 
