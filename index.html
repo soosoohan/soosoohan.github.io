@@ -1148,8 +1148,9 @@ setTimeout(() => {
          </div>
     </div>
 <!-- 모음 겨루기-->
-<div class="game-card" data-category="quiz" data-rank="23" data-mobile="true" onclick="location.href='https://soosooland.com/moeumbattle/'">
-<div class="game-card-header">
+<div class="game-card" data-category="quiz" data-rank="11" data-mobile="true" onclick="location.href='https://soosooland.com/moeumbattle/'">
+   <div class="rank-badge rank-new">🌱 New</div>
+    <div class="game-card-header">
       <div class="game-difficulty">
       <span class="ko-text">👥 2인 대결</span>
       <span class="en-text hidden">👥 2 Players</span>
@@ -1827,11 +1828,11 @@ function filterGames(category, button) {
     
     let filtered;
     if (category === 'popular') {
-        // 상위 13개 + 항상 보이는 카드
+        // 상위 14개 + 항상 보이는 카드
         filtered = cards.filter(card => {
             if (card.dataset.alwaysShow === 'true') return true;
             const rank = parseInt(card.dataset.rank);
-            if (!rank || rank > 13) return false;
+            if (!rank || rank > 14) return false;
             
             // 모바일에서는 모바일 지원 게임만 표시
             if (isMobile && card.dataset.mobile === 'false') return false;
