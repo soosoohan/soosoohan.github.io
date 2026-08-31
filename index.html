@@ -1771,13 +1771,15 @@ setTimeout(() => {
 //  변수 선언 
 let deferredPrompt;
 
-//  언어 설정 
 function setLanguage(lang) {
+    localStorage.setItem('soosoo-lang', lang);  // ← 여기로 저장 코드 이동
+
     const koTexts = document.querySelectorAll('.ko-text');
     const enTexts = document.querySelectorAll('.en-text');
     const koBtns = document.querySelector('.language-btn:first-child');
     const enBtns = document.querySelector('.language-btn:last-child');
 
+   
     if (lang === 'ko') {
         koTexts.forEach(el => el.classList.remove('hidden'));
         enTexts.forEach(el => el.classList.add('hidden'));
@@ -1793,29 +1795,23 @@ function setLanguage(lang) {
     }
 }
 
- // 페이지 로드 시 언어 초기화
 function initLanguage() {
   const saved = localStorage.getItem('soosoo-lang');
   
   if (saved) {
-    // 저장된 값 있으면 그대로 사용
     setLanguage(saved);
   } else {
-    // 없으면 브라우저 언어 감지
     const browserLang = navigator.language || navigator.userLanguage;
     const lang = browserLang.startsWith('ko') ? 'ko' : 'en';
     setLanguage(lang);
   }
- localStorage.setItem('soosoo-lang', lang);
 }
-
  
 //  PWA 설치 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
 });
-
 
 function handleInstall() {
     const isKorean = !document.querySelector('.ko-text').classList.contains('hidden');
