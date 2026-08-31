@@ -1806,7 +1806,8 @@ function initLanguage() {
     setLanguage(lang);
   }
 }
- 
+ document.addEventListener('DOMContentLoaded', initLanguage);
+
 //  PWA 설치 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
