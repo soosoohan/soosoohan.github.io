@@ -81,6 +81,13 @@ th:first-child,td:first-child{text-align:left}
    <a href="#timeline">전체 연표</a>
  </nav>
 <!-- 2026년 8월 -->
+  <section class="card" id="aug-2026">
+    <div class="section-title">2026년 8월 인기순위</div>
+    <table>
+      <thead><tr><th>Rank</th><th>Game</th><th>Change</th></tr></thead>
+      <tbody id="aug26Body"></tbody>
+    </table>
+  </section>
   <section class="card">
     <div class="section-title">📅 2026년 8월 타임라인</div>
     <div class="timeline" id="aug26Timeline"></div>
@@ -263,6 +270,7 @@ th:first-child,td:first-child{text-align:left}
 
 <script>
 const monthlyRanking = {
+ "2026-08": ["오목", "넘스톤", "야구게임","워퍼즈", "트링클", "모음퀴즈", "넘즐"],
  "2026-07": ["오목", "넘스톤", "넘즐", "트링클", "야구게임", "모음퀴즈", "워퍼즈" ],
  "2026-06": ["넘스톤","오목","모음퀴즈","워퍼즈","넘즐","트링클", "야구게임"],
  "2026-05": ["오목", "넘스톤","야구게임","모음퀴즈","트링클","넘즐","워퍼즈"],
@@ -473,6 +481,7 @@ function drawAllTimeline() {
 }
 
 function initializePage() {
+ drawRankingTable("2026-08", "aug26Body", "2026-07");
  drawRankingTable("2026-07", "jul26Body", "2026-06");
  drawRankingTable("2026-06", "jun26Body", "2026-05");
  drawRankingTable("2026-05", "may26Body", "2026-04");
