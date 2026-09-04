@@ -64,6 +64,7 @@ th:first-child,td:first-child{text-align:left}
 <div class="wrap">
  <h1>📰 수수랜드의 기록</h1>
  <nav class="topnav">
+   <a href="#sep-2026">2026년 9월</a>
    <a href="#jul-2026">2026년 8월</a>
    <a href="#jul-2026">2026년 7월</a>
    <a href="#jun-2026">2026년 6월</a>
@@ -80,6 +81,11 @@ th:first-child,td:first-child{text-align:left}
    <a href="#jul-2025">2025년 7월</a>
    <a href="#timeline">전체 연표</a>
  </nav>
+<!-- 2026년 9월 -->
+  <section class="card">
+    <div class="section-title">📅 2026년 9월 타임라인</div>
+    <div class="timeline" id="sep26Timeline"></div>
+  </section>
 <!-- 2026년 8월 -->
   <section class="card" id="aug-2026">
     <div class="section-title">2026년 8월 인기순위</div>
@@ -287,7 +293,10 @@ const monthlyRanking = {
 };
 
 const monthlyNews = {
-"2026-08": [
+"2026-09": [
+  "2026-09-04: 마인워더 출시"
+],
+ "2026-08": [
   "2026-08-02: 하루모음 재출시",
   "2026-08-02: 넘넘, 뉴그라운드에서 라이브 시작",
   "2026-08-02: 넘스탬프 알파 출시",
@@ -496,6 +505,7 @@ function initializePage() {
  drawRankingTable("2025-08", "aug25Body", "2025-07");
  drawRankingTable("2025-07", "jul25Body", null);
 
+ drawTimeline("2026-09", "sep26Timeline");
  drawTimeline("2026-08", "aug26Timeline");
  drawTimeline("2026-07", "jul26Timeline");
  drawTimeline("2026-06", "jun26Timeline");
