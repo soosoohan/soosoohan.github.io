@@ -278,12 +278,12 @@ We plan to develop games with more diverse topics and in various languages such 
 
 ### 📌 워드마인 시리즈의 격자 크기와 게임 종류 
 
-| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |
-|------------------|--------------|----------------|------|
-|영 8x8 한 7x7  | 워드마인 미니 (Wordmine mini)        | 마인워더 미니(MineWorder mini)    | 워드마인 솔로 미니(Wordmine Solo mini) |
-|영 12x12 한 10x10    | 워드마인 (Wordmine)   | 마인워더 (MineWorder)    | 워드마인 솔로(Wordmine Solo)|
-|영 14x14 한 12x12    | 워드마인 라지(Wordmine large)    | 마인워더 라지(MineWorder large)   |워드마인 솔로 라지(Wordmine Solo large)|
-
+| 격자 크기  grid size  | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |
+|------------------|--------------|----------------|
+|영 8x8 한 7x7  | 워드마인 미니 (Wordmine mini)        | 마인워더 미니(MineWorder mini)    | 
+|영 12x12 한 10x10    | 워드마인 (Wordmine)   | 마인워더 (MineWorder)    | 
+|영 14x14 한 12x12    | 워드마인 라지(Wordmine large)    | 마인워더 라지(MineWorder large)   |
+|영 16X16 한 14X14 | 워드마인 XL (Wordmine XL) |마인워더 XL (MineWorder XL) |
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
