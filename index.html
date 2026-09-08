@@ -664,6 +664,10 @@ setTimeout(() => {
     <span class="ko-text">단어</span>
     <span class="en-text hidden">Word</span>
   </button>
+  <button class="category-btn" onclick="filterGames('new', this)">
+    <span class="ko-text">신작</span>
+    <span class="en-text hidden">New</span>
+  </button>
  </div>
    
 <div class="games-grid">
@@ -1166,7 +1170,7 @@ setTimeout(() => {
          </div>
     </div>
 <!-- 모음 겨루기-->
-<div class="game-card" data-category="quiz" data-rank="9" data-mobile="true" onclick="location.href='https://soosooland.com/moeumbattle/'">
+<div class="game-card" data-category="quiz new" data-rank="9" data-mobile="true" onclick="location.href='https://soosooland.com/moeumbattle/'">
   <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1227,7 +1231,7 @@ setTimeout(() => {
     </div>
 
 <!-- 워드마인 라지 -->
-<div class="game-card" data-category="word" data-rank="10" data-mobile="false" onclick="location.href='https://soosooland.com/wordminelarge/'">
+<div class="game-card" data-category="word new" data-rank="10" data-mobile="false" onclick="location.href='https://soosooland.com/wordminelarge/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1258,7 +1262,7 @@ setTimeout(() => {
        </div>  
     </div>
 <!--마인워더 미니-->
-<div class="game-card" data-category="word" data-rank="11" data-mobile="true" onclick="location.href='https://soosooland.com/minewordermini/'">
+<div class="game-card" data-category="word new" data-rank="11" data-mobile="true" onclick="location.href='https://soosooland.com/minewordermini/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1289,7 +1293,7 @@ setTimeout(() => {
        </div>  
     </div>
 <!--마인워더-->
-<div class="game-card" data-category="word" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/mineworder/'">
+<div class="game-card" data-category="word new" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/mineworder/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1320,7 +1324,7 @@ setTimeout(() => {
        </div>  
     </div>
 <!--마인워더 라지-->
-<div class="game-card" data-category="word" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/mineworderlarge/'">
+<div class="game-card" data-category="word new" data-rank="11" data-mobile="false" onclick="location.href='https://soosooland.com/mineworderlarge/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1351,7 +1355,7 @@ setTimeout(() => {
        </div>  
     </div>
 <!-- 워드마인-->
-<div class="game-card" data-category="word" data-rank="5" data-mobile="false" onclick="location.href='https://soosooland.com/wordmine/'">
+<div class="game-card" data-category="word new" data-rank="5" data-mobile="false" onclick="location.href='https://soosooland.com/wordmine/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1382,7 +1386,7 @@ setTimeout(() => {
        </div>  
     </div>
 <!-- 워드마인 미니-->
-<div class="game-card" data-category="word" data-rank="8" data-mobile="true" onclick="location.href='https://soosooland.com/wordminemini/'">
+<div class="game-card" data-category="word new" data-rank="8" data-mobile="true" onclick="location.href='https://soosooland.com/wordminemini/'">
    <div class="rank-badge rank-new">
     <span class="ko-text">🌱새 게임</span>
     <span class="en-text hidden">🌱 New</span>
@@ -1609,7 +1613,7 @@ setTimeout(() => {
     </div>
 
  <!-- 야구시리즈 -->
-<div class="game-card" data-category="quiz" data-rank="4" data-mobile="true"  onclick="location.href='https://soosooland.com/yagoo'">
+<div class="game-card" data-category="strategy" data-rank="4" data-mobile="true"  onclick="location.href='https://soosooland.com/yagoo'">
     <div class="game-card-header">
           <div class="game-difficulty">
             <span class="ko-text">👤🤖👥 </span>
@@ -1964,11 +1968,13 @@ function filterGames(category, button) {
     } else {
     filtered = cards.filter(card => {
         if (card.dataset.alwaysShow === 'true') return true;
-        if (card.dataset.category !== category) return false;
+        const cats = card.dataset.category.split(' ');   // 👈 추가
+        if (!cats.includes(category)) return false;       // 👈 이 줄로 교체
         if (isMobile && card.dataset.mobile === 'false') return false;
         return true;
     });
 }
+
    
     // 정렬: 항상 보이는 카드는 맨 뒤로
     filtered.sort((a, b) => {
