@@ -283,7 +283,6 @@ We plan to develop games with more diverse topics and in various languages such 
 |영 8x8 한 7x7  | 워드마인 미니 (Wordmine mini)        | 마인워더 미니(MineWorder mini)    | 
 |영 12x12 한 10x10    | 워드마인 (Wordmine)   | 마인워더 (MineWorder)    | 
 |영 14x14 한 12x12    | 워드마인 라지(Wordmine large)    | 마인워더 라지(MineWorder large)   |
-|영 16X16 한 14X14 | 워드마인 XL (Wordmine XL) |마인워더 XL (MineWorder XL) |
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
