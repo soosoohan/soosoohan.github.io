@@ -88,25 +88,12 @@ th:first-child,td:first-child{text-align:left}
   <img src="https://soosooland.com/images/home.png" alt="수수랜드 홈"></button>
   <div class="wrap">
   <h1>📰 SoosooLand Updates</h1>
-  <nav class="topnav">
-    <a href="#sep-2026">September 2026</a>
-    <a href="#aug-2026">August 2026</a>
-    <a href="#jul-2026">July 2026</a>
-    <a href="#jun-2026">June 2026</a>
-    <a href="#may-2026">May 2026</a>
-    <a href="#apr-2026">April 2026</a>
-    <a href="#mar-2026">March 2026</a>
-    <a href="#feb-2026">February 2026</a>
-    <a href="#jan-2026">January 2026</a>
-    <a href="#dec-2025">December 2025</a>
-    <a href="#nov-2025">November 2025</a>
-    <a href="#oct-2025">October 2025</a>
-    <a href="#sep-2025">September 2025</a>
-    <a href="#aug-2025">August 2025</a>
-    <a href="#jul-2025">July 2025</a>
-    <a href="#timeline">Full Timeline</a>
-  </nav>
-
+  
+  <!-- 2026년 10월 -->
+  <section class="card">
+    <div class="section-title">📅 October 2026 Timeline</div>
+    <div class="timeline" id="oct26Timeline"></div>
+  </section>
   <!-- 2026년 9월 -->
   <section class="card" id="sep-2026">
     <div class="section-title">September 2026 Popularity Rankings</div>
@@ -330,6 +317,9 @@ const monthlyRanking = {
 };
 
 const monthlyNews = {
+  "2026-10": [
+  "2026-10-04: SoosooLand reached 6,000 users"
+],
   "2026-09": [
   "2026-09-04: Mineworder released",
   "2026-09-05: Mineworder mini released",
@@ -546,6 +536,7 @@ function initializePage() {
   drawRankingTable("2025-08", "aug25Body", "2025-07");
   drawRankingTable("2025-07", "jul25Body", null);
 
+  drawTimeline("2026-10", "oct26Timeline");
   drawTimeline("2026-09", "sep26Timeline");
   drawTimeline("2026-08", "aug26Timeline");
   drawTimeline("2026-07", "jul26Timeline");
