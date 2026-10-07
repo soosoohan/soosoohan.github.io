@@ -247,9 +247,6 @@ Worpuzz is a game where you explore a grid to find hidden words!
 
 - 한국어와 영어 모두 플레이 가능합니다! 게임은 계속해서 개선되고 업그레이드될 예정입니다.    
 - Playable in both Korean and English! The game will continue to be improved and upgraded.   
-
-- 워드마인 시리즈는 일부 게임만 공개되었으며 아직 개발중입니다.   
-- The Wordmine series has only had some of its games released so far, and it is still under development.
   
 ### 📝 게임 주제 / Game Topics
 
@@ -268,13 +265,13 @@ We plan to develop games with more diverse topics and in various languages such 
  
 | 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |숫자 힌트|
 |------------------|--------------|----------------|------|---|
-|영 8x8 한 7x7  | 워퍼즈 미니 (Worpuzz mini)  | 워퍼즈 메이트 콩(Worpuzz Mate Kong)    | 워퍼즈 브리즈 팝(Worpuzz Breeze Pop) |없음|
-|영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|없음|
-|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 메이트 찌니(Worpuzz Mate ZZini)   |워퍼즈 브리즈 젠(Worpuzz Breeze Zen)|없음|
-|영 16x16 한 14x14 | - |-|워퍼즈 브리즈 필드(Worpuzz Breeze Field)|없음|
-|영 8x8 한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder kong)  |-  | 있음|
-|영 12x12 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 워퍼즈 마인워더 (Worpuzz MineWorder)  |-  | 있음|
-|영 14x14 한 12x12    |워퍼즈마인 몽(Worpuzz Mine Mong)    | 마인워더 라지(Worpuzz MineWorder Zzini)| -  |있음|
+|영 8x8 한 7x7  | 워퍼즈 미니 (Worpuzz mini)  | 워퍼즈 메이트 콩(Worpuzz Mate Kong)    | 워퍼즈 브리즈 팝(Worpuzz Breeze Pop) |없음(Off)|
+|영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|없음(Off)|
+|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 메이트 찌니(Worpuzz Mate ZZini)   |워퍼즈 브리즈 젠(Worpuzz Breeze Zen)|없음(Off)|
+|영 16x16 한 14x14 | - |-|워퍼즈 브리즈 필드(Worpuzz Breeze Field)|없음(Off)|
+|영 8x8 한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder kong)  |-  | 있음(On)|
+|영 12x12 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 워퍼즈 마인워더 (Worpuzz MineWorder)  |-  | 있음(On)|
+|영 14x14 한 12x12    |워퍼즈마인 몽(Worpuzz Mine Mong)    | 마인워더 라지(Worpuzz MineWorder Zzini)| -  |있음(On)|
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
