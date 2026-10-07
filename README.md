@@ -209,9 +209,6 @@ Worpuzz is a game where you explore a grid to find hidden words!
 (“Worpuzz”라는 이름은 “Word”와 “Puzzle”의 조합입니다.)  
 (The name “Worpuzz” is a combination of “Word” and “Puzzle.”)
 
-(“Wordmine”라는 이름은 “Word”와 “mine”의 조합입니다.)  
-(The name “Wordmine” is a combination of “Word” and “mine.”)
-
 ### 🔎 게임 방법 / How to Play
 
 - 단어들이 격자 내에서 가로, 세로, 대각선으로 숨겨져 있습니다.  
@@ -268,21 +265,16 @@ Worpuzz is a game where you explore a grid to find hidden words!
 We plan to develop games with more diverse topics and in various languages such as Chinese and Japanese in the future.
   
 ### 📌 워퍼즈 시리즈의 격자 크기와 게임 종류
-
-| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |
+ 
+| 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |숫자 힌트|
 |------------------|--------------|----------------|------|
-|영 8x8 한 7x7  | 워퍼즈 미니 (Worpuzz Mini)  | 메이트 콩(Mate Kong)    |   브리즈 팝(Breeze Pop) |
-|영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|
-|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 메이트 찌니(Mate ZZini)   |브리즈 젠(Breeze Zen)|
-|영 16X16 한 14X14 | - |-|브리즈 필드(Breeze Field)|
-
-### 📌 워드마인 시리즈의 격자 크기와 게임 종류 
-
-| 격자 크기  grid size  | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |
-|------------------|--------------|----------------|
-|영 8x8 한 7x7  | 워드마인 미니 (Wordmine mini)        | 마인워더 미니(MineWorder mini)    | 
-|영 12x12 한 10x10    | 워드마인 (Wordmine)   | 마인워더 (MineWorder)    | 
-|영 14x14 한 12x12    | 워드마인 라지(Wordmine large)    | 마인워더 라지(MineWorder large)   |
+|영 8x8 한 7x7  | 워퍼즈 미니 (Worpuzz Mini)  | 워퍼즈 메이트 콩(Worpuzz Mate Kong)    | 워퍼즈 브리즈 팝(Worpuzz Breeze Pop) |없음|
+|영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz Worpuzz breeze)|없음|
+|영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 메이트 찌니(Worpuzz Mate ZZini)   |워퍼즈 브리즈 젠(Worpuzz Breeze Zen)|없음|
+|영 16X16 한 14X14 | - |-|워퍼즈 브리즈 필드(Worpuzz Breeze Field)|없음|
+|영 8x8 한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder mini)    | 있음|
+|영 12x12 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 마인워더 (Worpuzz MineWorder)    | 있음|
+|영 14x14 한 12x12    |워퍼즈마인 라지(Worpuzz Mine large)    | 마인워더 라지(Worpuzz MineWorder large)   |있음|
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
