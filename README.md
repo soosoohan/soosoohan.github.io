@@ -266,11 +266,11 @@ We plan to develop games with more diverse topics and in various languages such 
 | 격자 크기  grid size     | 👤🆚🤖컴퓨터와 대결   | 👤🆚👤사용자 2인 대결 |👤 혼자 하기 |숫자 힌트|
 |------------------|--------------|----------------|------|---|
 |En 8x8 <br>한 7x7  | 워퍼즈 미니 (Worpuzz mini)  | 워퍼즈 메이트 콩(Worpuzz Mate Kong)    | 워퍼즈 브리즈 팝(Worpuzz Breeze Pop) |없음(Off)|
+|En 8x8<br>한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder kong)  |-  | 있음(On)|
 |En 12x12<br>한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz breeze)|없음(Off)|
+|En 12x12<br> 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 워퍼즈 마인워더 (Worpuzz MineWorder)  |-  | 있음(On)|
 |En 14x14<br>한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 메이트 찌니(Worpuzz Mate ZZini)   |워퍼즈 브리즈 젠(Worpuzz Breeze Zen)|없음(Off)|
 |En 16x16<br>한 14x14 | - |-|워퍼즈 브리즈 필드(Worpuzz Breeze Field)|없음(Off)|
-|En 8x8<br>한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder kong)  |-  | 있음(On)|
-|En 12x12<br> 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 워퍼즈 마인워더 (Worpuzz MineWorder)  |-  | 있음(On)|
 |En 14x14<br>한 12x12    |워퍼즈마인 몽(Worpuzz Mine Mong)    | 마인워더 라지(Worpuzz MineWorder Zzini)| -  |있음(On)|
 
 -----
