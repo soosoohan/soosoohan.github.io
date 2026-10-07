@@ -272,9 +272,9 @@ We plan to develop games with more diverse topics and in various languages such 
 |영 12x12 한 10x10    | 워퍼즈(Worpuzz)   | 워퍼즈 메이트(Worpuzz Mate)    | 워퍼즈 브리즈(Worpuzz Worpuzz breeze)|없음|
 |영 14x14 한 12x12    | 워퍼즈 몽(Worpuzz Mong)    | 워퍼즈 메이트 찌니(Worpuzz Mate ZZini)   |워퍼즈 브리즈 젠(Worpuzz Breeze Zen)|없음|
 |영 16X16 한 14X14 | - |-|워퍼즈 브리즈 필드(Worpuzz Breeze Field)|없음|
-|영 8x8 한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder mini)  |  | 있음|
-|영 12x12 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 마인워더 (Worpuzz MineWorder)  |  | 있음|
-|영 14x14 한 12x12    |워퍼즈마인 라지(Worpuzz Mine large)    | 마인워더 라지(Worpuzz MineWorder large)|   |있음|
+|영 8x8 한 7x7  | 워퍼즈마인 미니 (Worpuzz Mine mini)        | 마인워더 미니(Worpuzz MineWorder mini)  |-  | 있음|
+|영 12x12 한 10x10    | 워퍼즈마인 (Worpuzz Mine)   | 마인워더 (Worpuzz MineWorder)  |-  | 있음|
+|영 14x14 한 12x12    |워퍼즈마인 라지(Worpuzz Mine large)    | 마인워더 라지(Worpuzz MineWorder large)| -  |있음|
 
 -----
 ### 🎯 넘즐 시리즈 / Numzzle Series
