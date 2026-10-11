@@ -110,7 +110,7 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 - 하루모음은 하루 1문제씩 매일 새로운 문제가 출제됩니다.  
  One new question is presented each day in Haroo Moeum.  
   
-## 둘이 모음 (Doori Moeum)
+## 둘이 모음 (Moeum Duel)
 
 - 두 사용자가 대결하는 모음퀴즈로, 각 팀은 서로 다른 자기만의 문제 세트를 풉니다.   
 - 라운드마다 한 팀만 문제를 풀고, 다른 팀은 대기합니다. 대기 팀은 지루하지 않도록 자기 팀이 다음 라운드에 풀 문제를 미리 보면서 기다립니다.  
@@ -157,8 +157,9 @@ This is a Korean language puzzle game where players guess the hidden consonants 
 
 | 사용자 user    | 👤혼자 하기 |👤혼자 하기   | 👤🆚👤 2인 대결 | 👤혼자 하기|
 |----|----|----|----|----|
-|  게임 Game| 모음퀴즈 <br>Moeum-quiz <br>하루모음<br> Haroo Moeum|모음 라운드<br>Moeum Round<br> |  둘이 모음<br> Doori-moeun <br> 모음 겨루기<br> Moeum Battle |모음 스쿨<br> Moeum School<br>모음 사전 <br> Moeum dict|
+|  게임 Game| 모음퀴즈 <br>Moeum-quiz <br>하루모음<br> Haroo Moeum|모음 라운드<br>Moeum Round<br> |  둘이 모음<br> Moeum Duel <br> 모음 겨루기<br> Moeum Battle |모음 스쿨<br> Moeum School<br>모음 사전 <br> Moeum dict|
 |게임 종료|6회 틀리거나 정답을 맞추면 |10라운드 끝나면 | 한 팀의 정답을 맞출 때까지| 모두 맞출 때까지 틀리면 다시 풀기 |
+
 
 -----
 
