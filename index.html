@@ -249,6 +249,11 @@ body {
         word-wrap: break-word;
         text-align: center;
     }
+.game-card a.card-link {
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
 
 .game-description-text {
         color: #333;
@@ -695,34 +700,39 @@ setTimeout(() => {
         </div>
           </div>
     </div>
-
 <!-- 넘즐X -->
-<div class="game-card" data-category="math" data-rank="32" data-mobile="true" onclick="location.href='https://soosooland.com/numzzlex'">
-    <div class="game-card-header">
-      <div class="game-difficulty">
-        <span class="ko-text">🤖 AI 대결</span>
-        <span class="en-text hidden">🤖 vs AI</span>
-      </div>
-        <div class="game-title">
+<div class="game-card" data-category="math" data-rank="32" data-mobile="true"
+     onclick="location.href='https://soosooland.com/numzzlex'">
+
+  <div class="game-card-header">
+    <div class="game-difficulty">
+      <span class="ko-text">🤖 AI 대결</span>
+      <span class="en-text hidden">🤖 vs AI</span>
+    </div>
+    <div class="game-title">
+      <a href="https://soosooland.com/numzzlex" class="card-link">
         <span class="ko-text">넘즐X</span>
         <span class="en-text hidden">NUMZZLEX</span>
-        </div>
-      </div>
-      <div class="game-description-text">
-        <div class="ko-text">
-        <strong>숫자 카드와 연산카드로 수식을 만들기</strong><br>
-          <div align="center">
-  <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game">
-          </div>
-        </div>
-        <div class="en-text hidden">
-        <strong>Create equations using number and operation cards</strong><br>
-          <div align="center">
-  <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle - Number Game">
-          </div>
-        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="game-description-text">
+    <div class="ko-text">
+      <strong>숫자 카드와 연산카드로 수식을 만들기</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle X - Number Game">
       </div>
     </div>
+    <div class="en-text hidden">
+      <strong>Create equations using number and operation cards</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/images/numzzle.jpeg" width="150" alt="Numzzle X - Number Game">
+      </div>
+    </div>
+  </div>
+</div>
+
 
  <!-- 넘플 -->
 <div class="game-card" data-category="math" data-rank="28" data-mobile="true" onclick="location.href='https://soosooland.com/numpple'">
@@ -840,8 +850,8 @@ setTimeout(() => {
   <!-- 넘스톤 -->
 <div class="game-card" data-category="strategy" data-rank="2" data-mobile="true" onclick="location.href='https://soosooland.com/stone/'">
 <div class="rank-badge rank-2">
-    <span class="ko-text">🥈9월</span>
-    <span class="en-text hidden">🥈SEP</span>
+    <span class="ko-text">🥈9월 2위</span>
+    <span class="en-text hidden">🥈SEP 2nd</span>
 </div>
  <div class="game-card-header">
   <div class="game-difficulty">
@@ -872,8 +882,8 @@ setTimeout(() => {
   <!-- 넘드롭스 -->
 <div class="game-card" data-category="strategy" data-rank="3" data-mobile="true" onclick="location.href='https://soosooland.com/drop/'">
 <div class="rank-badge rank-3">
-    <span class="ko-text">🥉9월</span>
-    <span class="en-text hidden">🥉SEP</span>
+    <span class="ko-text">🥉9월 3위</span>
+    <span class="en-text hidden">🥉SEP 3rd</span>
 </div>
 <div class="game-card-header">
   <div class="game-difficulty">
@@ -1664,8 +1674,8 @@ setTimeout(() => {
 <!-- 오목 게임 -->
 <div class="game-card" data-category="strategy" data-rank="1" data-mobile="true" onclick="location.href='https://soosooland.com/omok'">
   <div class="rank-badge rank-1">
-    <span class="ko-text">🥇9월</span>
-    <span class="en-text hidden">🥇SEP</span>
+    <span class="ko-text">🥇9월 1위</span>
+    <span class="en-text hidden">🥇SEP 1st</span>
  </div>
    <div class="game-card-header">
             <div class="game-difficulty">
@@ -1693,18 +1703,22 @@ setTimeout(() => {
           </div>
      </div>
 
- <!-- 워퍼즈 미니 -->
-<div class="game-card" data-category="word" data-rank="39" data-mobile="true" onclick="location.href='https://soosooland.com/worzzle'">
-         <div class="game-card-header">
-          <div class="game-difficulty">
-        <span class="ko-text">🤖 AI 대결</span>
-        <span class="en-text hidden">🤖 vs AI</span>
-      </div>
-             <div class="game-title">
-                 <span class="ko-text">워퍼즈 미니</span>
-                 <span class="en-text hidden">WORPUZZ mini</span>
-             </div>
-         </div>
+<!-- 워퍼즈 미니 -->
+<div class="game-card" data-category="word" data-rank="39" data-mobile="true"
+     onclick="location.href='https://soosooland.com/worzzle'">
+
+  <div class="game-card-header">
+    <div class="game-difficulty">
+      <span class="ko-text">🤖 AI 대결</span>
+      <span class="en-text hidden">🤖 vs AI</span>
+    </div>
+    <div class="game-title">
+      <a href="https://soosooland.com/worzzle" class="card-link">
+        <span class="ko-text">워퍼즈 미니</span>
+        <span class="en-text hidden">WORPUZZ mini</span>
+      </a>
+    </div>
+  </div>
          <div class="game-description-text">
              <div class="ko-text">
                     <strong>작은 격자 속에 숨어있는 단어를 찾으세요.</strong><br>
@@ -1722,60 +1736,69 @@ setTimeout(() => {
     </div>
 
  <!-- 워퍼즈 몽 -->
-<div class="game-card" data-category="word" data-rank="22" data-mobile="true" onclick="location.href='https://soosooland.com/mong'">
-         <div class="game-card-header">
-                  <div class="game-difficulty">
-        <span class="ko-text">🤖 AI 대결 💻</span>
-        <span class="en-text hidden">🤖 vs AI 💻</span>
-      </div>
-             <div class="game-title">
-                 <span class="ko-text">워퍼즈 몽</span>
-                 <span class="en-text hidden">WORPUZZ MONG</span>
-             </div>
-         </div>
-         <div class="game-description-text">
-             <div class="ko-text">
-                    <strong>큰 격자 속에 숨어있는 단어를 찾으세요.</strong><br>
-                 <div align="center">
-  <img src="https://soosooland.com/word/worpuzzmong.png" width="150" alt="Worpuzz Mong- Word search puzzle">
-                 </div>
-            </div> 
-            <div class="en-text hidden">
-                    <strong>Find hidden letters in the large grid</strong><br>
-                 <div align="center">
-  <img src="https://soosooland.com/word/worpuzzmong.png" width="150" alt="Worpuzz Mong- Word search puzzle">
-                 </div>
-            </div>
-            
-       </div>  
+<div class="game-card" data-category="word" data-rank="22" data-mobile="true"
+     onclick="location.href='https://soosooland.com/mong'">
+
+  <div class="game-card-header">
+    <div class="game-difficulty">
+      <span class="ko-text">🤖 AI 대결 💻</span>
+      <span class="en-text hidden">🤖 vs AI 💻</span>
     </div>
- <!-- 메이트 찌니-->
-<div class="game-card" data-category="word" data-rank="31" data-mobile="true" onclick="location.href='https://soosooland.com/zzini'">
-         <div class="game-card-header">
-      <div class="game-difficulty">
+    <div class="game-title">
+      <a href="https://soosooland.com/mong" class="card-link">
+        <span class="ko-text">워퍼즈 몽</span>
+        <span class="en-text hidden">WORPUZZ MONG</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="game-description-text">
+    <div class="ko-text">
+      <strong>큰 격자 속에 숨어있는 단어를 찾으세요.</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/word/worpuzzmong.png" width="150" alt="Worpuzz Mong- Word search puzzle">
+      </div>
+    </div>
+    <div class="en-text hidden">
+      <strong>Find hidden words in the large grid</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/word/worpuzzmong.png" width="150" alt="Worpuzz Mong- Word search puzzle">
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- 메이트 찌니 -->
+<div class="game-card" data-category="word" data-rank="31" data-mobile="true"
+     onclick="location.href='https://soosooland.com/zzini'">
+
+  <div class="game-card-header">
+    <div class="game-difficulty">
       <span class="ko-text">👥 2인 대결 💻</span>
       <span class="en-text hidden">👥 2 Players 💻</span>
     </div>
-             <div class="game-title">
-                 <span class="ko-text">메이트 찌니</span>
-                 <span class="en-text hidden">MATE	ZZINI</span>
-             </div>
-         </div>
-         <div class="game-description-text">
-             <div class="ko-text">
-                    <strong> 큰 격자 속에 숨어있는 단어를 찾으세요.</strong><br>
-                 <div align="center">
-  <img src="https://soosooland.com/word/matezzini.png" width="150" alt="Mate ZZini">
-                 </div>
-            </div> 
-            <div class="en-text hidden">
-                    <strong>Find hidden letters in the large grid</strong><br>
-                 <div align="center">
-  <img src="https://soosooland.com/word/matezzini.png" width="150" alt="Mate Zzini">
-                 </div>
-            </div>
-       </div>  
+    <div class="game-title">
+      <a href="https://soosooland.com/zzini" class="card-link">
+        <span class="ko-text">메이트 찌니</span>
+        <span class="en-text hidden">MATE ZZINI</span>
+      </a>
     </div>
+  </div>
+
+  <div class="game-description-text">
+    <div class="ko-text">
+      <strong>큰 격자 속에 숨어있는 단어를 찾으세요.</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/word/matezzini.png" width="150" alt="Mate Zzini- Word search puzzle">
+      </div>
+    </div>
+    <div class="en-text hidden">
+      <strong>Find hidden words in the large grid</strong><br>
+      <div align="center">
+        <img src="https://soosooland.com/word/matezzini.png" width="150" alt="Mate Zzini- Word search puzzle">
+      </div>
+    </div>
+  </div>
+</div>
 
       
 <!-- 바로가기 카드 -->
