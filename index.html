@@ -119,15 +119,33 @@ body {
         padding: 20px;
         overflow-y: auto;
     }
-.games-hub-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin-bottom: 20px;
-        font-size: clamp(1.5rem, 4.3vw, 2.1rem);
-        color: #f0f8ff;
-   }
+ .games-hub-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hub-logo {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+}
+
+.hub-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 .hub-title {
         margin: 0;
@@ -637,9 +655,11 @@ setTimeout(() => {
   }
 })();
 </script>
-
-<div class="games-hub">
-<div class="games-hub-header">Soosooland
+ <div class="games-hub">
+<div class="games-hub-header">
+  <a href="/" class="hub-logo">
+    <img src="banner.png" alt="Soosooland 수수랜드">
+  </a>
   <div class="header-buttons">
     <div class="language-toggle">
       <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
