@@ -119,14 +119,24 @@ body {
         padding: 20px;
         overflow-y: auto;
     }
- .games-hub-header {
+.games-hub-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
     margin-bottom: 20px;
 }
-
+.header-buttons {
+    order: -1;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+ 
 .hub-logo {
     display: block;
     width: 100%;
@@ -160,10 +170,10 @@ body {
     align-items: center;
     gap: 15px; /* 언어 버튼과 후원 버튼 사이 간격 */
 }
+ 
 .language-toggle {
-        position: absolute;
+    position: static;
         left: 20px;
-        top: 0;
    }
     
 .language-btn {
@@ -466,19 +476,8 @@ body {
     gap: 15px;
 }
 .header-buttons {
-      flex-direction: inline;
       gap: 10px;
     }
-
-.language-toggle {
-      position: static;
-      margin-top: 10px;
-      }
-
-.games-hub-header {
-      flex-direction: column;
-      }
-
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
